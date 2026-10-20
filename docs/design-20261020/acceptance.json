@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-20",
+  "status": "design_only",
+  "implementation_verified": false,
+  "features": [
+    {"id":"A01","name":"얼굴 자동 모자이크","units":["E01"]},
+    {"id":"A02","name":"자동 테마·태그 분류","units":["E02","E03"]},
+    {"id":"A03","name":"사진 속 글자 검색","units":["E04","E05"]}
+  ],
+  "assessment_units": [
+    {"id":"E01","feature":"A01","side":"android","evidence":"V01"},
+    {"id":"E02","feature":"A02","side":"android","evidence":"V02"},
+    {"id":"E03","feature":"A02","side":"server","evidence":"V03"},
+    {"id":"E04","feature":"A03","side":"android","evidence":"V04"},
+    {"id":"E05","feature":"A03","side":"server","evidence":"V05"}
+  ],
+  "screens":["U01","U02","U03","U04","U05","U06","U07"],
+  "states":["S01","S02","S03","S04","S05","S06","S07","S08","S09","S10","S11","S12"],
+  "planned_tests":["T01","T02","T03","T04","T05","T06","T07","T08","T09","T10","T11","T12","T13","T14","T15"],
+  "planned_evidence":["V01","V02","V03","V04","V05","V-B01","V-B02","V-B03","V-B04","V-B05","V-B06","V-B07","V-B08","V-B09","V-B10","V-B11","V-B12","V-B13","V-B14"],
+  "requirements":[
+    {"id":"R01","description":"기기 원본 보존과 실제 픽셀이 가려진 게시 사본","features":["A01"],"screens":["U02","U03","U06"],"states":["S03","S06"],"tests":["T01","T03"],"evidence":["V01"]},
+    {"id":"R02","description":"얼굴별 해제·수동 영역·크기·이동·강도·실행 취소","features":["A01"],"screens":["U03"],"states":["S03"],"tests":["T01","T02"],"evidence":["V01"]},
+    {"id":"R03","description":"얼굴 0개와 탐지 실패 구분, 직접 확인·보완","features":["A01"],"screens":["U02","U03"],"states":["S02","S03","S05"],"tests":["T02","T15"],"evidence":["V01"]},
+    {"id":"R04","description":"대표 테마와 다중 태그 추천·교정·미분류 게시","features":["A02"],"screens":["U02","U04"],"states":["S04","S05","S06"],"tests":["T04","T05"],"evidence":["V02"]},
+    {"id":"R05","description":"약한 근거의 기권과 사용자 확정값 덮어쓰기 방지","features":["A02"],"screens":["U04"],"states":["S05","S10"],"tests":["T04","T05"],"evidence":["V02"]},
+    {"id":"R06","description":"확정 분류의 서버 저장·권한·재접속 유지","features":["A02"],"screens":["U01","U04","U06"],"states":["S08","S09"],"tests":["T06","T07","T14"],"evidence":["V03"]},
+    {"id":"R07","description":"테마·태그 조건과 페이지 조회","features":["A02"],"screens":["U01","U05"],"states":["S11"],"tests":["T07","T14"],"evidence":["V03"]},
+    {"id":"R08","description":"공개 사본 한글·영문 OCR와 위치를 유지한 교정","features":["A03"],"screens":["U04"],"states":["S04","S05"],"tests":["T08"],"evidence":["V04"]},
+    {"id":"R09","description":"검색 제외 문구 미전송·미색인과 OCR 미사용 게시","features":["A03"],"screens":["U02","U04"],"states":["S05","S06"],"tests":["T08","T10","T11"],"evidence":["V04","V05"]},
+    {"id":"R10","description":"사진에만 있는 문구·정규화·복수 검색어·특수문자 리터럴 검색","features":["A03"],"screens":["U05"],"states":["S11"],"tests":["T10","T14"],"evidence":["V05"]},
+    {"id":"R11","description":"일치 줄 강조·확대·다중 결과 이동·최신 이미지 확인","features":["A03"],"screens":["U05","U06"],"states":["S11"],"tests":["T08","T09","T12"],"evidence":["V04"]},
+    {"id":"R12","description":"업로드 바이트와 분석 digest·크기 일치, 이미지 교체 무효화","features":["A01","A02","A03"],"screens":["U02","U04"],"states":["S10"],"tests":["T03","T11","T12"],"evidence":["V01","V05"]},
+    {"id":"R13","description":"이미지·검색 세대 검사로 지연 콜백 폐기","features":["A02","A03"],"screens":["U02","U05"],"states":["S04","S10","S11"],"tests":["T05","T09"],"evidence":["V02","V04"]},
+    {"id":"R14","description":"사진글·분류·검색 문구 원자 저장과 실패 파일 정리","features":["A02","A03"],"screens":["U02"],"states":["S07","S08","S09"],"tests":["T11","T13"],"evidence":["V03","V05","V-B06"]},
+    {"id":"R15","description":"작성자 수정 권한·revision 충돌과 입력 보존","features":["A02","A03"],"screens":["U04","U06"],"states":["S09","S12"],"tests":["T06","T11","T12"],"evidence":["V03","V05"]},
+    {"id":"R16","description":"기본 Post bare array·7필드·웹 작성·기본 업로드 회귀","features":["A01","A02","A03"],"screens":["U01","U02"],"states":["S06","S08"],"tests":["T07","T13"],"evidence":["V-B03","V-B04","V-B05","V-B10","V-B11"]},
+    {"id":"R17","description":"기존 인증·CSRF·같은 출처·공개 범위 유지","features":["A01","A02","A03"],"screens":["U02","U05","U07"],"states":["S09"],"tests":["T06","T10","T13","T14"],"evidence":["V03","V05"]},
+    {"id":"R18","description":"선택 취소·회전·업로드 중복 탭·모호한 실패 복구","features":["A01","A02","A03"],"screens":["U02","U03","U04"],"states":["S01","S02","S07","S08","S09"],"tests":["T05","T09","T13"],"evidence":["V01","V02","V04"]},
+    {"id":"R19","description":"처음 쓰는 사람의 과업·작은 세로 화면·피드백 검수","features":["A01","A02","A03"],"screens":["U01","U02","U03","U04","U05","U06","U07"],"states":["S01","S05","S09","S11"],"tests":["T15"],"evidence":["V01","V02","V04"]},
+    {"id":"R20","description":"학습·사용자 모델 설치 없이 기기 인식과 실제 무료 PythonAnywhere 운영","features":["A01","A02","A03"],"screens":["U02","U05"],"states":["S04","S08","S11"],"tests":["T03","T07","T14"],"evidence":["V-B12","V-B13","V03","V05"]},
+    {"id":"R21","description":"기본 1–14와 추가 5개 실제 증빙·보고서 추적","features":["A01","A02","A03"],"screens":["U01","U02","U06"],"states":["S08"],"tests":["T13","T14","T15"],"evidence":["V-B01","V-B02","V-B03","V-B04","V-B05","V-B06","V-B07","V-B08","V-B09","V-B10","V-B11","V-B12","V-B13","V-B14"]}
+  ],
+  "baseline_items":[
+    {"id":1,"evidence":"V-B01"},{"id":2,"evidence":"V-B02"},
+    {"id":3,"evidence":"V-B03"},{"id":4,"evidence":"V-B04"},
+    {"id":5,"evidence":"V-B05"},{"id":6,"evidence":"V-B06"},
+    {"id":7,"evidence":"V-B07"},{"id":8,"evidence":"V-B08"},
+    {"id":9,"evidence":"V-B09"},{"id":10,"evidence":"V-B10"},
+    {"id":11,"evidence":"V-B11"},{"id":12,"evidence":"V-B12"},
+    {"id":13,"evidence":"V-B13"},{"id":14,"evidence":"V-B14"}
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "started_utc": "2026-10-19T12:18:42.598405+00:00",
+  "finished_utc": "2026-10-19T12:19:28.876617+00:00",
+  "environment": "WSL Ubuntu",
+  "python": "/home/daeha/.venvs/mobile_web_service/bin/python",
+  "results": [
+    {
+      "name": "django-check",
+      "command": [
+        "/home/daeha/.venvs/mobile_web_service/bin/python",
+        "manage.py",
+        "check"
+      ],
+      "exit_code": 0,
+      "log": "evidence/baseline/django-check.txt"
+    },
+    {
+      "name": "migration-consistency",
+      "command": [
+        "/home/daeha/.venvs/mobile_web_service/bin/python",
+        "manage.py",
+        "makemigrations",
+        "--check",
+        "--dry-run"
+      ],
+      "exit_code": 0,
+      "log": "evidence/baseline/migration-consistency.txt"
+    },
+    {
+      "name": "tests-coverage",
+      "command": [
+        "/home/daeha/.venvs/mobile_web_service/bin/python",
+        "-m",
+        "coverage",
+        "run",
+        "manage.py",
+        "test",
+        "--verbosity",
+        "2"
+      ],
+      "exit_code": 0,
+      "log": "evidence/baseline/tests-coverage.txt"
+    },
+    {
+      "name": "coverage-report",
+      "command": [
+        "/home/daeha/.venvs/mobile_web_service/bin/python",
+        "-m",
+        "coverage",
+        "report"
+      ],
+      "exit_code": 0,
+      "log": "evidence/baseline/coverage-report.txt"
+    },
+    {
+      "name": "coverage-html",
+      "command": [
+        "/home/daeha/.venvs/mobile_web_service/bin/python",
+        "-m",
+        "coverage",
+        "html"
+      ],
+      "exit_code": 0,
+      "log": "evidence/baseline/coverage-html.txt"
+    },
+    {
+      "name": "coverage-json",
+      "command": [
+        "/home/daeha/.venvs/mobile_web_service/bin/python",
+        "-m",
+        "coverage",
+        "json",
+        "-o",
+        "htmlcov/coverage.json"
+      ],
+      "exit_code": 0,
+      "log": "evidence/baseline/coverage-json.txt"
+    },
+    {
+      "name": "http-api-engine",
+      "command": [
+        "/home/daeha/.venvs/mobile_web_service/bin/python",
+        "api_test_engine.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/baseline/http-api-engine.txt"
+    }
+  ],
+  "source_sha256": {
+    ".coveragerc": "c2dfdb44d047f65e678b4f50f1b519cb74b0fce8bdbea32ddc852b5ddd807322",
+    "api_test_engine.py": "ffa13b2546a1cd6c515ab5729deffa88af6a46ffc09d694a90279f9f06732f63",
+    "blog/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "blog/admin.py": "b4d5bc059687e714916377cf76b2313673d410de4d8272078d07302b4c82fcc9",
+    "blog/api_v1.py": "13fca17a3e33f6b927611f29a481551a5f5f071f2d3f0e9f89eae0ad78cd20c7",
+    "blog/api_v1_urls.py": "7437c87d91cae00175f832baf3a135ad163e2ddd3434064e0ceb00455bebbbbf",
+    "blog/apps.py": "2cbe7134dd1e850ceaea218d161912815660a85f74173d83b454a7106f801429",
+    "blog/domain.py": "a1bc674b0f7ea953eb298bdc75fdfd7d77a89f90fb4db9c03e7f4b709d05e0c3",
+    "blog/file_cleanup.py": "572fe90599c8155d461f68fd9abd984b63f0fb0603114f318ddec657a128e111",
+    "blog/forms.py": "3bcc6bf8e93ccb4e19a79d1fe03839273c383517950a5c9d615606f87b3ba5ce",
+    "blog/management/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "blog/management/commands/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "blog/management/commands/seed_local_author.py": "fe1c3f39b58cad1b1154466389cd0c4c3afa8be042221e3ae0bfce3237a09e3a",
+    "blog/migrations/0001_initial.py": "f63e4db5301bebf337aa9d59515099d39b43ef5fbca2291b575cac421333ee9b",
+    "blog/migrations/0002_gallery_decorlayout.py": "a2a36fcaacc5903bfca32bea3326ceb971b38571cd0239eef88680cb0bf75fa0",
+    "blog/migrations/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "blog/models.py": "b0a77a953113d8acd0c933762251fe5010deb87000083916c3603cb68b93fb63",
+    "blog/permissions.py": "2ec08cc5cec4e92ef15569a3465d24317c3a4be74d67f23ee038c0e398253715",
+    "blog/serializers.py": "843f2c791cae514b6b0f4ed546ee215c50baad43ae9301896bbad9aef41b3011",
+    "blog/services.py": "9cc668ea85062bce55784d112b3624823294568a36d799f1813188506759c9c8",
+    "blog/signup_forms.py": "323306842d1792a5799808a1f825491618e17fc61c004d8d68f9838f7cc2a0ba",
+    "blog/studio_signals.py": "1ada2a704f9ef231eaec4f0def8781e0f2a38e086077c1d8084e1a8d52263605",
+    "blog/templates/blog/base.html": "488b48d46245f87ac51526a596d6f71e6e45c2a3ec65a8d29653bc60582f0fd7",
+    "blog/templates/blog/js_test.html": "fb7a4fcecd08c14dfd9059565ebda0a5988c980ebc037274aacfd4ff83248b43",
+    "blog/templates/blog/post_detail.html": "71d9a0c46d8f7adc9c409a324e9adc67d38a6892b9a5534278a393cec6adf857",
+    "blog/templates/blog/post_edit.html": "81c0c15f3940ccfbff103a0d49cabef231642ef03174aae7e3e9ff0af30047cf",
+    "blog/templates/blog/post_list.html": "b04df2ad64e5639d74ee854b2ad5ddcb8bce5289de66581a07e6e5040ce84447",
+    "blog/templates/blog/studio.html": "19b31d33aff448058cd3ecc74767fd76e772acc1500cbe8f1a3f1a4e16ce146a",
+    "blog/templates/blog/studio_unavailable.html": "284de106e119463c5247b166abd1c9e2cf2b65636559766b3e73fc4aeb9c9cc0",
+    "blog/templates/blog/village.html": "d495197d34bfd3a50658a5d976cb3c5db65c1985980aaa92086ab50fe05e8c85",
+    "blog/templates/registration/login.html": "cc8be744414991584c1af6b257f0ae3b761c5d60593afd6d80585429afeeceff",
+    "blog/templates/registration/signup.html": "cdcc04069649225f8bf8b66e1d59aa4c47730e158f79cb6a110de193908a0c53",
+    "blog/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "blog/tests/helpers.py": "f1dd9aae7f5d4af82be728e6273c0be24258a26ef6c2e5f757c09d3f6ed98d45",
+    "blog/tests/test_baseline.py": "73fb15ebe2799d001f203599b9159ed657eb9054a16794855454888e80716d7c",
+    "blog/tests/test_configuration.py": "981657a45bfaaf828ad7741503668a3dd0bd8ebef048675904fc863886e4e84d",
+    "blog/tests/test_http_engine.py": "6da4934f5caaae45744f5e3973481f42a1d0fff0638061c83d94af7d4a6bb267",
+    "blog/tests/test_socket_request_capture.py": "46ade06e3da51bb9bdd078ea557ad3024d19a08696a5ceeae0670fc3383ab1ea",
+    "blog/tests/test_studio_api.py": "ed254ff9b7f977ea20241ee06373baed76efd57dc9b2760c0db84e90e5a4c416",
+    "blog/tests/test_studio_domain.py": "01225f1b05acea7cd83a8bfe06f4689ab859cb9ae2011d60c87c0a3336d721fc",
+    "blog/tests/test_studio_http.py": "bda644bad63121c49dea2ac4ee6d8b375b9f173eb391a7d7bb0b430ef535e691",
+    "blog/tests/test_studio_storage.py": "f7cad86e60144168c5f3bb6cb382635c920d21cc8975a85dc2c00f8a76f8b353",
+    "blog/tests/test_studio_web.py": "ce77367a91205cc69aafeb7f770c223187ea0dbf79c075a356c322134cca74e3",
+    "blog/tests/test_validators.py": "ec178dcb55a2abcc1d1cf6f17dc74b794c780bb3622168cbdc9ac05bd42c5eb5",
+    "blog/urls.py": "f054a24ef3e2ab5eadab009c2c160f067584b3c14e70863e4b188729126cf2c7",
+    "blog/validators.py": "d67cb4b021427c9ccff1355d9f232e19e144b466509bf2aacd7f651f00ebe0b2",
+    "blog/views.py": "56da309a5f4900d8fdd60421a9cf5ee2344e1de003c037b47f8f14e0a27b0822",
+    "blog/village_web.py": "724928aad82b2ec732b338f6785569d873e55f6287f0b870790c87eb63053a41",
+    "manage.py": "5f0bea98497240763a3c6b4e7dddb1ba6b7331ea10e5bb09120a0fbf03b2888e",
+    "photoblog/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "photoblog/asgi.py": "5474da6053ccb12fbfeb0614e7f039a47c3955b61df6342633a48080dd2927a8",
+    "photoblog/settings.py": "4109db2adccb4b85e921a0357c67f2ccd44a5fa38c59f073d9489ec89a053e31",
+    "photoblog/urls.py": "63cf7e6c3feef85db2b90a1c1b3d85b34583a747d25c68a55c886b0f8b8d11fc",
+    "photoblog/wsgi.py": "45fcaa56c7033e6bb431101fa23c2022892f1f2c573430f6de74bfb43c3280e3",
+    "requirements.txt": "07ddcc3503d840443b96583912b50be9b254c3f3dba69390f89d4df5033c4495",
+    "tools/audit_runtime.py": "f2ab55830bd255cdfa97fed1ab46ec3c936c458bbf78ee73d0d1b2d71483137c",
+    "tools/backup_development_database.py": "450db987157bfbdcdd2033a857ed77ff7c41824452bbbd446f235db44e83262d",
+    "tools/capture_telnet.py": "7e682e49bae75ec61e4e01402ac242d7585454bf69517f600a9746a76499aeed",
+    "tools/probe_runtime_form.py": "f9c5ca9bb230c91b67c809c5d0102c12d01836cfe16f2f82982ec489a8d800d9",
+    "tools/socket_request_capture.py": "0e5f7b56c6920db1945b135d68587610383e51afbf59de133f4ebc7743b295a3",
+    "tools/verify_baseline.py": "9a92db319c82325a1c72445b65bcb930dc420c99782651e45600dca4de5e7dd7",
+    "tools/verify_browser_storage.py": "d16bced136a14ef7f31e71cbcfbe6170ff92f31cba0d00897883435153bb4a2f",
+    "tools/verify_studio_storage.py": "c802375ee31515efad6f6ac26f164f598be33916871ea55e5dab5e932cee3dd0"
+  },
+  "source_changed_during_validation": false,
+  "pass": true,
+  "coverage_totals": {
+    "covered_lines": 691,
+    "num_statements": 701,
+    "percent_covered": 96.98996655518394,
+    "percent_covered_display": "97.0",
+    "missing_lines": 10,
+    "excluded_lines": 0,
+    "percent_statements_covered": 98.5734664764622,
+    "percent_statements_covered_display": "98.6",
+    "num_branches": 196,
+    "num_partial_branches": 17,
+    "covered_branches": 179,
+    "missing_branches": 17,
+    "percent_branches_covered": 91.3265306122449,
+    "percent_branches_covered_display": "91.3"
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "output": "C:\\Users\\1\\mobile_web_service\\common01\\모바일웹서비스 프로젝트 공통평가 01_수행 결과 보고서.docx",
+  "sha256": "0780f676b6c5adff1ab9dab6a7245d87ac634869badcd69b77cfd175dc9ba153",
+  "bytes": 4908802,
+  "reference": "C:\\Users\\1\\.codex\\codex-remote-attachments\\01a1540d-3877-7293-8a0f-ccdd0262b3aa\\2D08D360-E681-4A50-AA9C-9CBAD76F8E57\\2-모바일웹서비스-프로젝트_공통평가-01_수행-결과-보고서.docx",
+  "reference_sha256": "32143cf4d65a830410d5dec20b7d5b9b922d448c1382d2ab7dc5fc9a93384d6c",
+  "same_attached_and_old_form": true,
+  "original_requirement_cells_preserved": true,
+  "section_geometry_preserved": true,
+  "opaque_parts_preserved": true,
+  "examiner_judgement_blank": true,
+  "identity_blank_by_user_reply": true,
+  "registration_rows": 5,
+  "user_features": 3,
+  "images": [
+    {
+      "path": "evidence/baseline-api-post-form.jpg",
+      "sha256": "684aaed9920df175b4cca306eea26a4e7ab285e3fec73018b0ff0e0a47ec6588",
+      "bytes": 77444,
+      "original_pixels": [
+        1265,
+        906
+      ]
+    },
+    {
+      "path": "evidence/baseline-api-created.jpg",
+      "sha256": "1c5c99d525a625644656d2cc5b9ad1660e7664c6e922ce13200f54986c658d55",
+      "bytes": 73232,
+      "original_pixels": [
+        1265,
+        872
+      ]
+    },
+    {
+      "path": "evidence/baseline-codebeautify.jpg",
+      "sha256": "9fc902254250e75ab0d6d66c31bef8dfdbaea46121df9a55c8d20ff911faeb4d",
+      "bytes": 191577,
+      "original_pixels": [
+        1265,
+        1300
+      ]
+    },
+    {
+      "path": "evidence/content/android/content-start.png",
+      "sha256": "c23eb777c103cea53b7394f32d091f2a9f8ddcb3c0a38641dce1ff21a28ee0c3",
+      "bytes": 108159,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/content/android/content-published.png",
+      "sha256": "3e8cd98654660103e8707c926c56e0eca1d225ac715d8985e75e104c6c983012",
+      "bytes": 396145,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/content/android/content-face-preview.png",
+      "sha256": "4ebde27c0bb8dc73fac98b9ada27eb350031915fb8342f0849c85f16d38a72f9",
+      "bytes": 363536,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/content/android/content-classification-ocr.png",
+      "sha256": "e78bdfa9fa940442b7b105090d8012cd87b16829fd39bbd2f3d4e47ecf6b43a6",
+      "bytes": 407322,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/content/android/content-search-results.png",
+      "sha256": "1a28f626abdff407078d8b9fd0e041717bac739499f96e03fdbae175dee1e1e0",
+      "bytes": 400256,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/content/android/content-match-highlight.png",
+      "sha256": "ef68f642dea06476441dab6d744adad29768a7bf7044993db8bf1d44ee6babf8",
+      "bytes": 149620,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/mobile-web/android-ux-audit/after/mosaic-550.png",
+      "sha256": "35095555263816ec824c32b9542f403069ee5ed113c8cc1d42332e75b4096f94",
+      "bytes": 654238,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/mobile-web/android-ux-audit/after/edit-tags-550.png",
+      "sha256": "a9726122da5257e2db7faa49d9d0f6a9d0ca49936d084a792906cc077348e7b4",
+      "bytes": 134268,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/mobile-web/ocr-quality/production-foliage-crop.png",
+      "sha256": "dabea967d2e0a38b9799f0c8016bd474cff99c7e20171d3992f6fa7f16c7df42",
+      "bytes": 522909,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/mobile-web/ocr-quality/production-sign.png",
+      "sha256": "f36b6c40f31b442048231a5848186672e68e3c21fa198bc466adc2d07866607d",
+      "bytes": 85407,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/mobile-web/post-grid/grid-393x650.png",
+      "sha256": "e71b5940e7facb22fba391dde8904293e84ef7d2e6a40930191490e8a9f2521a",
+      "bytes": 451221,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/report-20261020/user-cloud-browser.jpg",
+      "sha256": "aa4602eb41abb0f65a9903af04ab6da4c5e75a64c06d182ff7635e17e6803c16",
+      "bytes": 94558,
+      "original_pixels": [
+        591,
+        1280
+      ]
+    },
+    {
+      "path": "evidence/report-20261020/android-cloud-origin.png",
+      "sha256": "d0b15289535d7896b4b8689e77c847c228a6e84ce7cdcf4ffdc8592b61ea6469",
+      "bytes": 379194,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/report-20261020/android-cloud-synced.png",
+      "sha256": "00fe38ad952369a6fa4f93d4b8d27b263acd6702222202690c5bc538e111e879",
+      "bytes": 474054,
+      "original_pixels": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/baseline-home.jpg",
+      "sha256": "31d122965732d76a3fece9989867f899b07da48e59c47bbc30f5f40d1b7ca41b",
+      "bytes": 63026,
+      "original_pixels": [
+        556,
+        1480
+      ]
+    }
+  ],
+  "embedded_original_bytes": true,
+  "public_release": "20261020092725e44d69",
+  "native_cloud_sync_verified": true,
+  "visual_review": "All 17 full-page renders inspected; no clipped or overlapping text/images or orphan pages observed",
+  "remaining": [
+    "학번 이름 GitHub URL push 제출",
+    "ID1 3 4 5 6 7 지정 화면 증빙"
+  ],
+  "inventory": [
+    {
+      "name": "[Content_Types].xml",
+      "policy": "editable",
+      "sha256": "8bf3a22c44bf62577eed1e9f8c2b710877ff531c7424ffd6596e0f994c3e5f9d"
+    },
+    {
+      "name": "_rels/.rels",
+      "policy": "preserve",
+      "sha256": "e19238d7a71fa7a2490776252686f70e2de6238c87cd509b5e3a3cc07c2ea4df"
+    },
+    {
+      "name": "word/document.xml",
+      "policy": "editable",
+      "sha256": "6b4319883a779ec273e136cb63df5c45aea1ef57bce15dcb67a35198d22bf30d"
+    },
+    {
+      "name": "word/_rels/document.xml.rels",
+      "policy": "editable",
+      "sha256": "1e121fadbf13c499c496fdebcdd5a553acc17fa06e4ce66cdc23e090410905b0"
+    },
+    {
+      "name": "word/footnotes.xml",
+      "policy": "preserve",
+      "sha256": "f21b2a7842452556c948c924ad111ad1401a8c866ee98574968e4074cae0d3a2"
+    },
+    {
+      "name": "word/endnotes.xml",
+      "policy": "preserve",
+      "sha256": "d7535b50c5b5906927992df3b6ffb17355d0acb00aecac38b18d64f63abb7fa5"
+    },
+    {
+      "name": "word/header1.xml",
+      "policy": "preserve",
+      "sha256": "4fa3570e5fb6426f6d04e17d9ab2c02307fe78ddd56f218aa2ffe482009162d0"
+    },
+    {
+      "name": "word/footer1.xml",
+      "policy": "preserve",
+      "sha256": "ade7438c12087da1c8ca85cdd3b5d8b99fd684400f0685fde44a18eb8c89d43d"
+    },
+    {
+      "name": "word/footer2.xml",
+      "policy": "preserve",
+      "sha256": "cea1b7b6c7ac73f9f253a2942bb33bb1d1511a7a7be54ad9aaa77823f41bb354"
+    },
+    {
+      "name": "word/media/image1.png",
+      "policy": "preserve",
+      "sha256": "4451e167c03182d1f83b5981774f4d6171b0a479d90734042ec75053d2865360"
+    },
+    {
+      "name": "word/theme/theme1.xml",
+      "policy": "preserve",
+      "sha256": "345399203645427d280b4a6f86215299c1e4ce818c5c5e140f6223738bebed43"
+    },
+    {
+      "name": "word/settings.xml",
+      "policy": "editable",
+      "sha256": "b4b33413c20cd0ecb7918d2e86330fd91ba4efc2665ee72a997ec84fd4d25a2a"
+    },
+    {
+      "name": "word/_rels/settings.xml.rels",
+      "policy": "preserve",
+      "sha256": "78bc92cd2e50a7138fce87ec0b2670e7843460d12d253efc949e955667b573e8"
+    },
+    {
+      "name": "customXml/item1.xml",
+      "policy": "preserve",
+      "sha256": "c8092edbb672f8c93f1d5ef66539a6f169462ba8738b785b59cc5d96f4aca59a"
+    },
+    {
+      "name": "customXml/itemProps1.xml",
+      "policy": "preserve",
+      "sha256": "7c4cd91a930f2d54373aa67ce7f8be941536edb644e841faa075bf09fd228bb1"
+    },
+    {
+      "name": "word/numbering.xml",
+      "policy": "preserve",
+      "sha256": "af72b8ef8da88d1fe38b52d4806fced5de92c1deb51d2148e8a70cf2f0609070"
+    },
+    {
+      "name": "word/styles.xml",
+      "policy": "preserve",
+      "sha256": "1417d68e2c42cf16ab150d3ab8668ba314c0ac0442fa7798ee6ce2f6876f802e"
+    },
+    {
+      "name": "word/webSettings.xml",
+      "policy": "preserve",
+      "sha256": "7005752096f5068a9c0efc2d2a4cc06b763f9da7ac67d708484387cc7787e28d"
+    },
+    {
+      "name": "word/fontTable.xml",
+      "policy": "preserve",
+      "sha256": "b442f9e8a400926bfce16be25217438581d3c5c24ab044418af7d4f5e33eaf02"
+    },
+    {
+      "name": "docProps/core.xml",
+      "policy": "preserve",
+      "sha256": "6854890bf342baf14aae533d61051aab6af0c743aa95008fb50cab5bac5b4e47"
+    },
+    {
+      "name": "docProps/app.xml",
+      "policy": "preserve",
+      "sha256": "19f726136ee0160e9d6cde37f6d5abf7e04a31bc4b3cad1627123f34e7a3ef48"
+    },
+    {
+      "name": "customXml/_rels/item1.xml.rels",
+      "policy": "preserve",
+      "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+    },
+    {
+      "name": "word/_rels/numbering.xml.rels",
+      "policy": "preserve",
+      "sha256": "94bca6aec3177c3b64686e1248ecfb39e9750dc067c2274af33e6b442d1f6617"
+    }
+  ],
+  "status": "final_set_report_verified_with_required_capture_gaps",
+  "verified_at": "2026-10-20T11:38:03.833928+00:00",
+  "document_pages": 17,
+  "assessment_form_pages": 2,
+  "appendix_pages": 15,
+  "image_count": 18,
+  "original_images_unchanged": true,
+  "assessment_status_unchanged": true,
+  "portable_copy_render_identical": true,
+  "ready_for_final_submission": false,
+  "github_pushed": false,
+  "course_submitted": false,
+  "cloud_http_flow_verified": true,
+  "cloud_test_post_id": 4,
+  "existing_posts_preserved": true,
+  "desktop_capture_blocker": "Computer Use stopped this turn because the current browser URL could not be determined reliably on Windows",
+  "pages": [
+    {
+      "page": 1,
+      "sha256": "e348e291e87900bad3fb2ed91a1e1afe07cad437be229a19d5c71cb0227f6fd7",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 2,
+      "sha256": "7c72d5791b4fc9d535df8680f4739b1e05faca03a53969c447b3166e406105b0",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 3,
+      "sha256": "521075fe78528976ac4266cc5f3e7f89ba832772542cbc9d4e5819eea68beefb",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 4,
+      "sha256": "11e72989a52c003dec17591a2e85d3790812c3b51559c0541f75cc205b38379c",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 5,
+      "sha256": "f30e47514b333642b048d603c26363390d2cdaaac16b97317e96769cb423a309",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 6,
+      "sha256": "ffba7943f31a2e60e1dedc744e2f5660f57e9b13122eb29ed8693dd1416be401",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 7,
+      "sha256": "5e6318372e911106cabe28cf60444ff13ad8793008bd9282dd3cd1986824b7f2",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 8,
+      "sha256": "aa7f2e03803fb1b96b0983ce53d921e3c754fcc1af62f78ce3f2a963202725dc",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 9,
+      "sha256": "fd729a016756ff506a0322018e520685c0a01f9ec97b288923639fa8e3266e94",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 10,
+      "sha256": "1b9e9a9c3f25f3b2b127bd1500c94842e1f02c73525460a994e6f98147502af8",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 11,
+      "sha256": "65fc5534ed825cda6541ef0e237fcc15d019f67517fe0c3d902e22c5312d2930",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 12,
+      "sha256": "f24ec4104838991d8ddb99fc851e7bcc9728d5a6adbe6d893fb8bf56db1cbe57",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 13,
+      "sha256": "3b67ee34c19883eed6f3eb65ae805ff53ca8cc2e03e0013255a972ee3443a9ef",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 14,
+      "sha256": "2cb9a07a4404368b73c674d39d1abb0e51c52e559467015b11da65cb445a8d22",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 15,
+      "sha256": "96b3e7139b84211c94fc6350a7d7d175e6a75b8967416fb753471bd8fa1cd5d0",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 16,
+      "sha256": "f68b6259e1ab378e2437b5d18d6b4d8113e83daef03208d957fa94a245ca7f33",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    },
+    {
+      "page": 17,
+      "sha256": "e15f529ea30914f1de31bc0186e1679bc2cc6613b460c1c03877977940f54107",
+      "visually_reviewed": true,
+      "portable_render_identical": true
+    }
+  ]
+}

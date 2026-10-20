@@ -1,0 +1,20 @@
+[
+  {
+    "id": 2,
+    "author": 1,
+    "title": "REST API 브라우저 POST 검증",
+    "text": "DRF HTML form에서 텍스트와 사진을 multipart POST로 전송합니다.",
+    "created_date": "2026-10-10T05:03:08.582101+09:00",
+    "published_date": "2026-10-10T05:03:08.582014+09:00",
+    "image": "http://127.0.0.1:8000/media/images/2026/10/09/77f6ffbf7f6e43109219266433af15af.png"
+  },
+  {
+    "id": 1,
+    "author": 1,
+    "title": "공통평가 기본 웹 업로드 검증",
+    "text": "브라우저에서 텍스트와 PNG 이미지를 multipart로 게시하고 같은 DB의 글과 저장된 사진을 확인합니다.",
+    "created_date": "2026-10-10T05:01:54.560401+09:00",
+    "published_date": "2026-10-10T05:01:54.601478+09:00",
+    "image": "http://127.0.0.1:8000/media/images/2026/10/09/19a72c39fa234f8ba3e4cff52a184200.png"
+  }
+]

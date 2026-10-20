@@ -1,0 +1,1438 @@
+{
+  "environment": "Actual Android API35 WebView; native view heights 650 and 550 CSS px",
+  "verifiedAt": "2026-10-20T08:34:13.573Z",
+  "checks": [
+    {
+      "name": "list-author-650 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Feed photo visible 650",
+      "pass": true,
+      "detail": {
+        "photo": {
+          "top": 242.23809814453125,
+          "bottom": 463.3333435058594,
+          "left": 12.7619047164917,
+          "right": 399.42859172821045,
+          "width": 386.66668701171875,
+          "height": 221.09524536132812,
+          "visible": true
+        },
+        "header": {
+          "top": 0,
+          "bottom": 60.761905670166016,
+          "left": 0,
+          "right": 412.19049072265625,
+          "width": 412.19049072265625,
+          "height": 60.761905670166016,
+          "visible": true
+        }
+      }
+    },
+    {
+      "name": "search-empty-650 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "login-650 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "login submit 650",
+      "pass": true,
+      "detail": [
+        {
+          "id": "로그인",
+          "top": 336.952392578125,
+          "bottom": 380.952392578125,
+          "left": 32.761905670166016,
+          "right": 379.42859268188477,
+          "clipBottom": 650.2857055664062,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "signup-650 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "signup submit 650",
+      "pass": true,
+      "detail": [
+        {
+          "id": "회원가입",
+          "top": 418.8690490722656,
+          "bottom": 462.8690490722656,
+          "left": 32.761905670166016,
+          "right": 379.42859268188477,
+          "clipBottom": 650.2857055664062,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "detail-650 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Detail photo fits 650",
+      "pass": true,
+      "detail": {
+        "top": 213.32142639160156,
+        "bottom": 449.76190185546875,
+        "left": 28.761905670166016,
+        "right": 383.42859268188477,
+        "width": 354.66668701171875,
+        "height": 236.4404754638672,
+        "visible": true
+      }
+    },
+    {
+      "name": "photo-picker-650 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Photo choices 650",
+      "pass": true,
+      "detail": [
+        {
+          "id": "취소",
+          "top": 19.6011905670166,
+          "bottom": 40.3988094329834,
+          "left": 16,
+          "right": 66,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "photo-input",
+          "top": 339.5952453613281,
+          "bottom": 387.5952453613281,
+          "left": 36.761905670166016,
+          "right": 375.42859268188477,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "camera-input",
+          "top": 395.5952453613281,
+          "bottom": 443.5952453613281,
+          "left": 36.761905670166016,
+          "right": 375.42859268188477,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edit-story-650 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Review buttons story 650",
+      "pass": true,
+      "detail": [
+        {
+          "id": "tab-story",
+          "top": 64,
+          "bottom": 100,
+          "left": 16,
+          "right": 140.7261962890625,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-tags",
+          "top": 64,
+          "bottom": 100,
+          "left": 143.7261962890625,
+          "right": 268.4583435058594,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-text",
+          "top": 64,
+          "bottom": 100,
+          "left": 271.4583435058594,
+          "right": 396.1845397949219,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "publish-photo",
+          "top": 598,
+          "bottom": 642,
+          "left": 12,
+          "right": 400.19049072265625,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edit-tags-650 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Review buttons tags 650",
+      "pass": true,
+      "detail": [
+        {
+          "id": "tab-story",
+          "top": 64,
+          "bottom": 100,
+          "left": 16,
+          "right": 140.7261962890625,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-tags",
+          "top": 64,
+          "bottom": 100,
+          "left": 143.7261962890625,
+          "right": 268.4583435058594,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-text",
+          "top": 64,
+          "bottom": 100,
+          "left": 271.4583435058594,
+          "right": 396.1845397949219,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "publish-photo",
+          "top": 598,
+          "bottom": 642,
+          "left": 12,
+          "right": 400.19049072265625,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "Tag entry 650",
+      "pass": true,
+      "detail": [
+        {
+          "id": "photo-tags",
+          "top": 500.83929443359375,
+          "bottom": 544.8392944335938,
+          "left": 14,
+          "right": 344.2797546386719,
+          "clipBottom": 564.8392791748047,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "add-tag",
+          "top": 500.83929443359375,
+          "bottom": 544.8392944335938,
+          "left": 350.2797546386719,
+          "right": 398.1904716491699,
+          "clipBottom": 564.8392791748047,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edit-text-650 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Review buttons text 650",
+      "pass": true,
+      "detail": [
+        {
+          "id": "tab-story",
+          "top": 64,
+          "bottom": 100,
+          "left": 16,
+          "right": 140.7261962890625,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-tags",
+          "top": 64,
+          "bottom": 100,
+          "left": 143.7261962890625,
+          "right": 268.4583435058594,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-text",
+          "top": 64,
+          "bottom": 100,
+          "left": 271.4583435058594,
+          "right": 396.1845397949219,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "publish-photo",
+          "top": 598,
+          "bottom": 642,
+          "left": 12,
+          "right": 400.19049072265625,
+          "clipBottom": 650,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "list-author-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Feed photo visible 550",
+      "pass": true,
+      "detail": {
+        "photo": {
+          "top": 242.23809814453125,
+          "bottom": 429.65476989746094,
+          "left": 12.7619047164917,
+          "right": 399.42859172821045,
+          "width": 386.66668701171875,
+          "height": 187.4166717529297,
+          "visible": true
+        },
+        "header": {
+          "top": 0,
+          "bottom": 60.761905670166016,
+          "left": 0,
+          "right": 412.19049072265625,
+          "width": 412.19049072265625,
+          "height": 60.761905670166016,
+          "visible": true
+        }
+      }
+    },
+    {
+      "name": "search-empty-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "login-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "login submit 550",
+      "pass": true,
+      "detail": [
+        {
+          "id": "로그인",
+          "top": 336.952392578125,
+          "bottom": 380.952392578125,
+          "left": 32.761905670166016,
+          "right": 379.42859268188477,
+          "clipBottom": 551.2380981445312,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "signup-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "signup submit 550",
+      "pass": true,
+      "detail": [
+        {
+          "id": "회원가입",
+          "top": 418.8690490722656,
+          "bottom": 462.8690490722656,
+          "left": 32.761905670166016,
+          "right": 379.42859268188477,
+          "clipBottom": 551.2380981445312,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "detail-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Detail photo fits 550",
+      "pass": true,
+      "detail": {
+        "top": 213.32142639160156,
+        "bottom": 449.76190185546875,
+        "left": 28.761905670166016,
+        "right": 383.42859268188477,
+        "width": 354.66668701171875,
+        "height": 236.4404754638672,
+        "visible": true
+      }
+    },
+    {
+      "name": "photo-picker-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Photo choices 550",
+      "pass": true,
+      "detail": [
+        {
+          "id": "취소",
+          "top": 19.6011905670166,
+          "bottom": 40.3988094329834,
+          "left": 16,
+          "right": 66,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "photo-input",
+          "top": 290.0952453613281,
+          "bottom": 338.0952453613281,
+          "left": 36.761905670166016,
+          "right": 375.42859268188477,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "camera-input",
+          "top": 346.0952453613281,
+          "bottom": 394.0952453613281,
+          "left": 36.761905670166016,
+          "right": 375.42859268188477,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edit-story-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Review buttons story 550",
+      "pass": true,
+      "detail": [
+        {
+          "id": "tab-story",
+          "top": 64,
+          "bottom": 100,
+          "left": 16,
+          "right": 140.7261962890625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-tags",
+          "top": 64,
+          "bottom": 100,
+          "left": 143.7261962890625,
+          "right": 268.4583435058594,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-text",
+          "top": 64,
+          "bottom": 100,
+          "left": 271.4583435058594,
+          "right": 396.1845397949219,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "publish-photo",
+          "top": 499,
+          "bottom": 543,
+          "left": 12,
+          "right": 400.19049072265625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edit-tags-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Review buttons tags 550",
+      "pass": true,
+      "detail": [
+        {
+          "id": "tab-story",
+          "top": 64,
+          "bottom": 100,
+          "left": 16,
+          "right": 140.7261962890625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-tags",
+          "top": 64,
+          "bottom": 100,
+          "left": 143.7261962890625,
+          "right": 268.4583435058594,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-text",
+          "top": 64,
+          "bottom": 100,
+          "left": 271.4583435058594,
+          "right": 396.1845397949219,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "publish-photo",
+          "top": 499,
+          "bottom": 543,
+          "left": 12,
+          "right": 400.19049072265625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "Tag entry 550",
+      "pass": true,
+      "detail": [
+        {
+          "id": "photo-tags",
+          "top": 401.83929443359375,
+          "bottom": 445.83929443359375,
+          "left": 14,
+          "right": 344.2797546386719,
+          "clipBottom": 465.83929443359375,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "add-tag",
+          "top": 401.83929443359375,
+          "bottom": 445.83929443359375,
+          "left": 350.2797546386719,
+          "right": 398.1904716491699,
+          "clipBottom": 465.83929443359375,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edit-text-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Review buttons text 550",
+      "pass": true,
+      "detail": [
+        {
+          "id": "tab-story",
+          "top": 64,
+          "bottom": 100,
+          "left": 16,
+          "right": 140.7261962890625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-tags",
+          "top": 64,
+          "bottom": 100,
+          "left": 143.7261962890625,
+          "right": 268.4583435058594,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-text",
+          "top": 64,
+          "bottom": 100,
+          "left": 271.4583435058594,
+          "right": 396.1845397949219,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "publish-photo",
+          "top": 499,
+          "bottom": 543,
+          "left": 12,
+          "right": 400.19049072265625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "mosaic-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Mosaic controls 550",
+      "pass": true,
+      "detail": [
+        {
+          "id": "사진 변경",
+          "top": 4,
+          "bottom": 40,
+          "left": 8,
+          "right": 71.04166793823242,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "editor-more",
+          "top": 4,
+          "bottom": 40,
+          "left": 356.3214416503906,
+          "right": 404.19049072265625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "이동",
+          "top": 383,
+          "bottom": 415,
+          "left": 12,
+          "right": 122.7261962890625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "선택",
+          "top": 383,
+          "bottom": 415,
+          "left": 124.7261962890625,
+          "right": 235.45834350585938,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "직접 가리기",
+          "top": 383,
+          "bottom": 415,
+          "left": 237.45834350585938,
+          "right": 348.1845397949219,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "undo-mosaic",
+          "top": 379,
+          "bottom": 419,
+          "left": 360.19049072265625,
+          "right": 404.19049072265625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "mosaic-strength",
+          "top": 427,
+          "bottom": 463,
+          "left": 63.14285659790039,
+          "right": 133.1428565979004,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "photo-zoom",
+          "top": 473,
+          "bottom": 505,
+          "left": 34.23214340209961,
+          "right": 310.190486907959,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "reset-view",
+          "top": 471,
+          "bottom": 507,
+          "left": 358.19049072265625,
+          "right": 404.19049072265625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "apply-mosaic",
+          "top": 511,
+          "bottom": 547,
+          "left": 8,
+          "right": 404.19049072265625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "Actual face detection",
+      "pass": true
+    },
+    {
+      "name": "new-story-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "New review story 550",
+      "pass": true,
+      "detail": [
+        {
+          "id": "tab-story",
+          "top": 64,
+          "bottom": 100,
+          "left": 16,
+          "right": 140.7261962890625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-tags",
+          "top": 64,
+          "bottom": 100,
+          "left": 143.7261962890625,
+          "right": 268.4583435058594,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-text",
+          "top": 64,
+          "bottom": 100,
+          "left": 271.4583435058594,
+          "right": 396.1845397949219,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "publish-photo",
+          "top": 499,
+          "bottom": 543,
+          "left": 12,
+          "right": 400.19049072265625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "new-tags-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "New review tags 550",
+      "pass": true,
+      "detail": [
+        {
+          "id": "tab-story",
+          "top": 64,
+          "bottom": 100,
+          "left": 16,
+          "right": 140.7261962890625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-tags",
+          "top": 64,
+          "bottom": 100,
+          "left": 143.7261962890625,
+          "right": 268.4583435058594,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-text",
+          "top": 64,
+          "bottom": 100,
+          "left": 271.4583435058594,
+          "right": 396.1845397949219,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "publish-photo",
+          "top": 499,
+          "bottom": 543,
+          "left": 12,
+          "right": 400.19049072265625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "new-text-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "New review text 550",
+      "pass": true,
+      "detail": [
+        {
+          "id": "tab-story",
+          "top": 64,
+          "bottom": 100,
+          "left": 16,
+          "right": 140.7261962890625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-tags",
+          "top": 64,
+          "bottom": 100,
+          "left": 143.7261962890625,
+          "right": 268.4583435058594,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "tab-text",
+          "top": 64,
+          "bottom": 100,
+          "left": 271.4583435058594,
+          "right": 396.1845397949219,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "publish-photo",
+          "top": 499,
+          "bottom": 543,
+          "left": 12,
+          "right": 400.19049072265625,
+          "clipBottom": 551,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "Bulk exclude updates summary",
+      "pass": true
+    },
+    {
+      "name": "Bulk restore updates summary",
+      "pass": true
+    },
+    {
+      "name": "Tag addition deduplicates",
+      "pass": true
+    },
+    {
+      "name": "tags-selected-550 horizontal fit",
+      "pass": true,
+      "detail": {
+        "width": 412,
+        "clientWidth": 412
+      }
+    },
+    {
+      "name": "Selected tag entry 550",
+      "pass": true,
+      "detail": [
+        {
+          "id": "✓ UX검사",
+          "top": 358.1547546386719,
+          "bottom": 394.1547546386719,
+          "left": 14,
+          "right": 90.10714721679688,
+          "clipBottom": 397.83929443359375,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "photo-tags",
+          "top": 401.83929443359375,
+          "bottom": 445.83929443359375,
+          "left": 14,
+          "right": 344.2797546386719,
+          "clipBottom": 465.83929443359375,
+          "unobstructed": true,
+          "pass": true
+        },
+        {
+          "id": "add-tag",
+          "top": 401.83929443359375,
+          "bottom": 445.83929443359375,
+          "left": 350.2797546386719,
+          "right": 398.1904716491699,
+          "clipBottom": 465.83929443359375,
+          "unobstructed": true,
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "pass": true,
+  "screens": [
+    {
+      "url": "https://daejinha.pythonanywhere.com/",
+      "width": 412,
+      "height": 650,
+      "primary": null,
+      "firstPhoto": {
+        "top": 242.23809814453125,
+        "bottom": 463.3333435058594,
+        "left": 12.7619047164917,
+        "right": 399.42859172821045,
+        "width": 386.66668701171875,
+        "height": 221.09524536132812,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/?q=uxnoresults",
+      "width": 412,
+      "height": 650,
+      "primary": null,
+      "firstPhoto": null
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/accounts/login/",
+      "width": 412,
+      "height": 650,
+      "primary": {
+        "top": 336.952392578125,
+        "bottom": 380.952392578125,
+        "left": 32.761905670166016,
+        "right": 379.42859268188477,
+        "width": 346.66668701171875,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": null
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/accounts/signup/",
+      "width": 412,
+      "height": 650,
+      "primary": {
+        "top": 418.8690490722656,
+        "bottom": 462.8690490722656,
+        "left": 32.761905670166016,
+        "right": 379.42859268188477,
+        "width": 346.66668701171875,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": null
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/3/",
+      "width": 412,
+      "height": 650,
+      "primary": null,
+      "firstPhoto": {
+        "top": 213.32142639160156,
+        "bottom": 449.76190185546875,
+        "left": 28.761905670166016,
+        "right": 383.42859268188477,
+        "width": 354.66668701171875,
+        "height": 236.4404754638672,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/new/",
+      "width": 412,
+      "height": 650,
+      "primary": {
+        "top": 339.5952453613281,
+        "bottom": 387.5952453613281,
+        "left": 36.761905670166016,
+        "right": 375.42859268188477,
+        "width": 338.66668701171875,
+        "height": 48,
+        "visible": true
+      },
+      "firstPhoto": null
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/3/edit/",
+      "width": 412,
+      "height": 650,
+      "primary": {
+        "top": 598,
+        "bottom": 642,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": {
+        "top": 112,
+        "bottom": 249.42857360839844,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 137.42857360839844,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/3/edit/",
+      "width": 412,
+      "height": 650,
+      "primary": {
+        "top": 598,
+        "bottom": 642,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": {
+        "top": 112,
+        "bottom": 214.1904754638672,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 102.19047546386719,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/3/edit/",
+      "width": 412,
+      "height": 650,
+      "primary": {
+        "top": 598,
+        "bottom": 642,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": {
+        "top": 112,
+        "bottom": 249.42857360839844,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 137.42857360839844,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/",
+      "width": 412,
+      "height": 551,
+      "primary": null,
+      "firstPhoto": {
+        "top": 242.23809814453125,
+        "bottom": 429.65476989746094,
+        "left": 12.7619047164917,
+        "right": 399.42859172821045,
+        "width": 386.66668701171875,
+        "height": 187.4166717529297,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/?q=uxnoresults",
+      "width": 412,
+      "height": 551,
+      "primary": null,
+      "firstPhoto": null
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/accounts/login/",
+      "width": 412,
+      "height": 551,
+      "primary": {
+        "top": 336.952392578125,
+        "bottom": 380.952392578125,
+        "left": 32.761905670166016,
+        "right": 379.42859268188477,
+        "width": 346.66668701171875,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": null
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/accounts/signup/",
+      "width": 412,
+      "height": 551,
+      "primary": {
+        "top": 418.8690490722656,
+        "bottom": 462.8690490722656,
+        "left": 32.761905670166016,
+        "right": 379.42859268188477,
+        "width": 346.66668701171875,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": null
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/3/",
+      "width": 412,
+      "height": 551,
+      "primary": null,
+      "firstPhoto": {
+        "top": 213.32142639160156,
+        "bottom": 449.76190185546875,
+        "left": 28.761905670166016,
+        "right": 383.42859268188477,
+        "width": 354.66668701171875,
+        "height": 236.4404754638672,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/new/",
+      "width": 412,
+      "height": 551,
+      "primary": {
+        "top": 290.0952453613281,
+        "bottom": 338.0952453613281,
+        "left": 36.761905670166016,
+        "right": 375.42859268188477,
+        "width": 338.66668701171875,
+        "height": 48,
+        "visible": true
+      },
+      "firstPhoto": null
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/3/edit/",
+      "width": 412,
+      "height": 551,
+      "primary": {
+        "top": 499,
+        "bottom": 543,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": {
+        "top": 112,
+        "bottom": 218.70833587646484,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 106.70833587646484,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/3/edit/",
+      "width": 412,
+      "height": 551,
+      "primary": {
+        "top": 499,
+        "bottom": 543,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": {
+        "top": 112,
+        "bottom": 192,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 80,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/3/edit/",
+      "width": 412,
+      "height": 551,
+      "primary": {
+        "top": 499,
+        "bottom": 543,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": {
+        "top": 112,
+        "bottom": 218.70833587646484,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 106.70833587646484,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/new/",
+      "width": 412,
+      "height": 551,
+      "primary": null,
+      "firstPhoto": {
+        "top": 60.64881134033203,
+        "bottom": 371.00000762939453,
+        "left": 8,
+        "right": 404.19049072265625,
+        "width": 396.19049072265625,
+        "height": 310.3511962890625,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/new/",
+      "width": 412,
+      "height": 551,
+      "primary": {
+        "top": 499,
+        "bottom": 543,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": {
+        "top": 112,
+        "bottom": 218.70833587646484,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 106.70833587646484,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/new/",
+      "width": 412,
+      "height": 551,
+      "primary": {
+        "top": 499,
+        "bottom": 543,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": {
+        "top": 112,
+        "bottom": 192,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 80,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/new/",
+      "width": 412,
+      "height": 551,
+      "primary": {
+        "top": 499,
+        "bottom": 543,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": {
+        "top": 112,
+        "bottom": 218.70833587646484,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 106.70833587646484,
+        "visible": true
+      }
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/post/new/",
+      "width": 412,
+      "height": 551,
+      "primary": {
+        "top": 499,
+        "bottom": 543,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 44,
+        "visible": true
+      },
+      "firstPhoto": {
+        "top": 112,
+        "bottom": 192,
+        "left": 12,
+        "right": 400.19049072265625,
+        "width": 388.19049072265625,
+        "height": 80,
+        "visible": true
+      }
+    }
+  ],
+  "physical_iPhone_verified": false,
+  "published": false
+}

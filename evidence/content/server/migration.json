@@ -1,0 +1,6 @@
+{
+  "environment": "WSL Ubuntu",
+  "backup": "evidence/private/database-backups/before-content-20261019-164141.sqlite3",
+  "existing_posts": 29,
+  "existing_post_images_unchanged": true
+}

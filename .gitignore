@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.sqlite3-*
+.coverage*
+htmlcov/
+staticfiles/
+media/
+.env
+.venv/
+node_modules/
+.gradle/
+build/
+local.properties
+evidence/private/
+evidence/test-runs/
+
+# Local artifacts and obsolete report copies
+dist/
+~$*
+*_작성중.docx
+/모바일웹서비스 프로젝트 공통평가 01_수행 결과 보고서.docx
+docs/archive/
+
+
+# Historical UI evidence and private recognition traces
+evidence/android/
+evidence/web/
+evidence/mobile-web/private-face-regression/
+evidence/**/*-raw.json
+
+# Reports are delivered separately at the user request
+*.docx
+*.doc
+*.pdf

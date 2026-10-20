@@ -1,0 +1,87 @@
+{
+  "environment": "WSL Ubuntu; live Django HTTP",
+  "phase": "excluded",
+  "pass": true,
+  "post_id": 61,
+  "image_bytes": 183281,
+  "image_sha256": "a71402f60205d8cdb14dc02c11b622ae6783efe81a2575b387c0bf3ef74e5137",
+  "original_sha256": "c55ef8cf93971173dbf1e797644677d653781b8894630d588c74f0e545c3401f",
+  "content": {
+    "post_id": 61,
+    "revision": 2,
+    "image_sha256": "a71402f60205d8cdb14dc02c11b622ae6783efe81a2575b387c0bf3ef74e5137",
+    "width": 1600,
+    "height": 1200,
+    "theme": "food",
+    "theme_status": "classified",
+    "theme_origin": "user",
+    "tags": [
+      {
+        "display": "후기",
+        "origin": "user"
+      },
+      {
+        "display": "모바일검증",
+        "origin": "user"
+      }
+    ],
+    "ocr_status": "ready",
+    "schema_version": 1,
+    "model_versions": {
+      "face": "mp_blazeface_sr1",
+      "label": "efficientnet_lite0_int8_1",
+      "ocr_ko": "tesseract7_fast_8741641",
+      "ocr_latin": "tesseract7_fast_8741641"
+    },
+    "mapping_version": "web_imagenet_v2",
+    "lines": [
+      {
+        "line_id": "ff965a2f-b66d-4752-9122-39d68dd7b724",
+        "text": "바다라멘 모바일교정",
+        "quad": [
+          [
+            0.52,
+            0.17166666666666666
+          ],
+          [
+            0.78,
+            0.17166666666666666
+          ],
+          [
+            0.78,
+            0.25833333333333336
+          ],
+          [
+            0.52,
+            0.25833333333333336
+          ]
+        ],
+        "origin": "user"
+      },
+      {
+        "line_id": "f2f50e86-bf21-4625-8463-fa776cdef123",
+        "text": "CAFE MENU",
+        "quad": [
+          [
+            0.514375,
+            0.3541666666666667
+          ],
+          [
+            0.78,
+            0.3541666666666667
+          ],
+          [
+            0.78,
+            0.4008333333333333
+          ],
+          [
+            0.514375,
+            0.4008333333333333
+          ]
+        ],
+        "origin": "auto"
+      }
+    ]
+  },
+  "sunset_search_post_ids": []
+}

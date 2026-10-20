@@ -1,0 +1,42 @@
+{
+  "url": "https://daejinha.pythonanywhere.com/post/3/",
+  "title": "[배포 테스트] 사진 블로그 업데이트 확인 · Common 01",
+  "width": 412,
+  "height": 650,
+  "clientWidth": 412,
+  "visualHeight": 650.2857055664062,
+  "scrollHeight": 861,
+  "horizontalOverflow": false,
+  "header": {
+    "top": 0,
+    "bottom": 60.761905670166016,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 60.761905670166016,
+    "visible": true
+  },
+  "firstPhoto": {
+    "top": 213.32142639160156,
+    "bottom": 449.76190185546875,
+    "left": 28.761905670166016,
+    "right": 383.42859268188477,
+    "width": 354.66668701171875,
+    "height": 236.4404754638672,
+    "visible": true
+  },
+  "main": {
+    "top": 80.76190948486328,
+    "bottom": 799.321418762207,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 718.5595092773438,
+    "visible": true
+  },
+  "primary": null,
+  "visibleText": "사진 블로그\n사진 게시\n계정 ▾\n[배포 테스트] 사진 블로그 업데이트 확인\n\ndaejinha · 2026.10.20\n\n수정\n\n자동 배포 연결과 게시글 등록이 정상 동작하는지 확인하기 위한 테스트 글입니다.\n\n제목·본문·테스트 이미지를 함께 등록했습니다. 기존 게시글과 사진은 그대로 유지했습니다.\n이 글은 Codex가 사용자의 요청으로 등록한 테스트 게시글입니다.\n\n확인일: 2026년 10월 20일\n테스트 식별자: deployment-smoke-20261020\n\n미분류\n\n수정\n삭제\n사진과 이야기를 함께 · 사진 블로그",
+  "environment": "Actual Android API35 emulator WebView; native ADB screenshot",
+  "physical_iPhone_verified": false,
+  "published": false
+}

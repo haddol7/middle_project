@@ -1,0 +1,18 @@
+{
+  "environment": "WSL Ubuntu live localhost HTTP, uploaded by actual Windows Android UI",
+  "post_id": 60,
+  "image_url": "http://127.0.0.1:8000/media/images/2026/10/19/749345c90e0b4f37a37c39e3344ffe84.jpg",
+  "sha256": "cb332d20b8c246a5876806a0b9d9c2052a09b87452978ecfb8a40dc1b5c88737",
+  "bytes": 165187,
+  "content_revision": 1,
+  "width": 1600,
+  "height": 1200,
+  "checks": {
+    "http_bytes_match_stored_file": true,
+    "http_bytes_match_content_digest": true,
+    "corrected_theme_saved": true,
+    "has_searchable_photo_text": true,
+    "within_image_limit": true
+  },
+  "pass": true
+}

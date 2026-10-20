@@ -1,0 +1,160 @@
+{
+  "environment": "Windows Android Emulator API35, native bundled ML Kit; no browser recognizer",
+  "source_sha256": "3cdc539a27cf1a5a96a22fbfde5946bb70244d836178f256d2070436e05de680",
+  "apk_sha256": "88e9b3db514ebd450a1ed47350bf7e6532de6ac9d5ca3a9c06339309d96e23b4",
+  "policy": "native_page_v2",
+  "models": {
+    "face": "16.1.7",
+    "label": "17.0.9",
+    "ocr_ko": "16.0.1",
+    "ocr_latin": "16.0.1"
+  },
+  "public_faces": {
+    "iou_threshold": 0.25,
+    "photos": 9,
+    "expected": 43,
+    "matched": 42,
+    "extra": 8,
+    "cases": [
+      {
+        "file": "2007_007763.jpg",
+        "expected": 7,
+        "detected": 7,
+        "matched": 7,
+        "missed": 0,
+        "extra": 0
+      },
+      {
+        "file": "2008_001009.jpg",
+        "expected": 2,
+        "detected": 2,
+        "matched": 2,
+        "missed": 0,
+        "extra": 0
+      },
+      {
+        "file": "2008_001322.jpg",
+        "expected": 3,
+        "detected": 3,
+        "matched": 3,
+        "missed": 0,
+        "extra": 0
+      },
+      {
+        "file": "2008_002079.jpg",
+        "expected": 6,
+        "detected": 9,
+        "matched": 6,
+        "missed": 0,
+        "extra": 3
+      },
+      {
+        "file": "2008_002470.jpg",
+        "expected": 6,
+        "detected": 5,
+        "matched": 5,
+        "missed": 1,
+        "extra": 0
+      },
+      {
+        "file": "2008_002506.jpg",
+        "expected": 3,
+        "detected": 3,
+        "matched": 3,
+        "missed": 0,
+        "extra": 0
+      },
+      {
+        "file": "2008_004176.jpg",
+        "expected": 7,
+        "detected": 12,
+        "matched": 7,
+        "missed": 0,
+        "extra": 5
+      },
+      {
+        "file": "2008_007676.jpg",
+        "expected": 7,
+        "detected": 7,
+        "matched": 7,
+        "missed": 0,
+        "extra": 0
+      },
+      {
+        "file": "2009_004587.jpg",
+        "expected": 2,
+        "detected": 2,
+        "matched": 2,
+        "missed": 0,
+        "extra": 0
+      }
+    ]
+  },
+  "negative_ocr": [
+    {
+      "file": "grass.png",
+      "lines": 0,
+      "included": 0
+    },
+    {
+      "file": "grass-large.png",
+      "lines": 0,
+      "included": 0
+    },
+    {
+      "file": "brick.png",
+      "lines": 0,
+      "included": 0
+    },
+    {
+      "file": "fur.png",
+      "lines": 0,
+      "included": 0
+    },
+    {
+      "file": "foliage-crop.png",
+      "lines": 0,
+      "included": 0
+    },
+    {
+      "file": "fruit-crop.png",
+      "lines": 0,
+      "included": 0
+    }
+  ],
+  "printed_page": {
+    "lines": 8,
+    "included": 6
+  },
+  "private_samples": [
+    {
+      "sample": "user_tilted_diary",
+      "before_candidates": 32,
+      "after_candidates": 25,
+      "included": 0,
+      "faces": 0,
+      "milliseconds": 9361
+    },
+    {
+      "sample": "user_group_11",
+      "before_candidates": 0,
+      "after_candidates": 0,
+      "included": 0,
+      "faces": 11,
+      "milliseconds": 1458
+    }
+  ],
+  "limits": [
+    "No word-accuracy/CER evaluation; handwritten spelling mistakes remain.",
+    "Private images and recognized text are excluded from this evidence.",
+    "Corpus measurements are bounded examples, not guaranteed detection on arbitrary photos.",
+    "Unmatched face annotations include background people and drawn faces; unmatched is not a false-positive label."
+  ],
+  "final_build_source_sha256": "652779dd6d1a7385743dc3ab8a3b86c53b6944e6c280ec6cce76acdd972b2c35",
+  "application_apk_sha256": "88e9b3db514ebd450a1ed47350bf7e6532de6ac9d5ca3a9c06339309d96e23b4",
+  "wsl_backend_quad_validation": {
+    "passed": true,
+    "quads": 33,
+    "diary_quads": 25
+  }
+}

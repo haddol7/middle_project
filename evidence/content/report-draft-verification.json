@@ -1,0 +1,193 @@
+{
+  "status": "draft_reviewed",
+  "reference": "C:\\Users\\1\\mobile_web_service\\모바일웹서비스 프로젝트_공통평가 01_수행 결과 보고서_최종.docx",
+  "reference_sha256": "32143cf4d65a830410d5dec20b7d5b9b922d448c1382d2ab7dc5fc9a93384d6c",
+  "output": "C:\\Users\\1\\mobile_web_service\\common01\\모바일웹서비스 프로젝트 공통평가 01_수행 결과 보고서_작성중.docx",
+  "output_sha256": "940c040252ce19b5080c3521ccb9ec309cc4bedd5a18809299b03ccc201587eb",
+  "bytes": 2172120,
+  "original_requirement_cells_preserved": true,
+  "examiner_judgement_cells_blank": true,
+  "identity_fields_not_invented": true,
+  "opaque_parts_preserved": true,
+  "sections": 1,
+  "registration_rows": 5,
+  "embedded_images": [
+    {
+      "path": "evidence/content/web/photo-text-search.jpg",
+      "sha256": "b28a7ad042808ceb0fd2afcbae8c7b27b487ec5c3fce76c39697703f2facd1fd",
+      "bytes": 64665,
+      "original_pixel_dimensions": [
+        1265,
+        712
+      ]
+    },
+    {
+      "path": "evidence/content/android/content-start.png",
+      "sha256": "c23eb777c103cea53b7394f32d091f2a9f8ddcb3c0a38641dce1ff21a28ee0c3",
+      "bytes": 108159,
+      "original_pixel_dimensions": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/content/android/content-published.png",
+      "sha256": "3e8cd98654660103e8707c926c56e0eca1d225ac715d8985e75e104c6c983012",
+      "bytes": 396145,
+      "original_pixel_dimensions": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/content/android/content-face-preview.png",
+      "sha256": "4ebde27c0bb8dc73fac98b9ada27eb350031915fb8342f0849c85f16d38a72f9",
+      "bytes": 363536,
+      "original_pixel_dimensions": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/content/android/content-classification-ocr.png",
+      "sha256": "e78bdfa9fa940442b7b105090d8012cd87b16829fd39bbd2f3d4e47ecf6b43a6",
+      "bytes": 407322,
+      "original_pixel_dimensions": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/content/android/content-search-results.png",
+      "sha256": "1a28f626abdff407078d8b9fd0e041717bac739499f96e03fdbae175dee1e1e0",
+      "bytes": 400256,
+      "original_pixel_dimensions": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/content/android/content-match-highlight.png",
+      "sha256": "ef68f642dea06476441dab6d744adad29768a7bf7044993db8bf1d44ee6babf8",
+      "bytes": 149620,
+      "original_pixel_dimensions": [
+        1080,
+        2400
+      ]
+    },
+    {
+      "path": "evidence/baseline-codebeautify.jpg",
+      "sha256": "9fc902254250e75ab0d6d66c31bef8dfdbaea46121df9a55c8d20ff911faeb4d",
+      "bytes": 191577,
+      "original_pixel_dimensions": [
+        1265,
+        1300
+      ]
+    },
+    {
+      "path": "evidence/mobile-web/posted-detail.png",
+      "sha256": "89bdc7965ce9e30b144102459433bb6902c43eefc6681719004dc17e061feb3b",
+      "bytes": 34483,
+      "original_pixel_dimensions": [
+        375,
+        812
+      ]
+    },
+    {
+      "path": "evidence/mobile-web/search-highlight.png",
+      "sha256": "a7a09e4b519bd2e3debcb33d7969d01679f74923407756cf3f078fc15c031347",
+      "bytes": 32213,
+      "original_pixel_dimensions": [
+        375,
+        812
+      ]
+    }
+  ],
+  "images_external": false,
+  "android_run_id": "20261019-173636-9c9bae3f",
+  "server_verification_finished_utc": "2026-10-19T19:08:37.200539+00:00",
+  "pythonanywhere_deployment_verified": false,
+  "document_pages": 10,
+  "assessment_form_pages": 2,
+  "appendix_pages": 8,
+  "original_image_count": 10,
+  "full_resolution_image_bytes_preserved": true,
+  "standalone_copy_opened_and_rendered": true,
+  "portable_page_images_identical": true,
+  "visual_review": {
+    "completed": true,
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "result": "No clipped/overlapping text or images, broken tables, missing Korean glyphs, or orphan continuation pages observed",
+    "renderer": "Installed Microsoft Word read-only PDF export + documents skill render_docx.py Windows conversion adapter",
+    "dpi": 150
+  },
+  "page_images": [
+    {
+      "page": 1,
+      "sha256": "00ce594c1926992bbef60d5a9738b104c9a90dd97367a786c71d6e981d373acb",
+      "copied_file_render_identical": true
+    },
+    {
+      "page": 2,
+      "sha256": "fb972ae04c386735f43a8698fa07d086a521160ec7b8feac440620f183557ea5",
+      "copied_file_render_identical": true
+    },
+    {
+      "page": 3,
+      "sha256": "ab0c44d588f842eaf9fdbab88ebcbe3767a9e4327b32f89aecdebf0b8764c348",
+      "copied_file_render_identical": true
+    },
+    {
+      "page": 4,
+      "sha256": "f2f82dca9468419836a5ec58aea1b772293a46d5b092597b8b4913490312c2a2",
+      "copied_file_render_identical": true
+    },
+    {
+      "page": 5,
+      "sha256": "42f6ee5c4148853d6202c316af8e95c8ac6a072a55b4812d9e51abc37cb748b6",
+      "copied_file_render_identical": true
+    },
+    {
+      "page": 6,
+      "sha256": "96bfde18464371557eb8e6ef48b3fdebddf4bf10b5984fa7c1a6869da803a857",
+      "copied_file_render_identical": true
+    },
+    {
+      "page": 7,
+      "sha256": "7bf432184f162239705839e33a4aa6c0d4f01cf0a4cfddbda60b75064341244e",
+      "copied_file_render_identical": true
+    },
+    {
+      "page": 8,
+      "sha256": "b46b2190db975bed4be510bd6a8a7a7d7e3042b06b8e7f22f2eff2366596e25b",
+      "copied_file_render_identical": true
+    },
+    {
+      "page": 9,
+      "sha256": "952331988095fc1b75958b1985a250a09e3d48106fe4d3518d033328db6e5639",
+      "copied_file_render_identical": true
+    },
+    {
+      "page": 10,
+      "sha256": "9585a5b1b48938f257ca048c65b4f9bd0d0110acebb6792f372c7d88057fd932",
+      "copied_file_render_identical": true
+    }
+  ],
+  "remaining": [
+    "PythonAnywhere server operation and Android cloud synchronization",
+    "Specified folder/address-bar/Telnet/VS Code/Coverage screens and current CodeBeautify recheck",
+    "Student ID/name, GitHub URL/push and final submission",
+    "Broader model quality, physical device/usability and some communication fault injection"
+  ]
+}

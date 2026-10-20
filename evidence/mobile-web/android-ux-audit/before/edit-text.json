@@ -1,0 +1,49 @@
+{
+  "url": "https://daejinha.pythonanywhere.com/post/3/edit/",
+  "title": "사진 글 수정 · Common 01",
+  "width": 412,
+  "height": 650,
+  "visualHeight": 650.2857055664062,
+  "scrollHeight": 650,
+  "horizontalOverflow": false,
+  "header": {
+    "top": 0,
+    "bottom": 133.95237731933594,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 133.95237731933594,
+    "visible": true
+  },
+  "firstPhoto": {
+    "top": 112,
+    "bottom": 249.42857360839844,
+    "left": 12,
+    "right": 400.19049072265625,
+    "width": 388.19049072265625,
+    "height": 137.42857360839844,
+    "visible": true
+  },
+  "main": {
+    "top": 153.95237731933594,
+    "bottom": 324.2738037109375,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 170.32142639160156,
+    "visible": true
+  },
+  "primary": {
+    "top": 0,
+    "bottom": 0,
+    "left": 0,
+    "right": 0,
+    "width": 0,
+    "height": 0,
+    "visible": false
+  },
+  "visibleText": "사진 블로그\n사진·검색\n사진 게시\n로그아웃\n\nPHOTO BLOG / EDIT\n\n사진 글 수정\n\n얼굴은 가리고, 분류와 문구는 확인하고 올려요.\n\n얼굴 편집\n게시 전 확인\n글 작성\n태그 0\n검색 문구 0\n전체 사진\n검색 안 함\n다시 읽기\n\n글자를 분석하고 있어요.\n\n모두 포함\n모두 제외\n\n분석 결과가 여기에 표시돼요.\n\n미분류 · 태그 0개 · 검색 문구 0개\n\n수정 저장\n사진과 이야기를 함께 · 사진 블로그",
+  "environment": "Actual Android API35 emulator WebView; native ADB screenshot",
+  "physical_iPhone_verified": false,
+  "published": false
+}

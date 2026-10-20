@@ -1,0 +1,28 @@
+{
+  "environment": "WSL Ubuntu",
+  "stage": "before_fix",
+  "database_write_attempted": false,
+  "original_jpeg_bytes": 820,
+  "samples": [
+    {
+      "cut_bytes": 2,
+      "serializer_accepted": true,
+      "full_decode_failed": true
+    },
+    {
+      "cut_bytes": 10,
+      "serializer_accepted": true,
+      "full_decode_failed": true
+    },
+    {
+      "cut_bytes": 25,
+      "serializer_accepted": true,
+      "full_decode_failed": true
+    },
+    {
+      "cut_bytes": 50,
+      "serializer_accepted": true,
+      "full_decode_failed": true
+    }
+  ]
+}

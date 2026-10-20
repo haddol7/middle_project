@@ -1,0 +1,9 @@
+{
+  "scope": "Windows Android UI removal build and JVM only; full device suite from I28 not rerun",
+  "tests": 30,
+  "failures": 0,
+  "apk_sha256": "B0B4D2E80F47295AA9E1046E6DFB5210D69FD1F113317F90CAF35082E654A68C",
+  "activity_sha256": "40840E5F001DA75116F036ECE8B2AF1A173336880F0E4748DBC3CC8C486EB41A",
+  "installed_on": "emulator-5554",
+  "pass": true
+}

@@ -1,0 +1,1307 @@
+{
+  "status": "executed",
+  "started": "2026-10-20T06:16:07.876597+00:00",
+  "finished": "2026-10-20T06:16:09.388103+00:00",
+  "environment": "WSL Ubuntu / Python MediaPipe CPU + actual application JavaScript geometry via Node; NO browser execution",
+  "versions": {
+    "mediapipe": "0.10.32",
+    "numpy": "2.5.4",
+    "Pillow": "12.0.0",
+    "opencv-contrib-python-headless": "5.0.0.93"
+  },
+  "test_dependency_note": "Isolated WSL evaluation venv. Replaced GUI OpenCV distribution with headless equivalent because libGL is unavailable. Not an application dependency or production deployment.",
+  "model_sha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f",
+  "source_sha256": {
+    "face-scans.mjs": "d96d292c2da6249826910e907757e9c0a5667ba5b311ff19aa6e0e8c94e17df0",
+    "pipeline.mjs": "e57d36431c631f1fc78d906b7732d7a379c7bff2fd326ffddde1df3b55f78af9",
+    "vision-engine.mjs": "b521b1d87ebf4ee70f808d5f05f94daca8ceb9f086eda86638cb3c3137320d76"
+  },
+  "photos": 16,
+  "errors": 0,
+  "annotated_faces": 43,
+  "totals": {
+    "tp": 37,
+    "fn": 6,
+    "fp": 16,
+    "covered_at_80_percent": 43
+  },
+  "baseline_totals": {
+    "tp": 11,
+    "fn": 32,
+    "fp": 4,
+    "covered_at_80_percent": 17
+  },
+  "results": [
+    {
+      "id": "dlib-2007_007763",
+      "filename": "2007_007763.jpg",
+      "expected": 7,
+      "faces": 7,
+      "baseline_faces": 1,
+      "passes": 33,
+      "comparison": {
+        "tp": 5,
+        "fn": 2,
+        "fp": 2,
+        "missed_indices": [
+          0,
+          1
+        ],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 0,
+        "fn": 7,
+        "fp": 1,
+        "missed_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "covered_at_80_percent": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "regions": [
+        {
+          "id": "d6939504-b03d-4c78-aa05-2c048bfcf9cc",
+          "x": 0.18980000000000002,
+          "y": 0.5193333333333333,
+          "w": 0.08839999999999998,
+          "h": 0.1213333333333334,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "c2a99b39-e58e-40ef-abdf-de28a5d7e082",
+          "x": 0.2849,
+          "y": 0.25453333333333333,
+          "w": 0.14820000000000005,
+          "h": 0.19760000000000005,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "1bd0be85-95fc-405e-9bf9-2e09bc7125af",
+          "x": 0.607,
+          "y": 0.6032,
+          "w": 0.13,
+          "h": 0.1802666666666667,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "6427d7a6-c1b0-412f-87a2-e838f87ff485",
+          "x": 0.3378,
+          "y": 0.16506666666666667,
+          "w": 0.19240000000000002,
+          "h": 0.2565333333333333,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "18d83745-ec4b-4429-8217-bd555b24465e",
+          "x": 0.5727000000000001,
+          "y": 0.19866666666666666,
+          "w": 0.13259999999999983,
+          "h": 0.17333333333333334,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "ca4adb48-a032-4132-8bca-963cf4303c9f",
+          "x": 0.7612000000000001,
+          "y": 0.19920000000000002,
+          "w": 0.14559999999999984,
+          "h": 0.21493333333333334,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "5081a237-d2f4-41aa-a10b-a6cecea2f915",
+          "x": 0.3388,
+          "y": 0.5428000000000001,
+          "w": 0.1144,
+          "h": 0.14906666666666657,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 108,
+      "sha256": "17d9897dd55d38179f51dc18371b3f4495a606aaa2846e25a3cb6a58b3a97c89",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_001009",
+      "filename": "2008_001009.jpg",
+      "expected": 2,
+      "faces": 3,
+      "baseline_faces": 2,
+      "passes": 22,
+      "comparison": {
+        "tp": 2,
+        "fn": 0,
+        "fp": 1,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 2,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true
+        ]
+      },
+      "regions": [
+        {
+          "id": "0015ed7c-b9fa-44f7-96dc-b976f7a3fc0a",
+          "x": 0.37472222222222223,
+          "y": 0.15729166666666666,
+          "w": 0.2672222222222222,
+          "h": 0.24375000000000002,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "dcc6e15e-4d90-4938-bd3e-2c67c1a0dabb",
+          "x": 0.33444444444444443,
+          "y": 0.4246875,
+          "w": 0.30333333333333334,
+          "h": 0.27354166666666657,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "7cb8562a-5078-4f45-8b29-7ff04f22727c",
+          "x": 0.1098611111111111,
+          "y": 0.31572916666666667,
+          "w": 0.2997222222222222,
+          "h": 0.22479166666666667,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 46,
+      "sha256": "2509864113a286bf245161d0317a18c38b6a6641135969847a7e59dff359c52c",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_001322",
+      "filename": "2008_001322.jpg",
+      "expected": 3,
+      "faces": 3,
+      "baseline_faces": 3,
+      "passes": 27,
+      "comparison": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true
+        ]
+      },
+      "regions": [
+        {
+          "id": "654f2d39-c040-47ed-8156-8cc75df716ff",
+          "x": 0.173,
+          "y": 0.4026666666666667,
+          "w": 0.23399999999999999,
+          "h": 0.2773333333333334,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "38a1a264-c74d-4d1a-9314-03d7a4a604ed",
+          "x": 0.6821,
+          "y": 0.3921333333333334,
+          "w": 0.2417999999999999,
+          "h": 0.32239999999999996,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "140e176d-8e6e-4225-8737-b1c9413e77ed",
+          "x": 0.42719999999999997,
+          "y": 0.5384,
+          "w": 0.19759999999999994,
+          "h": 0.2565333333333334,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 55,
+      "sha256": "2ea5a60f5347baab8da6eccce43b0320d63da1368d7710fb15cbff8a790bc626",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_002079",
+      "filename": "2008_002079.jpg",
+      "expected": 6,
+      "faces": 9,
+      "baseline_faces": 1,
+      "passes": 33,
+      "comparison": {
+        "tp": 6,
+        "fn": 0,
+        "fp": 3,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 1,
+        "fn": 5,
+        "fp": 0,
+        "missed_indices": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        "covered_at_80_percent": [
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "regions": [
+        {
+          "id": "34b5c454-e5b5-46a2-b618-6e7af7a7583e",
+          "x": 0.0427,
+          "y": 0.4836,
+          "w": 0.1326,
+          "h": 0.1768,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "88ff6f64-eefd-41a9-b5f0-af5043e6b1d3",
+          "x": 0.7996,
+          "y": 0.41359999999999997,
+          "w": 0.12480000000000002,
+          "h": 0.15946666666666676,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "7f97a7ce-4bb9-4de4-af9e-68294e6d3369",
+          "x": 0.6718999999999999,
+          "y": 0.3164,
+          "w": 0.12220000000000009,
+          "h": 0.1698666666666666,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "c3bbf85d-c8ef-4bef-a5c1-5fac723b6e95",
+          "x": 0.0928,
+          "y": 0.3236,
+          "w": 0.1144,
+          "h": 0.17680000000000007,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "b4f6fd09-9f9b-4647-8168-2fb85f87b8cf",
+          "x": 0.8204,
+          "y": 0.3914666666666667,
+          "w": 0.17959999999999998,
+          "h": 0.2357333333333333,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "40c3f7af-f4eb-4fa4-b887-bc7f1a19cd6d",
+          "x": 0.4338,
+          "y": 0.5601333333333334,
+          "w": 0.08839999999999998,
+          "h": 0.11439999999999995,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "1c428e91-2f81-448f-b308-49dbea017986",
+          "x": 0.819,
+          "y": 0.21626666666666666,
+          "w": 0.07800000000000007,
+          "h": 0.09013333333333334,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "52e739bc-bb97-4ae7-86f1-f99a0d1c27a4",
+          "x": 0.6059,
+          "y": 0.5225333333333333,
+          "w": 0.07020000000000004,
+          "h": 0.09360000000000002,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "fc0c58c8-0c70-4475-bb3a-e68f8e754ac1",
+          "x": 0.235,
+          "y": 0.3453333333333333,
+          "w": 0.07800000000000001,
+          "h": 0.10399999999999998,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 62,
+      "sha256": "f929bdf416d756b37eb90c119b892eba5d21041b134883e18d827bce641fb48f",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_002470",
+      "filename": "2008_002470.jpg",
+      "expected": 6,
+      "faces": 7,
+      "baseline_faces": 0,
+      "passes": 30,
+      "comparison": {
+        "tp": 6,
+        "fn": 0,
+        "fp": 1,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 0,
+        "fn": 6,
+        "fp": 0,
+        "missed_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "covered_at_80_percent": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "regions": [
+        {
+          "id": "af3488d1-c8ae-47f1-ab89-9e76c9bc3f2a",
+          "x": 0.3499,
+          "y": 0.2319277108433735,
+          "w": 0.12220000000000003,
+          "h": 0.1566265060240964,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "a0b7d224-94cf-40eb-a606-f0f46d28f470",
+          "x": 0.2918,
+          "y": 0.4932228915662651,
+          "w": 0.08839999999999998,
+          "h": 0.13704819277108427,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "9d0b9eb8-78e7-4542-8c33-8b9c89e0106e",
+          "x": 0.5276000000000001,
+          "y": 0.512198795180723,
+          "w": 0.17679999999999996,
+          "h": 0.20753012048192754,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "3e02656c-c0a7-4e35-9666-7ffefcb5f425",
+          "x": 0.0902,
+          "y": 0.448644578313253,
+          "w": 0.11960000000000001,
+          "h": 0.1840361445783133,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "19d4acb5-7563-44cf-bc35-0adb0136d4b1",
+          "x": 0.44489999999999996,
+          "y": 0.20150602409638557,
+          "w": 0.1482000000000001,
+          "h": 0.2114457831325301,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "884c45de-b8b2-4194-a5ae-fd8fd263021f",
+          "x": 0.6331,
+          "y": 0.1335843373493976,
+          "w": 0.16379999999999995,
+          "h": 0.1996987951807229,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "a6e36726-459f-44ff-94c0-d986143eb232",
+          "x": 0.8449,
+          "y": 0.2664156626506024,
+          "w": 0.09620000000000006,
+          "h": 0.14487951807228922,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 59,
+      "sha256": "14b543e3ac55b497aaaba9dc03a39be04c8ae670851b3f78f9f5adb08295d780",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_002506",
+      "filename": "2008_002506.jpg",
+      "expected": 3,
+      "faces": 3,
+      "baseline_faces": 3,
+      "passes": 27,
+      "comparison": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true
+        ]
+      },
+      "regions": [
+        {
+          "id": "3d802644-927e-4991-9ace-330075763b13",
+          "x": 0.1958,
+          "y": 0.14573333333333335,
+          "w": 0.24439999999999998,
+          "h": 0.3778666666666666,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "e0cb8408-b836-4468-aaaf-b2237e5a6aad",
+          "x": 0.654,
+          "y": 0.20186666666666667,
+          "w": 0.26,
+          "h": 0.3536,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "3165ce82-c757-4000-a572-10df903b7e7a",
+          "x": 0.4133,
+          "y": 0.23479999999999998,
+          "w": 0.2834000000000001,
+          "h": 0.3223999999999999,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 53,
+      "sha256": "ede6804edf0ec005144ffe7f0f2b56bd2aa1d21beee79d29f72cb16ead19a447",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_004176",
+      "filename": "2008_004176.jpg",
+      "expected": 7,
+      "faces": 11,
+      "baseline_faces": 1,
+      "passes": 30,
+      "comparison": {
+        "tp": 5,
+        "fn": 2,
+        "fp": 6,
+        "missed_indices": [
+          1,
+          6
+        ],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 0,
+        "fn": 7,
+        "fp": 1,
+        "missed_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "covered_at_80_percent": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      "regions": [
+        {
+          "id": "682b5d97-9fa6-4ce4-b151-7c4161e21aa1",
+          "x": 0.40802083333333333,
+          "y": 0.5100456621004567,
+          "w": 0.11104166666666665,
+          "h": 0.13059360730593605,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "4e1dcff4-2148-4fa9-9191-237713b701f3",
+          "x": 0.1984375,
+          "y": 0.1684931506849315,
+          "w": 0.12187500000000001,
+          "h": 0.14246575342465753,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "abd1ecff-01f4-4e8d-9dc6-57c70dc1aad1",
+          "x": 0.5510416666666667,
+          "y": 0.19029680365296803,
+          "w": 0.18958333333333333,
+          "h": 0.2107305936073059,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "7844bfad-c2a0-409c-a0e4-61ad7f4029e9",
+          "x": 0.3076041666666667,
+          "y": 0.18835616438356165,
+          "w": 0.18687499999999996,
+          "h": 0.20776255707762556,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "acd44abd-f21f-43e6-8369-70c0ddd1e3bc",
+          "x": 0.39760416666666665,
+          "y": 0.17420091324200912,
+          "w": 0.1652083333333333,
+          "h": 0.17214611872146116,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "6fa4106d-55e6-4b5a-bc2d-f65a7cf60d10",
+          "x": 0.3745833333333334,
+          "y": 0.17111872146118723,
+          "w": 0.1299999999999999,
+          "h": 0.1394977168949772,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "5121f780-d3a5-4f3c-ac0b-304e7e49f25c",
+          "x": 0.6564583333333334,
+          "y": 0.14554794520547945,
+          "w": 0.12458333333333327,
+          "h": 0.16324200913242007,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "de46680f-080a-4bc8-bc7f-37e2bc0b4c99",
+          "x": 0.76625,
+          "y": 0.11369863013698629,
+          "w": 0.07583333333333331,
+          "h": 0.08310502283105022,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "670d4439-3ecb-4de8-8471-44713c5234fb",
+          "x": 0.17864583333333334,
+          "y": 0.43219178082191784,
+          "w": 0.09479166666666666,
+          "h": 0.11278538812785383,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "24cfc75f-0a45-4c8d-b6da-b8e5dca86e5d",
+          "x": 0.5583333333333333,
+          "y": 0.6278538812785388,
+          "w": 0.16249999999999998,
+          "h": 0.17808219178082196,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "6c07f5ce-496c-4cfd-95ed-6ebf414daacb",
+          "x": 0.4720833333333333,
+          "y": 0.20456621004566208,
+          "w": 0.09750000000000003,
+          "h": 0.10684931506849318,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 60,
+      "sha256": "92a075f5e1d279f009ab4809592aaf0109e429adf3266e5aa8ce2755730b41c2",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_007676",
+      "filename": "2008_007676.jpg",
+      "expected": 7,
+      "faces": 7,
+      "baseline_faces": 2,
+      "passes": 22,
+      "comparison": {
+        "tp": 5,
+        "fn": 2,
+        "fp": 2,
+        "missed_indices": [
+          1,
+          3
+        ],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 0,
+        "fn": 7,
+        "fp": 2,
+        "missed_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "covered_at_80_percent": [
+          true,
+          true,
+          false,
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      "regions": [
+        {
+          "id": "d41c3240-0b64-4e25-bb87-cafe00adc38e",
+          "x": 0.3058,
+          "y": 0.18832335329341318,
+          "w": 0.2444,
+          "h": 0.3658682634730538,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "cd7bffd7-8856-4251-ac94-e78cfa20b82b",
+          "x": 0.6607000000000001,
+          "y": 0.336377245508982,
+          "w": 0.18459999999999988,
+          "h": 0.27634730538922153,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "68b026c3-8206-4999-9759-5ebe74fcc7ef",
+          "x": 0.4343,
+          "y": 0.16167664670658682,
+          "w": 0.10140000000000005,
+          "h": 0.15568862275449102,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "04663500-9ab7-4d8a-a31f-df1311b5293f",
+          "x": 0.5108,
+          "y": 0.36437125748502996,
+          "w": 0.11440000000000006,
+          "h": 0.16347305389221556,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "bc545705-6ce5-46b7-ae04-497be75e82f3",
+          "x": 0.1881,
+          "y": 0.38892215568862276,
+          "w": 0.13779999999999998,
+          "h": 0.21017964071856288,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "569575c9-fa4a-4637-862b-78e1071bc01d",
+          "x": 0.6131,
+          "y": 0.3344311377245509,
+          "w": 0.11180000000000001,
+          "h": 0.16347305389221561,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "4ee1a633-5cb4-4ce9-afeb-37e767c3aa96",
+          "x": 0.2427,
+          "y": 0.1967065868263473,
+          "w": 0.13260000000000002,
+          "h": 0.2413173652694611,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 49,
+      "sha256": "09a0e07d6fb3b4276e73b9f6450b5c69d97d3e3b75807948caf6defd40260e6f",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2009_004587",
+      "filename": "2009_004587.jpg",
+      "expected": 2,
+      "faces": 3,
+      "baseline_faces": 2,
+      "passes": 31,
+      "comparison": {
+        "tp": 2,
+        "fn": 0,
+        "fp": 1,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 2,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true
+        ]
+      },
+      "regions": [
+        {
+          "id": "03699671-ab88-4d91-9394-566a4985370c",
+          "x": 0.62875,
+          "y": 0.5373,
+          "w": 0.22749999999999992,
+          "h": 0.1794,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "49639392-3257-435e-84bd-bb685fb05ea8",
+          "x": 0.3345,
+          "y": 0.0846,
+          "w": 0.2859999999999999,
+          "h": 0.20279999999999998,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "cc1d195e-cdd7-4092-a311-5cb76fad8d80",
+          "x": 0.58625,
+          "y": 0.417,
+          "w": 0.09749999999999992,
+          "h": 0.07800000000000001,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 59,
+      "sha256": "2dc5d52a5388499cf912d7d99dc9d05e4bec7651153331f40e81ae4813bb317c",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-Tom_Cruise_avp_2014_4",
+      "filename": "Tom_Cruise_avp_2014_4.jpg",
+      "expected": 1,
+      "faces": 1,
+      "baseline_faces": 1,
+      "passes": 27,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "78a90fa5-42a3-43a8-a3ae-76bc7e5a134e",
+          "x": 0,
+          "y": 0.21381250000000002,
+          "w": 1,
+          "h": 0.7686249999999999,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 62,
+      "sha256": "d9bea1c716b461c15ac3bc7e256bb5efa3e04379d7131f9347e96e4baa6a37c6",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-dogs",
+      "filename": "dogs.jpg",
+      "expected": 0,
+      "faces": 5,
+      "baseline_faces": 1,
+      "passes": 21,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "bc25eabd-411c-4a62-a48b-1aeb16420911",
+          "x": 0.14005555555555554,
+          "y": 0.6384279475982533,
+          "w": 0.2787777777777778,
+          "h": 0.23842794759825336,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "d78de2a5-b434-4866-bfd2-c92aad7684c9",
+          "x": 0.5686666666666667,
+          "y": 0.07691048034934499,
+          "w": 0.35822222222222233,
+          "h": 0.36473799126637546,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "8f163493-254e-4a03-8a68-f879384e603e",
+          "x": 0.5860555555555556,
+          "y": 0.6074781659388647,
+          "w": 0.34233333333333327,
+          "h": 0.33635371179039286,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "e89fa63b-94ea-4209-92a7-27820bcd42fd",
+          "x": 0.09661111111111112,
+          "y": 0.1353165938864629,
+          "w": 0.29899999999999993,
+          "h": 0.29377729257641916,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "c546ef40-080e-4235-8f1c-5832cd7437c3",
+          "x": 0.7140000000000001,
+          "y": 0.5475982532751092,
+          "w": 0.22533333333333327,
+          "h": 0.22139737991266362,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 67,
+      "sha256": "66e22f8c3bd3b8f876ad9158caaa064992d2b56a5681d9c6efa163a59db7ed03",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "opencv-baboon",
+      "filename": "opencv-baboon.jpg",
+      "expected": 0,
+      "faces": 2,
+      "baseline_faces": 0,
+      "passes": 21,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "c848b82c-906f-4610-9472-35c831683465",
+          "x": 0.6748046875,
+          "y": 0.7255859375,
+          "w": 0.279296875,
+          "h": 0.2744140625,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "e86b569d-8862-4aaa-b8ce-7684cd2f0d62",
+          "x": 0.58251953125,
+          "y": 0.06689453125,
+          "w": 0.1142578125,
+          "h": 0.1142578125,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 47,
+      "sha256": "1a1dd18d78eec44420af3b0b7f08ee3d41c982916cae3ce203d7ff35d754cc0f",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "opencv-building",
+      "filename": "opencv-building.jpg",
+      "expected": 0,
+      "faces": 1,
+      "baseline_faces": 0,
+      "passes": 31,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "a59735e3-7ad0-41a5-bebc-bdfc66b0a5bc",
+          "x": 0.6826612903225806,
+          "y": 0.6259166666666667,
+          "w": 0.18421658986175127,
+          "h": 0.26650000000000007,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 66,
+      "sha256": "742a1baad62ac82e91e718e77eedf7e85c2eddc4badfb8c87c6cbc86c45a8b07",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "opencv-fruits",
+      "filename": "opencv-fruits.jpg",
+      "expected": 0,
+      "faces": 0,
+      "baseline_faces": 0,
+      "passes": 21,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [],
+      "elapsed_ms": 46,
+      "sha256": "9c031d80a1c52da5eca790db896baffec6a7e52bf786cdb7bbfca5c7f880e6a1",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "opencv-messi5",
+      "filename": "opencv-messi5.jpg",
+      "expected": null,
+      "faces": 5,
+      "baseline_faces": 0,
+      "passes": 22,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "0270a140-fd8a-4679-879d-5698ca374a9f",
+          "x": 0.39206204379562043,
+          "y": 0.2472222222222222,
+          "w": 0.0972627737226277,
+          "h": 0.16345029239766082,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "aae73265-0709-41ad-a6af-50bf2c7e1a83",
+          "x": 0.5294708029197079,
+          "y": 0,
+          "w": 0.2822992700729928,
+          "h": 0.40014619883040936,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "1340e1cf-b795-4686-bd39-5339539c8ffe",
+          "x": 0.60757299270073,
+          "y": 0,
+          "w": 0.39242700729927005,
+          "h": 0.5144736842105263,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "2fa3c63e-4a75-4b25-988b-a4b063ad28f4",
+          "x": 0.1062043795620438,
+          "y": 0,
+          "w": 0.3131386861313868,
+          "h": 0.4371345029239766,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "2d546340-24d8-4670-8883-a858c55c5a75",
+          "x": 0.2926094890510949,
+          "y": 0.15891812865497076,
+          "w": 0.12098540145985404,
+          "h": 0.19385964912280704,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 48,
+      "sha256": "1d570e49654e84c7a943918537bd9e5e1ef82920152e147c834006e235be97c9",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "nasa-exp70",
+      "filename": "nasa-exp70.jpg",
+      "expected": 7,
+      "faces": 8,
+      "baseline_faces": 0,
+      "passes": 35,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "44497c1c-7d78-405c-b9f4-122137dd0172",
+          "x": 0.3564208984375,
+          "y": 0.37988400488400487,
+          "w": 0.13139648437499996,
+          "h": 0.19444444444444442,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "722e3588-d9f6-49cb-8c16-7476b5b89afe",
+          "x": 0.2477294921875,
+          "y": 0.29081196581196583,
+          "w": 0.12124023437499998,
+          "h": 0.15158730158730155,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "3d6878f3-629b-4d21-81d6-7ae66d51406e",
+          "x": 0.5406494140625,
+          "y": 0.42277167277167277,
+          "w": 0.130126953125,
+          "h": 0.16666666666666669,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "49f52f9f-e9dc-4654-8424-c44030cd62d4",
+          "x": 0.7673583984375,
+          "y": 0.3391025641025641,
+          "w": 0.11616210937500004,
+          "h": 0.1563492063492063,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "b2ac7901-e854-499b-86d6-8c2a979397f0",
+          "x": 0.6402587890625,
+          "y": 0.3296398046398047,
+          "w": 0.117431640625,
+          "h": 0.14841269841269833,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "d4fd03ca-eda5-427e-aaf4-7273cc8a0349",
+          "x": 0.1234619140625,
+          "y": 0.23089133089133088,
+          "w": 0.11489257812499999,
+          "h": 0.1365079365079365,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "741037f9-85d1-46bc-8aec-ade63a71731b",
+          "x": 0.4493896484375,
+          "y": 0.2815934065934066,
+          "w": 0.12124023437500003,
+          "h": 0.1468253968253968,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "50a1ff13-8ad7-42d1-bfd4-e6327702bd84",
+          "x": 0.80986328125,
+          "y": 0.3581196581196581,
+          "w": 0.04824218750000009,
+          "h": 0.060317460317460325,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 533,
+      "sha256": "b281582a3c07db5cfadd1f87fdade4effca898d2feb41ddfc886a524b4ec9731",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    }
+  ],
+  "matching": "maximum one-to-one matching at IoU >= 0.3, padded mask boxes against dlib annotations",
+  "limitations": [
+    "Different native MediaPipe runtime from browser WASM; browser parity not established",
+    "Pillow JPEG decoding/resampling differs from browser canvas",
+    "No actual canvas mosaic pixel test, worker, Safari or production UI test",
+    "Small selected public sample; not population accuracy; existing XML may omit visible faces"
+  ],
+  "source_stable": true
+}

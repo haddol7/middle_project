@@ -1,0 +1,42 @@
+{
+  "observed_utc": "2026-10-09T20:20:59.651704+00:00",
+  "environment": "WSL Ubuntu",
+  "scope": "Single authenticated empty POST /post/new/ with valid CSRF, no photo/title/text submitted.",
+  "side_effects": "Local fixture authentication/session lifecycle only; logged out after probe. No photo post or image change.",
+  "runtime_http_status": 200,
+  "runtime_observation": {
+    "errorlist_count": 3,
+    "shows_required_field_errors": true
+  },
+  "fresh_source_http_status": 200,
+  "fresh_source_observation": {
+    "errorlist_count": 3,
+    "shows_required_field_errors": true
+  },
+  "runtime_matches_fresh_source": true,
+  "actual_behavior_drift_proven": false,
+  "before": {
+    "post_count": 2,
+    "post_ids": [
+      1,
+      2
+    ],
+    "media_files": [
+      "images/2026/10/09/19a72c39fa234f8ba3e4cff52a184200.png",
+      "images/2026/10/09/77f6ffbf7f6e43109219266433af15af.png"
+    ]
+  },
+  "after": {
+    "post_count": 2,
+    "post_ids": [
+      1,
+      2
+    ],
+    "media_files": [
+      "images/2026/10/09/19a72c39fa234f8ba3e4cff52a184200.png",
+      "images/2026/10/09/77f6ffbf7f6e43109219266433af15af.png"
+    ]
+  },
+  "photo_data_unchanged": true,
+  "credentials_or_csrf_tokens_printed": false
+}

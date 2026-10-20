@@ -1,0 +1,91 @@
+{
+  "purpose": "Held-out examples not used to select confirmation scales or threshold. No training.",
+  "cases": [
+    {
+      "id": "bald-group",
+      "filename": "bald-group.jpg",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/bald_guys.jpg",
+      "origin": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/bald_guys.jpg",
+      "sha256": "e0c40697dbd9a07684274f71760bc5161468e926ba75ff90d48b168019402e8b",
+      "width": 1986,
+      "height": 1545,
+      "expected_faces": null,
+      "ground_truth": null
+    },
+    {
+      "id": "two-people",
+      "filename": "two-people.jpg",
+      "url": "https://raw.githubusercontent.com/ageitgey/face_recognition/master/examples/two_people.jpg",
+      "origin": "https://raw.githubusercontent.com/ageitgey/face_recognition/master/examples/two_people.jpg",
+      "sha256": "536b29cd513fb618e4d5aa79d51a279948daa804ce359463449cce5f9dc68aa7",
+      "width": 1126,
+      "height": 661,
+      "expected_faces": 2,
+      "ground_truth": null
+    },
+    {
+      "id": "profile-person",
+      "filename": "profile-person.jpg",
+      "url": "https://raw.githubusercontent.com/ageitgey/face_recognition/master/examples/obama2.jpg",
+      "origin": "https://raw.githubusercontent.com/ageitgey/face_recognition/master/examples/obama2.jpg",
+      "sha256": "a7efcc907375274796f39646510704aa86672d59f6d5469d69af3c85590976a6",
+      "width": 626,
+      "height": 1200,
+      "expected_faces": 1,
+      "ground_truth": null
+    },
+    {
+      "id": "portrait-person",
+      "filename": "portrait-person.jpg",
+      "url": "https://raw.githubusercontent.com/ageitgey/face_recognition/master/examples/biden.jpg",
+      "origin": "https://raw.githubusercontent.com/ageitgey/face_recognition/master/examples/biden.jpg",
+      "sha256": "3c17508bb91554c637a2eabddfae790e5bb1caba93130814fc2ac50be9760c4c",
+      "width": 970,
+      "height": 2204,
+      "expected_faces": 1,
+      "ground_truth": null
+    },
+    {
+      "id": "graffiti",
+      "filename": "graffiti.png",
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/graf1.png",
+      "origin": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/graf1.png",
+      "sha256": "1504b769303c7bde00fa578eeaad3c68e02aceabeb1242e556f1f8d19e4bdea5",
+      "width": 800,
+      "height": 640,
+      "expected_faces": 0,
+      "ground_truth": null
+    },
+    {
+      "id": "sudoku",
+      "filename": "sudoku.png",
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/sudoku.png",
+      "origin": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/sudoku.png",
+      "sha256": "3cd9ab173f7178c0a16bba9f867062b58b5d60918d5aeb8ced85cba0b24c353a",
+      "width": 558,
+      "height": 563,
+      "expected_faces": 0,
+      "ground_truth": null
+    },
+    {
+      "id": "other-dog",
+      "filename": "other-dog.jpg",
+      "origin": "Existing official classification fixture; attribution in fixtures/SOURCES.txt",
+      "sha256": "d4cb12ea8a768582562e1f1c0c930ea6fc4757f5b66551b986b41498efd75ca1",
+      "width": 700,
+      "height": 577,
+      "expected_faces": 0,
+      "ground_truth": null
+    },
+    {
+      "id": "existing-portrait",
+      "filename": "existing-portrait.jpg",
+      "origin": "Existing browser regression fixture; attribution in fixtures/SOURCES.txt",
+      "sha256": "a8ca6d734765703b09728ab47fe59f473d93ae3967fc24c7c0288c3c7adb7130",
+      "width": 512,
+      "height": 600,
+      "expected_faces": 1,
+      "ground_truth": null
+    }
+  ]
+}

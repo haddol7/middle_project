@@ -1,0 +1,22 @@
+{
+  "environment": "WSL Ubuntu project virtualenv",
+  "command": "python -m unittest discover -s tools/local -p test_pythonanywhere_*.py -v",
+  "tests": 38,
+  "passed": true,
+  "errors": 0,
+  "failures": 0,
+  "verified_at": "2026-10-20T05:04:49.277546+00:00",
+  "cloud_verification_included": false,
+  "source_sha256": {
+    "tools/local/pythonanywhere_audit.py": "05e187802ab35b21c5e7f1658ddffbae7a07e471d688b48412845041f6db74bb",
+    "tools/local/pythonanywhere_auth.py": "54aad4b7406f3d5b602851c7d62f043d75eb627eddc17eef1de346c048738656",
+    "tools/local/pythonanywhere_deploy.py": "61af04c8ebff1d57e721697cfcda06987d32e19a0a1e34f0d49405445f0ca841",
+    "tools/local/pythonanywhere_remote.py": "5c92ef0f41bbb8cdcc8f704d30fa966eb176193da4f6890e0191d09ddd678df9",
+    "tools/local/test_pythonanywhere_auth.py": "216611d6077d989d67fb4b542188edaced03db8bd0fad53e579249a0d298d67f",
+    "tools/local/test_pythonanywhere_deploy.py": "e570ab684ef3cd5d0dd296992b70b28382f8ee3c5bbedd1fd87f072e09604329",
+    "tools/local/verify_pythonanywhere_public.py": "9caf729d568a5f0d931df2b804a5910fdb744a9f8a26094bdc584d39a5a988b6",
+    "tools/local/connect-pythonanywhere-ui.ps1": "78b9c7ea71a895af1c81ff73650571b74d020c03d41aa5771c7c404b297a35ed",
+    "tools/local/connect-pythonanywhere.ps1": "c3523e3c187429a08f3680a5c6d6e7b93adb94c5d9f5dc961065d05e4ad50eda",
+    "tools/local/deploy-pythonanywhere.ps1": "bc4e728c2fca196a6eb5c6c022d5eb401001923b58af269c4535bf1f659e2960"
+  }
+}

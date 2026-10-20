@@ -1,0 +1,13 @@
+{
+  "environment": "Windows Android API35 emulator",
+  "mode": "airplane mode",
+  "passed": true,
+  "tests": 3,
+  "cases": [
+    "com.haddol7.photoviewer.content.ContentDeviceTest#test01BundledFaceAndActualMosaicPixels",
+    "com.haddol7.photoviewer.content.ContentDeviceTest#test03KoreanLatinOcrAndRestorablePacket",
+    "com.haddol7.photoviewer.content.ContentDeviceTest#test06ActualPhotoProducesAnimalThemeWithoutManualSelection"
+  ],
+  "apk_sha256": "4536130a76ac81b51920634fa7d33a636f1294b665950a25966471300e83a3f7",
+  "restored_airplane_mode": "0"
+}

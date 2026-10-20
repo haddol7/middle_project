@@ -1,0 +1,50 @@
+{
+  "release": "20261020062224e8ef72",
+  "phase": "verified",
+  "verified_at": "2026-10-20T06:25:13.453738+00:00",
+  "public_probes": [
+    {
+      "url": "https://daejinha.pythonanywhere.com/static/blog/content/composer.mjs?v=face-confirm-5",
+      "status": 200,
+      "sha256": "216b37b97e459a94af9472d66d4d39da19d25b4e76f95e3fc8f9e7bf3ded0056",
+      "source_matches": true
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/static/blog/content/vision.mjs?v=face-confirm-5",
+      "status": 200,
+      "sha256": "9235a7d926307da79fae39b8a3566618baec31221261cede594df1e22c3de06a",
+      "source_matches": true
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/static/blog/content/vision-worker.mjs?v=face-confirm-5",
+      "status": 200,
+      "sha256": "266f45f53822cca75f07bea702f00fa72c249e7691cb28ba4140a62343ccf56e",
+      "source_matches": true
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/static/blog/content/vision-engine.mjs?v=face-confirm-5",
+      "status": 200,
+      "sha256": "1f21a9124234bcef7fc87ccad37b171785dd5d5dcfb5bd2fd56cbb769945791c",
+      "source_matches": true
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/static/blog/content/face-scans.mjs?v=face-confirm-5",
+      "status": 200,
+      "sha256": "267e155e9bd166fbb583a87afa6953d6b0653785239ee783c299475f13602d5e",
+      "source_matches": true
+    }
+  ],
+  "template_matches": true,
+  "root_cache_version_present": true,
+  "public_post_ids": [
+    3,
+    2,
+    1
+  ],
+  "private_photo_uploaded": false,
+  "browser_execution_verified": false,
+  "limitations": [
+    "Public source hash and template verification; no physical iPhone/Safari or browser model execution in this revision"
+  ],
+  "pass": true
+}

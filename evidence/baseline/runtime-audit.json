@@ -1,0 +1,128 @@
+{
+  "observed_utc": "2026-10-09T20:19:22.596026+00:00",
+  "environment": "WSL Ubuntu",
+  "pid": 267,
+  "owner_uid": 1000,
+  "command": [
+    "/home/daeha_linux/.venvs/mobile_web_service/bin/python",
+    "manage.py",
+    "runserver",
+    "0.0.0.0:8000",
+    "--noreload"
+  ],
+  "cwd": "/mnt/c/Users/haddo/mobile_web_service/common01/PhotoBlogServer",
+  "executable": "/usr/bin/python3.12",
+  "identity_matches_owned_common01_server": true,
+  "start_ticks_since_boot": 10364,
+  "clock_ticks_per_second": 100,
+  "kernel_boot_epoch": 1791569751,
+  "derived_start_utc": "2026-10-09T18:17:34.640000+00:00",
+  "wall_clock_vs_boot_plus_uptime_seconds": 0.9960260391235352,
+  "source_times": [
+    {
+      "path": "blog/__init__.py",
+      "mtime_utc": "2026-10-09T18:06:46.983402+00:00",
+      "mtime_epoch": 1791569206.983402,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "blog/admin.py",
+      "mtime_utc": "2026-10-09T18:06:47.820309+00:00",
+      "mtime_epoch": 1791569207.8203094,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "blog/apps.py",
+      "mtime_utc": "2026-10-09T18:06:47.074178+00:00",
+      "mtime_epoch": 1791569207.0741777,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "blog/file_cleanup.py",
+      "mtime_utc": "2026-10-09T18:06:47.332270+00:00",
+      "mtime_epoch": 1791569207.3322697,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "blog/forms.py",
+      "mtime_utc": "2026-10-09T18:06:47.490489+00:00",
+      "mtime_epoch": 1791569207.4904888,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "blog/models.py",
+      "mtime_utc": "2026-10-09T18:06:47.247236+00:00",
+      "mtime_epoch": 1791569207.247236,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "blog/permissions.py",
+      "mtime_utc": "2026-10-09T18:06:47.415804+00:00",
+      "mtime_epoch": 1791569207.415804,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "blog/serializers.py",
+      "mtime_utc": "2026-10-09T18:06:47.574029+00:00",
+      "mtime_epoch": 1791569207.574029,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "blog/urls.py",
+      "mtime_utc": "2026-10-09T18:06:47.736465+00:00",
+      "mtime_epoch": 1791569207.7364645,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "blog/validators.py",
+      "mtime_utc": "2026-10-09T18:06:47.162963+00:00",
+      "mtime_epoch": 1791569207.1629632,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "blog/views.py",
+      "mtime_utc": "2026-10-09T18:13:54.325037+00:00",
+      "mtime_epoch": 1791569634.325037,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "manage.py",
+      "mtime_utc": "2026-10-09T18:06:45.941260+00:00",
+      "mtime_epoch": 1791569205.94126,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "photoblog/__init__.py",
+      "mtime_utc": "2026-10-09T18:06:46.389744+00:00",
+      "mtime_epoch": 1791569206.3897436,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "photoblog/asgi.py",
+      "mtime_utc": "2026-10-09T18:06:46.723331+00:00",
+      "mtime_epoch": 1791569206.723331,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "photoblog/settings.py",
+      "mtime_utc": "2026-10-09T18:06:46.471271+00:00",
+      "mtime_epoch": 1791569206.471271,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "photoblog/urls.py",
+      "mtime_utc": "2026-10-09T18:06:46.554297+00:00",
+      "mtime_epoch": 1791569206.5542974,
+      "more_than_one_second_after_derived_start": false
+    },
+    {
+      "path": "photoblog/wsgi.py",
+      "mtime_utc": "2026-10-09T18:06:46.642672+00:00",
+      "mtime_epoch": 1791569206.6426723,
+      "more_than_one_second_after_derived_start": false
+    }
+  ],
+  "time_comparison_shows_later_source": false,
+  "clock_caution": "WSL wall-clock corrections can shift derived process wall time. Time comparison alone is not proof when conflicting historical observations exist.",
+  "action": "Read-only audit; process was not signalled or restarted."
+}

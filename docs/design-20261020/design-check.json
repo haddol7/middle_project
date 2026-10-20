@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-19T16:29:28.685Z",
+  "scope": "design_integrity_only",
+  "ok": true,
+  "counts": {
+    "features": 3,
+    "units": 5,
+    "requirements": 21,
+    "screens": 7,
+    "states": 12,
+    "planned_tests": 15,
+    "baseline_items": 14
+  },
+  "checks": [
+    {
+      "name": "three_user_features",
+      "ok": true
+    },
+    {
+      "name": "five_assessment_units",
+      "ok": true
+    },
+    {
+      "name": "balanced_sides",
+      "ok": true
+    },
+    {
+      "name": "design_status_only",
+      "ok": true
+    },
+    {
+      "name": "feature_unit_links",
+      "ok": true
+    },
+    {
+      "name": "requirement_refs",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "unique_requirements",
+      "ok": true
+    },
+    {
+      "name": "all_requirements_have_verification",
+      "ok": true
+    },
+    {
+      "name": "all_screens_traced",
+      "ok": true
+    },
+    {
+      "name": "all_states_traced",
+      "ok": true
+    },
+    {
+      "name": "all_tests_traced",
+      "ok": true
+    },
+    {
+      "name": "baseline_1_to_14",
+      "ok": true
+    },
+    {
+      "name": "new_document_local_links",
+      "ok": true,
+      "detail": {
+        "checked": 17,
+        "missing": []
+      }
+    },
+    {
+      "name": "diagram_receipt_byte_identity",
+      "ok": true
+    }
+  ],
+  "diagram": {
+    "deterministic_validation": {
+      "checksPassed": 9,
+      "checkCount": 9,
+      "compositionProfile": "showcase",
+      "compositionStatus": "pass",
+      "errors": 0,
+      "warnings": 0
+    },
+    "browser_evidence": "fail",
+    "visual_review": "failed",
+    "note": "Desktop vertical overflow is documented; product runtime is not implemented or tested."
+  }
+}

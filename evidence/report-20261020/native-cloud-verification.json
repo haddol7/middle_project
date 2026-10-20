@@ -1,0 +1,31 @@
+{
+  "verified_at": "2026-10-20T19:07:49.875604+09:00",
+  "environment": "Actual Android API35 PhotoViewer native app, configured through server settings UI; WSL public HTTP cross-check",
+  "origin": "https://daejinha.pythonanywhere.com/",
+  "native_sync_status": "동기화 완료 · 사진 3개",
+  "public_post_ids": [
+    3,
+    2,
+    1
+  ],
+  "first_title": "[배포 테스트] 사진 블로그 업데이트 확인",
+  "native_image_visually_reviewed": true,
+  "android_source_matches_existing_verified_run": true,
+  "source_mismatches": [],
+  "historical_run": "20261019-173636-9c9bae3f",
+  "cloud_upload_or_content_search_retested": false,
+  "posted": false,
+  "pass": true,
+  "screenshots": [
+    {
+      "path": "android-cloud-synced.png",
+      "sha256": "00fe38ad952369a6fa4f93d4b8d27b263acd6702222202690c5bc538e111e879"
+    },
+    {
+      "path": "android-cloud-origin.png",
+      "sha256": "d0b15289535d7896b4b8689e77c847c228a6e84ce7cdcf4ffdc8592b61ea6469"
+    }
+  ],
+  "installed_apk_sha256": "4536130a76ac81b51920634fa7d33a636f1294b665950a25966471300e83a3f7",
+  "installed_apk_matches_verified_run": true
+}

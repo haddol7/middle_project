@@ -1,0 +1,133 @@
+{
+  "environment": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "recognition_design": "self-hosted browser models; no external recognition service",
+  "checks": [
+    {
+      "name": "실제 사진 얼굴 탐지",
+      "pass": true,
+      "detail": {
+        "faces": 1
+      }
+    },
+    {
+      "name": "실제 모자이크 픽셀 변화",
+      "pass": true,
+      "detail": {
+        "changes": 20740
+      }
+    },
+    {
+      "name": "원본 파일과 작업 픽셀 보존",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "게시 사본 digest와 크기",
+      "pass": true,
+      "detail": {
+        "bytes": 64390,
+        "sha256": "483db1754867fbe329fcd086a8f80f4f1b0c88ef5ced090e4c15267111e9faae"
+      }
+    },
+    {
+      "name": "실제 강아지 사진 자동 동물 테마",
+      "pass": true,
+      "detail": {
+        "theme": "animal",
+        "tags": [
+          "강아지"
+        ],
+        "alternatives": [
+          {
+            "theme": "animal",
+            "score": 0.6875
+          },
+          {
+            "theme": "object",
+            "score": 0
+          },
+          {
+            "theme": "space",
+            "score": 0
+          }
+        ],
+        "evidence": {
+          "topScore": 0.234375,
+          "totalMass": 0.71484375
+        }
+      }
+    },
+    {
+      "name": "자동 한국어 태그",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "실제 한글 OCR",
+      "pass": true,
+      "detail": [
+        {
+          "line_id": "81eb614e-83b7-4c4a-95aa-a5ae36345fd5",
+          "text": "바다라멘",
+          "quad": [
+            [
+              0.08,
+              0.149
+            ],
+            [
+              0.34625,
+              0.149
+            ],
+            [
+              0.34625,
+              0.261
+            ],
+            [
+              0.08,
+              0.261
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        },
+        {
+          "line_id": "e9a745f5-6a58-419b-8827-0f4b21577218",
+          "text": "CAFE MENU 100",
+          "quad": [
+            [
+              0.079375,
+              0.41
+            ],
+            [
+              0.65625,
+              0.41
+            ],
+            [
+              0.65625,
+              0.502
+            ],
+            [
+              0.079375,
+              0.502
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        }
+      ]
+    },
+    {
+      "name": "실제 영문 OCR",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "실제 정규화 글자 좌표",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "started": "2026-10-20T05:54:06.562Z",
+  "pass": true,
+  "finished": "2026-10-20T05:54:07.398Z"
+}

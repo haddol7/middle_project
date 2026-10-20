@@ -1,0 +1,277 @@
+{
+  "note": "핵심 자격과 최대5개를 검토한 설명용 예시. 후보 점수를 부품 점수로 바꾼 최적화가 아니다.",
+  "plans": [
+    {
+      "title": "내용으로 정리하고 글자로 다시 찾기",
+      "ids": [
+        "F01",
+        "F02"
+      ],
+      "capabilities": [
+        "F01",
+        "F02"
+      ],
+      "components": [
+        "C01",
+        "C02",
+        "S01",
+        "S02"
+      ],
+      "server": 2,
+      "client": 2,
+      "total": 4,
+      "eligible": true,
+      "blockers": [],
+      "recognitionRisk": "high"
+    },
+    {
+      "title": "내용 검색과 공개 전 노출 점검",
+      "ids": [
+        "F01",
+        "F02",
+        "F10"
+      ],
+      "capabilities": [
+        "F01",
+        "F02",
+        "F10"
+      ],
+      "components": [
+        "C01",
+        "C02",
+        "C10",
+        "S01",
+        "S02"
+      ],
+      "server": 2,
+      "client": 3,
+      "total": 5,
+      "eligible": true,
+      "blockers": [],
+      "recognitionRisk": "high"
+    },
+    {
+      "title": "내용 검색과 게시할 컷 선택",
+      "ids": [
+        "F01",
+        "F02",
+        "F09"
+      ],
+      "capabilities": [
+        "F01",
+        "F02",
+        "F09"
+      ],
+      "components": [
+        "C01",
+        "C02",
+        "C09",
+        "S01",
+        "S02"
+      ],
+      "server": 2,
+      "client": 3,
+      "total": 5,
+      "eligible": false,
+      "blockers": [
+        "F09: need_review"
+      ],
+      "recognitionRisk": "high"
+    },
+    {
+      "title": "관련 글로 이어 읽기와 공개 전 점검",
+      "ids": [
+        "F01",
+        "F05",
+        "F10"
+      ],
+      "capabilities": [
+        "F01",
+        "F05",
+        "F10"
+      ],
+      "components": [
+        "C01",
+        "C05",
+        "C10",
+        "S01",
+        "S05"
+      ],
+      "server": 2,
+      "client": 3,
+      "total": 5,
+      "eligible": true,
+      "blockers": [],
+      "recognitionRisk": "high"
+    },
+    {
+      "title": "관심 주제 발견과 게시할 컷 선택",
+      "ids": [
+        "F01",
+        "F06",
+        "F09"
+      ],
+      "capabilities": [
+        "F01",
+        "F06",
+        "F09"
+      ],
+      "components": [
+        "C01",
+        "C06",
+        "C09",
+        "S01",
+        "S06"
+      ],
+      "server": 2,
+      "client": 3,
+      "total": 5,
+      "eligible": false,
+      "blockers": [
+        "F09: need_review"
+      ],
+      "recognitionRisk": "medium"
+    },
+    {
+      "title": "규칙 모음과 공개 전 점검",
+      "ids": [
+        "F01",
+        "F04",
+        "F10"
+      ],
+      "capabilities": [
+        "F01",
+        "F04",
+        "F10"
+      ],
+      "components": [
+        "C01",
+        "C04",
+        "C10",
+        "S01",
+        "S04"
+      ],
+      "server": 2,
+      "client": 3,
+      "total": 5,
+      "eligible": true,
+      "blockers": [],
+      "recognitionRisk": "high"
+    },
+    {
+      "title": "분류와 확인된 대체 설명",
+      "ids": [
+        "F01",
+        "F11"
+      ],
+      "capabilities": [
+        "F01",
+        "F11"
+      ],
+      "components": [
+        "C01",
+        "C11",
+        "S01",
+        "S11"
+      ],
+      "server": 2,
+      "client": 2,
+      "total": 4,
+      "eligible": true,
+      "blockers": [],
+      "recognitionRisk": "high"
+    },
+    {
+      "title": "OCR 검색과 확인된 대체 설명",
+      "ids": [
+        "F02",
+        "F11"
+      ],
+      "capabilities": [
+        "F02",
+        "F11"
+      ],
+      "components": [
+        "C02",
+        "C11",
+        "S02",
+        "S11"
+      ],
+      "server": 2,
+      "client": 2,
+      "total": 4,
+      "eligible": true,
+      "blockers": [],
+      "recognitionRisk": "high"
+    },
+    {
+      "title": "관심 주제에서 놓친 글 이어 읽기",
+      "ids": [
+        "F01",
+        "F16"
+      ],
+      "capabilities": [
+        "F01",
+        "F16"
+      ],
+      "components": [
+        "C01",
+        "C16",
+        "S01",
+        "S16"
+      ],
+      "server": 2,
+      "client": 2,
+      "total": 4,
+      "eligible": true,
+      "blockers": [],
+      "recognitionRisk": "medium"
+    },
+    {
+      "title": "분류와 관련 글 발견",
+      "ids": [
+        "F01",
+        "F05"
+      ],
+      "capabilities": [
+        "F01",
+        "F05"
+      ],
+      "components": [
+        "C01",
+        "C05",
+        "S01",
+        "S05"
+      ],
+      "server": 2,
+      "client": 2,
+      "total": 4,
+      "eligible": true,
+      "blockers": [],
+      "recognitionRisk": "medium"
+    },
+    {
+      "title": "분류와 관심 주제 피드",
+      "ids": [
+        "F01",
+        "F06"
+      ],
+      "capabilities": [
+        "F01",
+        "F06"
+      ],
+      "components": [
+        "C01",
+        "C06",
+        "S01",
+        "S06"
+      ],
+      "server": 2,
+      "client": 2,
+      "total": 4,
+      "eligible": true,
+      "blockers": [],
+      "recognitionRisk": "medium"
+    }
+  ]
+}

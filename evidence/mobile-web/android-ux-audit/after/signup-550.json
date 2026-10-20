@@ -1,0 +1,42 @@
+{
+  "url": "https://daejinha.pythonanywhere.com/accounts/signup/",
+  "title": "회원가입 · Common 01",
+  "width": 412,
+  "height": 551,
+  "clientWidth": 412,
+  "visualHeight": 551.2380981445312,
+  "scrollHeight": 622,
+  "horizontalOverflow": false,
+  "header": {
+    "top": 0,
+    "bottom": 60.761905670166016,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 60.761905670166016,
+    "visible": true
+  },
+  "firstPhoto": null,
+  "main": {
+    "top": 76.76190948486328,
+    "bottom": 560.428596496582,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 483.66668701171875,
+    "visible": true
+  },
+  "primary": {
+    "top": 418.8690490722656,
+    "bottom": 462.8690490722656,
+    "left": 32.761905670166016,
+    "right": 379.42859268188477,
+    "width": 346.66668701171875,
+    "height": 44,
+    "visible": true
+  },
+  "visibleText": "사진 블로그\n로그인\n회원가입\n회원가입\n\n사진과 이야기를 남길 계정을 만들어요.\n\n사용자 이름\n비밀번호\n비밀번호 확인\n회원가입\n아이디·비밀번호 안내\n\n이미 계정이 있나요? 로그인\n\n사진과 이야기를 함께 · 사진 블로그",
+  "environment": "Actual Android API35 emulator WebView; native ADB screenshot",
+  "physical_iPhone_verified": false,
+  "published": false
+}

@@ -1,0 +1,265 @@
+{
+  "output": "C:\\Users\\1\\mobile_web_service\\common01\\모바일웹서비스 프로젝트 공통평가 01_수행 결과 보고서.docx",
+  "draft": "C:\\Users\\1\\mobile_web_service\\common01\\모바일웹서비스 프로젝트 공통평가 01_수행 결과 보고서_작성중.docx",
+  "sha256": "cea54d5ddf85f55c8853d448116217a3f36b6df3b764472461a0d0f5e44e2496",
+  "bytes": 7923839,
+  "reference": "C:\\Users\\1\\.codex\\codex-remote-attachments\\01a1540d-3877-7293-8a0f-ccdd0262b3aa\\2D08D360-E681-4A50-AA9C-9CBAD76F8E57\\2-모바일웹서비스-프로젝트_공통평가-01_수행-결과-보고서.docx",
+  "reference_sha256": "32143cf4d65a830410d5dec20b7d5b9b922d448c1382d2ab7dc5fc9a93384d6c",
+  "original_requirement_cells_preserved": true,
+  "section_geometry_preserved": true,
+  "opaque_parts_preserved": true,
+  "examiner_judgement_blank": true,
+  "identity": {
+    "department": "컴퓨터공학과",
+    "name": "하대진",
+    "student_id": "2020105671"
+  },
+  "github_url": "https://github.com/haddol7/middle_project.git",
+  "document_pages": 19,
+  "assessment_form_pages": 2,
+  "appendix_pages": 17,
+  "image_count": 20,
+  "images": [
+    {
+      "embedded_part": "/word/media/image2.jpg",
+      "sha256": "684aaed9920df175b4cca306eea26a4e7ab285e3fec73018b0ff0e0a47ec6588",
+      "bytes": 77444
+    },
+    {
+      "embedded_part": "/word/media/image3.jpg",
+      "sha256": "1c5c99d525a625644656d2cc5b9ad1660e7664c6e922ce13200f54986c658d55",
+      "bytes": 73232
+    },
+    {
+      "embedded_part": "/word/media/image4.jpg",
+      "sha256": "9fc902254250e75ab0d6d66c31bef8dfdbaea46121df9a55c8d20ff911faeb4d",
+      "bytes": 191577
+    },
+    {
+      "embedded_part": "/word/media/image20.png",
+      "sha256": "a69d793a1e502ad4f0d3bded8239633ede1cc2fcc85a67dfbfec4b8e2c8d87a4",
+      "bytes": 262283
+    },
+    {
+      "embedded_part": "/word/media/image21.png",
+      "sha256": "21b4c45877dfbe19c9bebe5026929ccd26d9c5439852aea5f31177cc4456650f",
+      "bytes": 395758
+    },
+    {
+      "embedded_part": "/word/media/image22.png",
+      "sha256": "627393cea28c985be7a3267e28341d9d143d4af851d99c855959df307ecf45b6",
+      "bytes": 313946
+    },
+    {
+      "embedded_part": "/word/media/image23.png",
+      "sha256": "5ee9b4daa23ee280c410c5687aa7e179327cf06f1de16c602a1997728c226027",
+      "bytes": 182624
+    },
+    {
+      "embedded_part": "/word/media/image24.png",
+      "sha256": "21c25d8f36bf9e8872717ce9f9988064f377c87d7bae0d13e6a51c39e346b28f",
+      "bytes": 249372
+    },
+    {
+      "embedded_part": "/word/media/image25.png",
+      "sha256": "300fb57ea0d9a3d385520cbdb195d0a84518512120d5a174f16553efa3961c55",
+      "bytes": 149106
+    },
+    {
+      "embedded_part": "/word/media/image11.png",
+      "sha256": "35095555263816ec824c32b9542f403069ee5ed113c8cc1d42332e75b4096f94",
+      "bytes": 654238
+    },
+    {
+      "embedded_part": "/word/media/image12.png",
+      "sha256": "a9726122da5257e2db7faa49d9d0f6a9d0ca49936d084a792906cc077348e7b4",
+      "bytes": 134268
+    },
+    {
+      "embedded_part": "/word/media/image29.png",
+      "sha256": "593a61b819c30235b8b3bf29e70cf4fd3b3adab3a0008abfbb2a9aebc6d9fa2e",
+      "bytes": 549251
+    },
+    {
+      "embedded_part": "/word/media/image30.png",
+      "sha256": "3caa6e8aa5f7e727eb9fb74fba5b93dd6ea61c3c8a040d34f70dd95a4ca2f270",
+      "bytes": 86636
+    },
+    {
+      "embedded_part": "/word/media/image15.png",
+      "sha256": "e71b5940e7facb22fba391dde8904293e84ef7d2e6a40930191490e8a9f2521a",
+      "bytes": 451221
+    },
+    {
+      "embedded_part": "/word/media/image16.jpg",
+      "sha256": "aa4602eb41abb0f65a9903af04ab6da4c5e75a64c06d182ff7635e17e6803c16",
+      "bytes": 94558
+    },
+    {
+      "embedded_part": "/word/media/image17.png",
+      "sha256": "d0b15289535d7896b4b8689e77c847c228a6e84ce7cdcf4ffdc8592b61ea6469",
+      "bytes": 379194
+    },
+    {
+      "embedded_part": "/word/media/image26.png",
+      "sha256": "9e13db63353b969cbf892be948663df714e33dbfd080790242054ec1587c8bcb",
+      "bytes": 729199
+    },
+    {
+      "embedded_part": "/word/media/image19.jpg",
+      "sha256": "31d122965732d76a3fece9989867f899b07da48e59c47bbc30f5f40d1b7ca41b",
+      "bytes": 63026
+    },
+    {
+      "embedded_part": "/word/media/image27.png",
+      "sha256": "a8517730aee17ba36e3ad732190c12185d4f8207e1af68f2c8f84c98c82fbf04",
+      "bytes": 113121
+    },
+    {
+      "embedded_part": "/word/media/image28.png",
+      "sha256": "1c85571f684081cb7ad7553227be326eb9fafb77bda9e7e4880bfde6ba619e7e",
+      "bytes": 99330
+    }
+  ],
+  "portable_copy_byte_identical": true,
+  "assessment_status": {
+    "E01": "완료",
+    "E02": "완료",
+    "E03": "완료",
+    "E04": "부분",
+    "E05": "부분",
+    "ID14": "부분"
+  },
+  "native_current_cloud_sync_count": 3,
+  "latest_checks": {
+    "WSL_Django": 145,
+    "WSL_HTTP": 15,
+    "web_unit": 67,
+    "Android_JVM": 38,
+    "Android_device": 9,
+    "Android_small_screen_UI": 1,
+    "PythonAnywhere_read_only_sync": 1
+  },
+  "product_complete": false,
+  "packaging_paused": true,
+  "ready_for_final_submission": false,
+  "github_pushed": false,
+  "course_submitted": false,
+  "verified_at": "2026-10-20T14:10:59.912704+00:00",
+  "pages": [
+    {
+      "page": 1,
+      "sha256": "8f9b1a4d0aeae6d11c7b3a3aba4c799d83f7780edc17be7f917e630417d8997c",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 2,
+      "sha256": "6a62ff7b855b4bd2d72ff86227d23d3d69e9961bc5535960c27818afe8697562",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 3,
+      "sha256": "dd1252b669f9e96b3c8fc3f4a88862d7a770d30befbf757535c7960a87570f99",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 4,
+      "sha256": "bc427fa5d79d37a3e370ea997c0719873b83029412bae50b0f089a46f565fdf6",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 5,
+      "sha256": "f30e47514b333642b048d603c26363390d2cdaaac16b97317e96769cb423a309",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 6,
+      "sha256": "9ff6e835bda63d74f791291e3abbc919024c82792ced64d25ef82cc8749ae4cd",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 7,
+      "sha256": "f99eae52eac3d7b03dd1ce0caa5a0e5db4f31ddc46af4f66b56e5c3179782359",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 8,
+      "sha256": "b800b5d85aa5d609646a9872f65656aa278801fecd4ed7ae296ffd9eb1c25ff5",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 9,
+      "sha256": "ab7939adb278c74f5d143becfb4e806572859bba0e561ff16f7b45ef555c80c3",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 10,
+      "sha256": "2469bbf1518573651c24c5df8c384e4e64bb96d97454fc0a216b81f418fdc585",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 11,
+      "sha256": "3555d72948e1380da81a529e014dd2a6755faa15f6c0461e5e6fe03673be85bf",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 12,
+      "sha256": "f19ceac846df8d92174e7fbdb277ce610a06462e6fae94af1460f3aa93f6701c",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 13,
+      "sha256": "61f13fae0efeace77fb4205728cb699b5330c62d99383daf36f5ef3c30161397",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 14,
+      "sha256": "c033915fa084d189df1bff3711786063651ee4ef7adc2ff457769250607b5913",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 15,
+      "sha256": "d72d11bc93f40fd0acf5664de5e4aa1c07e47c2c63f96698bcda77db9d0385fb",
+      "visually_reviewed": true,
+      "review_basis": "final page directly inspected"
+    },
+    {
+      "page": 16,
+      "sha256": "722e0fc18924e85135e649d0e50829c915fc9afd752532683d22fd04ac796fe7",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 17,
+      "sha256": "ad7128495ddc808d8c4a19ab58035a9b59278bd814766c1a41199824aafce980",
+      "visually_reviewed": true,
+      "review_basis": "final page directly inspected"
+    },
+    {
+      "page": 18,
+      "sha256": "3e11f1475dea07bbd0be42b81061b459e7e632b0bc33ae8acffccda8059567b2",
+      "visually_reviewed": true,
+      "review_basis": "identical to inspected render-04 page"
+    },
+    {
+      "page": 19,
+      "sha256": "8f7515bb6cb07923984c74f34c28ba5992440db4d3ada922d90a6ae55b6a9f9a",
+      "visually_reviewed": true,
+      "review_basis": "final page directly inspected"
+    }
+  ]
+}

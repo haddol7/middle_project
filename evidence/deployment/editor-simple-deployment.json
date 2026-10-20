@@ -1,0 +1,38 @@
+{
+  "release": "2026102007340812030a",
+  "phase": "verified",
+  "verified_at": "2026-10-20T07:41:12.279243+00:00",
+  "package_sha256": "f1b7316dbe873321f83a1de6be5fdb72d730daa04a2e873756bed0d93499da9c",
+  "public_probes": [
+    {
+      "url": "https://daejinha.pythonanywhere.com/static/blog/content/composer.mjs?v=editor-simple-2",
+      "status": 200,
+      "content_type": "text/javascript",
+      "sha256": "7c94801af704dce688b68a1d6279f93a25e5d14112ba7a552a9351daf1897e0b",
+      "source_matches": true
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/static/blog/content/content.css?v=editor-simple-2",
+      "status": 200,
+      "content_type": "text/css",
+      "sha256": "030fc47d3c754334c7fbc6390a11d1bf6afbaf44436baac1250ef26ac10da746",
+      "source_matches": true
+    }
+  ],
+  "template_matches": true,
+  "editor_cache_version_present": true,
+  "more_panel_present": true,
+  "contextual_selection_actions_present": true,
+  "public_post_ids": [
+    3,
+    2,
+    1
+  ],
+  "browser_layout_executed": false,
+  "physical_iPhone_verified": false,
+  "private_photo_uploaded": false,
+  "limitations": [
+    "Actual public code and deployed template verified. Browser layout and physical Safari interaction were not executed."
+  ],
+  "pass": true
+}

@@ -1,0 +1,9 @@
+
+com.haddol7.photoviewer.content.ContentDeviceTest:...
+Test results for InstrumentationTestRunner=...
+Time: 1.599
+
+OK (3 tests)
+
+
+

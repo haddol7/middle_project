@@ -1,0 +1,10 @@
+ACTUAL WSL SUBPROCESS OUTPUT: coverage-html
+Run started UTC: 2026-10-19T12:18:42.598405+00:00
+WSL: Ubuntu
+Working directory: /mnt/c/Users/1/mobile_web_service/common01/PhotoBlogServer
+Command: /home/daeha/.venvs/mobile_web_service/bin/python -m coverage html
+Credential-like values are redacted if present; no terminal screenshot is fabricated.
+
+Wrote HTML report to htmlcov/index.html
+
+Exit code: 0

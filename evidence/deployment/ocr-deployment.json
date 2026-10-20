@@ -1,0 +1,34 @@
+{
+  "release": "20261020092725e44d69",
+  "phase": "verified",
+  "verified_at": "2026-10-20T09:30:35.593198+00:00",
+  "modules": {
+    "composer.mjs": {
+      "matches": true,
+      "sha256": "cceaae7616a275a923383c3e327cfbae4c990bbf66b5c70f8b7a6559e0a869ef"
+    },
+    "vision.mjs": {
+      "matches": true,
+      "sha256": "4cef52bcc2b57db01581aab995c1d5a0ea7085a0066c68c44013d61d7784e1b9"
+    },
+    "rules.mjs": {
+      "matches": true,
+      "sha256": "8916ed8afbfe3bcc560ac97397562e029d3455afa41c6b31d6d8312ba46f1372"
+    },
+    "ocr-policy.mjs": {
+      "matches": true,
+      "sha256": "4c5e15241faaebd137c16fd70e57e7c574b2a9245c146e084abb3e1a14bff7e9"
+    }
+  },
+  "editor_template_matches": true,
+  "public_post_ids": [
+    3,
+    2,
+    1
+  ],
+  "new_schema": false,
+  "existing_ocr_deleted": false,
+  "user_original_background_verified": false,
+  "physical_iPhone_verified": false,
+  "pass": true
+}

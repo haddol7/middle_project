@@ -1,0 +1,487 @@
+{
+  "status": "prepared_not_executed",
+  "browser_blocker": "CUA browser inventory is empty; user cannot open a browser now",
+  "model_version": "mp_blazeface_sr1_tiles_v4",
+  "inference_executed": false,
+  "photos": 16,
+  "annotated_photos": 9,
+  "annotated_faces": 43,
+  "scope": "Local evaluation only, not training or deployment. No images published.",
+  "cases": [
+    {
+      "id": "dlib-2007_007763",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2007_007763.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2007_007763.jpg",
+      "bytes": 89619,
+      "sha256": "17d9897dd55d38179f51dc18371b3f4495a606aaa2846e25a3cb6a58b3a97c89",
+      "width": 500,
+      "height": 375,
+      "expected_faces": 7,
+      "ground_truth": [
+        {
+          "x": 194,
+          "y": 90,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 158,
+          "y": 114,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 381,
+          "y": 89,
+          "w": 45,
+          "h": 44
+        },
+        {
+          "x": 94,
+          "y": 198,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 178,
+          "y": 214,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 294,
+          "y": 86,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 309,
+          "y": 233,
+          "w": 45,
+          "h": 44
+        }
+      ],
+      "annotation_source": "dlib PASCAL VOC example rectangles"
+    },
+    {
+      "id": "dlib-2008_001009",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_001009.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_001009.jpg",
+      "bytes": 41770,
+      "sha256": "2509864113a286bf245161d0317a18c38b6a6641135969847a7e59dff359c52c",
+      "width": 360,
+      "height": 480,
+      "expected_faces": 2,
+      "ground_truth": [
+        {
+          "x": 145,
+          "y": 79,
+          "w": 76,
+          "h": 76
+        },
+        {
+          "x": 125,
+          "y": 214,
+          "w": 90,
+          "h": 91
+        }
+      ],
+      "annotation_source": "dlib PASCAL VOC example rectangles"
+    },
+    {
+      "id": "dlib-2008_001322",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_001322.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_001322.jpg",
+      "bytes": 65344,
+      "sha256": "2ea5a60f5347baab8da6eccce43b0320d63da1368d7710fb15cbff8a790bc626",
+      "width": 500,
+      "height": 375,
+      "expected_faces": 3,
+      "ground_truth": [
+        {
+          "x": 104,
+          "y": 162,
+          "w": 76,
+          "h": 76
+        },
+        {
+          "x": 232,
+          "y": 218,
+          "w": 63,
+          "h": 63
+        },
+        {
+          "x": 344,
+          "y": 155,
+          "w": 90,
+          "h": 90
+        }
+      ],
+      "annotation_source": "dlib PASCAL VOC example rectangles"
+    },
+    {
+      "id": "dlib-2008_002079",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_002079.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_002079.jpg",
+      "bytes": 92641,
+      "sha256": "f929bdf416d756b37eb90c119b892eba5d21041b134883e18d827bce641fb48f",
+      "width": 500,
+      "height": 375,
+      "expected_faces": 6,
+      "ground_truth": [
+        {
+          "x": 407,
+          "y": 166,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 122,
+          "y": 134,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 346,
+          "y": 138,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 433,
+          "y": 171,
+          "w": 53,
+          "h": 52
+        },
+        {
+          "x": 62,
+          "y": 134,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 41,
+          "y": 194,
+          "w": 44,
+          "h": 44
+        }
+      ],
+      "annotation_source": "dlib PASCAL VOC example rectangles"
+    },
+    {
+      "id": "dlib-2008_002470",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_002470.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_002470.jpg",
+      "bytes": 91349,
+      "sha256": "14b543e3ac55b497aaaba9dc03a39be04c8ae670851b3f78f9f5adb08295d780",
+      "width": 500,
+      "height": 332,
+      "expected_faces": 6,
+      "ground_truth": [
+        {
+          "x": 274,
+          "y": 181,
+          "w": 52,
+          "h": 53
+        },
+        {
+          "x": 55,
+          "y": 156,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "x": 146,
+          "y": 166,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 329,
+          "y": 55,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "x": 233,
+          "y": 74,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "x": 178,
+          "y": 86,
+          "w": 37,
+          "h": 37
+        }
+      ],
+      "annotation_source": "dlib PASCAL VOC example rectangles"
+    },
+    {
+      "id": "dlib-2008_002506",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_002506.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_002506.jpg",
+      "bytes": 79316,
+      "sha256": "ede6804edf0ec005144ffe7f0f2b56bd2aa1d21beee79d29f72cb16ead19a447",
+      "width": 500,
+      "height": 375,
+      "expected_faces": 3,
+      "ground_truth": [
+        {
+          "x": 329,
+          "y": 78,
+          "w": 109,
+          "h": 109
+        },
+        {
+          "x": 224,
+          "y": 95,
+          "w": 91,
+          "h": 91
+        },
+        {
+          "x": 125,
+          "y": 65,
+          "w": 90,
+          "h": 91
+        }
+      ],
+      "annotation_source": "dlib PASCAL VOC example rectangles"
+    },
+    {
+      "id": "dlib-2008_004176",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_004176.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_004176.jpg",
+      "bytes": 93821,
+      "sha256": "92a075f5e1d279f009ab4809592aaf0109e429adf3266e5aa8ce2755730b41c2",
+      "width": 480,
+      "height": 438,
+      "expected_faces": 7,
+      "ground_truth": [
+        {
+          "x": 206,
+          "y": 230,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 162,
+          "y": 118,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 190,
+          "y": 82,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 326,
+          "y": 78,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 222,
+          "y": 98,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 110,
+          "y": 86,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 282,
+          "y": 102,
+          "w": 37,
+          "h": 37
+        }
+      ],
+      "annotation_source": "dlib PASCAL VOC example rectangles"
+    },
+    {
+      "id": "dlib-2008_007676",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_007676.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_007676.jpg",
+      "bytes": 110034,
+      "sha256": "09a0e07d6fb3b4276e73b9f6450b5c69d97d3e3b75807948caf6defd40260e6f",
+      "width": 500,
+      "height": 334,
+      "expected_faces": 7,
+      "ground_truth": [
+        {
+          "x": 226,
+          "y": 62,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 194,
+          "y": 113,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "x": 262,
+          "y": 130,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 366,
+          "y": 134,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 314,
+          "y": 122,
+          "w": 37,
+          "h": 37
+        },
+        {
+          "x": 107,
+          "y": 141,
+          "w": 52,
+          "h": 53
+        },
+        {
+          "x": 137,
+          "y": 84,
+          "w": 44,
+          "h": 44
+        }
+      ],
+      "annotation_source": "dlib PASCAL VOC example rectangles"
+    },
+    {
+      "id": "dlib-2009_004587",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2009_004587.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2009_004587.jpg",
+      "bytes": 79462,
+      "sha256": "2dc5d52a5388499cf912d7d99dc9d05e4bec7651153331f40e81ae4813bb317c",
+      "width": 400,
+      "height": 500,
+      "expected_faces": 2,
+      "ground_truth": [
+        {
+          "x": 154,
+          "y": 46,
+          "w": 75,
+          "h": 76
+        },
+        {
+          "x": 266,
+          "y": 280,
+          "w": 63,
+          "h": 63
+        }
+      ],
+      "annotation_source": "dlib PASCAL VOC example rectangles"
+    },
+    {
+      "id": "dlib-Tom_Cruise_avp_2014_4",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/Tom_Cruise_avp_2014_4.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "Tom_Cruise_avp_2014_4.jpg",
+      "bytes": 66360,
+      "sha256": "d9bea1c716b461c15ac3bc7e256bb5efa3e04379d7131f9347e96e4baa6a37c6",
+      "width": 565,
+      "height": 800,
+      "expected_faces": 1,
+      "ground_truth": null,
+      "annotation_source": "visual count; no rectangles"
+    },
+    {
+      "id": "dlib-dogs",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/dogs.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "dogs.jpg",
+      "bytes": 175216,
+      "sha256": "66e22f8c3bd3b8f876ad9158caaa064992d2b56a5681d9c6efa163a59db7ed03",
+      "width": 900,
+      "height": 916,
+      "expected_faces": 0,
+      "ground_truth": null,
+      "annotation_source": "visual count; no rectangles"
+    },
+    {
+      "id": "opencv-baboon",
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/baboon.jpg",
+      "origin": "https://github.com/opencv/opencv/tree/4.x/samples/data",
+      "filename": "opencv-baboon.jpg",
+      "bytes": 179920,
+      "sha256": "1a1dd18d78eec44420af3b0b7f08ee3d41c982916cae3ce203d7ff35d754cc0f",
+      "width": 512,
+      "height": 512,
+      "expected_faces": 0,
+      "ground_truth": null,
+      "annotation_source": "visual count; no rectangles"
+    },
+    {
+      "id": "opencv-building",
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/building.jpg",
+      "origin": "https://github.com/opencv/opencv/tree/4.x/samples/data",
+      "filename": "opencv-building.jpg",
+      "bytes": 79718,
+      "sha256": "742a1baad62ac82e91e718e77eedf7e85c2eddc4badfb8c87c6cbc86c45a8b07",
+      "width": 868,
+      "height": 600,
+      "expected_faces": 0,
+      "ground_truth": null,
+      "annotation_source": "visual count; no rectangles"
+    },
+    {
+      "id": "opencv-fruits",
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/fruits.jpg",
+      "origin": "https://github.com/opencv/opencv/tree/4.x/samples/data",
+      "filename": "opencv-fruits.jpg",
+      "bytes": 82429,
+      "sha256": "9c031d80a1c52da5eca790db896baffec6a7e52bf786cdb7bbfca5c7f880e6a1",
+      "width": 512,
+      "height": 480,
+      "expected_faces": 0,
+      "ground_truth": null,
+      "annotation_source": "visual count; no rectangles"
+    },
+    {
+      "id": "opencv-messi5",
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/messi5.jpg",
+      "origin": "https://github.com/opencv/opencv/tree/4.x/samples/data",
+      "filename": "opencv-messi5.jpg",
+      "bytes": 72937,
+      "sha256": "1d570e49654e84c7a943918537bd9e5e1ef82920152e147c834006e235be97c9",
+      "width": 548,
+      "height": 342,
+      "expected_faces": null,
+      "ground_truth": null,
+      "annotation_source": "exploratory: blurred crowd; no exhaustive face count"
+    },
+    {
+      "id": "nasa-exp70",
+      "url": "https://www.nasa.gov/wp-content/uploads/2023/10/iss070-s-002.jpg",
+      "origin": "https://www.nasa.gov/image-article/the-official-expedition-70-crew-portrait/",
+      "filename": "nasa-exp70.jpg",
+      "bytes": 4491620,
+      "sha256": "b281582a3c07db5cfadd1f87fdade4effca898d2feb41ddfc886a524b4ec9731",
+      "width": 7000,
+      "height": 5600,
+      "expected_faces": 7,
+      "ground_truth": null,
+      "annotation_source": "visual count; no rectangles"
+    }
+  ]
+}

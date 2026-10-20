@@ -1,0 +1,2461 @@
+{
+  "reviewer": "rubric",
+  "rubric": "T50-U25-R20-V5",
+  "rows": [
+    {
+      "id": "S01",
+      "T": 7.5,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "허용된 조건을 Django Q 객체로 결합하고 날짜 경계·안정 정렬·결과 수를 별도 조회 API로 구현",
+      "dependencies": "기존 WSL Django/DRF/SQLite; 태그를 선택할 때만 S05 연결",
+      "verification": "WSL에서 조건 조합·동일 시각 정렬·권한 fixture를 검증하고 C01에서 검색 결과를 시연",
+      "required": [
+        "C01"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "조합 검색은 기본 공개 배열 조회와 구분되는 추가 편의이며 난도는 실제 쿼리 조건과 상태 의미에서 판단한다."
+    },
+    {
+      "id": "S02",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "앨범·중간 소속 모델과 정렬 키를 만들고 atomic 트랜잭션으로 순서·대표사진·소유권을 검증",
+      "dependencies": "기존 WSL Django/SQLite; C02와 두 항목",
+      "verification": "WSL에서 다중 앨범 소속·중복 순서·교차 사용자 요청·롤백 fixture와 C02 재로그인 순서 보존 검증",
+      "required": [
+        "C02"
+      ],
+      "overlaps": [
+        "S31"
+      ],
+      "recognitionRisk": "low",
+      "note": "사진 정리 목적과 다대다·순서 정합성의 기술성이 명확하며 화면 수나 작업량을 감점하지 않는다."
+    },
+    {
+      "id": "S03",
+      "T": 8.5,
+      "U": 9,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "타입이 정해진 규칙 JSON을 저장하고 AST 검증 후 안전한 ORM 조건으로 변환해 요청 때 평가",
+      "dependencies": "기존 Django/SQLite; C03; 예약 작업·모델 학습 없음",
+      "verification": "조건 경계·금지 연산·빈 결과·신규 사진 반영을 WSL fixture로 검증하고 C03 조건 변경을 시연",
+      "required": [
+        "C03"
+      ],
+      "overlaps": [
+        "S01"
+      ],
+      "recognitionRisk": "low",
+      "note": "동적 규칙과 이해 가능한 조건 편집은 차별성이 있으며 작업량 때문에 U나 V를 낮추지 않는다."
+    },
+    {
+      "id": "S04",
+      "T": 6,
+      "U": 9,
+      "R": 8.5,
+      "V": 9,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사용자·사진 유일 제약의 저장 테이블과 반복 요청에 안정적인 추가·해제·재조회 API를 구현",
+      "dependencies": "기존 Django/SQLite와 C04 계정 동기화 버전",
+      "verification": "두 세션 저장·해제와 중복 요청을 WSL API 테스트 및 두 Android 세션으로 검증",
+      "required": [
+        "C04"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "동기화 편의는 명확하나 핵심 서버 구조가 단순해 기술 도전성은 상대적으로 낮다."
+    },
+    {
+      "id": "S05",
+      "T": 8,
+      "U": 9,
+      "R": 9,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "태그 정규화 키·별칭 테이블·사진 소속을 저장하고 접두 검색과 충돌하는 이름 변경을 검증",
+      "dependencies": "기존 Django/SQLite의 Unicode 정규화·제약과 C42",
+      "verification": "대소문자·공백·별칭 충돌·권한·자동완성 순서를 WSL fixture와 C42로 검증",
+      "required": [
+        "C42"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "명확한 분류 편의와 정규화 판단이 있으며 일괄 이동 S17/C05를 필수로 섞지 않는다."
+    },
+    {
+      "id": "S06",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "soft-delete 상태·삭제시각과 파일 보존을 분리하고 복원·수동 영구삭제를 원자적으로 검증",
+      "dependencies": "기존 Django/SQLite/Pillow 파일 저장소와 C06; 상시 정리 작업 없음",
+      "verification": "복원 전후 DB·파일·소유권·중간 실패 rollback을 WSL 임시 저장소에서 검증하고 C06에서 복원",
+      "required": [
+        "C06"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "되돌릴 수 없는 삭제 실수를 예방하는 독립 편의이며 파일 정합성의 높은 난도를 반영한다."
+    },
+    {
+      "id": "S07",
+      "T": 9,
+      "U": 9,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "제한된 게시물 스냅샷·파일 참조 모델을 두고 버전 복원과 참조 없는 파일 정리를 트랜잭션으로 처리",
+      "dependencies": "기존 Django/SQLite/Pillow와 C07; 버전·파일 수 상한",
+      "verification": "WSL에서 텍스트·사진 변경 연속 fixture와 복원 실패·경합·파일 해시 보존을 검증하고 C07 차이를 시연",
+      "required": [
+        "C07"
+      ],
+      "overlaps": [
+        "S18"
+      ],
+      "recognitionRisk": "low",
+      "note": "텍스트·사진의 제한 이력과 복원 의미는 기술성과 추가 편의를 함께 보여주며 검증 난도를 감점하지 않는다."
+    },
+    {
+      "id": "S08",
+      "T": 8.5,
+      "U": 8.5,
+      "R": 7,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "Post revision을 조건부 UPDATE에 포함해 충돌을 탐지하고 현재 버전과 최신 필드를 응답",
+      "dependencies": "기존 Django/SQLite와 C43; 기존 배치 revision과 별개 모델",
+      "verification": "같은 버전을 읽은 두 세션의 교차 저장·응답 지연·재조회 fixture를 WSL과 C43에서 검증",
+      "required": [
+        "C43"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "동시성 판단은 어렵지만 기본 데이터 안전성의 보완으로 인정될 위험은 작업량과 무관하게 유지한다."
+    },
+    {
+      "id": "S09",
+      "T": 9.5,
+      "U": 9,
+      "R": 7,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사용자·요청 키 unique 기록과 파일 해시를 결합하고 결과 확정·재조회·동일 키의 다른 본문 거부를 구현",
+      "dependencies": "기존 Django/SQLite; C08을 최소 대응 화면으로 선택; 기존 완료로 간주하지 않음",
+      "verification": "응답 단절·프로세스 실패 지점·중복 POST를 WSL 요청 fixture로 주입하고 Post 수·파일 수·확정 결과 일치 검증",
+      "required": [
+        "C08"
+      ],
+      "overlaps": [
+        "C11"
+      ],
+      "recognitionRisk": "high",
+      "note": "실패 의미와 멱등성의 난도는 높게 평가하지만 기본 업로드 신뢰성 보완이라는 독립 인정 위험은 남는다."
+    },
+    {
+      "id": "S10",
+      "T": 6.5,
+      "U": 8.5,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "업로드 바이트의 SHA256을 사용자 범위에서 조회하고 중복 기존 기록과 명시적 계속 의도를 검증",
+      "dependencies": "기존 hashlib/Django/SQLite와 C44; 사용자 간 해시 존재 조회 금지",
+      "verification": "동일·한 바이트 차이·다른 사용자 파일 fixture의 탐지 결과와 응답 노출 범위를 WSL에서 검증",
+      "required": [
+        "C44"
+      ],
+      "overlaps": [
+        "S11"
+      ],
+      "recognitionRisk": "medium",
+      "note": "중복 예방의 효과는 선명하나 완전 해시 비교는 유사도 알고리즘보다 단순하므로 T를 구분한다."
+    },
+    {
+      "id": "S11",
+      "T": 9.5,
+      "U": 9,
+      "R": 9,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "Pillow 축소 dHash·Hamming 거리·촬영 시간으로 최대 200장 후보 그래프를 만들고 결정적 그룹·오탐 제외를 저장",
+      "dependencies": "기존 Pillow·정수 bit 연산·SQLite와 C62; 학습 모델 없음",
+      "verification": "합성 원본·리사이즈·밝기 변형·다른 패턴의 기대 거리·그룹·오탐 제외 결과를 WSL에서 검증하고 C62 시연",
+      "required": [
+        "C62"
+      ],
+      "overlaps": [
+        "S10"
+      ],
+      "recognitionRisk": "low",
+      "note": "비슷함의 정의와 사용자 교정이 기술적 도전성과 시각적 차별성을 주며 모델 훈련이 필요 없다."
+    },
+    {
+      "id": "S12",
+      "T": 8,
+      "U": 9,
+      "R": 6.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "업로드 시 두 크기의 결정적 썸네일과 ETag를 생성하고 원본 참조·파생 파일 정리를 관리",
+      "dependencies": "기존 Pillow/Django 정적 미디어와 C45; 요청/업로드 시 처리로 상시 작업 없음",
+      "verification": "합성 대형 사진의 크기·방향·캐시304·해시와 파일 상한을 WSL에서 검증하고 C45 실제 전송량 비교",
+      "required": [
+        "C45"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "전송·캐시 기술성은 있으나 일반 이미지 제공 최적화로 판단될 수 있어 독립 R은 제한한다."
+    },
+    {
+      "id": "S13",
+      "T": 7.5,
+      "U": 8.5,
+      "R": 6.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "공개용 저장 바이트를 재인코딩해 GPS 등 지정 EXIF를 제거하고 원본이 공개 경로에 남지 않도록 저장 정책을 검증",
+      "dependencies": "기존 Pillow/Django와 C46; 공개 Post 계약과 미디어 URL 검사",
+      "verification": "GPS·방향·추가 메타데이터 합성 파일을 WSL에서 넣고 공개 URL 응답 바이트의 태그 유무·픽셀 방향을 검증",
+      "required": [
+        "C46"
+      ],
+      "overlaps": [
+        "C22"
+      ],
+      "recognitionRisk": "high",
+      "note": "공개 범위와 실제 바이트 검증의 난도는 인정하되 기본 개인정보 보호·처리 안내와 독립 기능의 경계가 있다."
+    },
+    {
+      "id": "S14",
+      "T": 7.5,
+      "U": 8.5,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "EXIF 촬영일과 출처를 보조 필드로 추출하고 보정값·시간대·생성일을 분리 저장",
+      "dependencies": "기존 Pillow/Django/SQLite와 C64",
+      "verification": "EXIF 없음·잘못된 날짜·시간대 경계·사용자 보정 fixture를 WSL에서 검증하고 C64 전후 결과 시연",
+      "required": [
+        "C64"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "사진 기록 날짜를 바로잡는 목적이 분명하며 기존 생성일 계약을 변경하지 않는다."
+    },
+    {
+      "id": "S15",
+      "T": 8,
+      "U": 9,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사진·파생본 파일 크기를 기준으로 사용량 ledger와 한도 검증을 구현하고 업로드·삭제 경합을 조정",
+      "dependencies": "기존 Django/SQLite/파일 저장소와 C47; 전체 512MiB 여유를 설정으로 보존",
+      "verification": "동시 업로드·실패 rollback·고아 파일·바이트 합계·한도 경계 fixture를 WSL에서 검증하고 C47 정리 결과 확인",
+      "required": [
+        "C47"
+      ],
+      "overlaps": [
+        "S27"
+      ],
+      "recognitionRisk": "medium",
+      "note": "저장공간 관리의 실제 편의와 자원 정합성의 난도를 평가하며 작업 부담은 감점하지 않는다."
+    },
+    {
+      "id": "S16",
+      "T": 9,
+      "U": 9,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "최대3장의 사전 검증·임시 파일 staging·DB commit·실패 파일 정리를 가진 다중 게시 요청을 구현",
+      "dependencies": "기존 Django/SQLite/Pillow와 C25; 기본 단일 POST 유지",
+      "verification": "각 파일 처리·DB commit 경계의 실패를 WSL fixture로 주입해 부분 Post·고아 파일 부재를 검증하고 C25 시연",
+      "required": [
+        "C25"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "다중 파일의 DB·저장소 실패 의미는 실질적으로 어렵지만 기본 단일 업로드와 추가 범위를 분리해야 한다."
+    },
+    {
+      "id": "S17",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 9,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "최대50개 소유 사진의 앨범 이동을 일괄 검증하고 원자 적용·실패 목록·결과 수를 반환",
+      "dependencies": "기존 Django/SQLite; 최소 S02/C02/C05가 함께 필요",
+      "verification": "권한 혼합·없는 ID·중복 ID·중간 실패·50개 경계 fixture를 WSL에서 검증하고 C05 선택 결과 시연",
+      "required": [
+        "C05",
+        "S02",
+        "C02"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "기술 난도와 대량 정리 효과는 좋지만 네 항목 집계라는 고정 조건을 숨기지 않는다."
+    },
+    {
+      "id": "S18",
+      "T": 9,
+      "U": 9,
+      "R": 9,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "원본·앱 편집 결과의 참조 그래프와 최근2버전 정책을 두고 활성 버전 교체·복원·파일 회수를 검증",
+      "dependencies": "기존 Django/SQLite/Pillow; C12 편집 도구와 C61 관리 UI까지 최소3개",
+      "verification": "원본 해시 보존·버전 교체·실패 rollback·상한 도달 파일 정리를 WSL에서 검증하고 C12/C61 왕복 시연",
+      "required": [
+        "C12",
+        "C61"
+      ],
+      "overlaps": [
+        "S07"
+      ],
+      "recognitionRisk": "medium",
+      "note": "이미지 버전 관리의 기술성은 높고 자체 편집기를 포함한 세 항목 구성을 유지한다."
+    },
+    {
+      "id": "S19",
+      "T": 6,
+      "U": 8,
+      "R": 7.5,
+      "V": 9,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "템플릿·자리표시자 스키마와 사용자별 저장·수정·동기화 API를 구현",
+      "dependencies": "기존 Django/SQLite와 C34 클라우드 연동 버전",
+      "verification": "시간대별 날짜 삽입·알 수 없는 토큰·중복 이름·다른 사용자 접근 fixture를 WSL과 C34에서 검증",
+      "required": [
+        "C34"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "반복 입력 편의는 있으나 템플릿 CRUD의 고유 기술 난도가 큰 후보는 아니다."
+    },
+    {
+      "id": "S20",
+      "T": 7.5,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사진별 댓글과 깊이1 답글·소유권·수정·삭제·안정된 페이지 커서를 구현",
+      "dependencies": "기존 Django/SQLite와 C48; 상시 실시간 서버 없음",
+      "verification": "답글 깊이·페이지 중복·교차 사용자 수정·삭제된 부모 fixture를 WSL에서 검증하고 C48 대화 시연",
+      "required": [
+        "C48"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "명확한 상호작용 편의로 추가 인정 설득력이 높으며 대화 화면의 공을 별도 클라이언트로 평가한다."
+    },
+    {
+      "id": "S21",
+      "T": 6.5,
+      "U": 8.5,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사용자·사진당 반응 unique 제약과 원자적 변경·취소·집계를 구현",
+      "dependencies": "기존 Django/SQLite와 C49",
+      "verification": "반복·동시 반응·취소·트랜잭션 실패 fixture를 WSL에서 검증하고 C49 목록·상세 일치 확인",
+      "required": [
+        "C49"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "원자성의 의미는 있으나 단순 공감 데이터 모델을 불필요하게 복잡하게 만들어 T를 올리지 않는다."
+    },
+    {
+      "id": "S22",
+      "T": 7.5,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "팔로우 테이블·자기 구독 방지·시간순 피드 쿼리·안정된 페이지 경계를 구현",
+      "dependencies": "기존 Django/SQLite와 C50; AI 추천·외부 API 없음",
+      "verification": "구독 변경·타인 피드·동일 시각 사진·새 사진 삽입 fixture를 WSL에서 검증하고 C50 재조회 시연",
+      "required": [
+        "C50"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "관심 사진을 찾는 목적이 분명하며 쿼리와 상태 일관성을 구체적으로 보여줄 수 있다."
+    },
+    {
+      "id": "S23",
+      "T": 7.5,
+      "U": 8.5,
+      "R": 7.5,
+      "V": 9,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "기기별 갱신 시각·사진 ID·정규화 본문 위치를 저장하고 늦은 저장을 판정",
+      "dependencies": "기존 Django/SQLite와 C51",
+      "verification": "두 세션의 순서 뒤집힌 저장·삭제 사진·본문 변경 fixture를 WSL에서 검증하고 두 Android 인스턴스 이어보기 시연",
+      "required": [
+        "C51"
+      ],
+      "overlaps": [
+        "C33"
+      ],
+      "recognitionRisk": "medium",
+      "note": "기기 간 상태 동기화가 기술성을 주지만 긴 사진글 재방문이라는 실제 추가 편의 근거는 필요하다."
+    },
+    {
+      "id": "S24",
+      "T": 9.5,
+      "U": 9.5,
+      "R": 9,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사용자당 초안1개·사진 staging·revision 조건부 저장·명시적 폐기·제한 용량 정책을 구현",
+      "dependencies": "기존 Django/SQLite/Pillow와 C52; 요청 시 정리만 사용",
+      "verification": "기기 간 충돌·응답 단절·사진 교체·게시 성공 후 초안 정리 fixture를 WSL에서 검증하고 C52 선택 결과 시연",
+      "required": [
+        "C52"
+      ],
+      "overlaps": [
+        "C09"
+      ],
+      "recognitionRisk": "low",
+      "note": "파일과 초안의 동시성·복원 의미가 어려우며 기기 간 이어쓰기 효과를 명확히 증명할 수 있다."
+    },
+    {
+      "id": "S25",
+      "T": 6.5,
+      "U": 9,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "게시일을 기본으로 월일·윤일 정책·시간대에 맞는 과거 사진을 조회",
+      "dependencies": "기존 Django/SQLite와 C63; 촬영일 선택 시에만 S14 추가",
+      "verification": "윤년·연말·타임존·사진 없는 날 fixture를 WSL에서 검증하고 C63 연도별 카드 비교",
+      "required": [
+        "C63"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "사진 재발견의 편의는 분명하지만 날짜 필터 자체의 기술 난도는 중간 수준이다."
+    },
+    {
+      "id": "S26",
+      "T": 7.5,
+      "U": 9.5,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "월 범위 쿼리·날짜 집계·대표사진 선택을 제한된 쿼리 수로 반환",
+      "dependencies": "기존 Django/SQLite와 C21",
+      "verification": "월별 합계·대표 선택 동점·시간대 경계·쿼리 수를 WSL fixture로 검증하고 C21 월 전환 시연",
+      "required": [
+        "C21"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "달력 UI의 효과와 서버 집계 의미는 있으나 작은 전체 목록의 단말 집계와 다른 필요성을 설명해야 한다."
+    },
+    {
+      "id": "S27",
+      "T": 7,
+      "U": 8.5,
+      "R": 7.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사진·저장량의 날짜 구간·형식 집계를 구현하고 실제 목록 필터와 합계가 일치하도록 응답",
+      "dependencies": "기존 Django/SQLite와 C53",
+      "verification": "합계·바이트 단위·빈 기간·형식 누락·다른 사용자 fixture를 WSL에서 검증하고 C53 차트 drill-down 비교",
+      "required": [
+        "C53"
+      ],
+      "overlaps": [
+        "S15"
+      ],
+      "recognitionRisk": "medium",
+      "note": "기술 효과를 분명히 시연할 수 있지만 수치 표시 자체보다 사용자의 정리 판단 편의가 중요하다."
+    },
+    {
+      "id": "S28",
+      "T": 7.5,
+      "U": 8,
+      "R": 6.5,
+      "V": 9,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "작업 로그를 도메인 이벤트와 같은 트랜잭션에 저장하고 유형·대상·결과 조회와 제한 보관을 구현",
+      "dependencies": "기존 Django/SQLite와 C54; worker 없음",
+      "verification": "성공·rollback·삭제 대상·시간순 필터 fixture를 WSL에서 검증하고 C54 반영 이력 확인",
+      "required": [
+        "C54"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "감사 정합성은 어렵지만 일반 개발 로그를 별도 사용자 편의로 포장할 수는 없다."
+    },
+    {
+      "id": "S29",
+      "T": 8,
+      "U": 9,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "댓글 이벤트를 같은 DB 트랜잭션에서 알림 행으로 만들고 읽음·중복 방지·묶음 조회를 구현",
+      "dependencies": "기존 Django/SQLite; C55와 댓글 원천 S20/C48까지4개",
+      "verification": "중복 이벤트·취소·다른 사용자 알림·읽음 경합 fixture를 WSL에서 검증하고 C55의 대상 이동 시연",
+      "required": [
+        "C55",
+        "S20",
+        "C48"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "이벤트와 읽음 상태의 도전성을 평가하되 네 항목 집계와 앱 종료 푸시가 아님을 명시해야 한다."
+    },
+    {
+      "id": "S30",
+      "T": 4.5,
+      "U": 7.5,
+      "R": 3,
+      "V": 8.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "기존 공개 상세 URL을 검증해 공유 설명 메타데이터를 반환",
+      "dependencies": "기존 Django URL reverse와 C28; 비밀 접근 제어 없음",
+      "verification": "외부 호스트 주입·없는 Post·URL 인코딩 fixture를 WSL에서 검증하고 C28 열기 확인",
+      "required": [
+        "C28"
+      ],
+      "overlaps": [
+        "C28"
+      ],
+      "recognitionRisk": "high",
+      "note": "이미 존재하는 공개 URL의 서버 포장은 독립 편의와 기술 차별성이 약하다."
+    },
+    {
+      "id": "S31",
+      "T": 8,
+      "U": 9,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "고정 사진과 순서 키를 사용자 범위에서 저장하고 전체 순서 교체의 중복·누락·충돌을 검증",
+      "dependencies": "기존 Django/SQLite와 C56",
+      "verification": "중복 순서·삭제 사진·서로 다른 기기의 재정렬 fixture를 WSL에서 검증하고 C56 재접속 순서 비교",
+      "required": [
+        "C56"
+      ],
+      "overlaps": [
+        "S02"
+      ],
+      "recognitionRisk": "medium",
+      "note": "전역 대표사진 정리는 유용하지만 앨범 재배치와의 독립 과업 경계를 설명해야 한다."
+    },
+    {
+      "id": "S32",
+      "T": 6.5,
+      "U": 8,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "최대100개 소유 사진의 메타데이터를 스트리밍 JSON/CSV로 직렬화하고 CSV 수식 삽입을 방지",
+      "dependencies": "기존 Python csv/json/Django와 C57",
+      "verification": "Unicode·줄바꿈·수식 접두·권한·범위 상한 fixture를 WSL에서 export/import 비교하고 C57 저장 파일 확인",
+      "required": [
+        "C57"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "데이터 휴대성은 인정할 수 있지만 메타데이터 출력의 난도는 큰 알고리즘 후보보다 낮다."
+    },
+    {
+      "id": "S33",
+      "T": 9,
+      "U": 8.5,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "CSV schema·소유 사진 ID·태그 매핑을 미리검사하고 preview digest와 재검증 후 원자 반영",
+      "dependencies": "기존 Python csv/Django/SQLite; C58와 S05/C42까지4개",
+      "verification": "손상CSV·권한오류·중복행·미리보기 이후 변경·rollback fixture를 WSL에서 검증하고 C58 행별 결과 시연",
+      "required": [
+        "C58",
+        "S05",
+        "C42"
+      ],
+      "overlaps": [
+        "S17"
+      ],
+      "recognitionRisk": "medium",
+      "note": "검사와 실제 반영의 일관성은 도전적이며 작업량과 무관하게 평가하되 네 항목 상한을 유지한다."
+    },
+    {
+      "id": "S34",
+      "T": 8,
+      "U": 9,
+      "R": 7.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "Pillow로 크기 제한 워터마크 사본을 합성하고 내용·옵션 digest 캐시와 수명 상한을 관리",
+      "dependencies": "기존 Pillow와 자동 확보 가능한 공개 한글 폰트; C15 서버 버전",
+      "verification": "위치·투명도·한글·가장자리·동일 요청 캐시·원본 해시 fixture를 WSL에서 검증하고 C15 공유 사본 비교",
+      "required": [
+        "C15"
+      ],
+      "overlaps": [
+        "C15"
+      ],
+      "recognitionRisk": "high",
+      "note": "합성과 캐시의 기술성은 있으나 같은 C15 기능을 단말·서버 대안으로 중복 등록하지 않는다."
+    },
+    {
+      "id": "S35",
+      "T": 8.5,
+      "U": 8.5,
+      "R": 7.5,
+      "V": 9,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "축소 밝기 분포·해상도·Laplacian 분산 참고 지표를 정규화하고 근거 수치를 제공",
+      "dependencies": "기존 Pillow·Python 수치 루프와 C36 서버 버전; 훈련 모델 없음",
+      "verification": "합성 노출·해상도·블러 단계의 단조성·경계·오경고 fixture를 WSL에서 검증하고 C36 설명 비교",
+      "required": [
+        "C36"
+      ],
+      "overlaps": [
+        "C36"
+      ],
+      "recognitionRisk": "medium",
+      "note": "영상 통계 알고리즘은 실질적 난도가 있으나 미학적 품질이나 AI 정답으로 과장해서는 안 된다."
+    },
+    {
+      "id": "S36",
+      "T": 9,
+      "U": 9,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "축소 HSV 또는 Lab 색상 histogram과 명시적 거리함수로 최대200장 유사 색상 순위를 계산",
+      "dependencies": "기존 Pillow·Python 색 변환·SQLite와 C35 서버 검색 버전; 훈련 없음",
+      "verification": "색칩·조명 변형·동일 비율 다른 사진 합성 fixture로 거리·순위·동점·권한을 WSL에서 검증하고 C35 검색 시연",
+      "required": [
+        "C35"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "색 표현·거리 설계와 시각 탐색이 도전적이며 앱 목적과 연결되는 탐색 과업을 설명해야 한다."
+    },
+    {
+      "id": "S37",
+      "T": 6.5,
+      "U": 8.5,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "공개 Post와 분리한 사용자 메모 모델·조회·수정 API와 객체별 권한을 구현",
+      "dependencies": "기존 Django/SQLite와 C59",
+      "verification": "다른 사용자 메모·공개 API 누출·삭제 사진 참조 fixture를 WSL에서 검증하고 C59 공개 본문 분리 확인",
+      "required": [
+        "C59"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "개인 메모의 추가성은 분명하지만 사진 자체의 비공개 보관으로 설명할 수 없다."
+    },
+    {
+      "id": "S38",
+      "T": 6.5,
+      "U": 8.5,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사용자별 뮤트 집합을 저장하고 새 피드 API의 작성자 제외 쿼리에 적용",
+      "dependencies": "기존 Django/SQLite와 C60; 공개 기본 배열 유지",
+      "verification": "숨김·해제·다른 사용자 피드·기본 공개 API 보존 fixture를 WSL에서 검증하고 C60 결과 확인",
+      "required": [
+        "C60"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "피드 조절 편의는 있지만 공개 사진에 대한 접근 제어와 혼동해서는 안 된다."
+    },
+    {
+      "id": "S39",
+      "T": 7,
+      "U": 7,
+      "R": 3,
+      "V": 9,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사진 수를 읽는 결정적 성장 상태 전이와 레벨·이력 정합성 규칙을 검증",
+      "dependencies": "기존 Django/SQLite와 기존 성장 표시 UI; C40은 필수 아님",
+      "verification": "사진 추가·삭제·재시도·경계 수 fixture의 상태·이력 불변식을 WSL에서 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "구현 도전성과 증빙은 별도로 인정하지만 사진 이용 편의와의 연결이 약하다는 R 제약은 유지한다."
+    },
+    {
+      "id": "S40",
+      "T": 9.5,
+      "U": 8,
+      "R": 4,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "배치 schema·가구 소유권·범위·개수·revision 조건부 저장과 충돌 복원을 구현",
+      "dependencies": "기존 Django/SQLite와 C40; 추가 인프라 없음",
+      "verification": "경계 좌표·금지 가구·동시 저장·손상 payload fixture를 WSL에서 검증하고 C40 충돌·재시작 시연",
+      "required": [
+        "C40"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "기술 난도를 높게 인정해도 가구 배치 저장의 Client 편의 인정 위험은 사라지지 않는다."
+    },
+    {
+      "id": "S41",
+      "T": 8,
+      "U": 8.5,
+      "R": 6,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "기존 인증·CSRF·사용자 생성·객체 소유권 정책을 일관된 endpoint에 적용하고 세션 회전을 검증",
+      "dependencies": "기존 Django 인증과 C41; 기존 구현 여부와 별도로 동일 척도 평가",
+      "verification": "가입·세션 재사용·CSRF 누락·다른 사용자 변경·로그아웃 fixture를 WSL에서 검증하고 C41 전환 시연",
+      "required": [
+        "C41"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "인증 기술성과 완성도는 있으나 일반 보안·기본 계정 구현과 독립 추가 기능의 중복 위험을 유지한다."
+    },
+    {
+      "id": "C01",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "조건 상태 객체와 검색 debounce·요청 세대 번호를 두고 칩·강조·복귀 위치를 보존",
+      "dependencies": "기존 Android Java/RecyclerView·S01; 태그는 S05 선택 시",
+      "verification": "JUnit 조건 상태·늦은 응답과 ADB 검색·칩 해제·빈 결과·상세 왕복을 합성 DB로 검증",
+      "required": [
+        "S01"
+      ],
+      "overlaps": [
+        "C32"
+      ],
+      "recognitionRisk": "low",
+      "note": "완성된 검색 상호작용의 편의와 시각적 마감 잠재력을 평가하며 화면 상태 수로 감점하지 않는다."
+    },
+    {
+      "id": "C02",
+      "T": 9,
+      "U": 10,
+      "R": 9.5,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "앨범·사진 선택 state machine과 드래그 정렬·접근 가능한 이동 명령·대표사진 미리보기를 구현",
+      "dependencies": "기존 Android Java/RecyclerView/ItemTouchHelper·S02",
+      "verification": "JUnit 순서 모델과 ADB 드래그·이동 버튼·회전·복귀·재접속 순서 일치를 검증",
+      "required": [
+        "S02"
+      ],
+      "overlaps": [
+        "C56"
+      ],
+      "recognitionRisk": "low",
+      "note": "복잡한 조작과 서버 저장을 정돈된 정리 흐름으로 보여줄 수 있어 높은 UI·기술 잠재력이 있다."
+    },
+    {
+      "id": "C03",
+      "T": 9,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "타입별 조건 AST를 문장·칩으로 편집하고 미리보기 요청의 세대·편집 초안을 보존",
+      "dependencies": "기존 Android Java 폼·RecyclerView·S03",
+      "verification": "JUnit 조건 직렬화·필드 교체와 ADB 조건 추가·잘못된 날짜·미리보기 경합·재시작 복원 검증",
+      "required": [
+        "S03"
+      ],
+      "overlaps": [
+        "C32"
+      ],
+      "recognitionRisk": "low",
+      "note": "조건식의 정확성과 이해하기 쉬운 시각 표현을 동시에 구현하는 도전성을 평가한다."
+    },
+    {
+      "id": "C04",
+      "T": 7,
+      "U": 9.5,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "서버·사용자 문맥 키로 로컬 저장 ID와 목록·상세 상태를 일치시키고 즉시 취소 UI를 구현",
+      "dependencies": "기존 Android SQLite/SharedPreferences; 최소 로컬 버전이며 동기화 선택 시 S04 추가",
+      "verification": "JUnit 문맥 분리와 ADB 저장·해제·회전·재시작·계정 변경 상태 일치 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "기본 로컬 보관함을 완성한 편의는 크지만 CRUD 중심의 기술 난도는 중간이다."
+    },
+    {
+      "id": "C05",
+      "T": 9,
+      "U": 10,
+      "R": 9,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "긴 누름 다중 선택·상황별 작업 바·재생성 선택 복원·앨범 이동 결과 요약을 구현",
+      "dependencies": "기존 RecyclerView/SelectionTracker 또는 Java 상태 집합; S17/S02/C02까지4개",
+      "verification": "JUnit 선택 집합·부분 실패와 ADB 선택·취소·회전·일괄 이동·접근성 이동 검증",
+      "required": [
+        "S17",
+        "S02",
+        "C02"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "대량 조작의 상호작용 난도를 높게 보되 네 항목 집계를 감추지 않는다."
+    },
+    {
+      "id": "C06",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "삭제 실행 취소·휴지통 목록·선택 복원·영구삭제 확인을 명확한 state machine으로 구현",
+      "dependencies": "기존 Android RecyclerView·S06",
+      "verification": "ADB 삭제·실행 취소·앱 재시작·복원 실패·영구삭제와 실제 서버 파일 상태를 함께 검증",
+      "required": [
+        "S06"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "실수 복구 목적과 완료된 화면 피드백의 가치는 분명하며 상태 검증의 어려움을 감점하지 않는다."
+    },
+    {
+      "id": "C07",
+      "T": 9.5,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "버전 타임라인·텍스트 LCS diff·사진 비교·복원 미리보기·확정 결과를 구현",
+      "dependencies": "기존 Android Java/Canvas/RecyclerView·S07",
+      "verification": "합성 문장 diff oracle·이미지 해시와 ADB 버전 선택·복원·재생성·경합 실패 시연",
+      "required": [
+        "S07"
+      ],
+      "overlaps": [
+        "C18",
+        "C61"
+      ],
+      "recognitionRisk": "low",
+      "note": "비교 알고리즘과 복원 판단 UI를 연결해 기술성과 사용 효과를 명확히 드러낼 수 있다."
+    },
+    {
+      "id": "C08",
+      "T": 10,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "SQLite outbox·앱 전용 사진 사본·안정된 요청 키와 전송 상태 전이를 구현해 사용자가 연결 후 재전송",
+      "dependencies": "기존 Android SQLite/파일 I/O/HTTP·S09; 상시 자동 게시나 새 외부 서비스 없음",
+      "verification": "강제 종료·연결 단절·응답 유실·계정 변경을 ADB와 WSL 오류 fixture로 주입해 단일 게시·대기 복원 검증",
+      "required": [
+        "S09"
+      ],
+      "overlaps": [
+        "C09",
+        "C11"
+      ],
+      "recognitionRisk": "low",
+      "note": "내구성 있는 오프라인 상태와 불명확한 전송 결과의 의미가 매우 어렵고 Codex가 실패 주입으로 검증할 수 있다."
+    },
+    {
+      "id": "C09",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "글·선택 사진 사본·입력 커서를 원자 저장하고 작성 복원·게시 성공 후 초안 폐기를 구현",
+      "dependencies": "기존 Android 파일 I/O/SQLite·기본 POST; S24 불필요",
+      "verification": "ADB 강제 종료·URI 권한 소멸·회전·게시 성공 직후 종료와 초안 사진 해시·텍스트 복원 검증",
+      "required": [],
+      "overlaps": [
+        "C08",
+        "S24",
+        "C52"
+      ],
+      "recognitionRisk": "low",
+      "note": "입력 손실을 막는 독립 편의와 생명주기 정합성을 보이며 작업량으로 점수를 낮추지 않는다."
+    },
+    {
+      "id": "C10",
+      "T": 9,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "원본 응답·썸네일의 문맥별 LRU 캐시와 atomic 교체·갱신시각·만료·연결 상태를 구현",
+      "dependencies": "기존 Android SQLite/파일 I/O/HTTP·기본 GET; S12 선택",
+      "verification": "ADB 네트워크 차단·강제 종료·용량 초과 eviction·계정 전환·갱신 오류에서 캐시 불변식 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "오프라인 읽기와 오래된 데이터 피드백은 차별적이고 캐시 정확성의 실제 난도가 높다."
+    },
+    {
+      "id": "C11",
+      "T": 9,
+      "U": 9.5,
+      "R": 6.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "전송 바이트 계수와 항목별 상태·취소·결과 확인·동일 요청 재시도를 구현",
+      "dependencies": "기존 Android HTTP 스트리밍·S09",
+      "verification": "WSL 지연·응답 유실 fixture와 ADB 취소·재시도·완료 이동을 검증해 진행값과 실제 바이트 비교",
+      "required": [
+        "S09"
+      ],
+      "overlaps": [
+        "C08"
+      ],
+      "recognitionRisk": "high",
+      "note": "실패 의미의 난도는 높게 보지만 필수 업로드 UI의 마감으로 평가될 독립 인정 위험은 남는다."
+    },
+    {
+      "id": "C12",
+      "T": 9,
+      "U": 10,
+      "R": 9.5,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "화면·원본 좌표 변환 Matrix와 비율 프리셋·제스처 crop·회전·EXIF 정규화·원본 보존 렌더를 구현",
+      "dependencies": "기존 Android Matrix/Canvas/Bitmap·기본 POST; 개인 모델 학습 없음",
+      "verification": "합성 격자·방향별 사진의 crop 좌표·픽셀 oracle과 ADB 제스처·회전·재생성·원본 해시 검증",
+      "required": [],
+      "overlaps": [
+        "C13",
+        "C14",
+        "C16"
+      ],
+      "recognitionRisk": "low",
+      "note": "기하 변환과 세밀한 편집 UI의 높은 완성도 잠재력이 있고 자동 검증 경로도 구체적이다."
+    },
+    {
+      "id": "C13",
+      "T": 9,
+      "U": 10,
+      "R": 9,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "색상 행렬·밝기·대비·채도와 LUT 프리셋을 작은 미리보기·최종 렌더에 일관되게 적용",
+      "dependencies": "기존 Android ColorMatrix/Canvas/Bitmap 또는 공개 Gradle 의존성 자동 구성",
+      "verification": "합성 색칩의 수치 oracle·원본 비교·초기화·조합 순서와 ADB 슬라이더·회전·게시 결과 검증",
+      "required": [],
+      "overlaps": [
+        "C12"
+      ],
+      "recognitionRisk": "medium",
+      "note": "영상 처리와 즉시 피드백의 도전성은 높으며 사진 편집 기능 묶음으로 인정될 위험만 별도 유지한다."
+    },
+    {
+      "id": "C14",
+      "T": 9,
+      "U": 9.5,
+      "R": 8.5,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사진 좌표의 텍스트 레이어·선택 핸들·위치·크기·색 상태와 최종 Canvas 합성을 구현",
+      "dependencies": "기존 Android Canvas/Paint/Matrix·기본 POST",
+      "verification": "한글·줄바꿈·모서리·크기 변경의 합성 fixture와 ADB 드래그·선택 복원·결과 픽셀 위치 검증",
+      "required": [],
+      "overlaps": [
+        "C12",
+        "C15"
+      ],
+      "recognitionRisk": "medium",
+      "note": "직접 조작과 텍스트 렌더의 실제 난도를 반영하되 워터마크와 중복 집계하지 않는다."
+    },
+    {
+      "id": "C15",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 8,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "문구·위치·투명도 상태를 공유용 Bitmap 합성으로 만들고 원본과 사본을 분리",
+      "dependencies": "기존 Android Canvas/Paint/FileProvider·기본 공유; S34는 서버 대안",
+      "verification": "합성 사진의 위치·alpha·글자 경계·원본 해시와 ADB 옵션 복원·공유 사본 검증",
+      "required": [],
+      "overlaps": [
+        "S34",
+        "C14"
+      ],
+      "recognitionRisk": "medium",
+      "note": "시각 조작·결과 차별성은 좋지만 같은 문구 합성 기능의 처리 위치 차이를 두 편의로 셀 수 없다."
+    },
+    {
+      "id": "C16",
+      "T": 10,
+      "U": 9.5,
+      "R": 9,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "네 점 좌표의 homography와 역변환을 계산하고 드래그 확대 보조·퇴화 사각형 차단·원근 보정 렌더를 구현",
+      "dependencies": "기존 Android Matrix.setPolyToPoly/Canvas/Bitmap; 모델·사용자 설치 없음",
+      "verification": "합성 격자 투영의 역변환 오차·코너 교차·특이행렬·EXIF 방향과 ADB 네 점 조작·전후 비교 검증",
+      "required": [],
+      "overlaps": [
+        "C12"
+      ],
+      "recognitionRisk": "low",
+      "note": "수학적 정확성과 정밀한 직접 조작의 도전성이 매우 높고 Codex가 합성 영상 oracle로 검증할 수 있다."
+    },
+    {
+      "id": "C17",
+      "T": 9.5,
+      "U": 10,
+      "R": 8,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "포인터 추적·확대 중심 유지·경계 clamp·페이지 넘김 충돌·복귀 전환·회전 상태 복원을 구현",
+      "dependencies": "기존 Android GestureDetector/ScaleGestureDetector/Matrix·기본 GET",
+      "verification": "JUnit 변환 불변식과 ADB 다중 터치·빠른 전환·TalkBack 대안·재생성 위치·상태 복원 검증",
+      "required": [],
+      "overlaps": [
+        "C18",
+        "C19"
+      ],
+      "recognitionRisk": "medium",
+      "note": "제스처 물리·상태의 높은 난도와 마감 잠재력을 인정하되 일반 뷰어 기본 완성도와의 경계는 있다."
+    },
+    {
+      "id": "C18",
+      "T": 9.5,
+      "U": 9,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "두 이미지의 정규화 좌표와 확대·이동을 연결하고 비율 차이·한 장 교체·선택 복원을 구현",
+      "dependencies": "기존 Android Matrix/Canvas·기본 GET; S11 불필요",
+      "verification": "합성 다른 종횡비 격자의 대응 좌표와 ADB 동시 확대·교체·회전·상태 복원 검증",
+      "required": [],
+      "overlaps": [
+        "C07",
+        "C17",
+        "C62"
+      ],
+      "recognitionRisk": "medium",
+      "note": "서로 다른 원본의 동기 제스처는 어렵고 시연이 선명하지만 비교라는 별도 이용 과업을 설명해야 한다."
+    },
+    {
+      "id": "C19",
+      "T": 7.5,
+      "U": 9,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "수명주기 인식 재생 타이머와 선택 큐·속도·일시정지·화면 유지 상태를 구현",
+      "dependencies": "기존 Android Handler/Lifecycle/FLAG_KEEP_SCREEN_ON·기본 GET",
+      "verification": "가상 시간 JUnit과 ADB 배경 이동·회전·재생/정지 경합·사진 삭제를 검증",
+      "required": [],
+      "overlaps": [
+        "C17"
+      ],
+      "recognitionRisk": "medium",
+      "note": "단순 타이머 이상의 재생 상태 설계는 있지만 수학·동시성 상위 후보보다는 기술 난도가 낮다."
+    },
+    {
+      "id": "C20",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "게시일 그룹과 안정된 anchor ID를 둔 타임라인·월 jump·sticky header·상세 복귀 위치를 구현",
+      "dependencies": "기존 Android RecyclerView/java.time·기본 GET; 촬영일 기준에만 S14",
+      "verification": "합성 여러 월·동일시각·날짜경계 fixture와 ADB 월 이동·신규 삽입·상세 왕복·회전 검증",
+      "required": [],
+      "overlaps": [
+        "C21",
+        "C63"
+      ],
+      "recognitionRisk": "low",
+      "note": "날짜 탐색의 완성된 가치를 평가하며 촬영일 추출 서버 기능을 구현한 것으로 주장하지 않는다."
+    },
+    {
+      "id": "C21",
+      "T": 8.5,
+      "U": 10,
+      "R": 9,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "월 grid·대표 썸네일·날짜 개수의 단말 집계와 선택·월 전환·상세 복귀 상태를 구현",
+      "dependencies": "기존 Android Java/Canvas 또는 RecyclerView/java.time·기본 GET; S26 선택",
+      "verification": "윤년·주 시작·빈 날짜·표시 개수 oracle와 ADB 월 전환·회전·재선택·큰 글자 검증",
+      "required": [],
+      "overlaps": [
+        "C20",
+        "C63"
+      ],
+      "recognitionRisk": "low",
+      "note": "시각적인 사진 탐색과 정교한 날짜 상태의 잠재력을 높게 평가하며 작은 단말 집계 범위를 명시한다."
+    },
+    {
+      "id": "C22",
+      "T": 8,
+      "U": 9,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "EXIF/GPS를 읽어 존재 범위를 안내하고 앱 사본만 재인코딩·태그 제거·방향 보정",
+      "dependencies": "기존 Android Bitmap과 공개 AndroidX ExifInterface를 Gradle로 자동 구성",
+      "verification": "GPS 합성 파일·방향·태그 없는 사진을 ADB에 넣고 게시 바이트·원본 해시·제거 안내를 검증",
+      "required": [],
+      "overlaps": [
+        "S13",
+        "C46"
+      ],
+      "recognitionRisk": "medium",
+      "note": "공개 직전 사용자 통제는 추가 편의지만 보안 기본 품질로 인식될 위험과 제거 범위 정확성이 필요하다."
+    },
+    {
+      "id": "C23",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 9,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "ACTION_SEND·content URI·persistable grant 처리와 작성 상태·취소·다중 intent 중복을 구현",
+      "dependencies": "기존 Android Intent/ContentResolver/FileProvider·기본 POST",
+      "verification": "Codex 테스트 보조앱 또는 ADB intent fixture로 공유·권한 소멸·재시작·취소·다시 공유를 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "다른 앱에서 바로 작성하는 차별화된 과업과 권한·생명주기의 기술성이 명확하다."
+    },
+    {
+      "id": "C24",
+      "T": 8,
+      "U": 9,
+      "R": 5.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "카메라 결과 URI·회전 보정·재촬영·미리보기·작성 복귀를 상태로 관리",
+      "dependencies": "기존 Android ActivityResult/MediaStore/FileProvider·기본 POST; 에뮬레이터 가상 카메라",
+      "verification": "ADB 에뮬레이터 합성 촬영·취소·다시찍기·회전·프로세스 종료 후 URI 복원 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "촬영 상태 구현은 어렵지만 단순 파일 선택 대체가 기본 ID11과 겹치는 독립 인정 위험은 유지한다."
+    },
+    {
+      "id": "C25",
+      "T": 9,
+      "U": 9.5,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "최대3장 선택·항목별 글·순서·단건 순차 요청·각 상태와 재진입 복원을 구현",
+      "dependencies": "기존 Android PhotoPicker/SQLite/HTTP·기본 단건 POST; 원자 게시 선택 시 S16",
+      "verification": "ADB 세 장 순서 변경·중간 실패·회전·성공 항목 유지와 서버 Post 수·내용 비교",
+      "required": [],
+      "overlaps": [
+        "C11"
+      ],
+      "recognitionRisk": "medium",
+      "note": "다중 상태와 조작의 난도는 높지만 원자성·중복 없는 재시도를 기본 API만으로 구현했다고 주장하지 않는다."
+    },
+    {
+      "id": "C26",
+      "T": 9.5,
+      "U": 10,
+      "R": 9,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "2–6장 레이아웃 모델과 각 슬롯 crop Matrix·비율·간격·위치 제스처·고해상도 합성을 구현",
+      "dependencies": "기존 Android Canvas/Bitmap/Matrix·기본 POST; 모델 학습 없음",
+      "verification": "합성 색격자의 슬롯 좌표·간격·자르기 oracle과 ADB 레이아웃 변경·재생성·최종 게시 픽셀 검증",
+      "required": [],
+      "overlaps": [
+        "C12"
+      ],
+      "recognitionRisk": "low",
+      "note": "여러 이미지의 기하 조합과 정밀한 편집 UI가 매우 도전적이며 효과가 눈에 보인다."
+    },
+    {
+      "id": "C27",
+      "T": 9,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사진글 pagination·텍스트 줄바꿈·비율 보존 레이아웃·페이지 Bitmap 렌더와 PDF 저장을 구현",
+      "dependencies": "기존 Android PdfDocument/StaticLayout/Storage Access Framework·서버 PDF 없음",
+      "verification": "한글·긴 글·사진 방향 fixture로 PDF 페이지·텍스트·잘림·이미지 비율을 자동 검사하고 ADB 저장·공유 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "페이지 조판의 실질적 난도와 결과물 차별성이 크며 Codex가 합성 내용과 렌더 oracle를 만들 수 있다."
+    },
+    {
+      "id": "C28",
+      "T": 8,
+      "U": 9,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "공개 URL QR·공유 시트와 Android deep link 라우팅·로그인 복귀·없는 기록 처리를 구현",
+      "dependencies": "기존 Android Intent/FileProvider와 공개 ZXing 라이브러리를 Gradle로 자동 구성; S30 불필요",
+      "verification": "생성 QR decode oracle와 ADB deep link·로그인 복귀·잘못된 URL·없는 Post 검증",
+      "required": [],
+      "overlaps": [
+        "S30"
+      ],
+      "recognitionRisk": "medium",
+      "note": "통합 흐름은 추가 편의이나 QR 생성 라이브러리 호출만을 높은 난도로 과장하지 않는다."
+    },
+    {
+      "id": "C29",
+      "T": 9,
+      "U": 10,
+      "R": 6.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "의미 있는 접근성 노드·focus 순서·큰 글자 reflow·터치 대안·대비를 전체 과업에 적용",
+      "dependencies": "기존 Android Accessibility API/UiAutomator/자동 접근성 검사 도구; 사용자 교육 없음",
+      "verification": "ADB accessibility dump·글꼴 배율·키보드 탐색·터치 크기·대비 계산과 자동 과업 진행을 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "접근성의 광범위한 상호작용 난도와 완성 잠재력은 높게 보되 일반 품질 기준과 독립 항목 경계를 유지한다."
+    },
+    {
+      "id": "C30",
+      "T": 6.5,
+      "U": 9.5,
+      "R": 5.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "theme token과 시스템·수동 선택을 저장하고 모든 입력·팝업·오류 상태에 대비 일관성을 적용",
+      "dependencies": "기존 Android DayNight/AppCompat·저장 preference",
+      "verification": "ADB 시스템 테마 전환·재시작·다이얼로그·오류·사진 색 유지 화면과 대비 수치를 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "완성된 시각적 일관성은 높게 평가하지만 테마 변경의 고유 기술 도전성과 독립성은 낮다."
+    },
+    {
+      "id": "C31",
+      "T": 9,
+      "U": 9,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "서버 origin·계정별 세션/캐시 namespace와 요청 generation을 두고 안전한 프로필 전환을 구현",
+      "dependencies": "기존 Android SQLite/HTTP·기존 인증 API; 새 서버 기능 슬롯 강제 없음",
+      "verification": "WSL 두 서버 fixture와 ADB 전환 중 늦은 응답·쿠키·초안·캐시 혼합 부재를 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "동시 응답과 문맥 분리의 난도는 높지만 일반 이용자의 다중 서버 필요성은 설명해야 한다."
+    },
+    {
+      "id": "C32",
+      "T": 7,
+      "U": 8.5,
+      "R": 6.5,
+      "V": 9,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "검색 조건을 타입 있는 로컬 schema로 저장·이름 변경·재실행하고 검색 결과 anchor를 복원",
+      "dependencies": "기존 Android SQLite와 기본 데이터 로컬 검색; C01 선택 시 재사용",
+      "verification": "조건 round-trip JUnit과 ADB 저장·삭제·중복 이름·빈 결과·재시작 검증",
+      "required": [],
+      "overlaps": [
+        "C01",
+        "C03"
+      ],
+      "recognitionRisk": "high",
+      "note": "저장 검색의 고유 편의는 있지만 최근 검색·스마트 앨범과 중복 집계할 위험을 유지한다."
+    },
+    {
+      "id": "C33",
+      "T": 7.5,
+      "U": 9,
+      "R": 6.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "본문 reflow·글자/행간·접기와 정규화 읽기 anchor를 저장해 사진 확대에서 복귀",
+      "dependencies": "기존 Android TextView/StaticLayout/SQLite·기본 GET",
+      "verification": "합성 긴 한글글의 줄바꿈·anchor round-trip과 ADB 확대·배율·회전·재시작 검증",
+      "required": [],
+      "overlaps": [
+        "S23",
+        "C51"
+      ],
+      "recognitionRisk": "high",
+      "note": "읽기 UI 완성 잠재력은 크지만 사진글 길이의 근거와 일반 스타일 개선 이상의 추가성을 설명해야 한다."
+    },
+    {
+      "id": "C34",
+      "T": 7.5,
+      "U": 8.5,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "날짜 토큰 tokenizer·템플릿 저장·삽입 transaction·실행 취소와 편집 상태를 구현",
+      "dependencies": "기존 Android SQLite/java.time/TextWatcher·기본 POST; 동기화에만 S19",
+      "verification": "토큰·언어·시간대·커서·undo JUnit과 ADB 삽입 후 수정·재시작 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "입력 효율 개선과 문자열 처리 도전성은 있으나 사용할 반복 작성 과업이 구체적이어야 한다."
+    },
+    {
+      "id": "C35",
+      "T": 9,
+      "U": 9,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "작은 샘플 histogram·quantization으로 대표색5개를 추출하고 색 값·비교·로컬 유사색 탐색을 구현",
+      "dependencies": "기존 Android Bitmap/Color Java 수치 알고리즘·기본 GET; 전체 서버 검색 선택 시 S36",
+      "verification": "합성 색비율·그라데이션 fixture의 팔레트·거리·동점 JUnit과 ADB 색 선택·검색 비교 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "통계적 색 표현의 난도는 높고 결과가 선명하지만 사진 탐색과 연결되는 사용 목적이 필요하다."
+    },
+    {
+      "id": "C36",
+      "T": 8.5,
+      "U": 9,
+      "R": 7.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "작은 Bitmap의 밝기 분포·해상도·Laplacian 변동을 계산해 이유·계속 선택 UI와 연결",
+      "dependencies": "기존 Android Bitmap·Java 수치 루프·기본 POST; 훈련 모델 없음",
+      "verification": "합성 노출·블러·크기 fixture의 수치 oracle·참고 설명과 ADB 계속 게시·원본 유지 검증",
+      "required": [],
+      "overlaps": [
+        "S35"
+      ],
+      "recognitionRisk": "medium",
+      "note": "영상 수치와 피드백의 도전성은 인정하되 사진 미학·AI 정답으로 포장하지 않는다."
+    },
+    {
+      "id": "C37",
+      "T": 7.5,
+      "U": 8.5,
+      "R": 7,
+      "V": 9,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "항목·연결 사진·진행률의 로컬 관계 모델과 누락 필터·완료 취소를 구현",
+      "dependencies": "기존 Android SQLite/RecyclerView·기본 사진 API",
+      "verification": "항목·사진 삭제·중복 연결·진행률 JUnit과 ADB 재시작·선택·누락 탐색 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "사진을 모으는 계획 과업의 추가성은 있으나 포토블로그와 별도 할 일 앱 사이의 목적 연결이 필요하다."
+    },
+    {
+      "id": "C38",
+      "T": 8.5,
+      "U": 9,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "제한 Markdown parser와 span renderer·안전한 링크 정책·입력/미리보기 위치 매핑을 구현",
+      "dependencies": "기존 Android Spannable 또는 공개 CommonMark 라이브러리를 Gradle 자동 구성; text 계약 유지",
+      "verification": "금지 HTML·중첩·깨진 문법·긴 목록 fixture와 ADB 편집/미리보기 왕복·웹 원문 호환 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "파싱·렌더·편집 위치의 난도와 표현 편의는 좋지만 원문 계약과 웹 표시의 의미를 유지해야 한다."
+    },
+    {
+      "id": "C39",
+      "T": 10,
+      "U": 8.5,
+      "R": 4,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "GLES 장면 그래프·camera transform·ray picking·이동 입력과 집 선택·사진 목록 라우팅을 구현",
+      "dependencies": "기존 Android GLES20/Matrix·기존 Gallery API; 새 외부 프로그램 숙련 없음",
+      "verification": "합성 배치의 투영·ray hit oracle와 ADB 이동·선택·충돌·장면 재생성·방문 복귀 검증",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "3D 렌더와 조작의 난도를 최고 수준으로 인정하되 일반 사진 탐색 편의의 근거가 약한 R은 유지한다."
+    },
+    {
+      "id": "C40",
+      "T": 10,
+      "U": 9,
+      "R": 4.5,
+      "V": 10,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "GLES 객체 picking·gizmo·이동/회전/스케일·배치 제약·revision 충돌·로컬 초안 복원을 구현",
+      "dependencies": "기존 Android GLES20/Matrix/SQLite·S40; C39·S39는 필수 아님",
+      "verification": "좌표·선택·가구 변환 수치 oracle와 ADB 직접 조작·동시 저장·강제 종료·복원 검증",
+      "required": [
+        "S40"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "기술성과 조작 마감 잠재력을 높게 반영하되 꾸미기의 ID14 편의 인정 위험과 자동 채택 여부는 별개다."
+    },
+    {
+      "id": "C41",
+      "T": 8.5,
+      "U": 9,
+      "R": 6,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "계정 state machine·CSRF/session 저장·오류·작업 복귀·로그아웃 문맥 정리를 구현",
+      "dependencies": "기존 Android HTTP/암호화 저장 API·S41",
+      "verification": "ADB 가입·인증 실패·늦은 응답·로그아웃 후 캐시·화면 복귀와 WSL 세션 fixture 검증",
+      "required": [
+        "S41"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "보안과 생명주기의 기술성은 높지만 기본 인증과 별도 편의 기능의 중복 위험을 유지한다."
+    },
+    {
+      "id": "C42",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 9,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "태그 tokenizer·자동완성 요청 generation·기존 태그 선택·이름 정리·태그별 탐색을 구현",
+      "dependencies": "기존 Android AutoCompleteTextView/RecyclerView·S05",
+      "verification": "정규화·자동완성 늦은 응답·빈 태그 JUnit과 ADB 입력·선택·이름 변경·탐색 복귀 검증",
+      "required": [
+        "S05"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "직접적인 정리·탐색 편의와 풍부한 상호작용이 있으며 추천 AI나 일괄 관리를 구현한 것으로 주장하지 않는다."
+    },
+    {
+      "id": "C43",
+      "T": 9,
+      "U": 9,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "내 입력·기준 revision·서버 최신 필드를 비교하고 유지/재편집·취소 상태를 복원",
+      "dependencies": "기존 Android Java diff/상태 저장·S08",
+      "verification": "두 Android 세션과 WSL 응답 지연 fixture로 편집 충돌·취소·재조회 실패·늦은 응답 검증",
+      "required": [
+        "S08"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "동시성의 사용자 선택 의미와 diff UI가 어렵지만 기본 편집 보호와 독립 기능의 경계는 필요하다."
+    },
+    {
+      "id": "C44",
+      "T": 7.5,
+      "U": 9,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "중복 검출 응답을 기존 기록 미리보기·교체·명시적 계속 선택 state machine에 연결",
+      "dependencies": "기존 Android 이미지 로더/폼·S10",
+      "verification": "같은 사진·다른 사용자 사진·취소·교체·연속 탭을 ADB와 WSL fixture로 검증",
+      "required": [
+        "S10"
+      ],
+      "overlaps": [
+        "C62"
+      ],
+      "recognitionRisk": "medium",
+      "note": "추가 편의가 명확하나 단순 경고를 지나치게 복잡하게 만들어 도전성 점수를 올리지 않는다."
+    },
+    {
+      "id": "C45",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 6.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "썸네일/원본 상태·조건부 캐시·저화질 설정·실제 네트워크 오류·재요청을 구현",
+      "dependencies": "기존 Android HTTP/Bitmap/캐시·S12",
+      "verification": "WSL 이미지 응답 fixture로 바이트·ETag·오류를 바꾸고 ADB 화질 전환·회전·재시작 상태 검증",
+      "required": [
+        "S12"
+      ],
+      "overlaps": [
+        "C10"
+      ],
+      "recognitionRisk": "high",
+      "note": "전송 제어와 화면 품질의 난도는 있지만 기본 이미지 로더 마감으로 인정될 위험은 별개다."
+    },
+    {
+      "id": "C46",
+      "T": 6.5,
+      "U": 8,
+      "R": 4.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "서버 처리 항목과 검증 가능한 GPS 제거 결과를 게시 전후 상태로 표시",
+      "dependencies": "기존 Android 폼·S13",
+      "verification": "GPS·태그 없는 fixture를 게시해 실제 파일 태그와 안내 내용이 일치하는지 WSL/ADB 검증",
+      "required": [
+        "S13"
+      ],
+      "overlaps": [
+        "C22"
+      ],
+      "recognitionRisk": "high",
+      "note": "정확한 안내는 중요하지만 사용자의 새로운 편의보다 기본 정보 처리 설명에 가까운 R 한계가 있다."
+    },
+    {
+      "id": "C47",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사진 크기 목록·용량 단위·정렬·선택·정리 미리보기와 갱신 결과의 일관성을 구현",
+      "dependencies": "기존 Android RecyclerView/Canvas·S15; 휴지통은 별도 S06/C06",
+      "verification": "합성 다른 크기 사진·단위·정렬 oracle와 ADB 선택·정리·응답 실패·갱신 전후 합계 검증",
+      "required": [
+        "S15"
+      ],
+      "overlaps": [
+        "C53"
+      ],
+      "recognitionRisk": "medium",
+      "note": "공간 제약을 정리 판단으로 바꾸는 UI 잠재력이 크며 범위를 넘어 복원 기능을 포함한 것으로 세지 않는다."
+    },
+    {
+      "id": "C48",
+      "T": 9,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "댓글/답글 view type·안정 ID·입력 draft·수정/삭제·낙관 상태와 실패 복구를 구현",
+      "dependencies": "기존 Android RecyclerView/입력 위젯·S20",
+      "verification": "ADB 대화 입력·답글·수정·삭제·회전·실패·재전송과 WSL 최종 댓글 내용을 검증",
+      "required": [
+        "S20"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "대화 위계와 입력 보존의 복잡한 마감이 기본 사진 업로드와 분명히 다른 추가 편의다."
+    },
+    {
+      "id": "C49",
+      "T": 8,
+      "U": 9,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사진 ID별 반응 상태 store·연속 터치 병합·낙관 표시·응답 revision·실패 rollback을 구현",
+      "dependencies": "기존 Android Java/HTTP·S21",
+      "verification": "지연·순서 뒤집힌 응답 fixture와 ADB 연타·취소·목록/상세 왕복·실패 복구 검증",
+      "required": [
+        "S21"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "단순 버튼보다 상태 일관성의 난도를 보되 인위적 복잡성은 가점으로 삼지 않는다."
+    },
+    {
+      "id": "C50",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 9.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "구독 상태·구독 목록·새 사진 feed의 갱신·빈 화면·anchor 복귀와 늦은 응답을 구현",
+      "dependencies": "기존 Android RecyclerView/HTTP·S22",
+      "verification": "ADB 구독·해제·새 사진 추가·빈 피드·갱신 경합·상세 복귀와 서버 기대 목록 검증",
+      "required": [
+        "S22"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "다시 찾고 싶은 작성자라는 명확한 추가 과업과 세밀한 피드 마감 잠재력이 있다."
+    },
+    {
+      "id": "C51",
+      "T": 8.5,
+      "U": 9,
+      "R": 7.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "다른 기기의 사진·본문 anchor를 미리 보여주고 이어보기 선택·삭제 대상·실패 상태를 구현",
+      "dependencies": "기존 Android 로컬 anchor/HTTP·S23",
+      "verification": "두 에뮬레이터 또는 계정 세션의 글자 배율·시간차·삭제·본문 변경·재진입을 ADB/WSL로 검증",
+      "required": [
+        "S23"
+      ],
+      "overlaps": [
+        "C33"
+      ],
+      "recognitionRisk": "medium",
+      "note": "다른 화면 폭의 위치 매핑과 동기화 의미는 어렵지만 사진글 재방문의 추가 편의 근거는 필요하다."
+    },
+    {
+      "id": "C52",
+      "T": 9.5,
+      "U": 9.5,
+      "R": 9,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "기기·서버 초안 snapshot과 사진의 비교·다운로드·조건부 덮어쓰기·폐기·편집 재개를 구현",
+      "dependencies": "기존 Android SQLite/파일/HTTP·S24",
+      "verification": "강제 종료·사진 다운로드 실패·서버 revision 변경·계정 전환 fixture와 두 Android 세션 선택 결과 검증",
+      "required": [
+        "S24"
+      ],
+      "overlaps": [
+        "C09",
+        "C08"
+      ],
+      "recognitionRisk": "medium",
+      "note": "사진을 포함한 초안의 동기화·선택 상태가 도전적이며 어려움을 U나 V의 감점으로 사용하지 않는다."
+    },
+    {
+      "id": "C53",
+      "T": 8,
+      "U": 9,
+      "R": 7.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "월·단위 상태와 상호작용 차트·선택 영역·대상 목록 drill-down·빈 기간을 구현",
+      "dependencies": "기존 Android Canvas/RecyclerView·S27; 공개 차트 의존성은 Gradle 자동 구성 가능",
+      "verification": "합성 통계의 축·합계·선택 좌표 oracle와 ADB 월 전환·차트 선택·목록 복귀·회전 검증",
+      "required": [
+        "S27"
+      ],
+      "overlaps": [
+        "C47"
+      ],
+      "recognitionRisk": "medium",
+      "note": "차트 조작·데이터 연결의 난도는 인정하지만 장식 통계만으로 추가 편의를 주장하지 않는다."
+    },
+    {
+      "id": "C54",
+      "T": 7.5,
+      "U": 8.5,
+      "R": 6.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "시간순 stable ID 목록·유형 필터·대상 이동·삭제 대상·실패 상태를 구현",
+      "dependencies": "기존 Android RecyclerView·S28",
+      "verification": "합성 이력·삭제 사진·응답 실패 fixture와 ADB 필터·상세 이동·복귀 위치 검증",
+      "required": [
+        "S28"
+      ],
+      "overlaps": [
+        "C07"
+      ],
+      "recognitionRisk": "high",
+      "note": "사용자 결과 확인에 가치가 있어도 개발 로그의 부수 화면이라는 독립 인정 위험은 유지한다."
+    },
+    {
+      "id": "C55",
+      "T": 8.5,
+      "U": 9.5,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "알림 묶음·읽음 store·대상 deep link·갱신 generation과 화면 복귀 상태를 구현",
+      "dependencies": "기존 Android RecyclerView/HTTP·S29/S20/C48 최소4개",
+      "verification": "합성 댓글 이벤트로 ADB 읽음·미읽음·빠른 갱신·대상 삭제·뒤로 복귀와 DB 상태 검증",
+      "required": [
+        "S29",
+        "S20",
+        "C48"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "알림 상태·탐색의 도전성은 있지만 원천 네 항목 집계와 앱 종료 푸시 제외를 유지한다."
+    },
+    {
+      "id": "C56",
+      "T": 9,
+      "U": 9.5,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "고정·정렬 상태와 드래그·접근 가능한 이동·미리보기·동시 저장 결과를 구현",
+      "dependencies": "기존 Android ItemTouchHelper/RecyclerView·S31",
+      "verification": "두 세션 재정렬·고정 해제·회전·드래그 중 목록 변경을 ADB와 WSL fixture로 검증",
+      "required": [
+        "S31"
+      ],
+      "overlaps": [
+        "C02"
+      ],
+      "recognitionRisk": "medium",
+      "note": "정밀한 목록 조작의 도전성은 높지만 앨범 재배치와 목적·결과가 다른지 설명해야 한다."
+    },
+    {
+      "id": "C57",
+      "T": 7.5,
+      "U": 8.5,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "범위·형식·포함 필드 확인과 Storage Access Framework 저장·공유·오류 복구를 구현",
+      "dependencies": "기존 Android SAF/FileProvider·S32",
+      "verification": "Unicode·CSV 수식·취소·권한·저장 실패 fixture와 ADB 파일 내용·범위 일치 검증",
+      "required": [
+        "S32"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "데이터 휴대성의 의미는 있으나 단순 포맷 선택을 높은 알고리즘 난도로 부풀리지 않는다."
+    },
+    {
+      "id": "C58",
+      "T": 9,
+      "U": 9,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "CSV 검사 snapshot·행별 오류·변경 미리보기·확정 적용·결과 대조를 구현",
+      "dependencies": "기존 Android SAF/RecyclerView·S33/S05/C42 최소4개",
+      "verification": "Codex 생성 손상·경계·권한 CSV를 ADB에 넣고 검사·수정 후 재검사·적용 결과와 서버 DB를 비교",
+      "required": [
+        "S33",
+        "S05",
+        "C42"
+      ],
+      "overlaps": [
+        "C05"
+      ],
+      "recognitionRisk": "medium",
+      "note": "표 기반 오류·확정 상태가 도전적이며 네 항목 집계와 모바일 분류 과업의 목적을 유지한다."
+    },
+    {
+      "id": "C59",
+      "T": 7.5,
+      "U": 9,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "공개 본문과 분리한 메모 상태·저장 표시·계정 namespace·메모 있는 사진 탐색을 구현",
+      "dependencies": "기존 Android 입력/SQLite/HTTP·S37",
+      "verification": "ADB 계정 전환·저장 실패·회전·메모 사진 찾기와 공개 API 메모 누출 부재 검증",
+      "required": [
+        "S37"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "개인 메모와 공개 본문의 명확한 위계가 편의를 주지만 사진 자체를 비공개라고 설명할 수 없다."
+    },
+    {
+      "id": "C60",
+      "T": 7.5,
+      "U": 9,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "피드 숨김·즉시 취소·뮤트 관리·해제·갱신 결과를 통일된 상태 store로 구현",
+      "dependencies": "기존 Android RecyclerView/HTTP·S38",
+      "verification": "ADB 숨김·취소·해제·갱신 경합·계정 전환과 서버 기대 피드 비교",
+      "required": [
+        "S38"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "사용자 피드 통제의 추가 편의가 명확하며 공개 사진 접근 차단과 구분한다."
+    },
+    {
+      "id": "C61",
+      "T": 9,
+      "U": 9,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "앱 편집 결과의 원본/최근 버전 비교·선택·복원·용량 안내와 편집기 왕복 상태를 구현",
+      "dependencies": "기존 Android Bitmap/Matrix·S18+C12까지 최소3개",
+      "verification": "합성 다른 편집 결과와 ADB 편집·버전 선택·복원·회전·서버 실패에서 표시와 해시 비교",
+      "required": [
+        "S18",
+        "C12"
+      ],
+      "overlaps": [
+        "C07"
+      ],
+      "recognitionRisk": "medium",
+      "note": "버전 선택 상태의 높은 난도를 반영하되 전체 수정 이력과 중복 및 세 항목 집계를 유지한다."
+    },
+    {
+      "id": "C62",
+      "T": 9.5,
+      "U": 9.5,
+      "R": 9,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "유사 그룹·연결 사진 비교·대표 선택·오탐 제외·다시 보기와 안정된 선택 상태를 구현",
+      "dependencies": "기존 Android RecyclerView/Matrix·S11; C18 필수 아님",
+      "verification": "합성 변형 사진 그룹을 ADB로 비교·제외·대표 선택·재조회·회전하고 서버 그룹 fixture와 대조",
+      "required": [
+        "S11"
+      ],
+      "overlaps": [
+        "C18",
+        "C44"
+      ],
+      "recognitionRisk": "medium",
+      "note": "알고리즘 결과를 사용자 판단으로 연결하는 상호작용의 난도와 차별성이 매우 높다."
+    },
+    {
+      "id": "C63",
+      "T": 8,
+      "U": 9.5,
+      "R": 8,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "같은 월일 카드·연도 탐색·기준 안내·빈 날·원문 복귀와 선택 상태를 구현",
+      "dependencies": "기존 Android RecyclerView/java.time·S25",
+      "verification": "윤일·사진 없는 날·여러 해 fixture로 ADB 연도 이동·원문 왕복·시간대 표기를 검증",
+      "required": [
+        "S25"
+      ],
+      "overlaps": [
+        "C20",
+        "C21"
+      ],
+      "recognitionRisk": "medium",
+      "note": "완성된 회상 탐색의 시각 효과는 높지만 일반 날짜 탐색과 다른 과업을 설명해야 한다."
+    },
+    {
+      "id": "C64",
+      "T": 8,
+      "U": 9,
+      "R": 8.5,
+      "V": 9.5,
+      "status": "pass",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "촬영일 출처·EXIF 없음·날짜 수정·변경 미리보기·서버 저장 결과를 구현",
+      "dependencies": "기존 Android 날짜 입력/폼·S14",
+      "verification": "EXIF·날짜 없음·잘못된 날짜·시간대 fixture로 ADB 수정·취소·실패·재생성·저장 결과를 검증",
+      "required": [
+        "S14"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "촬영정보의 의미를 사용자가 이해하고 바로잡는 편의가 있으며 실제 원본 메타데이터 수정과 혼동하지 않는다."
+    },
+    {
+      "id": "X01",
+      "T": 10,
+      "U": 9.5,
+      "R": 9,
+      "V": 9.5,
+      "status": "hold",
+      "codexGate": "pass",
+      "platformGate": "hold",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "ASGI WebSocket 세션·객체 revision·연산 순서·재연결 snapshot을 Django와 Android에서 구현하는 경로는 구체적이다",
+      "dependencies": "Codex가 Channels/ASGI 공개 패키지를 venv로 자동 구성할 수 있으나 실제 무료 PA 계정의 ASGI·정적 제공·과제 호환성 미확인",
+      "verification": "WSL 다중 클라이언트의 충돌·재접속·메시지 순서 fixture와 ADB 동시 조작을 검증할 수 있으나 PA 실배포 적합성 확인 전이다",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "협업 동시성의 매우 높은 도전성을 인정하지만 실험 배포의 필수 호환성 확인이 없어 보류하며 서버·클라이언트 별도 집계도 필요하다"
+    },
+    {
+      "id": "X02",
+      "T": 10,
+      "U": 9.5,
+      "R": 9,
+      "V": 9.5,
+      "status": "hold",
+      "codexGate": "hold",
+      "platformGate": "hold",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "사전학습 이미지 encoder와 벡터 거리 검색의 경로는 있으나 특정 모델·가중치·라이선스·자동 취득·무료 실행 메모리가 확인되지 않았다",
+      "dependencies": "현재 환경에는 검증된 대형 embedding 모델·지속 색인 worker가 없고 무료 PA 핵심 서버 조건과 양립 가능한 자동 구성 경로가 미확인이다",
+      "verification": "고정 synthetic 검색 fixture의 순위와 encoder determinism을 검증할 수 있으나 실행 가능한 모델·환경이 확정되지 않아 검증 경로의 전제가 충족되지 않았다",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "어려움은 높게 채점하지만 모델 훈련을 사용자에게 요구하지 않는 구체적 자동 실행 경로와 무료 서버 적합성이 입증되지 않아 보류한다"
+    },
+    {
+      "id": "X03",
+      "T": 8.5,
+      "U": 9,
+      "R": 9,
+      "V": 9.5,
+      "status": "hold",
+      "codexGate": "hold",
+      "platformGate": "hold",
+      "userManualWork": true,
+      "trainingRequired": false,
+      "implementation": "이미지 요청·응답 schema·제목 후보·사용자 수정·오류 복구는 구현할 수 있으나 사용할 모델 API 계정과 키가 확보되지 않았다",
+      "dependencies": "새 외부 API 계정·키·비용·이미지 전송 정책과 PA allowlist가 미확인이고 사용자 작업 없이 구성할 자격이 없다",
+      "verification": "API mock·오류 응답·제목 검토 화면은 WSL/ADB 검증 가능하지만 실제 외부 호출·비용·허용 여부는 검증할 수 있는 계정이 미확보다",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "수동 계정·API키 확보와 외부 통신 조건이 해결되지 않아 보류하며 이를 작업량 감점으로 처리하지 않는다"
+    },
+    {
+      "id": "X04",
+      "T": 8.5,
+      "U": 9,
+      "R": 9,
+      "V": 9.5,
+      "status": "hold",
+      "codexGate": "hold",
+      "platformGate": "hold",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "예약시각·상태·중복 실행 방지와 정시 trigger 명령은 구현 가능하나 앱 종료 후 정시 실행 주체를 현재 무료 환경에서 확정할 수 없다",
+      "dependencies": "무료 계정 생성 시점별 예약 작업 사용 가능성과 요구 정밀도·상시 실행 권한이 미확인이다",
+      "verification": "가상 clock으로 중복·시간대·실행 상태를 WSL에서 검증 가능하지만 실제 예약 시각 실행 환경의 선행 조건은 미충족이다",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "방문 시 처리로 기능을 축소하지 않으며 필수 정시 trigger의 실제 제공 여부가 확인되지 않아 보류한다"
+    },
+    {
+      "id": "X05",
+      "T": 9.5,
+      "U": 9.5,
+      "R": 9,
+      "V": 9.5,
+      "status": "hold",
+      "codexGate": "hold",
+      "platformGate": "hold",
+      "userManualWork": true,
+      "trainingRequired": false,
+      "implementation": "단말 push token·댓글 이벤트 발송·알림 클릭 라우팅은 구현 가능하지만 실제 외부 push 서비스 계정·서명 자격이 미확보다",
+      "dependencies": "새 외부 서비스 프로젝트/API키·서버 외부 호출·요금·종료 앱 전달 조건이 사용자 작업 없이 구성될 근거가 없다",
+      "verification": "token lifecycle·이벤트 dedupe·notification intent mock은 WSL/ADB 검증 가능하나 종료 앱 실제 수신을 검증할 외부 자격이 없다",
+      "required": [
+        "S20",
+        "C48"
+      ],
+      "overlaps": [
+        "S29",
+        "C55"
+      ],
+      "recognitionRisk": "medium",
+      "note": "푸시의 높은 동시성·상태 난도는 인정하지만 외부 계정과 무료 서버 통신 조건이 해결되지 않아 보류한다"
+    },
+    {
+      "id": "X06",
+      "T": 9,
+      "U": 7,
+      "R": 1,
+      "V": 8,
+      "status": "exclude",
+      "codexGate": "hold",
+      "platformGate": "exclude",
+      "userManualWork": true,
+      "trainingRequired": false,
+      "implementation": "Redis queue·Celery task·컨테이너 배포를 코드로 구성할 수 있으나 핵심 처리를 별도 서버로 넘기는 정의가 현재 과제 범위를 벗어난다",
+      "dependencies": "검증된 외부 서버·계정·비용이 없고 PythonAnywhere 무료 핵심 서버 조건과 평가 호환성도 입증되지 않았다",
+      "verification": "로컬 컨테이너 fixture가 성공해도 요구된 PA 실행 환경의 증빙이 될 수 없으므로 해당 대체 검증으로 통과시키지 않는다",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "제외 사유는 난도·작업량이 아니라 필수 배포 구조와 미확인 외부 자원에 대한 직접 의존이다"
+    },
+    {
+      "id": "X07",
+      "T": 9,
+      "U": 9.5,
+      "R": 9,
+      "V": 9.5,
+      "status": "hold",
+      "codexGate": "pass",
+      "platformGate": "hold",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "앨범 membership·초대 token·객체 권한·인증 미디어 응답의 코드 경로는 구체적이나 기존 공개 Post를 그대로 유지하면 비공개 정의를 충족하지 못한다",
+      "dependencies": "기존 Django/SQLite로 ACL은 구현 가능하지만 공개 기본 배열·공개 파일 URL의 필수 계약과 권위 있는 호환성 확인이 필요하다",
+      "verification": "WSL 익명·비회원·초대 회원의 API와 실제 파일 접근 행렬·token 취소 fixture는 만들 수 있으나 기본 공개 계약과 동시에 성립하지 않는다",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "높은 구현 난도와 편의는 인정하되 공개 데이터가 남는 상태를 비공개로 주장하지 않으며 평가 계약 충돌로 보류한다"
+    },
+    {
+      "id": "X08",
+      "T": 6,
+      "U": 7,
+      "R": 0,
+      "V": 9,
+      "status": "exclude",
+      "codexGate": "pass",
+      "platformGate": "pass",
+      "userManualWork": false,
+      "trainingRequired": false,
+      "implementation": "기존 Django 업로드·Android 동기화·Coverage 실행과 증빙 자동화는 현재 도구로 수행할 수 있다",
+      "dependencies": "이미 확보된 WSL Django·Windows Gradle/ADB 환경이며 새 설치·훈련이 필요 없다",
+      "verification": "기존 baseline·Gradle·ADB와 배포 URL 검증이 해당 동작의 증거지만 기본 항목 증거로 분류해야 한다",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "실행 가능성과 무관하게 기본 ID1–13의 동일 항목을 추가 기능으로 중복 등록하므로 제외한다"
+    }
+  ],
+  "blindSpots": [
+    "이번 점수는 F·effort·작업량·테스트 제작 부담을 전혀 포함하지 않은 설계 잠재력의 독립 재평가이며 실제 교수님 배점이나 구현·배포 완료 증거가 아니다.",
+    "기술 도전성 T는 정의상 필요한 알고리즘·상태·동시성에 부여했으며 endpoint 수나 인위적 복잡성 자체로 점수를 올리지 않았다.",
+    "pass의 userManualWork=false와 trainingRequired=false는 Codex가 명시한 SDK·공개 의존성·합성 fixture 경로를 수행한다는 뜻이고 일반 사용자의 사진 선택 동작을 개발 수작업으로 세지 않았다.",
+    "서버·클라이언트 각각 등록과 최대5개는 고정 gate다; S17/C05는 S02/C02까지4개, S29/C55는 댓글 S20/C48까지4개, S33/C58은 S05/C42까지4개, S18/C61은 C12까지3개다.",
+    "C04는 로컬 저장·C20은 게시일·C21은 단말 월 집계·C25는 단건 순차 게시로 평가했고 동기화·촬영일·서버 집계·원자 게시를 추가 주장하면 의존성을 재집계해야 한다.",
+    "S09는 신규로 구현·검증해야 할 멱등성 서버이며 예전 구현이 완료됐다는 근거로 사용하지 않았다.",
+    "기본 보안·업로드 상태·썸네일·접근성·테마는 높은 기술·UI 점수와 별개로 ID14 독립 인정 위험이 있으므로 R과 recognitionRisk에서 구분했다.",
+    "S13/C46과 C22, S34와 C15의 단말 버전, S35와 C36의 단말 버전은 같은 결과의 처리 대안이어서 각각 독립 편의 두 개로 주장하지 않는다.",
+    "C12/C13/C14/C15/C16은 사진 편집의 세부 도구로 합쳐질 수 있고 C20/C21/C63은 날짜 탐색으로 묶일 수 있어 독립 결과·목적을 제시하지 않으면 합산 집계가 약해진다.",
+    "무료 PA의 512MiB·단일 워커 범위는 입력·파생본·조회 상한과 요청 시 처리로 유지하며 actual 계정 잔여 공간·System Image·배포 URL 검증은 구현 과정에서 별도로 해야 한다.",
+    "X02는 개인 모델 훈련이 정의상 필수라고 단정하지 않았지만 특정 사전학습 모델의 취득·라이선스·실행이 미확인이라 codexGate를 보류했다; 미확인 모델을 AI가 알아서 한다고 처리하지 않았다.",
+    "X03/X05/X06의 미확보 외부 자격은 기존 PythonAnywhere 인증·배포 승인과 다르며 후자는 개발 공부·모델 훈련으로 간주하지 않는다.",
+    "사진관 비교군의 높은 GLES·revision 난도는 새 척도로 인정했으나 R의 목적 연결 위험이 사라지거나 사용자에게 이미 폐기된 방향을 재채택한 것은 아니다."
+  ]
+}

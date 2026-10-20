@@ -1,0 +1,35 @@
+{
+  "environment": "Actual Android software keyboard with native WebView resize",
+  "beforeHeight": 650.2857055664062,
+  "keyboardHeight": 503.23809814453125,
+  "keyboardVisible": true,
+  "fields": [
+    {
+      "id": "photo-tags",
+      "top": 359.83929443359375,
+      "bottom": 403.83929443359375,
+      "height": 503.23809814453125,
+      "unobstructed": true,
+      "pass": true
+    },
+    {
+      "id": "add-tag",
+      "top": 359.83929443359375,
+      "bottom": 403.83929443359375,
+      "height": 503.23809814453125,
+      "unobstructed": true,
+      "pass": true
+    },
+    {
+      "id": "publish-photo",
+      "top": 451,
+      "bottom": 495,
+      "height": 503.23809814453125,
+      "unobstructed": true,
+      "pass": true
+    }
+  ],
+  "pass": true,
+  "published": false,
+  "physical_iPhone_verified": false
+}

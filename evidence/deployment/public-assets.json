@@ -1,0 +1,363 @@
+{
+  "environment": "Public PythonAnywhere HTTPS; WSL verifier",
+  "verified_at": "2026-10-20T09:30:43.472364+00:00",
+  "pass_all": true,
+  "assets": 44,
+  "probes": [
+    {
+      "path": "/static/blog/content/composer.mjs",
+      "status": 200,
+      "bytes": 30172,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/content.css",
+      "status": 200,
+      "bytes": 25388,
+      "content_type": "text/css",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/detail.mjs",
+      "status": 200,
+      "bytes": 2371,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/editor-controls.mjs",
+      "status": 200,
+      "bytes": 861,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/face-probe.mjs",
+      "status": 200,
+      "bytes": 2641,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/face-scans.mjs",
+      "status": 200,
+      "bytes": 4557,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/fixtures/SOURCES.txt",
+      "status": 200,
+      "bytes": 984,
+      "content_type": "text/plain",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/fixtures/dog.jpg",
+      "status": 200,
+      "bytes": 83281,
+      "content_type": "image/jpeg",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/fixtures/portrait.jpg",
+      "status": 200,
+      "bytes": 61306,
+      "content_type": "image/jpeg",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/labels.mjs",
+      "status": 200,
+      "bytes": 12598,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/ocr-policy.mjs",
+      "status": 200,
+      "bytes": 3418,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/pipeline.mjs",
+      "status": 200,
+      "bytes": 3558,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/probe.mjs",
+      "status": 200,
+      "bytes": 3635,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/review-controls.mjs",
+      "status": 200,
+      "bytes": 942,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/rules.mjs",
+      "status": 200,
+      "bytes": 7116,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/stage.mjs",
+      "status": 200,
+      "bytes": 5920,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/vision-engine.mjs",
+      "status": 200,
+      "bytes": 2852,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/vision-worker.mjs",
+      "status": 200,
+      "bytes": 294,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/content/vision.mjs",
+      "status": 200,
+      "bytes": 4173,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/SOURCES.json",
+      "status": 200,
+      "bytes": 7645,
+      "content_type": "application/json",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/mediapipe/LICENSE",
+      "status": 200,
+      "bytes": 12331,
+      "content_type": "text/plain",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/mediapipe/vision_bundle.mjs",
+      "status": 200,
+      "bytes": 156139,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/mediapipe/wasm/vision_wasm_internal.js",
+      "status": 200,
+      "bytes": 334128,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/mediapipe/wasm/vision_wasm_internal.wasm",
+      "status": 200,
+      "bytes": 13519922,
+      "content_type": "application/wasm",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/mediapipe/wasm/vision_wasm_module_internal.js",
+      "status": 200,
+      "bytes": 334166,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/mediapipe/wasm/vision_wasm_module_internal.wasm",
+      "status": 200,
+      "bytes": 13519940,
+      "content_type": "application/wasm",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/mediapipe/wasm/vision_wasm_nosimd_internal.js",
+      "status": 200,
+      "bytes": 333931,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/mediapipe/wasm/vision_wasm_nosimd_internal.wasm",
+      "status": 200,
+      "bytes": 12627509,
+      "content_type": "application/wasm",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/models/efficientnet-lite0-int8.tflite",
+      "status": 200,
+      "bytes": 5434517,
+      "content_type": "text/plain",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/models/face-short-range.tflite",
+      "status": 200,
+      "bytes": 229746,
+      "content_type": "text/plain",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/models/imagenet-labels.txt",
+      "status": 200,
+      "bytes": 10484,
+      "content_type": "text/plain",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tessdata/LICENSE",
+      "status": 200,
+      "bytes": 11358,
+      "content_type": "text/plain",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tessdata/eng.traineddata.gz",
+      "status": 200,
+      "bytes": 1962155,
+      "content_type": "application/gzip",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tessdata/kor.traineddata.gz",
+      "status": 200,
+      "bytes": 1103423,
+      "content_type": "application/gzip",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tesseract/LICENSE",
+      "status": 200,
+      "bytes": 11358,
+      "content_type": "text/plain",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tesseract/LICENSE.md",
+      "status": 200,
+      "bytes": 11357,
+      "content_type": "text/markdown",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tesseract/tesseract-core-lstm.wasm",
+      "status": 200,
+      "bytes": 2855361,
+      "content_type": "application/wasm",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tesseract/tesseract-core-lstm.wasm.js",
+      "status": 200,
+      "bytes": 3896484,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tesseract/tesseract-core-relaxedsimd-lstm.wasm",
+      "status": 200,
+      "bytes": 2862266,
+      "content_type": "application/wasm",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tesseract/tesseract-core-relaxedsimd-lstm.wasm.js",
+      "status": 200,
+      "bytes": 3905767,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tesseract/tesseract-core-simd-lstm.wasm",
+      "status": 200,
+      "bytes": 2857601,
+      "content_type": "application/wasm",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tesseract/tesseract-core-simd-lstm.wasm.js",
+      "status": 200,
+      "bytes": 3899472,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tesseract/tesseract.min.js",
+      "status": 200,
+      "bytes": 62961,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    },
+    {
+      "path": "/static/blog/vendor/content/tesseract/worker.min.js",
+      "status": 200,
+      "bytes": 111307,
+      "content_type": "text/javascript",
+      "content_encoding": null,
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "HEAD validates accessibility, MIME and size, not physical iPhone browser execution"
+  ]
+}

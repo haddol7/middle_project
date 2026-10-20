@@ -1,0 +1,13 @@
+{
+  "environment": "Windows Android API35 -> WSL Ubuntu 127.0.0.1 temporary receiver (closed after verification)",
+  "android_run_id": "20261019-173636-9c9bae3f",
+  "bytes": 212,
+  "sha256": "6480558342d14fdd1ee62af5db625a665c98f823ba6ae5a003578bc48b14ece2",
+  "checks": {
+    "lecture_get": true,
+    "no_authorization": true,
+    "no_cookie": true,
+    "empty_body": true
+  },
+  "pass": true
+}

@@ -1,0 +1,47 @@
+{
+  "recorded_at_utc": "2026-10-20T04:15:23.5417862Z",
+  "status": "blocked_by_saved_browser_origin_permission",
+  "account": "daejinha",
+  "authenticated_browser": true,
+  "origin": "https://www.pythonanywhere.com",
+  "console_id": 48736170,
+  "existing_webapp": {
+    "domain": "daejinha.pythonanywhere.com",
+    "python_version": "3.13",
+    "source": "/home/daejinha/mobile-web-service-project",
+    "working_directory": "/home/daejinha/mobile-web-service-project",
+    "virtualenv": "/home/daejinha/.virtualenvs/mobile-web-service",
+    "static": "/home/daejinha/mobile-web-service-project/staticfiles",
+    "media": "/home/daejinha/mobile-web-service-project/media",
+    "force_https": false,
+    "expiry_observed": "2026-10-23",
+    "wsgi_sha256": "e84e588f393c4a7f808c69d0970915e42fa4561eead906bd67280d8ed1d9023e"
+  },
+  "uploads": [
+    "pythonanywhere-common01-20261019-191129.zip",
+    "pythonanywhere-common01-20261019-191129.json",
+    "pa_common01_20261020.py"
+  ],
+  "package_files_verified_in_pythonanywhere": 137,
+  "package_sha256": "bde2073c03369af989eb45f6595a79d362ac7e351e584b2a47a5021b664e761e",
+  "old_blog_migrations": [
+    "0001_initial",
+    "0002_post_image",
+    "0003_alter_post_image",
+    "0004_alter_post_image"
+  ],
+  "old_media_files": 4,
+  "backup_completed": false,
+  "new_source_extracted": false,
+  "live_wsgi_changed": false,
+  "live_web_settings_changed": false,
+  "production_deployment_verified": false,
+  "blocker": {
+    "initial": "User declined browser origin approval",
+    "conversational_approval_received": true,
+    "retry": "Saved user permission setting or managed policy still denies origin access",
+    "blocked_action": "Bash console frame keyboard input",
+    "no_workaround_attempted": true
+  },
+  "helper_sha256": "fe26885a831468fe960b045036fd06a6369d4b49a2c35ba690bfb505c43685b7"
+}

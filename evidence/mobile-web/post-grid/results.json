@@ -1,0 +1,301 @@
+{
+  "environment": "Actual Android API35 native WebView; ADB original screenshots",
+  "verified_at": "2026-10-20T09:10:00.476Z",
+  "checks": [
+    {
+      "width": 394,
+      "height": 650.2857055664062,
+      "horizontalOverflow": false,
+      "columns": "180.143px 180.143px",
+      "cards": [
+        {
+          "box": {
+            "top": 241.4761962890625,
+            "bottom": 450.8333435058594,
+            "left": 12,
+            "right": 192.1428680419922,
+            "width": 180.1428680419922,
+            "height": 209.35714721679688
+          },
+          "image": {
+            "top": 242.23809814453125,
+            "bottom": 353.87500762939453,
+            "left": 12.7619047164917,
+            "right": 191.38095378875732,
+            "width": 178.61904907226562,
+            "height": 111.63690948486328
+          },
+          "title": {
+            "top": 362.875,
+            "bottom": 402.0714302062988,
+            "left": 22.761905670166016,
+            "right": 181.38095474243164,
+            "width": 158.61904907226562,
+            "height": 39.19643020629883
+          },
+          "href": "https://daejinha.pythonanywhere.com/post/3/"
+        },
+        {
+          "box": {
+            "top": 241.4761962890625,
+            "bottom": 450.8333435058594,
+            "left": 202.1428680419922,
+            "right": 382.2857360839844,
+            "width": 180.1428680419922,
+            "height": 209.35714721679688
+          },
+          "image": {
+            "top": 242.23809814453125,
+            "bottom": 353.87500762939453,
+            "left": 202.90476989746094,
+            "right": 381.52381896972656,
+            "width": 178.61904907226562,
+            "height": 111.63690948486328
+          },
+          "title": {
+            "top": 362.875,
+            "bottom": 402.0714302062988,
+            "left": 212.90476989746094,
+            "right": 371.52381896972656,
+            "width": 158.61904907226562,
+            "height": 39.19643020629883
+          },
+          "href": "https://daejinha.pythonanywhere.com/post/2/"
+        },
+        {
+          "box": {
+            "top": 460.8333435058594,
+            "bottom": 670.1904907226562,
+            "left": 12,
+            "right": 192.1428680419922,
+            "width": 180.1428680419922,
+            "height": 209.35714721679688
+          },
+          "image": {
+            "top": 461.5952453613281,
+            "bottom": 573.2321548461914,
+            "left": 12.7619047164917,
+            "right": 191.38095378875732,
+            "width": 178.61904907226562,
+            "height": 111.63690948486328
+          },
+          "title": {
+            "top": 582.232177734375,
+            "bottom": 621.4286079406738,
+            "left": 22.761905670166016,
+            "right": 181.38095474243164,
+            "width": 158.61904907226562,
+            "height": 39.19643020629883
+          },
+          "href": "https://daejinha.pythonanywhere.com/post/1/"
+        }
+      ],
+      "fullyVisible": 2,
+      "visiblePhotos": 3,
+      "pass": true,
+      "screenshot": "grid-393x650.png",
+      "screenshot_sha256": "e71b5940e7facb22fba391dde8904293e84ef7d2e6a40930191490e8a9f2521a"
+    },
+    {
+      "width": 394,
+      "height": 551.2380981445312,
+      "horizontalOverflow": false,
+      "columns": "180.143px 180.143px",
+      "cards": [
+        {
+          "box": {
+            "top": 241.4761962890625,
+            "bottom": 450.8333435058594,
+            "left": 12,
+            "right": 192.1428680419922,
+            "width": 180.1428680419922,
+            "height": 209.35714721679688
+          },
+          "image": {
+            "top": 242.23809814453125,
+            "bottom": 353.87500762939453,
+            "left": 12.7619047164917,
+            "right": 191.38095378875732,
+            "width": 178.61904907226562,
+            "height": 111.63690948486328
+          },
+          "title": {
+            "top": 362.875,
+            "bottom": 402.0714302062988,
+            "left": 22.761905670166016,
+            "right": 181.38095474243164,
+            "width": 158.61904907226562,
+            "height": 39.19643020629883
+          },
+          "href": "https://daejinha.pythonanywhere.com/post/3/"
+        },
+        {
+          "box": {
+            "top": 241.4761962890625,
+            "bottom": 450.8333435058594,
+            "left": 202.1428680419922,
+            "right": 382.2857360839844,
+            "width": 180.1428680419922,
+            "height": 209.35714721679688
+          },
+          "image": {
+            "top": 242.23809814453125,
+            "bottom": 353.87500762939453,
+            "left": 202.90476989746094,
+            "right": 381.52381896972656,
+            "width": 178.61904907226562,
+            "height": 111.63690948486328
+          },
+          "title": {
+            "top": 362.875,
+            "bottom": 402.0714302062988,
+            "left": 212.90476989746094,
+            "right": 371.52381896972656,
+            "width": 158.61904907226562,
+            "height": 39.19643020629883
+          },
+          "href": "https://daejinha.pythonanywhere.com/post/2/"
+        },
+        {
+          "box": {
+            "top": 460.8333435058594,
+            "bottom": 670.1904907226562,
+            "left": 12,
+            "right": 192.1428680419922,
+            "width": 180.1428680419922,
+            "height": 209.35714721679688
+          },
+          "image": {
+            "top": 461.5952453613281,
+            "bottom": 573.2321548461914,
+            "left": 12.7619047164917,
+            "right": 191.38095378875732,
+            "width": 178.61904907226562,
+            "height": 111.63690948486328
+          },
+          "title": {
+            "top": 582.232177734375,
+            "bottom": 621.4286079406738,
+            "left": 22.761905670166016,
+            "right": 181.38095474243164,
+            "width": 158.61904907226562,
+            "height": 39.19643020629883
+          },
+          "href": "https://daejinha.pythonanywhere.com/post/1/"
+        }
+      ],
+      "fullyVisible": 2,
+      "visiblePhotos": 3,
+      "pass": true,
+      "screenshot": "grid-393x550.png",
+      "screenshot_sha256": "a7eefa435ab355255097eae315ac4d01176466b1eb7efe8bd7c44a6aebac949c"
+    },
+    {
+      "width": 320,
+      "height": 551.2380981445312,
+      "horizontalOverflow": false,
+      "columns": "144px 144px",
+      "cards": [
+        {
+          "box": {
+            "top": 241.4761962890625,
+            "bottom": 426.2440643310547,
+            "left": 12,
+            "right": 156,
+            "width": 144,
+            "height": 184.7678680419922
+          },
+          "image": {
+            "top": 242.23809814453125,
+            "bottom": 331.2857208251953,
+            "left": 12.7619047164917,
+            "right": 155.2381010055542,
+            "width": 142.4761962890625,
+            "height": 89.04762268066406
+          },
+          "title": {
+            "top": 339.28570556640625,
+            "bottom": 378.4821357727051,
+            "left": 20.761905670166016,
+            "right": 147.23810195922852,
+            "width": 126.4761962890625,
+            "height": 39.19643020629883
+          },
+          "href": "https://daejinha.pythonanywhere.com/post/3/"
+        },
+        {
+          "box": {
+            "top": 241.4761962890625,
+            "bottom": 426.2440643310547,
+            "left": 164,
+            "right": 308,
+            "width": 144,
+            "height": 184.7678680419922
+          },
+          "image": {
+            "top": 242.23809814453125,
+            "bottom": 331.2857208251953,
+            "left": 164.76190185546875,
+            "right": 307.23809814453125,
+            "width": 142.4761962890625,
+            "height": 89.04762268066406
+          },
+          "title": {
+            "top": 339.28570556640625,
+            "bottom": 378.4821357727051,
+            "left": 172.76190185546875,
+            "right": 299.23809814453125,
+            "width": 126.4761962890625,
+            "height": 39.19643020629883
+          },
+          "href": "https://daejinha.pythonanywhere.com/post/2/"
+        },
+        {
+          "box": {
+            "top": 434.2440490722656,
+            "bottom": 619.0119171142578,
+            "left": 12,
+            "right": 156,
+            "width": 144,
+            "height": 184.7678680419922
+          },
+          "image": {
+            "top": 435.0059509277344,
+            "bottom": 524.0535736083984,
+            "left": 12.7619047164917,
+            "right": 155.2381010055542,
+            "width": 142.4761962890625,
+            "height": 89.04762268066406
+          },
+          "title": {
+            "top": 532.0535888671875,
+            "bottom": 571.2500190734863,
+            "left": 20.761905670166016,
+            "right": 147.23810195922852,
+            "width": 126.4761962890625,
+            "height": 39.19643020629883
+          },
+          "href": "https://daejinha.pythonanywhere.com/post/1/"
+        }
+      ],
+      "fullyVisible": 2,
+      "visiblePhotos": 3,
+      "pass": true,
+      "screenshot": "grid-320x550.png",
+      "screenshot_sha256": "b1faf736372a3628eb9d19632432215073f4e83c72ae4dab97de57f5eb439abb"
+    }
+  ],
+  "empty": {
+    "gridWidth": 296,
+    "panelWidth": 296,
+    "pass": true
+  },
+  "detail": {
+    "url": "https://daejinha.pythonanywhere.com/post/3/",
+    "hasImage": true,
+    "hasBody": true
+  },
+  "pass": true,
+  "physical_iPhone_verified": false,
+  "published": false
+}

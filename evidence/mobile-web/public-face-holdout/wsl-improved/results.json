@@ -1,0 +1,460 @@
+{
+  "status": "executed",
+  "started": "2026-10-20T06:24:41.629506+00:00",
+  "finished": "2026-10-20T06:24:42.430798+00:00",
+  "environment": "WSL Ubuntu / Python MediaPipe CPU + actual application JavaScript geometry via Node; NO browser execution",
+  "versions": {
+    "mediapipe": "0.10.32",
+    "numpy": "2.5.4",
+    "Pillow": "12.0.0",
+    "opencv-contrib-python-headless": "5.0.0.93"
+  },
+  "test_dependency_note": "Isolated WSL evaluation venv. Replaced GUI OpenCV distribution with headless equivalent because libGL is unavailable. Not an application dependency or production deployment.",
+  "model_sha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f",
+  "source_sha256": {
+    "face-scans.mjs": "267e155e9bd166fbb583a87afa6953d6b0653785239ee783c299475f13602d5e",
+    "pipeline.mjs": "e57d36431c631f1fc78d906b7732d7a379c7bff2fd326ffddde1df3b55f78af9",
+    "vision-engine.mjs": "1f21a9124234bcef7fc87ccad37b171785dd5d5dcfb5bd2fd56cbb769945791c"
+  },
+  "photos": 8,
+  "errors": 0,
+  "annotated_faces": 0,
+  "confirmation_enabled": true,
+  "totals": {
+    "tp": 0,
+    "fn": 0,
+    "fp": 0,
+    "covered_at_80_percent": 0
+  },
+  "baseline_totals": {
+    "tp": 0,
+    "fn": 0,
+    "fp": 0,
+    "covered_at_80_percent": 0
+  },
+  "results": [
+    {
+      "id": "bald-group",
+      "filename": "bald-group.jpg",
+      "expected": null,
+      "faces": 24,
+      "baseline_faces": 3,
+      "passes": 65,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "3cdc20d5-476a-4b1f-b098-3ad8020558bb",
+          "x": 0.9069234642497482,
+          "y": 0.26870550161812295,
+          "w": 0.07789526686807646,
+          "h": 0.10012944983818772,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "1e7bedd4-d6a8-4c40-a9a5-9f3a9befa4b6",
+          "x": 0.15949144008056396,
+          "y": 0.02702265372168285,
+          "w": 0.07527693856998993,
+          "h": 0.09676375404530745,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "500d00bb-04f3-48cc-818c-bb506505db11",
+          "x": 0.011505538771399799,
+          "y": 0.2316181229773463,
+          "w": 0.11847935548841891,
+          "h": 0.1522977346278317,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "1d390013-e297-4cb4-a644-8d40da573821",
+          "x": 0.016263846928499495,
+          "y": 0.03644012944983819,
+          "w": 0.11651560926485396,
+          "h": 0.14977346278317152,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "63dd22d7-f978-4fa7-8713-c837f0be500e",
+          "x": 0.018252769385699898,
+          "y": 0.4389967637540453,
+          "w": 0.1080060422960725,
+          "h": 0.13883495145631075,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "fd9577a8-2025-47d8-9e0a-cce3813271cc",
+          "x": 0.5255790533736153,
+          "y": 0.8277022653721683,
+          "w": 0.12306143001007053,
+          "h": 0.15818770226537215,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "bc9bf8da-d47e-4699-8e35-6afe070df28f",
+          "x": 0.013444108761329307,
+          "y": 0.8133980582524272,
+          "w": 0.1322255790533736,
+          "h": 0.16996763754045308,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "9d7005cd-b8f9-49ce-a070-e8966b06f6ac",
+          "x": 0.25949144008056396,
+          "y": 0.03711974110032362,
+          "w": 0.13811681772406847,
+          "h": 0.17754045307443364,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "513d6440-35b9-4511-b4d3-1134962fa478",
+          "x": 0.16618831822759317,
+          "y": 0.5029449838187702,
+          "w": 0.16560926485397787,
+          "h": 0.21288025889967643,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "ef9a0ff7-2abf-46d1-b13b-4f991b2490b9",
+          "x": 0.14808660624370595,
+          "y": 0.2803236245954693,
+          "w": 0.09556898288016111,
+          "h": 0.12284789644012939,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "c754233b-cf1f-4e25-9ee6-8d75a12e3cbb",
+          "x": 0.4204934541792548,
+          "y": 0.04472491909385113,
+          "w": 0.12175226586102722,
+          "h": 0.15650485436893202,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "3653563f-c942-4f25-b710-79169db222ab",
+          "x": 0.5517119838872105,
+          "y": 0.6871844660194175,
+          "w": 0.09295065458207441,
+          "h": 0.11948220064724913,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "fce7a95b-5b13-4003-a3ef-1247290ea6f4",
+          "x": 0.3712739174219537,
+          "y": 0.5109061488673139,
+          "w": 0.1250251762336354,
+          "h": 0.16071197411003246,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "2137aa0f-43b2-45c2-b2b5-c11221ca8e64",
+          "x": 0.8235146022155085,
+          "y": 0.4546925566343042,
+          "w": 0.05891238670694865,
+          "h": 0.07572815533980581,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "972366e8-d3a2-4109-b984-7d8f0a9833b2",
+          "x": 0.718202416918429,
+          "y": 0.8597734627831715,
+          "w": 0.08575025176233642,
+          "h": 0.11022653721682862,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "fb478bf9-09d0-4c22-9e19-c65b97ca9e7d",
+          "x": 0.8906344410876132,
+          "y": 0.8477669902912621,
+          "w": 0.0968781470292045,
+          "h": 0.12453074433656963,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "5d0771ac-7b86-4d3f-89ee-9d571e15ac5b",
+          "x": 0.5151812688821752,
+          "y": 0.47323624595469255,
+          "w": 0.13026183282980863,
+          "h": 0.16744336569579293,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "83940332-8dc2-48e2-8fe8-734c8525099a",
+          "x": 0.2671450151057402,
+          "y": 0.2650809061488673,
+          "w": 0.11978851963746229,
+          "h": 0.15398058252427188,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "45f0fe42-649d-4e66-b9b2-d47dcb0a0d96",
+          "x": 0.14937059415911377,
+          "y": 0.7628802588996765,
+          "w": 0.16299093655589122,
+          "h": 0.20951456310679595,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "e21401b3-35f5-4eeb-a3e1-eb9baced4ad3",
+          "x": 0.7124118831822759,
+          "y": 0.05944983818770226,
+          "w": 0.18393756294058417,
+          "h": 0.23644012944983817,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "baa75c29-ef22-448a-8c19-332e6fefd237",
+          "x": 0.011052366565961732,
+          "y": 0.6303883495145631,
+          "w": 0.09622356495468277,
+          "h": 0.12368932038834946,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "86a737ae-ffe8-4383-b7a3-fa410e7b9ceb",
+          "x": 0.3661883182275932,
+          "y": 0.787864077669903,
+          "w": 0.12109768378650554,
+          "h": 0.15566343042071196,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "db56ebc6-9eb6-44ce-ba66-e43368884737",
+          "x": 0.4254028197381672,
+          "y": 0.24844660194174759,
+          "w": 0.11847935548841892,
+          "h": 0.15229773462783167,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "91b0822d-41d2-49cc-99ae-5fa803d09c89",
+          "x": 0.16059919436052367,
+          "y": 0.15077669902912622,
+          "w": 0.07004028197381673,
+          "h": 0.09003236245954693,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 218,
+      "sha256": "e0c40697dbd9a07684274f71760bc5161468e926ba75ff90d48b168019402e8b",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "two-people",
+      "filename": "two-people.jpg",
+      "expected": 2,
+      "faces": 2,
+      "baseline_faces": 2,
+      "passes": 47,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "42718269-8ca5-415b-a207-03be9dbebf23",
+          "x": 0.18952042628774424,
+          "y": 0.08532526475037823,
+          "w": 0.16625222024866787,
+          "h": 0.2832072617246596,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "070e951d-5e94-4fd1-8375-71e436cd2e6f",
+          "x": 0.6779307282415631,
+          "y": 0.12307110438729198,
+          "w": 0.17433392539964476,
+          "h": 0.2969742813918305,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 94,
+      "sha256": "536b29cd513fb618e4d5aa79d51a279948daa804ce359463449cce5f9dc68aa7",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "profile-person",
+      "filename": "profile-person.jpg",
+      "expected": 1,
+      "faces": 1,
+      "baseline_faces": 1,
+      "passes": 42,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "792b0ae4-31b8-4929-8762-4a97b62c4423",
+          "x": 0.22164536741214058,
+          "y": 0.20645833333333333,
+          "w": 0.6541533546325878,
+          "h": 0.34125000000000005,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 89,
+      "sha256": "a7efcc907375274796f39646510704aa86672d59f6d5469d69af3c85590976a6",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "portrait-person",
+      "filename": "portrait-person.jpg",
+      "expected": 1,
+      "faces": 1,
+      "baseline_faces": 1,
+      "passes": 15,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "fdcf8cf7-b371-4c69-a984-337bf5e07044",
+          "x": 0.3874583795782464,
+          "y": 0.107470703125,
+          "w": 0.3837957824639289,
+          "h": 0.16884765624999998,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 82,
+      "sha256": "3c17508bb91554c637a2eabddfae790e5bb1caba93130814fc2ac50be9760c4c",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "graffiti",
+      "filename": "graffiti.png",
+      "expected": 0,
+      "faces": 0,
+      "baseline_faces": 0,
+      "passes": 30,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [],
+      "elapsed_ms": 89,
+      "sha256": "1504b769303c7bde00fa578eeaad3c68e02aceabeb1242e556f1f8d19e4bdea5",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "sudoku",
+      "filename": "sudoku.png",
+      "expected": 0,
+      "faces": 0,
+      "baseline_faces": 0,
+      "passes": 21,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [],
+      "elapsed_ms": 54,
+      "sha256": "3cd9ab173f7178c0a16bba9f867062b58b5d60918d5aeb8ced85cba0b24c353a",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "other-dog",
+      "filename": "other-dog.jpg",
+      "expected": 0,
+      "faces": 0,
+      "baseline_faces": 1,
+      "passes": 29,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [],
+      "elapsed_ms": 58,
+      "sha256": "d4cb12ea8a768582562e1f1c0c930ea6fc4757f5b66551b986b41498efd75ca1",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "existing-portrait",
+      "filename": "existing-portrait.jpg",
+      "expected": 1,
+      "faces": 1,
+      "baseline_faces": 1,
+      "passes": 22,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "7a2bce0c-2bc1-4ff9-8f84-5dbdf3f0416c",
+          "x": 0.26337890625,
+          "y": 0.18141666666666667,
+          "w": 0.5103515624999999,
+          "h": 0.4355,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 46,
+      "sha256": "a8ca6d734765703b09728ab47fe59f473d93ae3967fc24c7c0288c3c7adb7130",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    }
+  ],
+  "matching": "maximum one-to-one matching at IoU >= 0.3, padded mask boxes against dlib annotations",
+  "limitations": [
+    "Different native MediaPipe runtime from browser WASM; browser parity not established",
+    "Pillow JPEG decoding/resampling differs from browser canvas",
+    "No actual canvas mosaic pixel test, worker, Safari or production UI test",
+    "Small selected public sample; not population accuracy; existing XML may omit visible faces"
+  ],
+  "source_stable": true
+}

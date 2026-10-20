@@ -1,0 +1,27 @@
+{
+  "purpose": "Codex가 추가 기능을 구현·검증할 도구가 있는지 읽기 전용 확인. 새 기능 구현 완료 증거가 아님.",
+  "wsl": {
+    "python": "3.12.15",
+    "django": "6.1.1",
+    "pillow": "12.3.0",
+    "sqlite": "3.53.1",
+    "venv": "/home/daeha/.venvs/mobile_web_service",
+    "check": "pass"
+  },
+  "windowsAndroid": {
+    "java": "25.0.3",
+    "projectLanguageLevel": "Java 17",
+    "compileSdk": 36,
+    "minSdk": 24,
+    "studio": "C:/Users/1/AppData/Local/Programs/Android/android-studio",
+    "sdk": "C:/Users/1/AppData/Local/Programs/Android/Sdk",
+    "adbCommand": "pass",
+    "availableAvd": "mobile_web_api35",
+    "connectedDevicesAtCheck": 0,
+    "check": "pass",
+    "note": "초기 제한 셸의 LOCALAPPDATA가 sandbox AC 경로를 가리켜 helper가 실패했다. 실제 호스트 실행에서 같은 helper/JDK/ADB/AVD 명령은 정상. 도구 재설치나 소스 수정은 하지 않았다."
+  },
+  "featureImplementationTestsRun": false,
+  "pythonAnywhereAccountInspected": false,
+  "userManualInstallationRequiredForThisCheck": false
+}

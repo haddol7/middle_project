@@ -1,0 +1,35 @@
+{
+  "environment": "WSL Ubuntu, actual local development DB and HTTP",
+  "checks": [
+    {
+      "table": "auth_user",
+      "rows": 51,
+      "identical": true
+    },
+    {
+      "table": "blog_post",
+      "rows": 61,
+      "identical": true
+    },
+    {
+      "table": "blog_photocontent",
+      "rows": 14,
+      "identical": true
+    },
+    {
+      "table": "blog_phototag",
+      "rows": 28,
+      "identical": true
+    },
+    {
+      "table": "blog_phototextline",
+      "rows": 14,
+      "identical": true
+    }
+  ],
+  "studio_tables_removed": true,
+  "local_http_posts": 61,
+  "local_owner": "baseline_author",
+  "production_owner": "daejinha",
+  "pass": true
+}

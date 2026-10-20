@@ -1,0 +1,19 @@
+{
+  "environment": "WSL Django template render and HTML contract",
+  "verified_at": "2026-10-20T09:26:59.102833+00:00",
+  "pass_all": true,
+  "unique_ids": 73,
+  "composer_id_references": 56,
+  "tabs": {
+    "tab-story": "panel-story",
+    "tab-tags": "panel-tags",
+    "tab-text": "panel-text"
+  },
+  "source_sha256": {
+    "blog/templates/blog/post_edit.html": "97eb50ec30a7c2e5dcf3f28a75ac4cce44058d445a71ee7d908092a7030afb3b",
+    "blog/static/blog/content/composer.mjs": "cceaae7616a275a923383c3e327cfbae4c990bbf66b5c70f8b7a6559e0a869ef",
+    "blog/static/blog/content/content.css": "aedaeb9010f0be9a3e55de06d452e63c52bf7663af1aebbc76d3eec53b02c938"
+  },
+  "browser_layout_executed": false,
+  "physical_iPhone_verified": false
+}

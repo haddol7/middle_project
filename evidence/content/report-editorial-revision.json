@@ -1,0 +1,139 @@
+{
+  "output": "C:\\Users\\1\\mobile_web_service\\common01\\모바일웹서비스 프로젝트 공통평가 01_수행 결과 보고서.docx",
+  "sha256": "446534a1e3b79403741ff97a7845d22d501c878283ceaba522682cdc89fac14d",
+  "bytes": 4907770,
+  "reference": "C:\\Users\\1\\.codex\\codex-remote-attachments\\01a1540d-3877-7293-8a0f-ccdd0262b3aa\\2D08D360-E681-4A50-AA9C-9CBAD76F8E57\\2-모바일웹서비스-프로젝트_공통평가-01_수행-결과-보고서.docx",
+  "reference_sha256": "32143cf4d65a830410d5dec20b7d5b9b922d448c1382d2ab7dc5fc9a93384d6c",
+  "same_attached_and_old_form": true,
+  "original_requirement_cells_preserved": true,
+  "section_geometry_preserved": true,
+  "opaque_parts_preserved": true,
+  "examiner_judgement_blank": true,
+  "identity_blank_by_user_reply": true,
+  "registration_rows": 5,
+  "user_features": 3,
+  "embedded_original_bytes": true,
+  "public_release": "20261020092725e44d69",
+  "native_cloud_sync_verified": true,
+  "visual_review": "All 16 page PNGs inspected; no clipped or overlapping text/images, broken tables or orphan continuation pages observed",
+  "remaining": [
+    "학번 이름 GitHub URL push 제출",
+    "ID1 3 4 5 6 7 지정 화면 증빙"
+  ],
+  "status": "editorially_revised_and_visually_verified_with_submission_gaps",
+  "verified_at": "2026-10-20T10:43:03.205420+00:00",
+  "before_editorial_sha256": "dd515fb0da40c02ab7aef46ba9cf41708f10e06017f28b6849e6ca0971e990e4",
+  "editorial_review": "common01/evidence/content/report-editorial-review.json",
+  "editorial_followup_reviewers": [
+    "report_voice_review",
+    "report_evidence_review"
+  ],
+  "document_pages": 16,
+  "assessment_form_pages": 2,
+  "appendix_pages": 14,
+  "image_count": 18,
+  "original_images_unchanged": true,
+  "assessment_status_unchanged": true,
+  "portable_copy_render_identical": true,
+  "ready_for_final_submission": false,
+  "github_pushed": false,
+  "course_submitted": false,
+  "pages": [
+    {
+      "page": 1,
+      "sha256": "2d207e7f3afb434469e6a6d97eeda01471141279f949d4be626007ae5f03553e",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 2,
+      "sha256": "5e1b8c4196db826b69245c306dda88e6ef7408763fa3995a2c86c62a1211927f",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 3,
+      "sha256": "87215a8e3f69b91036bfaa7d02e525841f4a58e143bbc577a88dfeb43e40d2f2",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 4,
+      "sha256": "30ed03738184f0cae7f3740fa07f8024d72dcd440f9af26185aedd51ee0c757b",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 5,
+      "sha256": "1222c27a908233c5f7416c70d049dc16f8ac775f01829f9e712df900b2bcf6f8",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 6,
+      "sha256": "7f572aff1b9587bbd95f147593450213afaa33e6e165dd943bc0f62e4259cfd7",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 7,
+      "sha256": "7d82f0d6f5948669572e44253ab61ad6316872d2d3052aa275ec5435e27c6c5e",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 8,
+      "sha256": "8b9d09e3b9172d8d39769dd17f76379ef7df293edb0dc42b239c063b4f67566a",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 9,
+      "sha256": "43502a3387e62b9e5d6538e7573ec0b419fb002dd4da4707752a42b0f8fb716c",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 10,
+      "sha256": "0ebcb2d112946e09c30e7386a38f4edcaeb02c680ada3dfce5b8f17576d57923",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 11,
+      "sha256": "4de115138b47685260a9b764b689e3d9209248cc04ad9a534352d5914e0fe129",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 12,
+      "sha256": "b293b967650b3c2c3fd9d67e31516b6702e6ac9b660753bb0b1553c79a19af42",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 13,
+      "sha256": "7025589695ba95b66498bd17931af17ffb77182a26355a9654300cc438076921",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 14,
+      "sha256": "3c778aa5e29e69b78d28e4d45fc1dbe377a6d9f94d1c43014f2eeb048e6af33b",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 15,
+      "sha256": "2b3c5eb836468d4f86da4d05025a0375d86fddca05de30d7b8d35a78e6765a91",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    },
+    {
+      "page": 16,
+      "sha256": "5ade8f3c7c003872435407a24c020c830e95b086d07502e79be2de8b6b736bcc",
+      "portable_render_identical": true,
+      "visually_reviewed": true
+    }
+  ]
+}

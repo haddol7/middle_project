@@ -1,0 +1,11 @@
+{
+  "username": "daejinha",
+  "reset_completed": true,
+  "server_authentication_verified": true,
+  "is_staff": true,
+  "is_superuser": true,
+  "permissions_changed": false,
+  "completed_at": "2026-10-20T05:43:21.606739+00:00",
+  "public_admin_login_verified": true,
+  "verification_session_logged_out": true
+}

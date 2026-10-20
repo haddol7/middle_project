@@ -1,0 +1,12 @@
+{
+  "environment": "WSL Ubuntu, actual PythonAnywhere HTTPS",
+  "checks": {
+    "no_full_list": true,
+    "no_plain_list": true,
+    "matched_locations_retained": true,
+    "cache_version_updated": true,
+    "deployed_module_matches": true
+  },
+  "pass": true,
+  "module_sha256": "307e26f761382193abfa742753e4ab18fdbd9c69e81fac5eff7ec8e1ec7411d7"
+}

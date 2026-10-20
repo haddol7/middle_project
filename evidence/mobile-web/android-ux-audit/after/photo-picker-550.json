@@ -1,0 +1,42 @@
+{
+  "url": "https://daejinha.pythonanywhere.com/post/new/",
+  "title": "새 사진 게시 · Common 01",
+  "width": 412,
+  "height": 551,
+  "clientWidth": 412,
+  "visualHeight": 551.2380981445312,
+  "scrollHeight": 551,
+  "horizontalOverflow": false,
+  "header": {
+    "top": 0,
+    "bottom": 60.761905670166016,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 60.761905670166016,
+    "visible": false
+  },
+  "firstPhoto": null,
+  "main": {
+    "top": 80.76190948486328,
+    "bottom": 251.08333587646484,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 170.32142639160156,
+    "visible": true
+  },
+  "primary": {
+    "top": 290.0952453613281,
+    "bottom": 338.0952453613281,
+    "left": 36.761905670166016,
+    "right": 375.42859268188477,
+    "width": 338.66668701171875,
+    "height": 48,
+    "visible": true
+  },
+  "visibleText": "사진 블로그\n사진 게시\n계정 ▾\n\nPHOTO BLOG / UPLOAD\n\n새 사진 게시\n\n얼굴은 가리고, 분류와 문구는 확인하고 올려요.\n\n취소\n사진 선택\n1 / 3\n＋\n어떤 순간을 남길까요?\n\n사진은 이 브라우저에서 먼저 처리합니다.\n게시할 때 가린 사본만 서버로 보냅니다.\n\n사진 보관함에서 선택\n새 사진 촬영\n\n원본은 보존하고 가린 사본만 게시해요.\n\n사진 형식·처리 안내\n사진과 이야기를 함께 · 사진 블로그",
+  "environment": "Actual Android API35 emulator WebView; native ADB screenshot",
+  "physical_iPhone_verified": false,
+  "published": false
+}

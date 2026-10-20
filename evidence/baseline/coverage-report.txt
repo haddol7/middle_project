@@ -1,0 +1,34 @@
+ACTUAL WSL SUBPROCESS OUTPUT: coverage-report
+Run started UTC: 2026-10-19T12:18:42.598405+00:00
+WSL: Ubuntu
+Working directory: /mnt/c/Users/1/mobile_web_service/common01/PhotoBlogServer
+Command: /home/daeha/.venvs/mobile_web_service/bin/python -m coverage report
+Credential-like values are redacted if present; no terminal screenshot is fabricated.
+
+Name                     Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------
+blog/admin.py                7      0      0      0 100.0%
+blog/api_v1.py             109      0     24      0 100.0%
+blog/api_v1_urls.py          3      0      0      0 100.0%
+blog/apps.py                 7      0      0      0 100.0%
+blog/domain.py             100      0     50      0 100.0%
+blog/file_cleanup.py        22      0      8      1  96.7%   10->exit
+blog/forms.py                7      0      0      0 100.0%
+blog/models.py              63      1      8      1  97.2%   47->51, 77
+blog/permissions.py          4      0      0      0 100.0%
+blog/serializers.py          7      0      0      0 100.0%
+blog/services.py           137      4     54      8  93.7%   57->75, 67->69, 98, 123, 126->125, 141->143, 148, 177
+blog/signup_forms.py         6      0      0      0 100.0%
+blog/studio_signals.py      38      0     14      2  96.2%   22->exit, 32->exit
+blog/urls.py                 6      0      0      0 100.0%
+blog/validators.py          32      1     10      1  95.2%   33
+blog/views.py               60      1     10      1  97.1%   43
+blog/village_web.py         41      2     10      2  92.2%   35, 51
+photoblog/settings.py       42      0      6      0 100.0%
+photoblog/urls.py           10      1      2      1  83.3%   22
+--------------------------------------------------------------------
+TOTAL                      701     10    196     17  97.0%
+
+4 empty files skipped.
+
+Exit code: 0

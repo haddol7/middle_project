@@ -1,0 +1,1881 @@
+{
+  "reviewer": "ux",
+  "rubric": "R25-T20-U25-F15-E15",
+  "rows": [
+    {
+      "id": "S01",
+      "R": 5,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C01"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "복합 조건과 결과 수를 검색 화면에 일관되게 연결하면 탐색 편의가 명확하지만 필수 공개 배열은 유지하고 C01을 별도로 집계해야 한다."
+    },
+    {
+      "id": "S02",
+      "R": 4,
+      "T": 5,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "C02"
+      ],
+      "overlaps": [
+        "S31"
+      ],
+      "recognitionRisk": "medium",
+      "note": "앨범 관계와 순서를 안정적으로 보존하는 처리는 C02의 정리 경험을 뒷받침하나 단순 CRUD만으로 서버 독립 가점을 보장할 수 없다."
+    },
+    {
+      "id": "S03",
+      "R": 4,
+      "T": 5,
+      "U": 4,
+      "F": 5,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "C03"
+      ],
+      "overlaps": [
+        "S01",
+        "C32"
+      ],
+      "recognitionRisk": "medium",
+      "note": "조건을 읽기 쉬운 문장으로 조립하는 C03과 함께라면 유용하지만 검색 조건 저장과 의미가 겹치고 두 항목의 완성 비용이 크다."
+    },
+    {
+      "id": "S04",
+      "R": 4,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [
+        "C04"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "기기 간 저장 상태 일치는 명확한 편의이나 흔한 기능이라 계정 전환과 즉시 피드백까지 갖춘 C04를 별도 구현해야 한다."
+    },
+    {
+      "id": "S05",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C42"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 분류 체계를 일관되게 만드는 가치는 있으나 태그 입력과 관리용 Android 항목이 따로 정의되지 않아 한 슬롯으로 체감 기능이 완성되지 않는다; 보완 후: C42의 태그 입력과 이름 정리 및 태그별 탐색으로 결과를 명확히 시연할 수 있지만 일반 태그 지정과 별도 일괄 정리를 이중 집계하면 안 된다."
+    },
+    {
+      "id": "S06",
+      "R": 4,
+      "T": 5,
+      "U": 5,
+      "F": 4,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "C06"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "잘못 삭제한 사진의 복구라는 목적과 실패 전후 시연이 뚜렷하고 C06과의 연동이 좋으나 휴지통 파일도 무료 저장공간을 사용한다."
+    },
+    {
+      "id": "S07",
+      "R": 4,
+      "T": 5,
+      "U": 4,
+      "F": 3,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "C07"
+      ],
+      "overlaps": [
+        "S18"
+      ],
+      "recognitionRisk": "medium",
+      "note": "수정 실수를 되돌리는 C07과 결합하면 설득력이 있으나 사진 버전의 저장량과 삭제 정합성을 관리할 부담이 크다."
+    },
+    {
+      "id": "S08",
+      "R": 3,
+      "T": 5,
+      "U": 4,
+      "F": 5,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "C43"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "초기 검토: 덮어쓰기를 막는 실제 기술은 좋지만 안전장치로만 평가될 위험이 있고 Android 충돌 비교와 선택 UI를 추가 등록해야 한다; 보완 후: C43에서 덮어쓰기 직전 편집을 비교하고 선택하는 구성이 명확해졌지만 일반 충돌 안전장치와 독립 편의 기능의 경계는 여전히 불확실하다."
+    },
+    {
+      "id": "S09",
+      "R": 4,
+      "T": 5,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C08"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "dependencyAlternatives": [
+        [
+          "C08"
+        ],
+        [
+          "C11"
+        ]
+      ],
+      "note": "초기 검토: 끊긴 연결에서 중복 게시를 막는 의미가 C08 대기함으로 명확해지지만 서버 키 처리만 구현하고 완성된 사용자 기능으로 주장해서는 안 된다; 보완 후: 현재 최소 구성은 C08 대기함과의 두 항목이며 C11 실패 복구 화면을 택하는 대안도 있지만 두 클라이언트를 동시에 필수로 집계하지 않는다."
+    },
+    {
+      "id": "S10",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C44"
+      ],
+      "overlaps": [
+        "S11"
+      ],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 같은 사진의 실수 게시를 직접 줄일 수 있으나 경고 후 계속하기와 기존 사진 열기용 Android UI 비용이 별도로 필요하다; 보완 후: C44에서 기존 사진을 확인하고 다른 사진을 선택하는 흐름이 완성되지만 완전 중복 탐지와 유사 후보 정리를 중복 등록하지 않도록 한다."
+    },
+    {
+      "id": "S11",
+      "R": 4,
+      "T": 5,
+      "U": 4,
+      "F": 4,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "C62"
+      ],
+      "overlaps": [
+        "S10"
+      ],
+      "recognitionRisk": "low",
+      "note": "초기 검토: 사용자에게 유사 후보를 비교하도록 제시하면 유용하지만 C18의 두 장 비교를 그룹 탐색으로 확장해야 하며 자동 정답처럼 표현하면 안 된다; 보완 후: C62의 후보 그룹과 비교 및 다른 사진으로 판단하는 조작으로 목적이 구체화되지만 dHash의 오탐을 전제로 제한된 처리 범위를 지켜야 한다."
+    },
+    {
+      "id": "S12",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 4,
+      "E": 4,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C45"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "초기 검토: 빠른 사진 목록은 체감되지만 기본 성능 보완으로 인정될 위험이 크고 Android 이미지 로더와 파생본 저장공간까지 별도 준비해야 한다; 보완 후: C45의 화질 선택과 재요청으로 체감을 보여줄 수 있어도 일반 이미지 로딩 품질 보완에 머물면 독립 추가 기능의 설득력이 약하다."
+    },
+    {
+      "id": "S13",
+      "R": 4,
+      "T": 4,
+      "U": 3,
+      "F": 5,
+      "E": 4,
+      "effort": 3,
+      "status": "pass",
+      "required": [
+        "C46"
+      ],
+      "overlaps": [
+        "C22"
+      ],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 공개 사진의 위치 노출을 줄이는 목적은 분명하지만 결과 안내용 Android UI와 처리 전후 메타데이터 증빙이 필요하다; 보완 후: C46에서 GPS 처리 전후와 범위를 설명하더라도 공개 사진의 통상 안전장치와 독립 추가 기능을 구분해야 한다."
+    },
+    {
+      "id": "S14",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 4,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C64"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 촬영일 중심 탐색은 게시일과 구분되는 가치가 있지만 C20의 날짜 표시와 보정 입력까지 마련해야 설명이 완성된다; 보완 후: C64에서 날짜 출처와 없음 및 보정을 명시하면 촬영일 데이터의 의미가 드러나지만 타임라인 자체는 별도의 C20이다."
+    },
+    {
+      "id": "S15",
+      "R": 4,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C47"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "초기 검토: 무료 계정의 제한 안에서 업로드 가능량을 미리 알려주는 효용은 높지만 잔여량과 정리 행동을 보여주는 Android UI는 별도 항목이다; 보완 후: C47의 사진별 크기와 정렬 및 정리 결과가 정의되어 잔여량 숫자를 실제 사진 정리 행동으로 연결할 수 있다."
+    },
+    {
+      "id": "S16",
+      "R": 4,
+      "T": 5,
+      "U": 4,
+      "F": 4,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "C25"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "복수 사진의 일관된 게시 결과는 유용하지만 C25의 순차 게시 대안보다 서버 정합성과 파일 정리 검증 비용이 커진다."
+    },
+    {
+      "id": "S17",
+      "R": 4,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 4,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C05",
+        "S02"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "앨범으로 여러 사진을 한 번에 이동하는 범위로 평가하며 S02와 C02 및 C05까지 의존성이 이어져 최종 슬롯 소비가 크다."
+    },
+    {
+      "id": "S18",
+      "R": 3,
+      "T": 5,
+      "U": 4,
+      "F": 3,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "C61",
+        "C12"
+      ],
+      "overlaps": [
+        "S07"
+      ],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 원본 보존은 편집 안심에 도움이 되지만 C12 외에 버전 관리 UI가 필요하고 S07과 사진 복원 가점이 중복될 수 있다; 보완 후: C12 편집 결과를 C61에서 원본과 비교하고 복원하는 세 항목 구성이며 사진 버전 저장량과 S07의 복원 기능 중복에 주의해야 한다."
+    },
+    {
+      "id": "S19",
+      "R": 3,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [
+        "C34"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "여러 기기에서 같은 문구를 재사용하는 편의는 있으나 단말 템플릿에 비해 추가 서버 항목의 차별성이 작다."
+    },
+    {
+      "id": "S20",
+      "R": 4,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C48"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "초기 검토: 사진에 관한 대화라는 사용 흐름을 만들 수 있지만 별도 Android 댓글과 답글 UI가 후보에 없어 실제 등록 수를 추가 계산해야 한다; 보완 후: C48의 입력 보호와 답글 위계 및 전송 실패 처리로 사진을 통한 대화 경험을 Android에서 구체적으로 시연할 수 있지만 두 항목이 필요하다."
+    },
+    {
+      "id": "S21",
+      "R": 3,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [
+        "C49"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 피드백 동작을 예쁘게 완성할 여지는 있으나 반응 하나의 기술적 실질이 작고 Android 반응 UI가 별도로 필요하다; 보완 후: C49로 연속 터치와 실패 복구를 시연할 수 있어도 반응 하나의 편의와 기술적 실질은 작아 두 항목 구성의 우선순위는 높지 않다."
+    },
+    {
+      "id": "S22",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C50"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "초기 검토: 보고 싶은 작성자의 사진만 보는 편의는 명확하나 구독과 피드용 Android 화면을 추가 구현해야 하고 소셜 방향의 목적 설명이 필요하다; 보완 후: C50의 구독 관리와 새 사진 피드로 목적이 구체화되지만 두 항목이 필요하고 단순 시간순 목록과의 차이를 설명해야 한다."
+    },
+    {
+      "id": "S23",
+      "R": 2,
+      "T": 4,
+      "U": 3,
+      "F": 5,
+      "E": 4,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C51"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "초기 검토: 기기 간 이어읽기의 추가 가치는 사진글이 길 때에 한정되며 C33에 동기화 상태와 충돌 복구를 더해야 한다; 보완 후: C51에서 삭제된 사진과 동기화 실패까지 처리하는 구성이 되었지만 긴 사진글을 다른 기기에서 읽을 필요가 작다면 효용은 제한적이다."
+    },
+    {
+      "id": "S24",
+      "R": 4,
+      "T": 5,
+      "U": 5,
+      "F": 3,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "C52"
+      ],
+      "overlaps": [
+        "C09"
+      ],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 다른 기기에서도 작성을 이어가는 UX는 좋지만 C09의 로컬 초안과 다르며 별도 클라우드 초안 UI와 사진 사본 용량을 계산해야 한다; 보완 후: C52의 시각과 내용 비교로 기기 간 초안의 가치를 보여줄 수 있지만 로컬 초안과의 중복 등록 판단 및 사진 사본 제한이 필요하다."
+    },
+    {
+      "id": "S25",
+      "R": 3,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [
+        "C63"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 과거 사진을 다시 발견하는 카드 효과는 있으나 조회 로직만으로 난도를 보여주기 어렵고 C20에 회상 카드가 추가되어야 한다; 보완 후: C63의 연도 카드와 원문 이동으로 과거 사진의 재발견을 보여줄 수 있지만 단순 날짜 조회의 서버 구현 난도는 높지 않다."
+    },
+    {
+      "id": "S26",
+      "R": 4,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C21"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "달력의 썸네일과 개수를 안정적으로 공급하면 C21의 탐색이 좋아지지만 소량에서는 단말 집계로 충분해 서버 독립 가점의 근거가 필요하다."
+    },
+    {
+      "id": "S27",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 4,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C53"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 통계를 실제 정리 행동으로 연결하지 않으면 장식적 차트가 될 수 있고 Android 통계와 정리 연결 UI가 따로 필요하다; 보완 후: C53의 차트에서 대상 사진으로 이동하므로 장식적 그래프보다 정리 행동에 연결되지만 지표를 사용하는 목적을 설명해야 한다."
+    },
+    {
+      "id": "S28",
+      "R": 3,
+      "T": 4,
+      "U": 3,
+      "F": 5,
+      "E": 4,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C54"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "초기 검토: 작업이 반영되었는지 확인하는 가치는 있으나 관리자 로그와 구분되는 사용자 목적 및 별도 Android 이력 UI를 제시해야 한다; 보완 후: C54에서 반영 결과를 추적하는 경험이 정의되었어도 사용자가 이력을 확인해야 할 필요는 단순 개발 로그와 구분해 설명해야 한다."
+    },
+    {
+      "id": "S29",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 4,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "C55",
+        "S20"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 댓글 알림만 수동 새로고침으로 조회하는 범위이며 S20의 댓글 UI와 별도 알림함까지 필요해 세 개 이상 항목의 비용이 생긴다; 보완 후: 댓글을 원천으로 택한 최소 구성은 S20과 C48 및 S29와 C55의 네 항목이며 앱 종료 후 푸시는 포함하지 않는다."
+    },
+    {
+      "id": "S30",
+      "R": 2,
+      "T": 2,
+      "U": 3,
+      "F": 5,
+      "E": 5,
+      "effort": 2,
+      "status": "pass",
+      "required": [
+        "C28"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "공개 상세 URL이 이미 있으므로 링크 생성 API만의 추가 편의와 난도는 약하고 실제 공유 경험은 C28에서 완성된다."
+    },
+    {
+      "id": "S31",
+      "R": 4,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C56"
+      ],
+      "overlaps": [
+        "S02"
+      ],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 대표 기록을 직접 앞에 두는 편의는 있지만 Android 재정렬 UI가 별도로 필요하고 앨범 내 순서 저장과 중복 집계하기 쉽다; 보완 후: C56의 고정과 목록 재배치로 보여주고 싶은 사진을 앞에 두는 편의가 구체화되었지만 앨범 안의 순서 저장과 중복을 피해야 한다."
+    },
+    {
+      "id": "S32",
+      "R": 4,
+      "T": 4,
+      "U": 3,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C57"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 데이터를 갖고 나오는 목적은 명확하지만 파일 저장과 결과 안내용 Android 항목을 별도로 마련해야 하며 사진 PDF와는 다른 기능이다; 보완 후: C57에서 범위와 형식을 확인하고 파일로 저장하는 흐름이 완성되지만 사진 본체 백업이나 PDF 출력과 같은 효능으로 설명하면 안 된다."
+    },
+    {
+      "id": "S33",
+      "R": 4,
+      "T": 5,
+      "U": 3,
+      "F": 4,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "C58",
+        "S05"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 반영 전 오류와 변경 내역을 보여주면 공이 드러나지만 S05와 별도 Android 가져오기 화면에 의존해 비용이 높다; 보완 후: 태그 CSV의 사전 검사와 반영에는 C58 및 S05와 C42까지 네 항목이 필요하므로 비용에 맞는 반복 분류 작업의 근거가 있어야 한다."
+    },
+    {
+      "id": "S34",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 4,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C15"
+      ],
+      "overlaps": [
+        "C15"
+      ],
+      "recognitionRisk": "high",
+      "note": "초기 검토: 공유 사본을 서버에서 생성하는 방식은 가능하나 별도 미리보기와 공유 UI가 필요하며 C15와 같은 사용자 기능을 두 번 집계하면 안 된다; 보완 후: C15를 서버 합성 버전으로 연결한 두 항목 구성이며 로컬 합성과 사용자에게 같은 결과를 주는 부분을 별도 기능으로 부풀리지 않는다."
+    },
+    {
+      "id": "S35",
+      "R": 3,
+      "T": 4,
+      "U": 3,
+      "F": 5,
+      "E": 4,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C36"
+      ],
+      "overlaps": [
+        "C36"
+      ],
+      "recognitionRisk": "high",
+      "note": "초기 검토: 지표의 한계를 설명하는 Android 안내 UI가 필요하며 C36로 단말 처리할 수 있는 기능을 서버로 옮긴 것만으로 추가 가점은 약하다; 보완 후: C36을 서버 계산 버전으로 연결한 두 항목 구성이며 제한적 참고 지표를 서버로 옮겼다는 것만으로 추가 항목의 설득력이 높아지지는 않는다."
+    },
+    {
+      "id": "S36",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 4,
+      "E": 4,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C35"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 색을 시각적으로 선택해 사진을 찾는 경험은 차별화되지만 C35에 서버 검색 결과와 범위 안내를 확장해야 한다; 보완 후: C35의 색상 선택에서 서버의 제한된 사진 집합을 검색하는 두 항목 구성이며 로컬 팔레트 추출 대안과 구분해야 한다."
+    },
+    {
+      "id": "S37",
+      "R": 3,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [
+        "C59"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 본인 메모는 간단한 편의이지만 별도 Android 메모 입력 UI가 필요하고 사진 자체가 비공개인 것처럼 설명해서는 안 된다; 보완 후: C59로 공개 본문과 분리된 개인 메모를 찾는 흐름이 구체화되었지만 사진 비공개 보관은 아니며 단순 텍스트 저장에 가깝다."
+    },
+    {
+      "id": "S38",
+      "R": 4,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [
+        "C60"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "초기 검토: 피드를 스스로 정리하는 효용은 있으나 숨김과 해제 UI를 추가 집계해야 하며 기본 공개 API에서 게시물이 사라지는 기능은 아니다; 보완 후: C60의 실행 취소와 해제 목록으로 내 피드를 정리하는 편의를 시연할 수 있지만 기본 공개 API에서 사진을 없애는 기능은 아니다."
+    },
+    {
+      "id": "S39",
+      "R": 1,
+      "T": 3,
+      "U": 2,
+      "F": 5,
+      "E": 4,
+      "effort": 3,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "성장 수치와 이력은 기존 화면으로 보여줄 수 있어도 사진 이용을 편하게 하는 이유가 약해 높은 구현 노력과 추가점수 설득력을 구분해야 한다."
+    },
+    {
+      "id": "S40",
+      "R": 2,
+      "T": 5,
+      "U": 3,
+      "F": 5,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "C40"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "배치 검증과 충돌 처리는 기술적 실질이 크지만 C40과 두 항목을 쓰는 꾸미기가 사진 편의라는 목적에 얼마나 기여하는지는 약하다."
+    },
+    {
+      "id": "S41",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "C41"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "다중 사용자 기반은 다른 기능에 유용하나 기존 구현이며 기본 인증과 소유권 안전장치의 중복 가점 위험을 따져야 한다."
+    },
+    {
+      "id": "C01",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S01"
+      ],
+      "overlaps": [
+        "C32"
+      ],
+      "recognitionRisk": "low",
+      "note": "검색 결과 강조와 조건 칩 및 복귀 상태가 함께 완성되면 편의와 들인 공을 바로 시연할 수 있으나 S01을 별도 집계한다."
+    },
+    {
+      "id": "C02",
+      "R": 5,
+      "T": 5,
+      "U": 5,
+      "F": 4,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "S02"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "앨범 대표사진과 선택 및 접근 가능한 재배치까지 연결하면 사진 정리라는 목적에 맞는 높은 시각적 완성도를 보여준다."
+    },
+    {
+      "id": "C03",
+      "R": 4,
+      "T": 5,
+      "U": 5,
+      "F": 4,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "S03"
+      ],
+      "overlaps": [
+        "C32"
+      ],
+      "recognitionRisk": "medium",
+      "note": "조건을 자연스럽게 조립하고 결과를 즉시 미리보는 UI는 인상적이나 복잡한 규칙 화면이 되지 않도록 범위를 제한해야 한다."
+    },
+    {
+      "id": "C04",
+      "R": 5,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "로컬 보관함 범위로도 독립 편의는 명확하며 계정별 상태와 실행 취소를 마감할 수 있지만 기기 동기화를 주장하면 S04가 추가된다."
+    },
+    {
+      "id": "C05",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 4,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "S17",
+        "S02"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "다중 선택의 상태와 일부 실패를 세밀하게 보여주면 좋지만 앨범 이동 범위에서도 S17 및 S02와 C02까지 네 항목을 사용한다."
+    },
+    {
+      "id": "C06",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S06"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "삭제 직후 실행 취소와 휴지통의 복원을 명료하게 구분하면 오류 예방과 모바일 편의를 쉽게 증명할 수 있다."
+    },
+    {
+      "id": "C07",
+      "R": 4,
+      "T": 5,
+      "U": 5,
+      "F": 3,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "S07"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "변경 차이와 복원을 이해시키는 화면은 높은 완성도를 보여주지만 여러 사진 버전과 실패 복구까지 다루면 범위가 커진다."
+    },
+    {
+      "id": "C08",
+      "R": 5,
+      "T": 5,
+      "U": 5,
+      "F": 4,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "S09"
+      ],
+      "overlaps": [
+        "C09",
+        "C11"
+      ],
+      "recognitionRisk": "low",
+      "note": "연결이 끊겨도 기록을 잃지 않고 상태와 재전송을 통제하는 UX는 강하지만 계정 분리와 사본 보관 및 S09를 끝까지 구현해야 한다."
+    },
+    {
+      "id": "C09",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [
+        "C08",
+        "S24"
+      ],
+      "recognitionRisk": "low",
+      "note": "입력과 사진을 종료 뒤 그대로 이어가는 경험은 실수 방지 효과가 명확하며 기본 POST만으로도 완결된 추가 기능을 만들 수 있다."
+    },
+    {
+      "id": "C10",
+      "R": 5,
+      "T": 5,
+      "U": 5,
+      "F": 4,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "최근 사진을 연결 없이 읽고 갱신 시점과 재시도를 구분하는 흐름은 완성도가 높으나 캐시 상한과 만료 및 계정 전환 검증이 필요하다."
+    },
+    {
+      "id": "C11",
+      "R": 4,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S09"
+      ],
+      "overlaps": [
+        "C08"
+      ],
+      "recognitionRisk": "medium",
+      "note": "실제 진행률과 실패 회복 피드백은 눈에 띄지만 기본 게시 UI의 마감과 구분해야 하며 대기함과 겹치는 부분은 중복 등록하지 않는다."
+    },
+    {
+      "id": "C12",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 4,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [],
+      "overlaps": [
+        "C13"
+      ],
+      "recognitionRisk": "low",
+      "note": "게시 전에 원하는 구도를 만드는 직접 편의와 전후 결과가 명확하지만 Java 제스처와 큰 사진 메모리 처리를 세밀하게 완성해야 한다."
+    },
+    {
+      "id": "C13",
+      "R": 4,
+      "T": 4,
+      "U": 5,
+      "F": 4,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [],
+      "overlaps": [
+        "C12"
+      ],
+      "recognitionRisk": "medium",
+      "note": "연속 조절과 원본 비교는 공들인 화면을 보여주지만 C12와 편집 도구 하위 메뉴를 나누어 별도 가점으로 포장할 위험이 있다."
+    },
+    {
+      "id": "C14",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 4,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [
+        "C15"
+      ],
+      "recognitionRisk": "medium",
+      "note": "직접 문구를 배치해 게시하는 조작은 시연이 명확하지만 워터마크와 글자 합성의 같은 부분을 별도 기능으로 중복시키면 안 된다."
+    },
+    {
+      "id": "C15",
+      "R": 4,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [],
+      "overlaps": [
+        "C14",
+        "S34"
+      ],
+      "recognitionRisk": "medium",
+      "note": "위치와 투명도를 보며 공유 사본을 만드는 편의는 있으나 글자 주석이나 서버 워터마크 처리와 같은 사용자 기능으로 보일 수 있다."
+    },
+    {
+      "id": "C16",
+      "R": 4,
+      "T": 5,
+      "U": 4,
+      "F": 3,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "수동 모서리 조정과 전후 비교는 실질 난도가 높지만 문서 사진이라는 목적 설득과 정확도 및 큰 이미지 처리가 큰 부담이다."
+    },
+    {
+      "id": "C17",
+      "R": 4,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "확대와 사진 간 이동 및 자연스러운 복귀는 사진 앱의 완성도를 크게 높이지만 기본 뷰어 품질과 독립 추가 기능의 경계를 설명해야 한다."
+    },
+    {
+      "id": "C18",
+      "R": 4,
+      "T": 5,
+      "U": 5,
+      "F": 4,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "두 사진의 확대와 이동을 맞춰 비교하는 조작은 명확한 추가 편의이며 기본 GET만으로 결과와 상호작용을 시연할 수 있다."
+    },
+    {
+      "id": "C19",
+      "R": 4,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "선택한 사진을 편하게 감상하는 목적과 시연은 명확하지만 비교적 흔한 재생 기능이라 세부 상태 처리가 차별점이다."
+    },
+    {
+      "id": "C20",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "게시일 기준 연월일 탐색만으로도 사진을 다시 찾는 편의가 크며 촬영일과 보정까지 주장할 때만 S14를 추가해야 한다."
+    },
+    {
+      "id": "C21",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "제한된 전체 목록을 단말에서 월별로 묶는 범위라면 한 항목으로 날짜 탐색과 빈 상태 및 월 전환을 정교하게 완성할 수 있다."
+    },
+    {
+      "id": "C22",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [
+        "S13"
+      ],
+      "recognitionRisk": "medium",
+      "note": "업로드 전 위치정보 유무와 제거 결과를 확인하는 행동은 명확하지만 S13과 동일 보호를 두 번 등록하지 않고 적용 형식을 밝혀야 한다."
+    },
+    {
+      "id": "C23",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "다른 앱에서 바로 작성을 이어가는 편의는 있으나 단순 사진 선택을 넘어 권한과 취소 및 재시작까지 처리해야 ID11과 구분된다."
+    },
+    {
+      "id": "C24",
+      "R": 3,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "촬영 흐름의 편의는 있으나 기본 업로드의 사진 입력 수단 하나로 평가될 위험이 높아 독립 기능의 설득력이 제한된다."
+    },
+    {
+      "id": "C25",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 4,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "기본 단일 POST를 순차 호출하는 범위로도 선택과 개별 글 및 결과 상태를 보여줄 수 있지만 원자성과 안전 재시도는 별도 서버 기능이다."
+    },
+    {
+      "id": "C26",
+      "R": 4,
+      "T": 5,
+      "U": 5,
+      "F": 4,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "여러 사진을 한 장으로 구성하는 직접 조작과 결과가 시각적으로 좋지만 상한과 축소 처리로 단말 메모리를 제어해야 한다."
+    },
+    {
+      "id": "C27",
+      "R": 5,
+      "T": 4,
+      "U": 4,
+      "F": 4,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "사진과 글을 실제 파일로 가져가는 편의가 명확하고 결과물을 확인하기 쉬우나 페이지 나눔과 사진 수 및 메모리 상한을 정해야 한다."
+    },
+    {
+      "id": "C28",
+      "R": 4,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "QR과 공유를 통해 특정 사진으로 돌아오는 흐름은 명확하며 기존 상세 URL로 가능하므로 S30을 필수인 것처럼 추가할 필요가 없다."
+    },
+    {
+      "id": "C29",
+      "R": 3,
+      "T": 5,
+      "U": 5,
+      "F": 5,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "TalkBack과 큰 글자에서도 실제 과업을 끝내는 수준이면 UI 노력은 크지만 일반 접근성 마감 자체를 독립 가점으로 인정할지는 불확실하다."
+    },
+    {
+      "id": "C30",
+      "R": 2,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "모든 입력과 오류 화면까지 테마를 통일하면 품질은 높아지지만 시각적 기본 마감과 별도 편의 기능을 혼동하면 안 된다."
+    },
+    {
+      "id": "C31",
+      "R": 4,
+      "T": 5,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "서버와 계정 전환 중 늦은 응답과 로컬 자료를 분리하는 기술은 실질적이나 일반 사용자의 필요와 현재 URL 입력 대비 차이를 설명해야 한다."
+    },
+    {
+      "id": "C32",
+      "R": 3,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [
+        "C01"
+      ],
+      "overlaps": [
+        "C01",
+        "C03"
+      ],
+      "recognitionRisk": "high",
+      "note": "검색 재실행은 편하지만 C01의 최근 검색이나 C03의 조건 저장과 구분되는 가치가 작아 슬롯을 추가 사용하기에는 약하다."
+    },
+    {
+      "id": "C33",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "긴 글이 실제 사용 맥락이라면 읽기 편의가 있으나 단순 글꼴과 행간 조절만으로는 독립 추가 기능의 실질이 부족하다."
+    },
+    {
+      "id": "C34",
+      "R": 4,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "반복 입력을 줄이고 삽입 후 편집과 취소를 지원하면 완결된 편의가 되며 단말 저장 범위에서는 S19가 필요하지 않다."
+    },
+    {
+      "id": "C35",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 4,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "색상 추출과 복사 조작은 시각적으로 좋지만 포토블로그 사용 목적과의 연결이 약하고 서버 전체 색상 검색은 S36이 별도로 필요하다."
+    },
+    {
+      "id": "C36",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 4,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [
+        "S35"
+      ],
+      "recognitionRisk": "medium",
+      "note": "문제의 이유와 그대로 게시할 선택을 보여주면 유용하지만 휴리스틱의 오판을 설명하고 좋은 사진의 객관적 판정처럼 포장하면 안 된다."
+    },
+    {
+      "id": "C37",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "목록과 사진 연결의 피드백은 명확하지만 촬영 과업이 실제 서비스 목적이라는 근거가 있어야 추가 편의로 설득하기 쉽다."
+    },
+    {
+      "id": "C38",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 4,
+      "E": 4,
+      "effort": 4,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "작성 중 미리보기는 좋지만 기본 text 계약과 웹 표시가 어긋나면 편의가 깨지므로 앱 화면만 예쁜 상태로 끝낼 수 없다."
+    },
+    {
+      "id": "C39",
+      "R": 2,
+      "T": 5,
+      "U": 2,
+      "F": 4,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "GLES 이동과 집 선택은 기술적으로 크지만 사진을 찾는 단계가 늘어나는 경우 편의의 근거가 약해 시각적 규모만으로 점수를 추정하면 안 된다."
+    },
+    {
+      "id": "C40",
+      "R": 2,
+      "T": 5,
+      "U": 3,
+      "F": 4,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "S40"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "꾸미기의 조작과 상태 복구에는 공이 많이 들지만 사진을 다루는 편의와 관계가 약하고 S40까지 두 슬롯을 사용한다."
+    },
+    {
+      "id": "C41",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S41"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "계정 전환과 오류 복귀를 정교하게 만들 수 있으나 기존 구현이며 기본 로그인과 추가 편의의 구분을 평가자에게 확인할 필요가 있다."
+    },
+    {
+      "id": "C42",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S05"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "태그를 입력하고 기존 제안을 고르며 이름을 정리한 뒤 같은 태그의 사진을 찾는 일관된 경험은 사진 분류 편의가 명확하다."
+    },
+    {
+      "id": "C43",
+      "R": 4,
+      "T": 5,
+      "U": 4,
+      "F": 4,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "S08"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "충돌한 내 입력과 최신값을 명료하게 비교하는 UI는 실질 난도가 있지만 일반 편집 실패 복구와 독립 편의의 차이를 설명해야 한다."
+    },
+    {
+      "id": "C44",
+      "R": 4,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S10"
+      ],
+      "overlaps": [
+        "C62"
+      ],
+      "recognitionRisk": "medium",
+      "note": "같은 사진을 다시 올리기 직전에 기존 기록을 확인하고 직접 결정을 바꾸는 흐름은 사용자 통제와 전후 시연이 명확하다."
+    },
+    {
+      "id": "C45",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 4,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S12"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "데이터 사용과 원본 재요청을 통제하는 UI는 편하지만 기본 이미지 로더의 품질 마감을 독립 기능으로 포장할 위험이 크다."
+    },
+    {
+      "id": "C46",
+      "R": 3,
+      "T": 3,
+      "U": 3,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [
+        "S13"
+      ],
+      "overlaps": [
+        "C22"
+      ],
+      "recognitionRisk": "high",
+      "note": "확인 가능한 처리 결과만 안내해야 하며 정보 처리 안내 화면 하나가 독립 편의로 인정될지와 C22의 보호 효과 중복을 따져야 한다."
+    },
+    {
+      "id": "C47",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S15"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "사진별 용량과 정렬 및 정리 결과를 연결하면 서버 공간 부족을 사용자가 이해하고 해결할 수 있는 완결된 흐름이 된다."
+    },
+    {
+      "id": "C48",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S20"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "댓글 위계와 키보드 입력 및 실패 복구를 세밀하게 완성하면 사진에 관한 대화라는 목적과 구현 노력을 실제 조작으로 보여줄 수 있다."
+    },
+    {
+      "id": "C49",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [
+        "S21"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "연속 터치와 실패 시 되돌림을 정교하게 처리하면 완성도는 높지만 반응 버튼 하나의 편의와 난도에는 한계가 있다."
+    },
+    {
+      "id": "C50",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S22"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "작성자 구독에서 목록 관리와 새 사진 탐색 및 상세 복귀까지 이어지는 흐름은 원하는 사진을 보는 편의가 명확하다."
+    },
+    {
+      "id": "C51",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 4,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S23"
+      ],
+      "overlaps": [
+        "C33"
+      ],
+      "recognitionRisk": "medium",
+      "note": "다른 기기에서 이어볼 위치를 직접 고르는 경험은 좋지만 사진글 길이와 이용 빈도가 낮으면 두 항목의 비용에 비해 효용이 작다."
+    },
+    {
+      "id": "C52",
+      "R": 5,
+      "T": 5,
+      "U": 5,
+      "F": 3,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "S24"
+      ],
+      "overlaps": [
+        "C09",
+        "C08"
+      ],
+      "recognitionRisk": "medium",
+      "note": "내용과 시각을 비교해 초안을 복구하는 조작은 난도와 편의가 크지만 사진 사본 저장과 충돌 및 로컬 초안 중복을 관리해야 한다."
+    },
+    {
+      "id": "C53",
+      "R": 4,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S27"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "단위와 빈 기간 및 선택 상태를 정리하고 차트에서 사진으로 이동하게 하면 보기 좋은 통계를 실제 탐색 도구로 만들 수 있다."
+    },
+    {
+      "id": "C54",
+      "R": 3,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S28"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "유형별 반영 결과와 원문 이동은 시연이 쉽지만 사용자가 작업 이력을 확인할 필요가 있는지 먼저 설명해야 한다."
+    },
+    {
+      "id": "C55",
+      "R": 4,
+      "T": 4,
+      "U": 5,
+      "F": 4,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "S29"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "묶음과 읽음 상태 및 대상 이동은 세밀한 UI를 만들 수 있지만 댓글 원천을 택하면 전체 네 항목이며 종료 후 푸시는 아니다."
+    },
+    {
+      "id": "C56",
+      "R": 5,
+      "T": 4,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S31"
+      ],
+      "overlaps": [
+        "C02"
+      ],
+      "recognitionRisk": "medium",
+      "note": "대표 사진 고정과 접근 가능한 순서 조절은 명확한 편의지만 C02 앨범 재배치와 같은 조작을 두 항목으로 부풀리지 않아야 한다."
+    },
+    {
+      "id": "C57",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S32"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "포함 항목과 형식을 미리 확인하고 실제 파일을 저장하는 흐름은 분명하지만 메타데이터 내보내기를 사진 백업으로 표현하면 안 된다."
+    },
+    {
+      "id": "C58",
+      "R": 4,
+      "T": 5,
+      "U": 4,
+      "F": 4,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "S33",
+        "S05",
+        "C42"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "행별 오류와 반영 전후 요약을 세밀하게 만들 수 있지만 태그 서비스와 태그 화면까지 포함한 네 항목의 비용이 크다."
+    },
+    {
+      "id": "C59",
+      "R": 4,
+      "T": 3,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [
+        "S37"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "개인 메모의 입력과 저장 상태를 공개 본문과 구분하면 편하지만 기본 텍스트 입력보다 추가되는 실질 난도는 크지 않다."
+    },
+    {
+      "id": "C60",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S38"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "숨김과 실행 취소 및 해제를 피드와 일관되게 연결하는 편의는 있지만 공개 사진 접근을 차단하는 기능은 아니다."
+    },
+    {
+      "id": "C61",
+      "R": 4,
+      "T": 5,
+      "U": 5,
+      "F": 3,
+      "E": 5,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "S18"
+      ],
+      "overlaps": [
+        "C07"
+      ],
+      "recognitionRisk": "medium",
+      "note": "원본과 최근 사본을 비교하고 사용 버전을 되돌리는 시각적 결과는 좋지만 선택한 구성에서는 S18과 C12까지 세 항목이 필요하다."
+    },
+    {
+      "id": "C62",
+      "R": 5,
+      "T": 5,
+      "U": 5,
+      "F": 4,
+      "E": 4,
+      "effort": 5,
+      "status": "pass",
+      "required": [
+        "S11"
+      ],
+      "overlaps": [
+        "C44"
+      ],
+      "recognitionRisk": "low",
+      "note": "유사 후보 그룹에서 비교하고 다른 사진으로 판단하는 경험은 정리 편의가 크지만 오탐을 전제로 대표 선택의 의미와 저장 범위를 밝혀야 한다."
+    },
+    {
+      "id": "C63",
+      "R": 4,
+      "T": 3,
+      "U": 5,
+      "F": 5,
+      "E": 5,
+      "effort": 3,
+      "status": "pass",
+      "required": [
+        "S25"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "과거의 같은 날을 연도 카드로 탐색하는 시각적 경험은 좋지만 단순 날짜 필터와 차별되는 회상 목적을 설명해야 한다."
+    },
+    {
+      "id": "C64",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 5,
+      "E": 5,
+      "effort": 4,
+      "status": "pass",
+      "required": [
+        "S14"
+      ],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "날짜의 출처와 없음 및 보정 결과를 이해하기 쉽게 보여주면 신뢰성이 높아지지만 촬영정보 화면만의 독립 편의는 제한적이다."
+    },
+    {
+      "id": "X01",
+      "R": 4,
+      "T": 5,
+      "U": 5,
+      "F": 1,
+      "E": 3,
+      "effort": 5,
+      "status": "hold",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "협업 UI의 잠재력은 높지만 현재 무료 계정과 평가 서버의 ASGI 호환성이 확인되지 않아 활성 후보로 비교할 수 없다."
+    },
+    {
+      "id": "X02",
+      "R": 4,
+      "T": 5,
+      "U": 4,
+      "F": 0,
+      "E": 2,
+      "effort": 5,
+      "status": "hold",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "의미 검색의 편의는 있어도 대형 모델과 상시 색인이 무료 자원에서 성립한다는 근거가 없다."
+    },
+    {
+      "id": "X03",
+      "R": 4,
+      "T": 3,
+      "U": 4,
+      "F": 1,
+      "E": 3,
+      "effort": 4,
+      "status": "hold",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "자동 제목 검토 흐름은 만들 수 있으나 외부 호출 허용과 비용 및 사진 전송 조건이 확인되지 않아 채택할 수 없다."
+    },
+    {
+      "id": "X04",
+      "R": 4,
+      "T": 4,
+      "U": 4,
+      "F": 0,
+      "E": 2,
+      "effort": 5,
+      "status": "hold",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "medium",
+      "note": "앱을 닫은 뒤 정확한 시각에 게시하는 보장을 무료 계정에서 입증하지 못했으며 방문 시 지연 처리로 바꾸면 다른 기능이다."
+    },
+    {
+      "id": "X05",
+      "R": 4,
+      "T": 5,
+      "U": 5,
+      "F": 1,
+      "E": 3,
+      "effort": 5,
+      "status": "hold",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "low",
+      "note": "댓글 알림의 UX는 강하지만 종료 상태 푸시 전달에 필요한 외부 서비스와 호출 및 비용 조건을 확인하지 못했다."
+    },
+    {
+      "id": "X06",
+      "R": 1,
+      "T": 5,
+      "U": 2,
+      "F": 0,
+      "E": 1,
+      "effort": 5,
+      "status": "exclude",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "외부 작업 인프라의 복잡성을 실제 사진 편의의 가점으로 볼 수 없고 필수 PythonAnywhere 운영과의 호환 근거도 없다."
+    },
+    {
+      "id": "X07",
+      "R": 4,
+      "T": 5,
+      "U": 5,
+      "F": 0,
+      "E": 2,
+      "effort": 5,
+      "status": "hold",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "공개 기본 API와 이미지 URL을 그대로 두고 비공개를 보장할 수 없으므로 보안 인상을 주는 화면만 구현해서는 안 된다."
+    },
+    {
+      "id": "X08",
+      "R": 0,
+      "T": 2,
+      "U": 2,
+      "F": 5,
+      "E": 5,
+      "effort": 2,
+      "status": "exclude",
+      "required": [],
+      "overlaps": [],
+      "recognitionRisk": "high",
+      "note": "필수 게시와 동기화 및 테스트의 완수를 추가 기능으로 다시 집계하는 것은 평가 기준과 중복된다."
+    }
+  ],
+  "topPairs": [
+    {
+      "ids": [
+        "S02",
+        "C02"
+      ],
+      "registrationCount": 2,
+      "note": "앨범의 데이터 정합성과 직접 재배치 경험을 통해 사진 정리 목적과 시각적 완성도를 함께 증명한다."
+    },
+    {
+      "ids": [
+        "S06",
+        "C06"
+      ],
+      "registrationCount": 2,
+      "note": "실수 삭제의 실행 취소와 휴지통 복원은 목적과 전후 증빙이 명료하고 서버 파일 정합성도 설명할 수 있다."
+    },
+    {
+      "ids": [
+        "S01",
+        "C01"
+      ],
+      "registrationCount": 2,
+      "note": "조건 검색과 Android 탐색의 효과를 각각 증명할 수 있으며 운영 자원 부담이 낮다."
+    },
+    {
+      "ids": [
+        "S09",
+        "C08"
+      ],
+      "registrationCount": 2,
+      "note": "실제 중복 방지와 대기 상태 복구를 함께 보여주되 C09 및 C11을 같은 흐름의 추가 항목으로 중복 집계하지 않는다."
+    },
+    {
+      "ids": [
+        "S15",
+        "C47"
+      ],
+      "registrationCount": 2,
+      "note": "무료 저장공간 제약을 사용자가 이해하고 실제로 정리하는 행동으로 연결해 서비스 운영과 모바일 편의를 함께 보여준다."
+    },
+    {
+      "ids": [
+        "S05",
+        "C42"
+      ],
+      "registrationCount": 2,
+      "note": "태그의 데이터 정규화와 입력 및 사진 탐색을 연결할 수 있으며 일괄 정리 기능과의 경계를 명확히 한다."
+    }
+  ],
+  "blindSpots": [
+    "점수는 설계 잠재력 비교이며 교수님의 실제 배점이나 독립 항목 인정 또는 실제 배포 성능을 예측한 수치가 아니다.",
+    "C42부터 C64까지 대응 UI가 정의되었으므로 기존의 UI 미정 상태는 해소되었지만 화면 정의가 생겼다는 이유만으로 독립 가점이나 구현 완료를 인정하지 않는다.",
+    "S17과 C05를 앨범 이동 범위로 평가하면 S02와 C02까지 네 개가 필요하며 S33과 C58의 태그 CSV 구성도 S05와 C42까지 네 개가 필요하다.",
+    "댓글을 원천으로 고른 알림함은 S20과 C48 및 S29와 C55의 네 개가 필요하며 반응 원천을 택하는 대안은 S21과 C49로 바꾸어 재집계한다.",
+    "S18과 C61의 앱 내 편집 최소 구성은 C12까지 세 개이며 외부에서 편집한 사본을 고르는 것으로 축소하지 않는다.",
+    "S09는 현재 C08 대기함을 택한 두 항목으로 채점했고 C11 화면을 택할 수 있는 대안은 dependencyAlternatives에 표시했으므로 둘 모두 필수로 보지 않는다.",
+    "C04와 C10 및 C20과 C21 및 C25와 C28 및 C34는 명시한 로컬 또는 기본 API 활용 범위에서 서버 후보가 선택 사항이며 동기화와 원자성 등으로 범위를 바꾸면 재집계해야 한다.",
+    "C20에서 실제 촬영일과 보정까지 포함하면 S14 및 C64가 더 필요하고 단순 게시일 타임라인 범위에서는 그 두 항목이 필요하지 않다.",
+    "오프라인 대기함과 초안 보호 및 실패 복구, 검색 조건 저장, 편집 하위 도구, 로컬과 서버의 대체 처리를 여러 독립 기능으로 부풀릴 위험이 크다.",
+    "일반 테마와 접근성 및 이미지 로딩과 보안은 모든 화면의 품질 기준일 수 있으므로 추가 기능 인정과 화면 전체 완성도를 구분한다.",
+    "대표사진과 빈 목록 및 긴 제목과 오류 및 키보드와 재시작 등 상태별 마감을 실제 Android 화면으로 검증해야 웹 시안의 품질을 Android 성과로 오인하지 않는다.",
+    "기존 사진관의 구현 규모와 기술 난도를 사진 편의에 대한 목적 설명의 약함과 별도로 평가하며 3D라는 이유만으로 점수를 추정하지 않는다."
+  ]
+}

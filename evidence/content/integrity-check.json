@@ -1,0 +1,121 @@
+{
+  "schema_version": 2,
+  "checked_at_utc": "2026-10-19T19:14:21.5299825Z",
+  "pass": true,
+  "scope": "Artifact integrity only; preserves separate environment execution evidence; no new Android execution or cloud certification",
+  "pythonanywhere_deployment_verified": false,
+  "physical_iphone_safari_verified": false,
+  "server_source_files": 124,
+  "server_verification_finished_utc": "2026-10-20T04:08:37.200539+09:00",
+  "android_run_id": "20261019-173636-9c9bae3f",
+  "android_source_files": 94,
+  "apks": 2,
+  "original_android_screenshots": 6,
+  "offline_apk_matches": true,
+  "offline_selected_tests": 3,
+  "deployment_zip": {
+    "path": "dist/pythonanywhere-common01-20261019-191129.zip",
+    "files": 137,
+    "sha256": "bde2073c03369af989eb45f6595a79d362ac7e351e584b2a47a5021b664e761e",
+    "uploaded": false
+  },
+  "diagnostic_request_anonymous": true,
+  "ui_uploaded_image_digest_matches": true,
+  "web_screenshot": {
+    "path": "web/photo-text-search.jpg",
+    "sha256": "b28a7ad042808ceb0fd2afcbae8c7b27b487ec5c3fce76c39697703f2facd1fd",
+    "captured_at_utc": "2026-10-19T17:40:08.1507358Z"
+  },
+  "traced_requirements": 21,
+  "checked_markdown_links": 62,
+  "mobile_web": {
+    "unit_tests": 21,
+    "actual_browser_model_checks": 9,
+    "browser_ui_pass": true,
+    "live_http_pass": true,
+    "files": [
+      {
+        "path": "evidence/mobile-web/browser-models.json",
+        "bytes": 2851,
+        "sha256": "430002bb9726bc3571d7ee382e77410e6cae864d40d639e033ee32ee8239adbf"
+      },
+      {
+        "path": "evidence/mobile-web/browser-models.png",
+        "bytes": 63522,
+        "sha256": "0c438d8b33172e4d91cda7e33a89534391876d7378a7c922bc5710936231b562"
+      },
+      {
+        "path": "evidence/mobile-web/browser-ui.json",
+        "bytes": 1863,
+        "sha256": "c6fb94c9539410e34f1316fa740bd91f59e55c96a475edb1dcefccbafc6b13d2"
+      },
+      {
+        "path": "evidence/mobile-web/composer-public-copy.png",
+        "bytes": 31454,
+        "sha256": "285eb36e419f25504e42ddf98bdc2bd4ff79439e03b699003dd58aec4fbce4e5"
+      },
+      {
+        "path": "evidence/mobile-web/composer-review.png",
+        "bytes": 23660,
+        "sha256": "7d0d83bebb46948f372f0ce91061af1421d60509eca84c448a1705b6b53bd57c"
+      },
+      {
+        "path": "evidence/mobile-web/detail-landscape.png",
+        "bytes": 5433,
+        "sha256": "d3c5612435e118d782ea81d0bc0f89f5b11440ab3e6e45060d6bf565703a08b8"
+      },
+      {
+        "path": "evidence/mobile-web/http-excluded.json",
+        "bytes": 2029,
+        "sha256": "d28443d5fdc8e058802cdd9dd38d49e7bd6023bdf23ae3c9525aba86d55064f7"
+      },
+      {
+        "path": "evidence/mobile-web/http-initial.json",
+        "bytes": 2451,
+        "sha256": "bc7fa9ff12375fbc40d2109b965ee25d3909e176d3c4b7a69c4c8ef1ab280396"
+      },
+      {
+        "path": "evidence/mobile-web/posted-detail.png",
+        "bytes": 34483,
+        "sha256": "89bdc7965ce9e30b144102459433bb6902c43eefc6681719004dc17e061feb3b"
+      },
+      {
+        "path": "evidence/mobile-web/search-excluded.png",
+        "bytes": 33335,
+        "sha256": "c7af5b9107430a3316f381269d2746d00c234b9970a19a37860f6a7519b00c25"
+      },
+      {
+        "path": "evidence/mobile-web/search-highlight.png",
+        "bytes": 32213,
+        "sha256": "a7a09e4b519bd2e3debcb33d7969d01679f74923407756cf3f078fc15c031347"
+      },
+      {
+        "path": "evidence/mobile-web/search-result.png",
+        "bytes": 37033,
+        "sha256": "162307d8e5739fdedae83684fef448c827a43cb91105e482e9a46c54e75caa58"
+      },
+      {
+        "path": "evidence/mobile-web/unit-tests.txt",
+        "bytes": 1682,
+        "sha256": "12f79fb9fb44641dbe7a320fcd9a71c1151a3554c1b628dffaf228fa36c7003b"
+      },
+      {
+        "path": "evidence/mobile-web/unit-verification.json",
+        "bytes": 6429,
+        "sha256": "348c85bac18d263f13a0bf729cc364a4c3876852a533778de8901727621c08dd"
+      },
+      {
+        "path": "evidence/mobile-web/web-uploaded-photo.jpg",
+        "bytes": 183281,
+        "sha256": "a71402f60205d8cdb14dc02c11b622ae6783efe81a2575b387c0bf3ef74e5137"
+      }
+    ]
+  },
+  "report": {
+    "pages": 10,
+    "images": 10,
+    "sha256": "940c040252ce19b5080c3521ccb9ec309cc4bedd5a18809299b03ccc201587eb",
+    "reviewed": true,
+    "portable_identical": true
+  }
+}

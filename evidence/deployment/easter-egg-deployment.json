@@ -1,0 +1,47 @@
+{
+  "verified_at": "2026-10-20T05:16:52.720675+00:00",
+  "deployment": {
+    "phase": "verified",
+    "source": "/home/daejinha/common01-auto/releases/2026102005121116c05a/PhotoBlogServer",
+    "virtualenv": "/home/daejinha/.virtualenvs/common01-07ddcc3503d84044",
+    "backup": "/home/daejinha/.local/share/common01-auto/2026102005121116c05a",
+    "candidate_wsgi": "/home/daejinha/common01-auto/releases/2026102005121116c05a/candidate_wsgi.py",
+    "previous_wsgi_sha256": "3ec057cf288e6786d9e9901b1d50041c31de5baeb5e36e49c3a90452c3e8728a",
+    "package_sha256": "8233b572418e31970c9c63739334c31af583d6b2f96b0c0547900b2cc8da4cf2",
+    "release": "2026102005121116c05a",
+    "static": "/home/daejinha/common01-auto/releases/2026102005121116c05a/PhotoBlogServer/staticfiles",
+    "media": "/home/daejinha/common01-auto/shared/media",
+    "previous": {
+      "source": "/home/daejinha/common01-auto/releases/2026102004523169f8f8/PhotoBlogServer",
+      "release": "2026102004523169f8f8",
+      "virtualenv": "/home/daejinha/.virtualenvs/common01-07ddcc3503d84044",
+      "backup": "/home/daejinha/.local/share/common01-auto/2026102004523169f8f8"
+    },
+    "staged_at": 1792473288,
+    "public_probes": [
+      {
+        "path": "/",
+        "status": 200,
+        "sha256": "686677445d3f48fbc5229ffe634ee39ad77b62acad10fbbcf62a9b5efd8a6c9f"
+      },
+      {
+        "path": "/accounts/login/",
+        "status": 200,
+        "sha256": "c0d6f3a866f447a138e1bd47ebebd0d78b45276e582f9acf11e6017405401346"
+      },
+      {
+        "path": "/api_root/Post/",
+        "status": 200,
+        "sha256": "5ec5a1ab2a7af4d61dff389a65818d86bb15701cabc808b28539d203adea29d2"
+      },
+      {
+        "path": "/static/blog/content/composer.mjs",
+        "status": 200,
+        "sha256": "5221f812ad846ab1caf39b551720561d43702e777cb3329e5c2a990d1761c88f"
+      }
+    ]
+  },
+  "template_sha256": "441a77b28e2ea7c34b6a06f60707a700e312a08d0d277daadeace9b2ae227c65",
+  "deployed_template_matches_windows_source": true,
+  "browser_evidence": "easter-egg-browser.json"
+}

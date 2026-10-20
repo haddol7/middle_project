@@ -1,0 +1,8 @@
+
+com.haddol7.photoviewer.data.LiveRepositoryTest:...
+Test results for InstrumentationTestRunner=...
+Time: 4.367
+
+OK (3 tests)
+
+

@@ -1,0 +1,418 @@
+{
+  "note": "평가서에 맞춘 보수적 등록 가정. 기본 API·공유 SDK는 새 슬롯 아님. 독립 인정은 최종 증거에 달려 있음.",
+  "components": [
+    {
+      "id": "S01",
+      "side": "server",
+      "capability": "F01",
+      "title": "사진 내용 기반 테마·태그 추천과 교정 — 서버",
+      "scope": "PA Django가 원시 제안과 사용자가 확정한 태그를 구분 저장하고 작성자별 수정 권한·분류별 목록 API를 제공한다. 기존 공개 Post 배열을 유지한다. 개별 사진의 이미지 지문·분석 버전·수정 revision을 검사하는 분석 결과 적용 API를 포함한다. 기존 사진에도 같은 API를 적용할 수 있으나 대량 진행·재개 UI는 F25다."
+    },
+    {
+      "id": "C01",
+      "side": "client",
+      "capability": "F01",
+      "title": "사진 내용 기반 테마·태그 추천과 교정 — Android",
+      "scope": "Android가 사진 회전·축소·분석 수명주기, 분류 제안 칩, 선택 이유와 미확정 상태, 결과 교정 화면을 담당한다."
+    },
+    {
+      "id": "S02",
+      "side": "server",
+      "capability": "F02",
+      "title": "사진 속 글자로 다시 찾기와 일치 영역 표시 — 서버",
+      "scope": "PA Django·SQLite에서 게시글별 OCR 텍스트와 원본 기준 좌표·해시·분석 버전을 저장하고 제한된 데이터에 대해 검색·강조 위치를 응답한다. 긴 요청·외부 모델 서버는 쓰지 않는다."
+    },
+    {
+      "id": "C02",
+      "side": "client",
+      "capability": "F02",
+      "title": "사진 속 글자로 다시 찾기와 일치 영역 표시 — Android",
+      "scope": "Android가 인식 수행, 공개 전 텍스트 포함 여부 확인, 검색어 강조, 회전·확대에 맞는 영역 표시를 제공한다."
+    },
+    {
+      "id": "S03",
+      "side": "server",
+      "capability": "F03",
+      "title": "테마·사진 속 글자·시기를 조합한 기억 기반 좁혀 찾기 — 서버",
+      "scope": "PA가 권한과 공개 범위를 유지한 복합 필터·조건별 개수·안정된 페이지네이션을 제공한다. 색인·검색 범위를 명시하고 대형 외부 검색엔진을 요구하지 않는다."
+    },
+    {
+      "id": "C03",
+      "side": "client",
+      "capability": "F03",
+      "title": "테마·사진 속 글자·시기를 조합한 기억 기반 좁혀 찾기 — Android",
+      "scope": "Android가 조건 칩, 기간 선택, 결과 수, 조건 완화 제안, 최근 조건 재사용과 접근 가능한 상태 피드백을 제공한다."
+    },
+    {
+      "id": "S04",
+      "side": "server",
+      "capability": "F04",
+      "title": "내용 조건을 저장하는 자동 모음 — 서버",
+      "scope": "작성자별 모음 규칙 저장·검증·조회, 규칙 변경 이력 또는 버전 검사, 페이지네이션을 PA에서 처리한다."
+    },
+    {
+      "id": "C04",
+      "side": "client",
+      "capability": "F04",
+      "title": "내용 조건을 저장하는 자동 모음 — Android",
+      "scope": "Android가 자연어처럼 보이는 규칙 빌더, 현재 결과 미리보기, 규칙 설명, 빈 모음 안내를 제공한다."
+    },
+    {
+      "id": "S05",
+      "side": "server",
+      "capability": "F05",
+      "title": "관련 사진글과 추천 이유 — 서버",
+      "scope": "PA가 관련 후보·점수 근거·제외 설정을 반환하고 자기 글 반복·같은 글 중복·빈 후보를 제어한다."
+    },
+    {
+      "id": "C05",
+      "side": "client",
+      "capability": "F05",
+      "title": "관련 사진글과 추천 이유 — Android",
+      "scope": "Android가 추천 이유와 사진 카드, 이어 읽기 위치, 추천 숨기기·태그 탐색 연결을 제공한다."
+    },
+    {
+      "id": "S06",
+      "side": "server",
+      "capability": "F06",
+      "title": "관심 테마별 발견 피드 — 서버",
+      "scope": "PA가 관심 설정, 피드 커서, 중복 노출 제한과 정렬 근거를 처리한다. 정기 작업이나 외부 추천 서버가 필요 없다."
+    },
+    {
+      "id": "C06",
+      "side": "client",
+      "capability": "F06",
+      "title": "관심 테마별 발견 피드 — Android",
+      "scope": "Android가 관심 선택, 주제별 탭·혼합 피드, 추천 이유, 관심 편집, 빈 결과 대체 경로를 제공한다."
+    },
+    {
+      "id": "S07",
+      "side": "server",
+      "capability": "F07",
+      "title": "새 사진 게시 중 이어질 과거 기록 제안 — 서버",
+      "scope": "PA가 작성자 소유 글 후보, 선택한 글 간 링크와 역방향 탐색, 삭제된 링크 상태를 관리한다."
+    },
+    {
+      "id": "C07",
+      "side": "client",
+      "capability": "F07",
+      "title": "새 사진 게시 중 이어질 과거 기록 제안 — Android",
+      "scope": "Android가 게시 화면의 연결 후보, 비교 보기, 연결 이유·선택 취소와 게시 후 앞뒤 기록 이동을 제공한다."
+    },
+    {
+      "id": "S08",
+      "side": "server",
+      "capability": "F08",
+      "title": "촬영 시각·내용을 이용한 한 활동 묶음 제안 — 서버",
+      "scope": "PA가 사용자가 승인한 묶음과 글 연결·순서·수정 버전을 저장하고 조회한다. 자동 군집을 필수 background job으로 만들지 않는다."
+    },
+    {
+      "id": "C08",
+      "side": "client",
+      "capability": "F08",
+      "title": "촬영 시각·내용을 이용한 한 활동 묶음 제안 — Android",
+      "scope": "Android가 제안 검토, 포함·제외·순서 수정, 촬영 시각 확인과 묶음 타임라인을 제공한다."
+    },
+    {
+      "id": "C09",
+      "side": "client",
+      "capability": "F09",
+      "title": "비슷한 컷에서 게시 후보 고르기 — Android",
+      "scope": "Android가 선택 사진의 임시 보관, 유사 그룹, 동일 확대 비율 비교, 제한된 품질 힌트와 최종 선택을 담당한다."
+    },
+    {
+      "id": "C10",
+      "side": "client",
+      "capability": "F10",
+      "title": "공개 전 사진 속 얼굴·연락처 노출 점검 — Android",
+      "scope": "Android가 로컬 분석, 후보 영역 검토, 가리기 취소·추가, 최종 사본 생성·공개 미리보기를 담당한다."
+    },
+    {
+      "id": "S11",
+      "side": "server",
+      "capability": "F11",
+      "title": "사진 내용 단서로 대체 설명 작성 돕기 — 서버",
+      "scope": "PA가 게시자 확정 대체 설명과 자동 초안의 출처를 구분 저장하고 공개 응답에 제공한다."
+    },
+    {
+      "id": "C11",
+      "side": "client",
+      "capability": "F11",
+      "title": "사진 내용 단서로 대체 설명 작성 돕기 — Android",
+      "scope": "Android가 설명 검토·수정과 TextView·이미지 contentDescription, 중복 낭독 방지, TalkBack 초점 흐름을 구현한다."
+    },
+    {
+      "id": "C12",
+      "side": "client",
+      "capability": "F12",
+      "title": "사진 속 외국어 글자 읽기와 번역 보조 — Android",
+      "scope": "Android가 영역 선택, 원문·번역 병렬 보기, 언어 선택, 모델 다운로드 상태·실패·저장공간 안내와 캐시 관리를 담당한다."
+    },
+    {
+      "id": "C13",
+      "side": "client",
+      "capability": "F13",
+      "title": "사진 내용에 맞는 기록 질문 카드 — Android",
+      "scope": "Android가 질문 선택·답변·본문 반영·되돌리기·건너뛰기를 제공하고 게시 흐름을 강제로 늘리지 않는다."
+    },
+    {
+      "id": "S14",
+      "side": "server",
+      "capability": "F14",
+      "title": "내 관심 주제의 과거 기록 다시 보기 — 서버",
+      "scope": "PA가 작성자 소유 과거 후보와 선정 이유·숨김 상태를 제공한다. 날짜 경계·윤년·시간대를 명시한다."
+    },
+    {
+      "id": "C14",
+      "side": "client",
+      "capability": "F14",
+      "title": "내 관심 주제의 과거 기록 다시 보기 — Android",
+      "scope": "Android가 주제별 과거 기록 카드·날짜 설명·원문 열기·숨기기를 제공한다."
+    },
+    {
+      "id": "S15",
+      "side": "server",
+      "capability": "F15",
+      "title": "분류어 통합과 자동 인식 교정 관리 — 서버",
+      "scope": "PA가 작성자별 별칭·대표 태그, 영향 조회·원자적 통합·되돌릴 수 있는 수정 기록과 기존 자동 태그 출처를 관리한다."
+    },
+    {
+      "id": "C15",
+      "side": "client",
+      "capability": "F15",
+      "title": "분류어 통합과 자동 인식 교정 관리 — Android",
+      "scope": "Android가 분리 표기 비교, 영향 사진 미리보기, 충돌 안내, 실행·되돌리기와 새 게시 시 표준 태그 제안을 제공한다."
+    },
+    {
+      "id": "S16",
+      "side": "server",
+      "capability": "F16",
+      "title": "놓친 관심 주제 사진 모아 읽기 — 서버",
+      "scope": "PA가 사용자별 주제 구독·읽음 위치·새 글 집계·페이지 커서를 관리하고 새 게시 중에도 중복·누락을 통제한다."
+    },
+    {
+      "id": "C16",
+      "side": "client",
+      "capability": "F16",
+      "title": "놓친 관심 주제 사진 모아 읽기 — Android",
+      "scope": "Android가 테마별 새 글 배지, 미확인 묶음, 읽음·되돌리기·이어읽기와 오프라인 상태 설명을 제공한다."
+    },
+    {
+      "id": "S17",
+      "side": "server",
+      "capability": "F17",
+      "title": "사진 한 장을 예시로 비슷한 게시물 찾기 — 서버",
+      "scope": "기기에서 생성한 동일 모델 버전의 벡터를 길이·타입·정규화 검증 후 저장한다. 후보 상한 200의 bounded cosine 비교를 WSGI 요청 안에서 처리하고 대형 벡터 DB·외부 서버는 사용하지 않는다."
+    },
+    {
+      "id": "C17",
+      "side": "client",
+      "capability": "F17",
+      "title": "사진 한 장을 예시로 비슷한 게시물 찾기 — Android",
+      "scope": "EXIF 방향·이미지 decode·CPU 추론·취소/복구·예시 업로드 없이 벡터 질의·유사도 목록 UI를 구현한다."
+    },
+    {
+      "id": "S18",
+      "side": "server",
+      "capability": "F18",
+      "title": "이미 게시한 비슷한 사진 업로드 전 알려주기 — 서버",
+      "scope": "Pillow로 저장 시 해시 생성·소유자별 최대200장 bounded 비교·후보 점수·기존 게시물 링크 반환."
+    },
+    {
+      "id": "C18",
+      "side": "client",
+      "capability": "F18",
+      "title": "이미 게시한 비슷한 사진 업로드 전 알려주기 — Android",
+      "scope": "업로드 준비 화면에서 비차단 비교 카드·확대·원본과 후보 전환·강행 선택을 구현한다."
+    },
+    {
+      "id": "C19",
+      "side": "client",
+      "capability": "F19",
+      "title": "사진 속 글자 선택·복사와 원문 위치 보기 — Android",
+      "scope": "영역 터치→문장 초점, 목록→사진 영역 이동, 선택 복사, 확대·회전 상태 유지, 오류 안내."
+    },
+    {
+      "id": "C20",
+      "side": "client",
+      "capability": "F20",
+      "title": "사진 속 QR·웹주소를 게시물의 참고 링크로 제안 — Android",
+      "scope": "인식된 주소 미리보기·첨부/해제·중복 제거·게시 후 링크 실행 동작을 구현한다."
+    },
+    {
+      "id": "C21",
+      "side": "client",
+      "capability": "F21",
+      "title": "사진에서 확인한 단서로 게시 제목 후보 제안 — Android",
+      "scope": "추천 근거와 수정 가능한 제목 후보·추천 거절·사용자 입력 보호를 구현한다."
+    },
+    {
+      "id": "S22",
+      "side": "server",
+      "capability": "F22",
+      "title": "같은 주제로 이어 온 기록의 변화 보기 — 서버",
+      "scope": "연속 기록의 소유자·사진 연결·순서·설명 저장과 조회."
+    },
+    {
+      "id": "C22",
+      "side": "client",
+      "capability": "F22",
+      "title": "같은 주제로 이어 온 기록의 변화 보기 — Android",
+      "scope": "후보 제안, 사용자 연결 확정, 날짜 차이 표시와 비교 탐색 UI."
+    },
+    {
+      "id": "S23",
+      "side": "server",
+      "capability": "F23",
+      "title": "사진 한 장을 단서로 내 비슷한 기록 찾기 — 서버",
+      "scope": "이미지 해시 생성·저장, 본인 사진의 제한된 거리 검색, 공개 여부/삭제 검사."
+    },
+    {
+      "id": "C23",
+      "side": "client",
+      "capability": "F23",
+      "title": "사진 한 장을 단서로 내 비슷한 기록 찾기 — Android",
+      "scope": "질의 사진 선택, 유사도 후보·정확한 복사본과 유사 후보 구분, 확대 비교."
+    },
+    {
+      "id": "C24",
+      "side": "client",
+      "capability": "F24",
+      "title": "사진 속 QR 링크를 함께 읽기 — Android",
+      "scope": "사진 위 QR 위치 표시, 결과 내용·도메인 확인, 복사/열기와 여러 QR 선택."
+    },
+    {
+      "id": "C25",
+      "side": "client",
+      "capability": "F25",
+      "title": "예전 게시물도 내용 검색에 포함시키기 — Android",
+      "scope": "단말 로컬 DB에 처리한 게시물ID·이미지 지문·페이지 위치를 체크포인트로 저장하고, 기존사진 분석의 진행·중단·앱 종료 후 재개·결과 확인·재시도를 제공한다."
+    },
+    {
+      "id": "C26",
+      "side": "client",
+      "capability": "F26",
+      "title": "사진의 관심 영역으로 같은 테마 기록 찾기 — Android",
+      "scope": "영역 좌표·회전·확대·모호한 라벨과 결과 목록을 연결한다."
+    },
+    {
+      "id": "S27",
+      "side": "server",
+      "capability": "F27",
+      "title": "인물 포함 여부·인원수로 내 사진 좁히기 — 서버",
+      "scope": "본인 사진의 사용자 확정 인원수 범주 저장·조건 조회."
+    },
+    {
+      "id": "C27",
+      "side": "client",
+      "capability": "F27",
+      "title": "인물 포함 여부·인원수로 내 사진 좁히기 — Android",
+      "scope": "검출 영역 확인·수정·검색 조건과 결과 설명."
+    },
+    {
+      "id": "S28",
+      "side": "server",
+      "capability": "F28",
+      "title": "사진 장면의 자유로운 설명문 자동 생성 — 서버",
+      "scope": "확정 설명 저장·조회. 서버에서 생성형 모델을 돌리지 않는다."
+    },
+    {
+      "id": "C28",
+      "side": "client",
+      "capability": "F28",
+      "title": "사진 장면의 자유로운 설명문 자동 생성 — Android",
+      "scope": "지원 여부 조회·생성·수정 UI. 지원 안 되는 경우 템플릿으로 바꿔 같은 기능이라고 주장하지 않는다."
+    },
+    {
+      "id": "S29",
+      "side": "server",
+      "capability": "F29",
+      "title": "자유 문장으로 사진 내용 검색 — 서버",
+      "scope": "기기 벡터의 제한된 유사도 비교·저장만 가능. 무료 PA에 대형 추론 서버를 두지 않는다."
+    },
+    {
+      "id": "C29",
+      "side": "client",
+      "capability": "F29",
+      "title": "자유 문장으로 사진 내용 검색 — Android",
+      "scope": "텍스트·이미지 인코딩과 검색 UI. 단순 태그 동의어 검색으로 정의를 축소하지 않는다."
+    },
+    {
+      "id": "S30",
+      "side": "server",
+      "capability": "F30",
+      "title": "사용자가 직접 훈련하는 맞춤 사진 분류기 — 서버",
+      "scope": "모델/결과 보관. 현 계획에 채택하지 않는다."
+    },
+    {
+      "id": "C30",
+      "side": "client",
+      "capability": "F30",
+      "title": "사용자가 직접 훈련하는 맞춤 사진 분류기 — Android",
+      "scope": "사용자 모델 준비와 학습이 필수인 비교군."
+    },
+    {
+      "id": "S31",
+      "side": "server",
+      "capability": "F31",
+      "title": "촬영 위치가 가까운 내 기록 다시 찾기 — 서버",
+      "scope": "소유자 범위의 좌표 메타데이터 저장·거리 조회, 공개 Post/이미지 계약 유지. 사진 비공개 보장을 주장하지 않는다."
+    },
+    {
+      "id": "C31",
+      "side": "client",
+      "capability": "F31",
+      "title": "촬영 위치가 가까운 내 기록 다시 찾기 — Android",
+      "scope": "위치 없음·기준 사진·거리 범위·거리순 후보 및 EXIF 정보 출처 표시."
+    },
+    {
+      "id": "S32",
+      "side": "server",
+      "capability": "F32",
+      "title": "테마별 대표 사진 추천과 사용자 확정 — 서버",
+      "scope": "대표 선택 저장·제한 후보 계산 및 데이터 변경 시 유효성 검사."
+    },
+    {
+      "id": "C32",
+      "side": "client",
+      "capability": "F32",
+      "title": "테마별 대표 사진 추천과 사용자 확정 — Android",
+      "scope": "후보 비교·추천 이유·대표 확정·되돌리기."
+    },
+    {
+      "id": "S33",
+      "side": "server",
+      "capability": "F33",
+      "title": "분류가 모호한 사진 검토함 — 서버",
+      "scope": "미확정 목록 및 소유자 수정 API."
+    },
+    {
+      "id": "C33",
+      "side": "client",
+      "capability": "F33",
+      "title": "분류가 모호한 사진 검토함 — Android",
+      "scope": "미확정 수·검토·보류·재조회 UI."
+    },
+    {
+      "id": "S34",
+      "side": "server",
+      "capability": "F34",
+      "title": "월별 사진 주제 변화와 해당 기록 다시 보기 — 서버",
+      "scope": "소유자별 기간·테마 집계와 동일 조건의 상세 사진 목록 API. 사용자 요청 때 계산하며 cron은 쓰지 않는다."
+    },
+    {
+      "id": "C34",
+      "side": "client",
+      "capability": "F34",
+      "title": "월별 사진 주제 변화와 해당 기록 다시 보기 — Android",
+      "scope": "모바일 월별 차트·사진 수·터치 상세·테마 범례·빈 기간·분류 보류 안내를 구현한다."
+    },
+    {
+      "id": "C35",
+      "side": "client",
+      "capability": "F35",
+      "title": "문서 사진 원근 보정 — 이전 추천 비교군 — Android",
+      "scope": "네 점 조작·퇴화 사각형 거부·전후 비교."
+    }
+  ]
+}

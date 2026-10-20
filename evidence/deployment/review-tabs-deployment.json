@@ -1,0 +1,46 @@
+{
+  "release": "20261020075611be2d07",
+  "phase": "verified",
+  "verified_at": "2026-10-20T07:59:24.336711+00:00",
+  "package_sha256": "dcac6ac8e689ac63a1abf43a6ffeea0e30451bd0be7c15cf733edd0f12a46e97",
+  "public_probes": [
+    {
+      "url": "https://daejinha.pythonanywhere.com/static/blog/content/composer.mjs?v=review-tabs-1",
+      "status": 200,
+      "content_type": "text/javascript",
+      "sha256": "a513e83d4728a45aa2af6f083c84fd83e7a18aa91594a1688850db536bf89fff",
+      "source_matches": true
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/static/blog/content/content.css?v=review-tabs-1",
+      "status": 200,
+      "content_type": "text/css",
+      "sha256": "6f0caee612215c7ad6cebb307dda7be18de12fcf4d2186cdb0c6c55ff3cddad1",
+      "source_matches": true
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/static/blog/content/review-controls.mjs?v=review-tabs-1",
+      "status": 200,
+      "content_type": "text/javascript",
+      "sha256": "3455e02fec60cedea5e1fa790580d250fd7ddbb81afba472ad3023889ad9dc2e",
+      "source_matches": true
+    }
+  ],
+  "template_matches": true,
+  "cache_version_present": true,
+  "review_tabs_present": true,
+  "tag_controls_present": true,
+  "compact_ocr_controls_present": true,
+  "public_post_ids": [
+    3,
+    2,
+    1
+  ],
+  "browser_layout_executed": false,
+  "physical_iPhone_verified": false,
+  "private_photo_uploaded": false,
+  "limitations": [
+    "Public code and deployed template verified; actual browser layout, keyboard interaction and physical Safari were not executed."
+  ],
+  "pass": true
+}

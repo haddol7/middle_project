@@ -1,0 +1,42 @@
+{
+  "url": "https://daejinha.pythonanywhere.com/post/new/",
+  "title": "새 사진 게시 · Common 01",
+  "width": 412,
+  "height": 551,
+  "clientWidth": 412,
+  "visualHeight": 551.2380981445312,
+  "scrollHeight": 551,
+  "horizontalOverflow": false,
+  "header": {
+    "top": 0,
+    "bottom": 60.761905670166016,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 60.761905670166016,
+    "visible": false
+  },
+  "firstPhoto": {
+    "top": 60.64881134033203,
+    "bottom": 371.00000762939453,
+    "left": 8,
+    "right": 404.19049072265625,
+    "width": 396.19049072265625,
+    "height": 310.3511962890625,
+    "visible": true
+  },
+  "main": {
+    "top": 80.76190948486328,
+    "bottom": 251.08333587646484,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 170.32142639160156,
+    "visible": true
+  },
+  "primary": null,
+  "visibleText": "사진 블로그\n사진 게시\n계정 ▾\n\nPHOTO BLOG / UPLOAD\n\n새 사진 게시\n\n얼굴은 가리고, 분류와 문구는 확인하고 올려요.\n\n사진 변경\n얼굴 가리기\n더보기\n\n얼굴 1곳을 가렸어요. 빠진 곳을 확인해주세요.\n\n이동\n선택\n직접 가리기\n전체 강도\n약\n중\n강\n확대\n1.0×\n맞춤\n다음\n사진과 이야기를 함께 · 사진 블로그",
+  "environment": "Actual Android API35 emulator WebView; native ADB screenshot",
+  "physical_iPhone_verified": false,
+  "published": false
+}

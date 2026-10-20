@@ -1,0 +1,363 @@
+{
+  "started_at": "2026-10-20T11:32:21.243192+00:00",
+  "environment": "WSL Ubuntu HTTPS against PythonAnywhere",
+  "origin": "https://daejinha.pythonanywhere.com",
+  "checks": [
+    {
+      "name": "legacy_array_before",
+      "passed": true
+    },
+    {
+      "name": "resume_preserves_original_inventory",
+      "passed": true
+    },
+    {
+      "name": "same_origin_existing_image_3",
+      "passed": true
+    },
+    {
+      "name": "same_origin_existing_image_2",
+      "passed": true
+    },
+    {
+      "name": "same_origin_existing_image_1",
+      "passed": true
+    },
+    {
+      "name": "existing_account_login",
+      "passed": true
+    },
+    {
+      "name": "resume_own_fixture_only",
+      "passed": true
+    },
+    {
+      "name": "multipart_post_201_legacy_7_fields_previous_attempt",
+      "passed": true
+    },
+    {
+      "name": "classification_and_ocr_stored_revision_1",
+      "passed": true
+    },
+    {
+      "name": "uploaded_image_digest_matches",
+      "passed": true
+    },
+    {
+      "name": "classification_filter_finds_post",
+      "passed": true
+    },
+    {
+      "name": "search_http_200",
+      "passed": true
+    },
+    {
+      "name": "initial_ocr_text_and_quad_search",
+      "passed": true
+    },
+    {
+      "name": "public_web_search_renders_post",
+      "passed": true
+    },
+    {
+      "name": "public_detail_embeds_matching_line_id",
+      "passed": true
+    },
+    {
+      "name": "owner_correction_saved",
+      "passed": true
+    },
+    {
+      "name": "search_http_200",
+      "passed": true
+    },
+    {
+      "name": "old_ocr_search_removed",
+      "passed": true
+    },
+    {
+      "name": "search_http_200",
+      "passed": true
+    },
+    {
+      "name": "corrected_ocr_search_matches",
+      "passed": true
+    },
+    {
+      "name": "stale_revision_rejected_409",
+      "passed": true
+    },
+    {
+      "name": "anonymous_correction_rejected",
+      "passed": true
+    },
+    {
+      "name": "exclude_ocr_lines_saved",
+      "passed": true
+    },
+    {
+      "name": "search_http_200",
+      "passed": true
+    },
+    {
+      "name": "excluded_text_not_searchable",
+      "passed": true
+    },
+    {
+      "name": "test_post_restored_to_original_demo_data",
+      "passed": true
+    },
+    {
+      "name": "search_http_200",
+      "passed": true
+    },
+    {
+      "name": "restored_ocr_search_matches",
+      "passed": true
+    },
+    {
+      "name": "all_prior_posts_present",
+      "passed": true
+    },
+    {
+      "name": "same_origin_existing_image_3",
+      "passed": true
+    },
+    {
+      "name": "same_origin_existing_image_2",
+      "passed": true
+    },
+    {
+      "name": "same_origin_existing_image_1",
+      "passed": true
+    },
+    {
+      "name": "prior_post_fields_content_and_image_bytes_unchanged",
+      "passed": true
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api_root/Post/",
+      "status": 200,
+      "response_sha256": "e12055cc367e6e305dfbc7119ebe01a21971d885a933b79800900204685a7177"
+    },
+    {
+      "method": "GET",
+      "path": "/media/images/2026/10/20/0650ee907b96448295ef9dca635b6fa4.png",
+      "status": 200,
+      "response_sha256": "0b88d1fb82ca2403f17b1fcfacbfd3139f5571a33704b09c7ed6207ad881c255"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/3/content/",
+      "status": 200,
+      "response_sha256": "9db801b9360bbc4680e0da1128e583d685e2d24e87a9b088419f26b8c2a0c8d1"
+    },
+    {
+      "method": "GET",
+      "path": "/media/images/2026/09/24/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2026-09-23_132827.png",
+      "status": 200,
+      "response_sha256": "46ef074c99204835dbfc0b99eaa87af7def31b18d783ee6599aa346712ea53c1"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/2/content/",
+      "status": 200,
+      "response_sha256": "7ad3874af099a7f72060d3404c959f6d7a087da0c4ff8c262dd2f95b0195b15e"
+    },
+    {
+      "method": "GET",
+      "path": "/media/images/2026/09/23/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2026-09-23_132827.png",
+      "status": 200,
+      "response_sha256": "46ef074c99204835dbfc0b99eaa87af7def31b18d783ee6599aa346712ea53c1"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/1/content/",
+      "status": 200,
+      "response_sha256": "3f78fe897103f60b62df3a90386f586fe4a512c53252db62aa6fc8cd9e5395fa"
+    },
+    {
+      "method": "POST",
+      "path": "/accounts/login/",
+      "status": 200,
+      "response_sha256": "2fce45305966155818596a8f54fe2eccafeecddef116aa4284d9a63293a4eb5d"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/me/",
+      "status": 200,
+      "response_sha256": "2dc7de9e21b1a7a9ced782b73d54d33151a21eb4f7911e6dcd7df319d9693447"
+    },
+    {
+      "method": "GET",
+      "path": "/api_root/Post/4/",
+      "status": 200,
+      "response_sha256": "fbb9895bedbf0815ac7519902602801eb5ec67bbd44ad39bdca0af0e046d38cb"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/4/content/",
+      "status": 200,
+      "response_sha256": "dd08b4e2ca5ff73850e8666f67815e77a802e443924b55435692e064e22d180e"
+    },
+    {
+      "method": "GET",
+      "path": "/media/images/2026/10/20/2838094dadbc40d3858d82786c7b4438.png",
+      "status": 200,
+      "response_sha256": "eb9d13e67bae688b4747e85ba6f3711e92c14869f60e775a33f5578b3227847b"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/content-posts/?theme=object&tag=%EC%A0%9C%EC%B6%9C%EA%B2%80%EC%A6%9D",
+      "status": 200,
+      "response_sha256": "10e4e5cce1a9f76a50a8fca5511f61126771f88e5ea3389f28c10bd0b6c6aa2f"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/photo-text-search/?q=This+is+a+lot",
+      "status": 200,
+      "response_sha256": "536b898e955f45b7718e92b5ea9f71703ce5a5eb35862d336412fbc0e8408eab"
+    },
+    {
+      "method": "GET",
+      "path": "/?q=This+is+a+lot",
+      "status": 200,
+      "response_sha256": "412f4060374817023029df815d540289fa6ff2d3badd348ec68f15ce51c5809c"
+    },
+    {
+      "method": "GET",
+      "path": "/post/4/?q=This+is+a+lot",
+      "status": 200,
+      "response_sha256": "85443c0c1575dda89fea0cf08d2a5d089238511ef61807e5df94dfcc301ac268"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/posts/4/content/",
+      "status": 200,
+      "response_sha256": "eb494740ff49387860c91a1f54b91e5430ec1a5b9ce73503cd2689be8d201726"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/photo-text-search/?q=This+is+a+lot",
+      "status": 200,
+      "response_sha256": "357441a1c10b7b55fd59555772c0ae23195e117d3343491c279175b9321b881a"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/photo-text-search/?q=%EC%88%98%EC%A0%95%EB%AC%B8%EA%B5%AC%ED%99%95%EC%9D%B820261020",
+      "status": 200,
+      "response_sha256": "82fa6e9a3dd07dd6cd2ca6f66b64f5d0bbc219d36c5a0bf48d6c26c0c5092fde"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/posts/4/content/",
+      "status": 409,
+      "response_sha256": "aefcc6a3e3463ae63bb3432707c84063890168f91defdb3f8cdeead6886c6aa9"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/posts/4/content/",
+      "status": 401,
+      "response_sha256": "7779335ee611827a5dac09d448f8599a43c2d66a226e02da292b30a99977b8b8"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/posts/4/content/",
+      "status": 200,
+      "response_sha256": "3f7fbc4c36abf87d69fc26eed170771d171c111bdfe1eb9bad8b1d1ae2cd05f8"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/photo-text-search/?q=%EC%88%98%EC%A0%95%EB%AC%B8%EA%B5%AC%ED%99%95%EC%9D%B820261020",
+      "status": 200,
+      "response_sha256": "357441a1c10b7b55fd59555772c0ae23195e117d3343491c279175b9321b881a"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/posts/4/content/",
+      "status": 200,
+      "response_sha256": "8d01cd262fc830f398e8aba5b5fe50dbb8722b353292ddd7c8ba6cc28053a353"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/photo-text-search/?q=This+is+a+lot",
+      "status": 200,
+      "response_sha256": "cc6efaafd1a4156cb2b1824d10d2bd6040f77d585a12ee01abf0884d4343d1f6"
+    },
+    {
+      "method": "GET",
+      "path": "/api_root/Post/",
+      "status": 200,
+      "response_sha256": "e12055cc367e6e305dfbc7119ebe01a21971d885a933b79800900204685a7177"
+    },
+    {
+      "method": "GET",
+      "path": "/media/images/2026/10/20/0650ee907b96448295ef9dca635b6fa4.png",
+      "status": 200,
+      "response_sha256": "0b88d1fb82ca2403f17b1fcfacbfd3139f5571a33704b09c7ed6207ad881c255"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/3/content/",
+      "status": 200,
+      "response_sha256": "9db801b9360bbc4680e0da1128e583d685e2d24e87a9b088419f26b8c2a0c8d1"
+    },
+    {
+      "method": "GET",
+      "path": "/media/images/2026/09/24/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2026-09-23_132827.png",
+      "status": 200,
+      "response_sha256": "46ef074c99204835dbfc0b99eaa87af7def31b18d783ee6599aa346712ea53c1"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/2/content/",
+      "status": 200,
+      "response_sha256": "7ad3874af099a7f72060d3404c959f6d7a087da0c4ff8c262dd2f95b0195b15e"
+    },
+    {
+      "method": "GET",
+      "path": "/media/images/2026/09/23/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2026-09-23_132827.png",
+      "status": 200,
+      "response_sha256": "46ef074c99204835dbfc0b99eaa87af7def31b18d783ee6599aa346712ea53c1"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/1/content/",
+      "status": 200,
+      "response_sha256": "3f78fe897103f60b62df3a90386f586fe4a512c53252db62aa6fc8cd9e5395fa"
+    },
+    {
+      "method": "POST",
+      "path": "/accounts/logout/",
+      "status": 200,
+      "response_sha256": "2ac01453713542ac2464ed052686e755ef108eaba29d2478af17003d50b8509d"
+    }
+  ],
+  "pass_all": true,
+  "scope": "HTTP multipart upload, stored classification, OCR correction, search, exclusion and conflict handling",
+  "browser_flow_verified": false,
+  "new_model_inference": false,
+  "inference_input": "Previously verified Android WebView printed-page OCR output; no accuracy claim added",
+  "retained_test_post_id": 4,
+  "existing_posts_preserved": true,
+  "before_post_ids": [
+    3,
+    2,
+    1
+  ],
+  "before_snapshot_sha256": "98c45906fec19f5ad4df9a3ad47c87500b6cebfc99bd8112517ad9cd84cd88be",
+  "upload_evidence": "cloud-content-flow-attempt-1.json",
+  "finished_at": "2026-10-20T11:32:53.793961+00:00",
+  "after_post_ids": [
+    4,
+    3,
+    2,
+    1
+  ],
+  "test_post_final_revision": 4,
+  "test_post_url": "https://daejinha.pythonanywhere.com/post/4/",
+  "verification_session_logged_out": true
+}

@@ -1,0 +1,55 @@
+Browser tab: 2, Title: "사진 글 수정 · Common 01", URL: "https://daejinha.pythonanywhere.com/post/4/edit/".
+1 AXWebArea 사진 글 수정 · Common 01, URL: daejinha.pythonanywhere.com/post/4/edit/
+	8 container content-composer
+		9 text PHOTO BLOG / EDIT
+		10 heading 사진 글 수정, Value: 1
+			11 text 사진 글 수정
+		12 text 얼굴은 가리고, 분류와 문구는 확인하고 올려요.
+		13 container 게시 전 확인
+			14 button 얼굴 편집, ID: back-to-mosaic
+			15 heading 게시 전 확인, Value: 2, ID: review-title
+				16 text 게시 전 확인
+			17 tab group 게시 내용 확인
+				18 tab (selectable, settable, boolean) 글 작성, Value: 0, ID: tab-story
+				19 tab (selectable, settable, boolean) 태그 1, ID: tab-tags, Value: 0
+태그
+1
+				20 tab (selected, settable, boolean) 검색 문구 8, Value: 1, ID: tab-text
+					33 text 검색 문구 
+					34 text 8
+			21 container
+				22 image Description: 최종 공개 사본과 선택한 문구 위치, ID: review-stage
+				23 button 전체 사진, ID: review-reset
+			35 container Description: 검색 문구 8, ID: panel-text
+				36 checkbox (settable, integer) Description: 검색 안 함, Value: 0, ID: skip-ocr
+				37 button 다시 읽기, ID: rerun-ocr
+				38 text 8/8개 포함
+				39 button 모두 포함, ID: include-lines
+				40 button 모두 제외, ID: exclude-lines
+				41 container Description: 인식 문구 목록, ID: ocr-lines
+					42 checkbox (settable, integer) Description: 1번 문구 검색에 포함, Value: 1
+					43 checkbox Description: 1번 문구 위치·교정: This is a lot of 12 point text to test the, Value: 1
+					44 checkbox (settable, integer) Description: 2번 문구 검색에 포함, Value: 1
+					45 checkbox Description: 2번 문구 위치·교정: ocr code and see if it works on all types, Value: 0
+					46 checkbox (settable, integer) Description: 3번 문구 검색에 포함, Value: 1
+					47 checkbox Description: 3번 문구 위치·교정: of file format., Value: 0
+					48 checkbox (settable, integer) Description: 4번 문구 검색에 포함, Value: 1
+					49 checkbox Description: 4번 문구 위치·교정: The quick brown dog jumped over the, Value: 0
+					50 checkbox (settable, integer) Description: 5번 문구 검색에 포함, Value: 1
+					51 checkbox Description: 5번 문구 위치·교정: lazy fox. The quick brown dog jumped, Value: 0
+					52 checkbox (settable, integer) Description: 6번 문구 검색에 포함, Value: 1
+					53 checkbox Description: 6번 문구 위치·교정: over the lazy fox. The quick brown dog, Value: 0
+					54 checkbox (settable, integer) Description: 7번 문구 검색에 포함, Value: 1
+					55 checkbox Description: 7번 문구 위치·교정: jumped over the lazy fox. The quick, Value: 0
+					56 checkbox (settable, integer) Description: 8번 문구 검색에 포함, Value: 1
+					57 checkbox Description: 8번 문구 위치·교정: brown dog jumped over the lazy fox., Value: 0
+				58 container ocr-correction
+					59 container
+						60 text 1번 문구 교정
+						61 text 검색 포함
+					62 text field (settable) Description: 선택한 인식 문구 교정, Value: This is a lot of 12 point text to test the, ID: ocr-text
+					63 text 체크한 문구만 검색에 포함돼요. 사진의 글자는 지워지지 않아요.
+			31 text 사물 · 태그 1개 · 검색 문구 8개
+			32 button 수정 저장, ID: publish-photo
+
+The focused UI element is 20 tab (selected, settable, boolean) 검색 문구 8, Value: 1, ID: tab-text

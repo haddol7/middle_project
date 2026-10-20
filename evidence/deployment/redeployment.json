@@ -1,0 +1,55 @@
+{
+  "verified_at": "2026-10-20T05:04:19.604138+00:00",
+  "environment": "PythonAnywhere Python 3.13 / public HTTPS verified from WSL",
+  "authentication_reused": true,
+  "user_manual_upload_required": false,
+  "user_manual_reload_required": false,
+  "webapp": {
+    "domain_name": "daejinha.pythonanywhere.com",
+    "python_version": "3.13",
+    "source_directory": "/home/daejinha/common01-auto/releases/2026102004523169f8f8/PhotoBlogServer",
+    "virtualenv_path": "/home/daejinha/.virtualenvs/common01-07ddcc3503d84044",
+    "force_https": true
+  },
+  "deployment": {
+    "phase": "verified",
+    "source": "/home/daejinha/common01-auto/releases/2026102004523169f8f8/PhotoBlogServer",
+    "virtualenv": "/home/daejinha/.virtualenvs/common01-07ddcc3503d84044",
+    "backup": "/home/daejinha/.local/share/common01-auto/2026102004523169f8f8",
+    "candidate_wsgi": "/home/daejinha/common01-auto/releases/2026102004523169f8f8/candidate_wsgi.py",
+    "previous_wsgi_sha256": "e7e67ec503c9ae5a660ae756750f4498d345c39fb7e0d9e57bc71792a3849938",
+    "package_sha256": "9d43cabf6724905b5333fc36f1d47404d3965e54322fdf8e39a4c07864f8f1a1",
+    "release": "2026102004523169f8f8",
+    "static": "/home/daejinha/common01-auto/releases/2026102004523169f8f8/PhotoBlogServer/staticfiles",
+    "media": "/home/daejinha/common01-auto/shared/media",
+    "previous": {
+      "source": "/home/daejinha/common01-auto/releases/20261020044548717b72/PhotoBlogServer",
+      "release": "20261020044548717b72",
+      "virtualenv": "/home/daejinha/.virtualenvs/common01-07ddcc3503d84044",
+      "backup": "/home/daejinha/.local/share/common01-auto/20261020044548717b72"
+    },
+    "staged_at": 1792472552,
+    "public_probes": [
+      {
+        "path": "/",
+        "status": 200,
+        "sha256": "233b6f91a2ccc3f2fb1e71541a31e48e54c5801f2e2d3bd16476dd712db67866"
+      },
+      {
+        "path": "/accounts/login/",
+        "status": 200,
+        "sha256": "4d700f68d12fb1d8f0f321e764c0ec0f7184afc50e0dba0fc1ed2e1baab9dd35"
+      },
+      {
+        "path": "/api_root/Post/",
+        "status": 200,
+        "sha256": "c111bb32d5ddf57d2ff86f8c1f27c5f13a7a24adc69272f40c6f4add4c11fa87"
+      },
+      {
+        "path": "/static/blog/content/composer.mjs",
+        "status": 200,
+        "sha256": "5221f812ad846ab1caf39b551720561d43702e777cb3329e5c2a990d1761c88f"
+      }
+    ]
+  }
+}

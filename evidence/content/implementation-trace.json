@@ -1,0 +1,790 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-20",
+  "scope": "Local implementation trace; does not certify cloud deployment, overall assessment completion, population model accuracy, or submission",
+  "design_reference": "docs/design-20261020/acceptance.json",
+  "paths": {
+    "implementation_and_tests_relative_to": "common01",
+    "evidence_relative_to": "common01/evidence/content"
+  },
+  "status_definition": {
+    "local_verified": "해당 기능의 명시된 로컬 기능 검사 통과. 설명된 한계·클라우드 검증을 포함하지 않음.",
+    "partially_verified": "구현은 있으며 검증 일부가 남음.",
+    "cloud_login_required": "실제 PythonAnywhere 계정 접근 후 검증 필요.",
+    "submission_pending": "지정 제출 증빙과 최종 제출 미완료."
+  },
+  "source_of_execution_counts": [
+    "server/verification.json",
+    "android/verification.json",
+    "../mobile-web/unit-verification.json",
+    "../mobile-web/browser-models.json",
+    "../mobile-web/browser-ui.json"
+  ],
+  "requirements": [
+    {
+      "id": "R01",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/PhotoPipeline.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/MosaicDraft.java"
+      ],
+      "tests": [
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "android/ui-uploaded-photo.json",
+        "android/content-face-preview.png"
+      ],
+      "verification_scope": "고정 fixture의 원본 파일·Bitmap 불변과 실제 픽셀 변화, 실제 UI 게시 파일 digest. 모든 사진 탐지율은 의미하지 않음.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/pipeline.mjs",
+          "PhotoBlogServer/blog/static/blog/content/vision.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R02",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/MosaicDraft.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/PhotoCanvas.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/MainActivity.java"
+      ],
+      "tests": [
+        "PhotoViewer/app/src/test/java/com/haddol7/photoviewer/content/ContentRulesTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "android/verification.json"
+      ],
+      "verification_scope": "규칙·실제 터치의 수동 영역 추가/이동/실행 취소와 게시 흐름. 모든 제스처 조합의 자동 검증은 아님.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/stage.mjs",
+          "PhotoBlogServer/blog/static/blog/content/rules.mjs",
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R03",
+      "status": "partially_verified",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/MainActivity.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/VisionEngine.java"
+      ],
+      "tests": [
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java"
+      ],
+      "evidence": [
+        "android/verification.json"
+      ],
+      "verification_scope": "0개·실패 안내와 수동 보완 구현. 다수·작은 얼굴·저조도 검증 자료와 장애 주입은 미완료.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs",
+          "PhotoBlogServer/blog/static/blog/content/vision.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "partially_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R04",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/ThemeMapper.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/ComposerState.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/MainActivity.java"
+      ],
+      "tests": [
+        "PhotoViewer/app/src/test/java/com/haddol7/photoviewer/content/ContentRulesTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "android/content-classification-ocr.png"
+      ],
+      "verification_scope": "자동 동물 테마/태그, 약한 근거 기권, UI 교정. UI fixture의 food는 사용자 교정값.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/rules.mjs",
+          "PhotoBlogServer/blog/static/blog/content/vision-engine.mjs",
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R05",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/ThemeMapper.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/GenerationGate.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/MainActivity.java"
+      ],
+      "tests": [
+        "PhotoViewer/app/src/test/java/com/haddol7/photoviewer/content/ContentRulesTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "android/verification.json"
+      ],
+      "verification_scope": "임계값·접전 기권, 세대 검사 유닛 및 교정값 Activity 복원. 모델 정확도 모집단 측정 아님.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/rules.mjs",
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R06",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoBlogServer/blog/content_services.py",
+        "PhotoBlogServer/blog/content_api.py"
+      ],
+      "tests": [
+        "PhotoBlogServer/blog/tests/test_photo_content.py",
+        "PhotoBlogServer/blog/tests/test_content_http.py",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "server/verification.json",
+        "android/ui-uploaded-photo.json"
+      ],
+      "verification_scope": "로컬 실제 HTTP·별도 Repository 재조회·권한·교정값 유지. 클라우드는 R20.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R07",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoBlogServer/blog/content_queries.py",
+        "PhotoBlogServer/blog/content_api.py",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/data/PhotoRepository.java"
+      ],
+      "tests": [
+        "PhotoBlogServer/blog/tests/test_photo_content.py",
+        "PhotoBlogServer/blog/tests/test_content_http.py",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java"
+      ],
+      "evidence": [
+        "server/verification.json",
+        "android/verification.json"
+      ],
+      "verification_scope": "AND 필터·페이지 cursor·기존 기본 API 회귀. 실제 PythonAnywhere는 별도.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/detail.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R08",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/VisionEngine.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/ComposerState.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/MainActivity.java"
+      ],
+      "tests": [
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "android/content-classification-ocr.png",
+        "android/content-match-highlight.png"
+      ],
+      "verification_scope": "한영 OCR·위치 보존·교정·JSON 복원 및 실제 사진 문구 이동. 다양한 글꼴·배경 품질 측정은 미실시.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/vision.mjs",
+          "PhotoBlogServer/blog/static/blog/content/rules.mjs",
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R09",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/ComposerState.java",
+        "PhotoBlogServer/blog/content_rules.py",
+        "PhotoBlogServer/blog/content_services.py"
+      ],
+      "tests": [
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoBlogServer/blog/tests/test_photo_content.py",
+        "PhotoBlogServer/blog/tests/test_content_http.py"
+      ],
+      "evidence": [
+        "server/verification.json",
+        "android/verification.json"
+      ],
+      "verification_scope": "제외 줄 미전송·미색인, 미사용/글자없음 상태 및 교정 후 검색 제외.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs",
+          "PhotoBlogServer/blog/static/blog/content/rules.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R10",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoBlogServer/blog/content_rules.py",
+        "PhotoBlogServer/blog/content_queries.py",
+        "PhotoBlogServer/blog/content_api.py"
+      ],
+      "tests": [
+        "PhotoBlogServer/blog/tests/test_photo_content.py",
+        "PhotoBlogServer/blog/tests/test_content_http.py",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "server/verification.json",
+        "android/content-search-results.png",
+        "web/photo-text-search.jpg"
+      ],
+      "verification_scope": "NFKC·대소문자·공백·AND·%/_ 리터럴, 사진에만 있는 문구.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/detail.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R11",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/MainActivity.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/PhotoCanvas.java"
+      ],
+      "tests": [
+        "PhotoBlogServer/blog/tests/test_photo_content.py",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "android/content-match-highlight.png",
+        "android/verification.json"
+      ],
+      "verification_scope": "일치 줄 버튼·확대·최신 revision/digest 확인. 전체 문구 펼침·다른 줄 이동·접기는 최종 UI 테스트에서 확인.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/detail.mjs",
+          "PhotoBlogServer/blog/static/blog/content/stage.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R12",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/PhotoPipeline.java",
+        "PhotoBlogServer/blog/content_services.py",
+        "PhotoBlogServer/blog/services.py"
+      ],
+      "tests": [
+        "PhotoBlogServer/blog/tests/test_photo_content.py",
+        "PhotoBlogServer/blog/tests/test_content_http.py",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java"
+      ],
+      "evidence": [
+        "android/ui-uploaded-photo.json",
+        "server/verification.json"
+      ],
+      "verification_scope": "최종 encoded bytes 재디코딩 분석·digest/크기 검사, 교체 무효화·단조 증가 revision.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/pipeline.mjs",
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs",
+          "PhotoBlogServer/blog/static/blog/content/detail.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R13",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/GenerationGate.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/MainActivity.java"
+      ],
+      "tests": [
+        "PhotoViewer/app/src/test/java/com/haddol7/photoviewer/content/ContentRulesTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "android/verification.json"
+      ],
+      "verification_scope": "순수 세대 무효화와 Activity 복원 확인. 모든 실제 네트워크 응답 순서의 강제 역전 시험은 아님.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/rules.mjs",
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "partially_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R14",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoBlogServer/blog/content_services.py",
+        "PhotoBlogServer/blog/services.py"
+      ],
+      "tests": [
+        "PhotoBlogServer/blog/tests/test_photo_content.py",
+        "PhotoBlogServer/blog/tests/test_content_http.py"
+      ],
+      "evidence": [
+        "server/verification.json"
+      ],
+      "verification_scope": "DB 실패·파일/metadata 롤백·교체/삭제 정리. 기존 파일 commit 신호 유지.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R15",
+      "status": "partially_verified",
+      "implementation": [
+        "PhotoBlogServer/blog/content_services.py",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/MainActivity.java"
+      ],
+      "tests": [
+        "PhotoBlogServer/blog/tests/test_photo_content.py",
+        "PhotoBlogServer/blog/tests/test_content_http.py",
+        "PhotoBlogServer/blog/tests/test_content_concurrency.py",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java"
+      ],
+      "evidence": [
+        "server/verification.json",
+        "android/verification.json"
+      ],
+      "verification_scope": "작성자 권한·실제 SQLite 동시 수정 409·지연 digest 거부 검증. Android 충돌 입력 보존은 구현했으나 UI 장애 주입은 미실시.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "partially_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R16",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoBlogServer/blog/serializers.py",
+        "PhotoBlogServer/blog/services.py",
+        "PhotoBlogServer/blog/views.py",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/MainActivity.java"
+      ],
+      "tests": [
+        "PhotoBlogServer/blog/tests/test_photo_content.py",
+        "PhotoBlogServer/blog/tests/test_content_web.py",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/data/LiveRepositoryTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "server/verification.json",
+        "android/verification.json"
+      ],
+      "verification_scope": "bare array·정확한 7필드, 기본 웹·인증·기존 Android 업로드·새 UI 실제 게시 회귀.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R17",
+      "status": "local_verified",
+      "implementation": [
+        "PhotoBlogServer/blog/content_api.py",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/data/PhotoRepository.java"
+      ],
+      "tests": [
+        "PhotoBlogServer/blog/tests/test_photo_content.py",
+        "PhotoBlogServer/blog/tests/test_content_http.py",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/data/LiveRepositoryTest.java"
+      ],
+      "evidence": [
+        "server/verification.json",
+        "android/socket-request-check.json"
+      ],
+      "verification_scope": "로컬 CSRF·권한·공개 범위·같은 출처 정책 회귀. 실제 클라우드 환경은 R20.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs",
+          "PhotoBlogServer/blog/static/blog/content/detail.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "local_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R18",
+      "status": "partially_verified",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/MainActivity.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/ComposerState.java"
+      ],
+      "tests": [
+        "PhotoViewer/app/src/test/java/com/haddol7/photoviewer/content/ContentRulesTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "android/verification.json"
+      ],
+      "verification_scope": "선택 취소 보존·회전 복원·폼 저장 중 비활성화·성공/상세실패 분리·모호한 POST 자동 재전송 방지 구현. 회전 검증 통과, 전송 단절/중복 탭 전체 장애 주입은 미실시.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/composer.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "partially_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R19",
+      "status": "partially_verified",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/MainActivity.java",
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/ui/UiKit.java"
+      ],
+      "tests": [
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "android/content-start.png",
+        "android/content-classification-ocr.png"
+      ],
+      "verification_scope": "세로 에뮬레이터·키보드·여백 복원·48dp 버튼 검수. 제3자 첫 사용 관찰·다양한 화면/접근성 글자 크기 검수는 미실시.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/content.css",
+          "PhotoBlogServer/blog/static/blog/content/stage.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "partially_verified",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R20",
+      "status": "cloud_login_required",
+      "implementation": [
+        "PhotoViewer/app/src/main/java/com/haddol7/photoviewer/content/VisionEngine.java",
+        "PhotoViewer/app/build.gradle.kts",
+        "PhotoBlogServer/deploy/manage_production.py"
+      ],
+      "tests": [
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/data/LiveRepositoryTest.java"
+      ],
+      "evidence": [
+        "android/offline-check.json",
+        "server/verification.json"
+      ],
+      "verification_scope": "bundled 모델·별도 사용자 설치/학습 없음·로컬 검증·배포 ZIP 준비. PythonAnywhere 로그인/활성화와 실제 Android 클라우드 검증 대기.",
+      "mobile_web": {
+        "implementation": [
+          "PhotoBlogServer/blog/static/blog/content/vision.mjs",
+          "PhotoBlogServer/blog/static/blog/content/vision-engine.mjs"
+        ],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "cloud_login_required",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    },
+    {
+      "id": "R21",
+      "status": "submission_pending",
+      "implementation": [
+        "docs/IMPLEMENTATION_LOG.md",
+        "docs/REPORT_NOTES.md",
+        "docs/REQUIREMENTS.md"
+      ],
+      "tests": [
+        "PhotoBlogServer/blog/tests/test_photo_content.py",
+        "PhotoBlogServer/blog/tests/test_content_http.py",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/content/ContentDeviceTest.java",
+        "PhotoViewer/app/src/androidTest/java/com/haddol7/photoviewer/ui/ContentUiTest.java"
+      ],
+      "evidence": [
+        "README.md",
+        "android/verification.json",
+        "server/verification.json"
+      ],
+      "verification_scope": "5개 등록 설명·보고서 메모·증거/코드 연결 확보. 지정 주소창/Telnet/VS Code/Coverage 화면, 실제 클라우드, 최종 Word/GitHub 제출 미완료.",
+      "mobile_web": {
+        "implementation": [],
+        "tests": [
+          "web-tests/content-rules.test.mjs",
+          "PhotoBlogServer/blog/tests/test_mobile_web.py"
+        ],
+        "evidence": [
+          "../mobile-web/unit-verification.json",
+          "../mobile-web/browser-models.json",
+          "../mobile-web/browser-ui.json",
+          "../mobile-web/http-excluded.json"
+        ],
+        "status": "submission_pending",
+        "verification_scope": "실제 Chromium 모델·픽셀/390×844·844×390 UI, WSL 저장·검색 검증. 항목별 세부 실행은 browser-ui.json과 모델 검사에 한정. 모든 제스처·실패 조합, 물리 iPhone Safari·PythonAnywhere는 미검증."
+      }
+    }
+  ],
+  "platform_scope": {
+    "client_features": 3,
+    "assessment_registrations": 5,
+    "platforms": [
+      "Android",
+      "mobile web"
+    ],
+    "duplicate_platform_registration": false,
+    "physical_iPhone_Safari_verified": false,
+    "pythonanywhere_verified": false
+  }
+}

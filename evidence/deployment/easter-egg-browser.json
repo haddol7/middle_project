@@ -1,0 +1,14 @@
+{
+  "url": "https://daejinha.pythonanywhere.com/",
+  "environment": "Actual public PythonAnywhere page in in-app Chromium",
+  "verified_at": "2026-10-20T05:16:23.431Z",
+  "initial_hidden": true,
+  "four_taps_hidden": true,
+  "five_taps_visible": true,
+  "close_hides": true,
+  "keyboard_reopens": true,
+  "expanded": "true",
+  "screenshot": "easter-egg-browser.jpg",
+  "detail_screenshot": "easter-egg-detail.jpg",
+  "physical_iphone_verified": false
+}

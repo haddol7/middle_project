@@ -1,0 +1,155 @@
+{
+  "started_at": "2026-10-20T11:31:23.080496+00:00",
+  "environment": "WSL Ubuntu HTTPS against PythonAnywhere",
+  "origin": "https://daejinha.pythonanywhere.com",
+  "checks": [
+    {
+      "name": "legacy_array_before",
+      "passed": true
+    },
+    {
+      "name": "same_origin_existing_image_3",
+      "passed": true
+    },
+    {
+      "name": "same_origin_existing_image_2",
+      "passed": true
+    },
+    {
+      "name": "same_origin_existing_image_1",
+      "passed": true
+    },
+    {
+      "name": "existing_account_login",
+      "passed": true
+    },
+    {
+      "name": "multipart_post_201_legacy_7_fields",
+      "passed": true
+    },
+    {
+      "name": "classification_and_ocr_stored_revision_1",
+      "passed": true
+    },
+    {
+      "name": "uploaded_image_digest_matches",
+      "passed": true
+    },
+    {
+      "name": "classification_filter_finds_post",
+      "passed": true
+    },
+    {
+      "name": "search_http_200",
+      "passed": false
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api_root/Post/",
+      "status": 200,
+      "response_sha256": "5ec5a1ab2a7af4d61dff389a65818d86bb15701cabc808b28539d203adea29d2"
+    },
+    {
+      "method": "GET",
+      "path": "/media/images/2026/10/20/0650ee907b96448295ef9dca635b6fa4.png",
+      "status": 200,
+      "response_sha256": "0b88d1fb82ca2403f17b1fcfacbfd3139f5571a33704b09c7ed6207ad881c255"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/3/content/",
+      "status": 200,
+      "response_sha256": "9db801b9360bbc4680e0da1128e583d685e2d24e87a9b088419f26b8c2a0c8d1"
+    },
+    {
+      "method": "GET",
+      "path": "/media/images/2026/09/24/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2026-09-23_132827.png",
+      "status": 200,
+      "response_sha256": "46ef074c99204835dbfc0b99eaa87af7def31b18d783ee6599aa346712ea53c1"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/2/content/",
+      "status": 200,
+      "response_sha256": "7ad3874af099a7f72060d3404c959f6d7a087da0c4ff8c262dd2f95b0195b15e"
+    },
+    {
+      "method": "GET",
+      "path": "/media/images/2026/09/23/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2026-09-23_132827.png",
+      "status": 200,
+      "response_sha256": "46ef074c99204835dbfc0b99eaa87af7def31b18d783ee6599aa346712ea53c1"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/1/content/",
+      "status": 200,
+      "response_sha256": "3f78fe897103f60b62df3a90386f586fe4a512c53252db62aa6fc8cd9e5395fa"
+    },
+    {
+      "method": "POST",
+      "path": "/accounts/login/",
+      "status": 200,
+      "response_sha256": "1b5bf71ce52eb8b4dd79fd1f3c8ce333c79a49f5d4860c5a02deb98786772532"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/me/",
+      "status": 200,
+      "response_sha256": "767846bc38851e8a8c7490c4f95fa65e2355668252b0c376fab5efe29a314642"
+    },
+    {
+      "method": "POST",
+      "path": "/api_root/Post/",
+      "status": 201,
+      "response_sha256": "fbb9895bedbf0815ac7519902602801eb5ec67bbd44ad39bdca0af0e046d38cb"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/4/content/",
+      "status": 200,
+      "response_sha256": "dd08b4e2ca5ff73850e8666f67815e77a802e443924b55435692e064e22d180e"
+    },
+    {
+      "method": "GET",
+      "path": "/media/images/2026/10/20/2838094dadbc40d3858d82786c7b4438.png",
+      "status": 200,
+      "response_sha256": "eb9d13e67bae688b4747e85ba6f3711e92c14869f60e775a33f5578b3227847b"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/content-posts/?theme=object&tag=%EC%A0%9C%EC%B6%9C%EA%B2%80%EC%A6%9D",
+      "status": 200,
+      "response_sha256": "10e4e5cce1a9f76a50a8fca5511f61126771f88e5ea3389f28c10bd0b6c6aa2f"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/photo-text-search/?q=This+is+a+lot+of+12+point+text+to+test+the",
+      "status": 400,
+      "response_sha256": "9f9d3e23ef07639d54636054cd0144cc039d5887dffb9c04052615db7fa7dde0"
+    },
+    {
+      "method": "POST",
+      "path": "/accounts/logout/",
+      "status": 200,
+      "response_sha256": "2ac01453713542ac2464ed052686e755ef108eaba29d2478af17003d50b8509d"
+    }
+  ],
+  "pass_all": false,
+  "scope": "HTTP multipart upload, stored classification, OCR correction, search, exclusion and conflict handling",
+  "browser_flow_verified": false,
+  "new_model_inference": false,
+  "inference_input": "Previously verified Android WebView printed-page OCR output; no accuracy claim added",
+  "retained_test_post_id": 4,
+  "existing_posts_preserved": false,
+  "before_post_ids": [
+    3,
+    2,
+    1
+  ],
+  "before_snapshot_sha256": "98c45906fec19f5ad4df9a3ad47c87500b6cebfc99bd8112517ad9cd84cd88be",
+  "finished_at": "2026-10-20T11:31:40.996309+00:00",
+  "error_type": "AssertionError",
+  "verification_session_logged_out": true
+}

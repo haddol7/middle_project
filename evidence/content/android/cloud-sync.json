@@ -1,0 +1,12 @@
+{
+  "url": "https://daejinha.pythonanywhere.com/",
+  "read_only": true,
+  "posts": 3,
+  "image_sha256": "a1cb2bddb6b4453cb7f34a552168934ff840dbbcef0d67a23b39e4090eed9f4e",
+  "native_image_visible": true,
+  "images_hash_checked": 3,
+  "images_rendered": 3,
+  "apk_sha256": "88e9b3db514ebd450a1ed47350bf7e6532de6ac9d5ca3a9c06339309d96e23b4",
+  "source_sha256": "652779dd6d1a7385743dc3ab8a3b86c53b6944e6c280ec6cce76acdd972b2c35",
+  "screenshot_sha256": "9e13db63353b969cbf892be948663df714e33dbfd080790242054ec1587c8bcb"
+}

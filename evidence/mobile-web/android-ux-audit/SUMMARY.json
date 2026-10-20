@@ -1,0 +1,154 @@
+{
+  "release": "20261020082900cbea43",
+  "verified_at": "2026-10-20T08:36:05.965Z",
+  "environment": "Windows Android API35 emulator / native WebView / production PythonAnywhere; backend validation in WSL",
+  "viewports": [
+    {
+      "width": 412,
+      "height": 650
+    },
+    {
+      "width": 412,
+      "height": 550
+    }
+  ],
+  "keyboard_visual_height": 503.23809814453125,
+  "layout_checks": 50,
+  "layout_pass": true,
+  "keyboard_pass": true,
+  "deployment_pass": true,
+  "public_assets": 43,
+  "public_assets_pass": true,
+  "native_screenshots": [
+    {
+      "path": "after/detail-550.png",
+      "sha256": "2dbe51cdf66dde325040eb0e0eb2b2d70cb8ad784c31cec6b82b193a7e764ce9",
+      "bytes": 133257
+    },
+    {
+      "path": "after/detail-650.png",
+      "sha256": "bbe0bf2669df4943b23ed86be18f253f44c1ba7510856bd7b99240ad9ed62692",
+      "bytes": 168533
+    },
+    {
+      "path": "after/edit-story-550.png",
+      "sha256": "2a0585b541ec1e44bef831b307fd7ef466e1a89d93808abbfbc6c49afb026d87",
+      "bytes": 143459
+    },
+    {
+      "path": "after/edit-story-650.png",
+      "sha256": "d4016aa003117b32cb60dbbbe4b5d5bbd56943c7892127b564c329630b9ab183",
+      "bytes": 149343
+    },
+    {
+      "path": "after/edit-tags-550.png",
+      "sha256": "a9726122da5257e2db7faa49d9d0f6a9d0ca49936d084a792906cc077348e7b4",
+      "bytes": 134268
+    },
+    {
+      "path": "after/edit-tags-650.png",
+      "sha256": "4f3e28c008d90f7c1cf5d9f0b85f90a804d01115dd37785c2dd16a8633fc5e93",
+      "bytes": 138250
+    },
+    {
+      "path": "after/edit-text-550.png",
+      "sha256": "6f31f0266ac713cbc6a0ee29857e582f26cc613fa0cdc47feac77ef5a101b0df",
+      "bytes": 110883
+    },
+    {
+      "path": "after/edit-text-650.png",
+      "sha256": "6f8c245f41332164283df3a537f4e9588f97e8ae5de96512e06df3dfec30bcd3",
+      "bytes": 116892
+    },
+    {
+      "path": "after/list-author-550.png",
+      "sha256": "a80feb1b0af918fcd2bd3de54f6cabe20eb4e1317fb41958a090d9bc190d6ecc",
+      "bytes": 140113
+    },
+    {
+      "path": "after/list-author-650.png",
+      "sha256": "469afa51983c23d6f3352b90f31a68c23371da4123aace6c5dac0aac53ca4439",
+      "bytes": 158924
+    },
+    {
+      "path": "after/login-550.png",
+      "sha256": "7de3495e8bdb1bee94d35722acd03904c94630fafdd7e5018fbe2fe82c00b251",
+      "bytes": 84390
+    },
+    {
+      "path": "after/login-650.png",
+      "sha256": "bb28fa3a8c5158ed028fe9b343ee4168bb0286641229d845ff03b8e48590a3c9",
+      "bytes": 84395
+    },
+    {
+      "path": "after/mosaic-550.png",
+      "sha256": "35095555263816ec824c32b9542f403069ee5ed113c8cc1d42332e75b4096f94",
+      "bytes": 654238
+    },
+    {
+      "path": "after/new-story-550.png",
+      "sha256": "65480c689f1f9c8794a965d7ed818663d9bc115009e041c19f893d43e3632b82",
+      "bytes": 195237
+    },
+    {
+      "path": "after/new-tags-550.png",
+      "sha256": "e9b176a46dfa304e62620949eed098807d08b3ac3fdbd5f244a71c4c0ac371d8",
+      "bytes": 200535
+    },
+    {
+      "path": "after/new-text-550.png",
+      "sha256": "d0e64f68b506ff483c5b6ac452149e469b454a6c3409a625584c772b013e8a20",
+      "bytes": 247946
+    },
+    {
+      "path": "after/photo-picker-550.png",
+      "sha256": "2d0787af5ef3f93451120aacbecd4f1e7591ec216a071a9405c517a46209f947",
+      "bytes": 97488
+    },
+    {
+      "path": "after/photo-picker-650.png",
+      "sha256": "1f02cf53487f80bdbfff7a869ea76c625ef4549960b5dae53c0098f2370ad982",
+      "bytes": 97306
+    },
+    {
+      "path": "after/search-empty-550.png",
+      "sha256": "9ac3c8546111643b0e69de3f9a4e4c84294cff541685c2458b26f0cbb9d09fe4",
+      "bytes": 118870
+    },
+    {
+      "path": "after/search-empty-650.png",
+      "sha256": "0ae00c3dae4a84a1cd740a231d872806517b5dda9178306fb8277a23e4251480",
+      "bytes": 118870
+    },
+    {
+      "path": "after/signup-550.png",
+      "sha256": "8084565dbde70582a1fa9d2fd844bdea0a3c1ad52536da3f6a12c1d559423a2f",
+      "bytes": 91211
+    },
+    {
+      "path": "after/signup-650.png",
+      "sha256": "8abbe82bc8aeae611b6dc1d4e1900883b848c051ea1f45f376dc2361b90daf58",
+      "bytes": 99287
+    },
+    {
+      "path": "after/tag-keyboard.png",
+      "sha256": "0bbb67c10f68de3ca0a1e5953132ecaa30c2560d0e6fb1d1c8a5af388a689218",
+      "bytes": 265355
+    },
+    {
+      "path": "after/tags-selected-550.png",
+      "sha256": "5ad1e1af01008ac2a96433b5f5028c182d4599c363b705cab9b62f9c08c50651",
+      "bytes": 192249
+    }
+  ],
+  "post_ids": [
+    3,
+    2,
+    1
+  ],
+  "private_photo_uploaded": false,
+  "user_content_published": false,
+  "physical_iPhone_verified": false,
+  "assessed_native_android_sync_verified_by_this_audit": false,
+  "pass": true
+}

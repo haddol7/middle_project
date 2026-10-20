@@ -1,0 +1,36 @@
+{
+  "scope": "Read-only multi-agent editorial and evidence review requested by the user",
+  "source": "common01/모바일웹서비스 프로젝트 공통평가 01_수행 결과 보고서.docx",
+  "source_sha256": "dd515fb0da40c02ab7aef46ba9cf41708f10e06017f28b6849e6ca0971e990e4",
+  "pages": 16,
+  "reviewers": ["report_voice_review", "report_assessor_review", "report_evidence_review", "root synthesis and source checks"],
+  "document_modified": false,
+  "authorship_detection_performed": false,
+  "conclusion": "도구의 작업 사정과 검수 해명이 학생 수행 결과의 설명에 섞여 있다. 이를 정리하되 검증 환경과 미완료 상태는 유지해야 한다.",
+  "findings": [
+    {"priority":"high","section":"A13","page":15,"quote":"Windows 창 촬영은 앱 접근 승인 시간 초과로 확보하지 못하였다.","action":"도구 작업 경위는 내부 기록에 두고 부족한 지정 증빙을 직접 명시한다."},
+    {"priority":"high","section":"A2 A13","pages":[4,15],"quote":"가짜 주소창·터미널·편집기를 합성하지 않았다.","action":"불필요한 해명을 삭제하고 주소창 등 지정 화면 미확보 상태만 남긴다."},
+    {"priority":"high","section":"A11","page":13,"quote":"사용자가 제공한 실제 iPhone 브라우저 캡처","action":"목록 개편 전 iPhone 브라우저 접속 화면으로 표현하고 작성자가 직접 촬영·검사했다고 추가하지 않는다."},
+    {"priority":"medium","section":"A1","page":3,"quote":"기존 최종 양식과 SHA256까지 동일하다.","action":"양식 파일 대조는 내부 검수 기록으로 이동한다."},
+    {"priority":"medium","section":"A1","page":3,"quote":"난이도나 특정 점수를 스스로 확정하지 않는다.","action":"자기 채점 해명을 삭제한다. 교수님 판정 공란은 유지한다."},
+    {"priority":"medium","section":"A3 A8 A9 A11 A12","quote":"별도 실행으로 주장하지 않는다.","action":"각 캡션의 환경·시점을 긍정형으로 명시하고 필요한 한계를 중복 없이 정리한다."},
+    {"priority":"medium","section":"A4 A7 A9 A13","pages":[6,9,11,15],"action":"메타 검수 표현과 코드 경로 나열을 줄이고 문제·구현 선택·처리 결과를 앞에 쓴다. 테스트 표와 재현 경로는 보존한다."},
+    {"priority":"precision","section":"A4","page":6,"quote":"실제 기기 10개","action":"Windows JVM 단위 테스트 63건과 Android API35 에뮬레이터의 기기 테스트 10건으로 분리한다. JVM 테스트를 에뮬레이터에서 실행했다고 바꾸지 않는다."},
+    {"priority":"precision","section":"A10","page":12,"quote":"일치하는 결과만 유지","action":"짧은 문구는 정규화 후 정확 일치, 10자 이상은 최대 10% 문자 차이 허용이라는 코드 기준을 반영해 재인식 비교 기준 통과로 표현한다."},
+    {"priority":"clarity","section":"A12","page":14,"quote":"실제 앱에 저장된 PythonAnywhere 주소","action":"연결 설정에 표시된 주소로 캡션을 구체화할 수 있다. 코드가 preferences에 저장하므로 저장 기능의 사실 오류로 단정하지 않는다. 재시작 후 영속성 검사가 별도로 증명됐다고 주장하지 않는다."}
+  ],
+  "root_adjudications": [
+    "A7의 사물·포스터→음식·라멘·후기는 교정값 저장 경로의 예제다. 음식이 정답 또는 추천 실패의 정확도 개선이라고 바꾸지 않는다.",
+    "iPhone 캡처를 학생이 제공받았거나 직접 촬영했다고 새로 서술하지 않는다. 행위자 없는 캡션과 기존 출처 기록을 사용한다.",
+    "실제·검증 등의 어휘 빈도나 정형적인 학술 종결어미만으로 AI 작성 여부를 판단하지 않는다. 기능3개/등록5개 구분은 양식 근거가 있으므로 유지한다."
+  ],
+  "preserve": [
+    "로컬 WSL와 PythonAnywhere, native PhotoViewer와 Android WebView 및 iPhone 캡처의 환경 구분",
+    "Android 기기 검사는 API35 에뮬레이터이며 JVM 단위 테스트는 Windows에서 실행한 구분",
+    "OCR 배경 6조건은 파생 이미지 포함이며 양성 자료는 생성 간판6줄과 공개 인쇄물8줄이라는 표본 구성",
+    "216→0은 해당 검사 입력의 결과이며 모든 자연 사진의 오탐0% 보장이 아님",
+    "제보 사진 원본 미검증, 작은 글자 누락 가능성, 기존 결과 재인식·저장 필요",
+    "클라우드 native 동기화는 비로그인 공개 목록·이미지 수신까지이며 게시·수정·검색 전체 재검사는 미실시",
+    "ID1 3 4 5 6 7 지정 화면 보완, 신원·GitHub·제출 미완료 및 판정 공란"
+  ]
+}

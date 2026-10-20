@@ -1,0 +1,53 @@
+{
+  "verified_at": "2026-10-20T11:53:47.813953+00:00",
+  "scope": "Current UI/source/evidence audit; no product edits, posts or packaging",
+  "browser": {
+    "origin": "https://daejinha.pythonanywhere.com",
+    "desktop_only": true,
+    "search_query": "This is a lot",
+    "highlighted_lines": 7,
+    "edit_metadata_restored": true,
+    "tag_tab_checked": true,
+    "ocr_tab_checked": true,
+    "saved": false,
+    "new_model_inference": false
+  },
+  "android": {
+    "environment": "Windows Android API35 emulator, actual PhotoViewer",
+    "sync_count": 4,
+    "one_column_cards": true,
+    "full_visible_cards": 1,
+    "source_review_of_vertical_editors": true
+  },
+  "github": {
+    "url": "https://github.com/haddol7/middle_project.git",
+    "ls_remote_exit_code": 0,
+    "refs": [],
+    "pushed": false
+  },
+  "identity_from_user": true,
+  "product_complete": false,
+  "packaging_paused": true,
+  "required_captures_pending": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "screenshots": [
+    {
+      "path": "android-list.png",
+      "sha256": "2ebce0c24b4bc0bc46a18d06253d2be5974fdf113ccd7bfc485d6b51f919f110"
+    },
+    {
+      "path": "edit-ocr.png",
+      "sha256": "179861e003bd6a74865249cd2f4731df6d3c1c0ca0a789588815df9ef1914ed7"
+    },
+    {
+      "path": "search-highlight-wide.png",
+      "sha256": "196ea191e4dbaf0f479f7544e5421558bf51d3fbe445db30152bde68514bb16a"
+    }
+  ]
+}

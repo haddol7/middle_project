@@ -1,0 +1,136 @@
+{
+  "faces": 11,
+  "width": 960,
+  "height": 1280,
+  "regions": [
+    {
+      "id": "dea19c16-5eeb-4d9b-8064-897311014064",
+      "x": 0.38333333333333336,
+      "y": 0.4265625,
+      "w": 0.08124999999999999,
+      "h": 0.06093749999999998,
+      "active": true,
+      "automatic": true,
+      "strength": 2
+    },
+    {
+      "id": "2edb5fa7-df43-4bc4-b5c2-3968cc5a5a71",
+      "x": 0.46380208333333334,
+      "y": 0.5015625,
+      "w": 0.08802083333333338,
+      "h": 0.08124999999999993,
+      "active": true,
+      "automatic": true,
+      "strength": 2
+    },
+    {
+      "id": "fc571b15-852a-41bc-ad57-28c34336d10b",
+      "x": 0.4596875,
+      "y": 0.3931640625,
+      "w": 0.07854166666666673,
+      "h": 0.06601562499999997,
+      "active": true,
+      "automatic": true,
+      "strength": 2
+    },
+    {
+      "id": "4e1da17e-7abd-439f-a7f7-e278594200cf",
+      "x": 0.6197395833333333,
+      "y": 0.5491796875,
+      "w": 0.09072916666666664,
+      "h": 0.06804687499999995,
+      "active": true,
+      "automatic": true,
+      "strength": 2
+    },
+    {
+      "id": "143b9699-79d0-480d-b064-661463cf879b",
+      "x": 0.7339583333333334,
+      "y": 0.4951171875,
+      "w": 0.07583333333333331,
+      "h": 0.055859375000000044,
+      "active": true,
+      "automatic": true,
+      "strength": 2
+    },
+    {
+      "id": "270484dc-5e59-4958-9401-35d2115f5677",
+      "x": 0.5890625,
+      "y": 0.47242187500000005,
+      "w": 0.09479166666666661,
+      "h": 0.06296874999999996,
+      "active": true,
+      "automatic": true,
+      "strength": 2
+    },
+    {
+      "id": "cdce13d2-16e0-488b-8c3b-46c993d531d1",
+      "x": 0.5242708333333334,
+      "y": 0.420546875,
+      "w": 0.051458333333333384,
+      "h": 0.03859375000000004,
+      "active": true,
+      "automatic": true,
+      "strength": 2
+    },
+    {
+      "id": "a778bbbd-02ca-4ced-8f2c-5a11c18902c2",
+      "x": 0.653125,
+      "y": 0.44476562499999994,
+      "w": 0.08125000000000004,
+      "h": 0.05890625000000005,
+      "active": true,
+      "automatic": true,
+      "strength": 2
+    },
+    {
+      "id": "43a43ecc-7951-4b53-8e2d-0e25e06bed2e",
+      "x": 0.23223958333333333,
+      "y": 0.5609765624999999,
+      "w": 0.0907291666666667,
+      "h": 0.07414062500000007,
+      "active": true,
+      "automatic": true,
+      "strength": 2
+    },
+    {
+      "id": "fac993f4-ae5e-4a99-857d-a7e0821b4b5c",
+      "x": 0.6178125,
+      "y": 0.42328124999999994,
+      "w": 0.062291666666666634,
+      "h": 0.04875000000000007,
+      "active": true,
+      "automatic": true,
+      "strength": 2
+    },
+    {
+      "id": "6f600637-6cb9-4452-b152-28648c2ba512",
+      "x": 0.22447916666666667,
+      "y": 0.44859375,
+      "w": 0.06770833333333331,
+      "h": 0.05281249999999993,
+      "active": true,
+      "automatic": true,
+      "strength": 2
+    }
+  ],
+  "masked_regions_changed": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "source_pixels_unchanged": true,
+  "sha256": "ae5fe182e6b63ccf5f22a205bc828c5ee73526c286746f54d7fd57764fe5ac15",
+  "elapsed_ms": 588,
+  "model_version": "mp_blazeface_sr1_tiles_v4",
+  "environment": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "uploaded": false
+}

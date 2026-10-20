@@ -1,0 +1,10 @@
+{
+  "url": "https://daejinha.pythonanywhere.com/post/new/",
+  "environment": "Actual public PythonAnywhere composer / in-app Chromium; physical iPhone not verified",
+  "verified_at": "2026-10-20T05:58:34.112Z",
+  "face_count": 11,
+  "all_automatic_and_masked": true,
+  "note": "얼굴 11곳을 가렸어요. 누락된 얼굴을 직접 확인해주세요.",
+  "composer_script": "/static/blog/content/composer.mjs?v=face-tiles-4",
+  "private_photo_published": false
+}

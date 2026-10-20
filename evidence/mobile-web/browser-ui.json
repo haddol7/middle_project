@@ -1,0 +1,53 @@
+{
+  "environment": "ChatGPT in-app Chromium 155 on Windows; WSL Django localhost",
+  "post_id": 61,
+  "finished_utc": "2026-10-19T19:08:26.273Z",
+  "pass": true,
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "documentWidth": 375
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "documentWidth": 829
+    }
+  ],
+  "actions_verified": [
+    "native file chooser with public portrait and generated sign fixture",
+    "one automatic face; per-face toggle; undo; manual region add and undo",
+    "actual mosaic public copy, theme abstention, actual Korean and English OCR",
+    "manual food theme and tags; Korean line correction; four spurious lines excluded",
+    "real multipart UI publish, post 61",
+    "photo-text query 모바일교정 returns post and highlights its line",
+    "edit reload preserves theme, tags and three included lines",
+    "exclude SUNSET line and save; query SUNSET visibly has no results",
+    "Korean query still returns post after edit"
+  ],
+  "independent_http_evidence": [
+    "http-initial.json",
+    "http-excluded.json"
+  ],
+  "source_changes_during_debugging": [
+    "detail module helper renamed to avoid shadowing window.location before successful final highlight verification; release query v2",
+    "detail canvas aspect ratio reduced unused space; final portrait and landscape screenshots captured"
+  ],
+  "screenshots": [
+    "composer-review.png",
+    "composer-public-copy.png",
+    "posted-detail.png",
+    "search-result.png",
+    "search-highlight.png",
+    "search-excluded.png",
+    "detail-landscape.png"
+  ],
+  "not_verified": [
+    "physical iPhone Safari",
+    "native iPhone camera permission and HEIC variations",
+    "PythonAnywhere static/model loading and public deployment",
+    "all gesture and failure combinations",
+    "offline browser recognition after restart"
+  ]
+}

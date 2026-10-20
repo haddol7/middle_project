@@ -1,0 +1,23 @@
+{
+  "environment": "Actual Android API35 WebView, public PythonAnywhere modules and local browser model",
+  "release": "20261020130539b3d8a3",
+  "input_sha256": "884ff9dacfe5971efa1400708aceb21902a79e867dc953d87a654b00982d001a",
+  "before_candidates": 4,
+  "after_candidates": 16,
+  "auto_selected": 0,
+  "real_jpeg_pipeline": true,
+  "model_versions": {
+    "face": "mp_blazeface_sr1_confirm_v5",
+    "label": "efficientnet_lite0_int8_1",
+    "ocr_ko": "tesseract7_fast_8741641_page2",
+    "ocr_latin": "tesseract7_fast_8741641_page2"
+  },
+  "elapsed_ms": 15432,
+  "all_quads_valid": true,
+  "word_accuracy_measured": false,
+  "handwriting_requires_review": true,
+  "posted": false,
+  "physical_iPhone_verified": false,
+  "pass": true,
+  "backend_clockwise_convex_validation": true
+}

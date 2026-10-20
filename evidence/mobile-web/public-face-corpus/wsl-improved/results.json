@@ -1,0 +1,1066 @@
+{
+  "status": "executed",
+  "started": "2026-10-20T06:22:47.204470+00:00",
+  "finished": "2026-10-20T06:22:49.375656+00:00",
+  "environment": "WSL Ubuntu / Python MediaPipe CPU + actual application JavaScript geometry via Node; NO browser execution",
+  "versions": {
+    "mediapipe": "0.10.32",
+    "numpy": "2.5.4",
+    "Pillow": "12.0.0",
+    "opencv-contrib-python-headless": "5.0.0.93"
+  },
+  "test_dependency_note": "Isolated WSL evaluation venv. Replaced GUI OpenCV distribution with headless equivalent because libGL is unavailable. Not an application dependency or production deployment.",
+  "model_sha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f",
+  "source_sha256": {
+    "face-scans.mjs": "267e155e9bd166fbb583a87afa6953d6b0653785239ee783c299475f13602d5e",
+    "pipeline.mjs": "e57d36431c631f1fc78d906b7732d7a379c7bff2fd326ffddde1df3b55f78af9",
+    "vision-engine.mjs": "1f21a9124234bcef7fc87ccad37b171785dd5d5dcfb5bd2fd56cbb769945791c"
+  },
+  "photos": 16,
+  "errors": 0,
+  "annotated_faces": 43,
+  "confirmation_enabled": true,
+  "totals": {
+    "tp": 43,
+    "fn": 0,
+    "fp": 0,
+    "covered_at_80_percent": 43
+  },
+  "baseline_totals": {
+    "tp": 11,
+    "fn": 32,
+    "fp": 4,
+    "covered_at_80_percent": 17
+  },
+  "results": [
+    {
+      "id": "dlib-2007_007763",
+      "filename": "2007_007763.jpg",
+      "expected": 7,
+      "faces": 7,
+      "baseline_faces": 1,
+      "passes": 51,
+      "comparison": {
+        "tp": 7,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 0,
+        "fn": 7,
+        "fp": 1,
+        "missed_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "covered_at_80_percent": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "regions": [
+        {
+          "id": "4495d461-8c81-4efd-ad0f-bbe56207bf54",
+          "x": 0.317,
+          "y": 0.308,
+          "w": 0.07800000000000001,
+          "h": 0.10399999999999998,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "d07cd29d-aec5-4511-bc2f-36238f8603b7",
+          "x": 0.35869999999999996,
+          "y": 0.5636,
+          "w": 0.08060000000000006,
+          "h": 0.10746666666666671,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "8faf287e-a84c-4ba4-8c25-9444c95eb80f",
+          "x": 0.5892000000000001,
+          "y": 0.22293333333333332,
+          "w": 0.0935999999999999,
+          "h": 0.12480000000000002,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "6ce7c269-4f61-4178-9919-92ad7baf5998",
+          "x": 0.3875,
+          "y": 0.23666666666666666,
+          "w": 0.09099999999999997,
+          "h": 0.12133333333333332,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "b6140862-f063-4482-a9c4-2d34c7969592",
+          "x": 0.6266,
+          "y": 0.6194666666666667,
+          "w": 0.09879999999999989,
+          "h": 0.13173333333333326,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "3e846671-5353-4c66-ab6f-e3df34798d0f",
+          "x": 0.7679,
+          "y": 0.2212,
+          "w": 0.12219999999999998,
+          "h": 0.16293333333333337,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "38ea5611-0a6c-4a27-a9e2-3599763cc75d",
+          "x": 0.1884,
+          "y": 0.5152,
+          "w": 0.0832,
+          "h": 0.11093333333333333,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 227,
+      "sha256": "17d9897dd55d38179f51dc18371b3f4495a606aaa2846e25a3cb6a58b3a97c89",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_001009",
+      "filename": "2008_001009.jpg",
+      "expected": 2,
+      "faces": 2,
+      "baseline_faces": 2,
+      "passes": 28,
+      "comparison": {
+        "tp": 2,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 2,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true
+        ]
+      },
+      "regions": [
+        {
+          "id": "16d7fc70-efc2-4e61-b76c-6919c085733d",
+          "x": 0.3831944444444444,
+          "y": 0.16864583333333333,
+          "w": 0.24194444444444452,
+          "h": 0.1814583333333334,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "92ab574c-f938-4fc6-87e2-2a3c3571fc75",
+          "x": 0.3408333333333333,
+          "y": 0.4327083333333333,
+          "w": 0.2961111111111111,
+          "h": 0.22208333333333335,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 72,
+      "sha256": "2509864113a286bf245161d0317a18c38b6a6641135969847a7e59dff359c52c",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_001322",
+      "filename": "2008_001322.jpg",
+      "expected": 3,
+      "faces": 3,
+      "baseline_faces": 3,
+      "passes": 30,
+      "comparison": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true
+        ]
+      },
+      "regions": [
+        {
+          "id": "6d8bbca6-c3fc-4b1c-8448-034e09fcdf58",
+          "x": 0.4393,
+          "y": 0.5457333333333334,
+          "w": 0.1794,
+          "h": 0.23919999999999997,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "bbf7bd6e-ee68-4e7b-b0b2-12fb3507f6c2",
+          "x": 0.6876,
+          "y": 0.40213333333333334,
+          "w": 0.2288,
+          "h": 0.3050666666666666,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "1cd7d949-9e03-4a72-8265-5764a0c54d96",
+          "x": 0.18180000000000002,
+          "y": 0.4130666666666667,
+          "w": 0.19239999999999996,
+          "h": 0.2565333333333333,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 100,
+      "sha256": "2ea5a60f5347baab8da6eccce43b0320d63da1368d7710fb15cbff8a790bc626",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_002079",
+      "filename": "2008_002079.jpg",
+      "expected": 6,
+      "faces": 6,
+      "baseline_faces": 1,
+      "passes": 54,
+      "comparison": {
+        "tp": 6,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 1,
+        "fn": 5,
+        "fp": 0,
+        "missed_indices": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        "covered_at_80_percent": [
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "regions": [
+        {
+          "id": "936d0271-d37b-431f-9417-e642a28757e6",
+          "x": 0.8661,
+          "y": 0.43746666666666667,
+          "w": 0.13390000000000002,
+          "h": 0.1837333333333333,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "27ae2f69-f8c9-44d7-9749-e1dc56f4d903",
+          "x": 0.1012,
+          "y": 0.34026666666666666,
+          "w": 0.0936,
+          "h": 0.12480000000000002,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "d63a2028-a2c3-4f5f-85c1-665e366717c4",
+          "x": 0.0436,
+          "y": 0.4874666666666667,
+          "w": 0.12479999999999997,
+          "h": 0.16639999999999988,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "ca7b8e30-e5ec-4475-bb37-4bbf1835ce13",
+          "x": 0.8072,
+          "y": 0.43093333333333333,
+          "w": 0.0935999999999999,
+          "h": 0.12479999999999997,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "39288d48-2c8e-4c21-a272-33dd11805dc7",
+          "x": 0.6907000000000001,
+          "y": 0.3582666666666667,
+          "w": 0.0805999999999999,
+          "h": 0.10746666666666665,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "7824622a-c12e-49fc-bb68-0aa79795ee0c",
+          "x": 0.2284,
+          "y": 0.3525333333333333,
+          "w": 0.08320000000000005,
+          "h": 0.11093333333333338,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 106,
+      "sha256": "f929bdf416d756b37eb90c119b892eba5d21041b134883e18d827bce641fb48f",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_002470",
+      "filename": "2008_002470.jpg",
+      "expected": 6,
+      "faces": 6,
+      "baseline_faces": 0,
+      "passes": 46,
+      "comparison": {
+        "tp": 6,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 0,
+        "fn": 6,
+        "fp": 0,
+        "missed_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "covered_at_80_percent": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "regions": [
+        {
+          "id": "fdbc98eb-b8b0-49d8-8a04-8bcdea173127",
+          "x": 0.4652,
+          "y": 0.21265060240963854,
+          "w": 0.09359999999999996,
+          "h": 0.1409638554216868,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "21ea823a-6496-4089-90db-e90d35c5f046",
+          "x": 0.5324,
+          "y": 0.5126506024096386,
+          "w": 0.1352,
+          "h": 0.20361445783132537,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "0a948aef-22eb-4c2a-81fb-176a0a44cf0f",
+          "x": 0.3564,
+          "y": 0.25060240963855424,
+          "w": 0.08320000000000005,
+          "h": 0.1253012048192771,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "d3882f68-71b8-4d3c-b3d9-041298c3f628",
+          "x": 0.6407999999999999,
+          "y": 0.14578313253012049,
+          "w": 0.11440000000000017,
+          "h": 0.172289156626506,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "145ce6eb-b555-4229-bfe7-426cf1c85d1d",
+          "x": 0.0948,
+          "y": 0.4530120481927711,
+          "w": 0.1144,
+          "h": 0.172289156626506,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "6495011a-a91a-4429-b5ee-46e35ebdad42",
+          "x": 0.29469999999999996,
+          "y": 0.4980421686746988,
+          "w": 0.08060000000000006,
+          "h": 0.12138554216867475,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 95,
+      "sha256": "14b543e3ac55b497aaaba9dc03a39be04c8ae670851b3f78f9f5adb08295d780",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_002506",
+      "filename": "2008_002506.jpg",
+      "expected": 3,
+      "faces": 3,
+      "baseline_faces": 3,
+      "passes": 32,
+      "comparison": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 3,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true
+        ]
+      },
+      "regions": [
+        {
+          "id": "7264c022-f2ed-4d27-be62-79f8c23517a2",
+          "x": 0.4285,
+          "y": 0.25133333333333335,
+          "w": 0.22099999999999997,
+          "h": 0.2946666666666667,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "41081298-c70a-4152-8775-d18a1dee26fb",
+          "x": 0.1996,
+          "y": 0.17013333333333333,
+          "w": 0.2288,
+          "h": 0.3050666666666666,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "a36edd1f-851a-40a3-972c-894cbf667856",
+          "x": 0.6595,
+          "y": 0.218,
+          "w": 0.247,
+          "h": 0.32933333333333337,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 86,
+      "sha256": "ede6804edf0ec005144ffe7f0f2b56bd2aa1d21beee79d29f72cb16ead19a447",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_004176",
+      "filename": "2008_004176.jpg",
+      "expected": 7,
+      "faces": 7,
+      "baseline_faces": 1,
+      "passes": 56,
+      "comparison": {
+        "tp": 7,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 0,
+        "fn": 7,
+        "fp": 1,
+        "missed_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "covered_at_80_percent": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      "regions": [
+        {
+          "id": "dcacdcea-6463-4936-9586-19372c6e2168",
+          "x": 0.5816666666666667,
+          "y": 0.21963470319634704,
+          "w": 0.08666666666666667,
+          "h": 0.0949771689497717,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "2a17a07e-d60d-43b9-8427-fd37b4b06581",
+          "x": 0.33375,
+          "y": 0.26529680365296804,
+          "w": 0.08666666666666673,
+          "h": 0.0949771689497717,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "64f9fa58-a0ae-4cfc-92e3-96e33d27f4d8",
+          "x": 0.6720833333333334,
+          "y": 0.16803652968036528,
+          "w": 0.09749999999999992,
+          "h": 0.10684931506849318,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "12b89646-b21a-4340-b828-17f22d780d06",
+          "x": 0.458125,
+          "y": 0.20981735159817352,
+          "w": 0.0920833333333334,
+          "h": 0.1009132420091324,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "70f3bed2-9d7d-4401-9220-3dd3a1fe50f6",
+          "x": 0.38697916666666665,
+          "y": 0.17294520547945205,
+          "w": 0.09479166666666666,
+          "h": 0.10388127853881277,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "2623dc11-1983-4f6a-8c8c-07d409b93a63",
+          "x": 0.41583333333333333,
+          "y": 0.517351598173516,
+          "w": 0.09749999999999998,
+          "h": 0.10684931506849316,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "cb7aa4f5-59b8-4e8b-ab39-1f3c3d8c8cdd",
+          "x": 0.20510416666666667,
+          "y": 0.17682648401826484,
+          "w": 0.10020833333333337,
+          "h": 0.10981735159817352,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 134,
+      "sha256": "92a075f5e1d279f009ab4809592aaf0109e429adf3266e5aa8ce2755730b41c2",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2008_007676",
+      "filename": "2008_007676.jpg",
+      "expected": 7,
+      "faces": 7,
+      "baseline_faces": 2,
+      "passes": 31,
+      "comparison": {
+        "tp": 7,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 0,
+        "fn": 7,
+        "fp": 2,
+        "missed_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "covered_at_80_percent": [
+          true,
+          true,
+          false,
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      "regions": [
+        {
+          "id": "639c57c3-05d5-4ad2-9700-1067a313b033",
+          "x": 0.5157,
+          "y": 0.3618263473053892,
+          "w": 0.10659999999999992,
+          "h": 0.15958083832335335,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "224f03c3-f9ea-48d3-a01a-745e78af70d1",
+          "x": 0.718,
+          "y": 0.3772455089820359,
+          "w": 0.10399999999999998,
+          "h": 0.15568862275449102,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "f2e5f9ad-969c-4be5-ad26-170311d6f7fb",
+          "x": 0.3665,
+          "y": 0.3241017964071856,
+          "w": 0.11699999999999999,
+          "h": 0.17514970059880242,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "380bac10-0fb6-4b70-bcdd-1e011d2c895d",
+          "x": 0.6229,
+          "y": 0.34266467065868267,
+          "w": 0.09620000000000006,
+          "h": 0.14401197604790417,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "4ffb6c32-4fba-4557-a6ca-0a8a938f8897",
+          "x": 0.4352,
+          "y": 0.1724550898203593,
+          "w": 0.09359999999999996,
+          "h": 0.14011976047904195,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "bd690a53-6848-4f16-8e5b-c106d2d22896",
+          "x": 0.1979,
+          "y": 0.40404191616766466,
+          "w": 0.1222,
+          "h": 0.182934131736527,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "0cc38e02-1623-4f3b-ac6f-1b7be0fa032a",
+          "x": 0.24559999999999998,
+          "y": 0.2059880239520958,
+          "w": 0.12479999999999997,
+          "h": 0.18682634730538916,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 81,
+      "sha256": "09a0e07d6fb3b4276e73b9f6450b5c69d97d3e3b75807948caf6defd40260e6f",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-2009_004587",
+      "filename": "2009_004587.jpg",
+      "expected": 2,
+      "faces": 2,
+      "baseline_faces": 2,
+      "passes": 35,
+      "comparison": {
+        "tp": 2,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true
+        ]
+      },
+      "baseline_comparison": {
+        "tp": 2,
+        "fn": 0,
+        "fp": 0,
+        "missed_indices": [],
+        "covered_at_80_percent": [
+          true,
+          true
+        ]
+      },
+      "regions": [
+        {
+          "id": "4e72f399-289a-4cf6-923e-cf7096e4c337",
+          "x": 0.339375,
+          "y": 0.0875,
+          "w": 0.24375000000000002,
+          "h": 0.19499999999999998,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "b812f65d-d8a7-440b-a043-21b0659d4d5b",
+          "x": 0.63025,
+          "y": 0.5382,
+          "w": 0.2144999999999999,
+          "h": 0.17159999999999997,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 85,
+      "sha256": "2dc5d52a5388499cf912d7d99dc9d05e4bec7651153331f40e81ae4813bb317c",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-Tom_Cruise_avp_2014_4",
+      "filename": "Tom_Cruise_avp_2014_4.jpg",
+      "expected": 1,
+      "faces": 1,
+      "baseline_faces": 1,
+      "passes": 28,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "0d760c54-3157-4649-955a-71b425b60736",
+          "x": 0,
+          "y": 0.21506250000000002,
+          "w": 1,
+          "h": 0.7686249999999999,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 84,
+      "sha256": "d9bea1c716b461c15ac3bc7e256bb5efa3e04379d7131f9347e96e4baa6a37c6",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "dlib-dogs",
+      "filename": "dogs.jpg",
+      "expected": 0,
+      "faces": 0,
+      "baseline_faces": 1,
+      "passes": 33,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [],
+      "elapsed_ms": 148,
+      "sha256": "66e22f8c3bd3b8f876ad9158caaa064992d2b56a5681d9c6efa163a59db7ed03",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "opencv-baboon",
+      "filename": "opencv-baboon.jpg",
+      "expected": 0,
+      "faces": 0,
+      "baseline_faces": 0,
+      "passes": 25,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [],
+      "elapsed_ms": 58,
+      "sha256": "1a1dd18d78eec44420af3b0b7f08ee3d41c982916cae3ce203d7ff35d754cc0f",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "opencv-building",
+      "filename": "opencv-building.jpg",
+      "expected": 0,
+      "faces": 0,
+      "baseline_faces": 0,
+      "passes": 33,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [],
+      "elapsed_ms": 76,
+      "sha256": "742a1baad62ac82e91e718e77eedf7e85c2eddc4badfb8c87c6cbc86c45a8b07",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "opencv-fruits",
+      "filename": "opencv-fruits.jpg",
+      "expected": 0,
+      "faces": 0,
+      "baseline_faces": 0,
+      "passes": 21,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [],
+      "elapsed_ms": 50,
+      "sha256": "9c031d80a1c52da5eca790db896baffec6a7e52bf786cdb7bbfca5c7f880e6a1",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "opencv-messi5",
+      "filename": "opencv-messi5.jpg",
+      "expected": null,
+      "faces": 1,
+      "baseline_faces": 0,
+      "passes": 34,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "b9456ae9-5235-4c3c-b785-ea9bbe62363d",
+          "x": 0.3958029197080292,
+          "y": 0.2687134502923977,
+          "w": 0.08065693430656934,
+          "h": 0.12923976608187132,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 78,
+      "sha256": "1d570e49654e84c7a943918537bd9e5e1ef82920152e147c834006e235be97c9",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    },
+    {
+      "id": "nasa-exp70",
+      "filename": "nasa-exp70.jpg",
+      "expected": 7,
+      "faces": 7,
+      "baseline_faces": 0,
+      "passes": 54,
+      "comparison": null,
+      "baseline_comparison": null,
+      "regions": [
+        {
+          "id": "cde16de0-ec40-47d5-960c-0812b21c0a10",
+          "x": 0.2591796875,
+          "y": 0.30451770451770455,
+          "w": 0.08125000000000004,
+          "h": 0.10158730158730156,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "25df8931-7c56-45cc-b38c-983918b269df",
+          "x": 0.7927490234375,
+          "y": 0.35320512820512817,
+          "w": 0.07807617187500004,
+          "h": 0.09761904761904766,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "4c397751-95e1-40a7-bde7-37e2d26678aa",
+          "x": 0.655859375,
+          "y": 0.33894993894993897,
+          "w": 0.08378906249999996,
+          "h": 0.10476190476190472,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "7b445a8d-1074-47bb-bbbb-d7cec6207bdc",
+          "x": 0.565966796875,
+          "y": 0.44633699633699636,
+          "w": 0.07998046875000009,
+          "h": 0.09999999999999992,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "2cf1c131-e53a-4a52-8010-116901e27840",
+          "x": 0.3803466796875,
+          "y": 0.4413614163614164,
+          "w": 0.08061523437499996,
+          "h": 0.10079365079365071,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "df8cb36b-d178-48c5-9609-f22a84f22923",
+          "x": 0.1437255859375,
+          "y": 0.2541819291819292,
+          "w": 0.07045898437499998,
+          "h": 0.08809523809523806,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        },
+        {
+          "id": "298dc125-6114-4cd5-b5ed-e10316efdb82",
+          "x": 0.4757568359375,
+          "y": 0.30119047619047623,
+          "w": 0.07045898437500003,
+          "h": 0.08809523809523806,
+          "active": true,
+          "automatic": true,
+          "strength": 2
+        }
+      ],
+      "elapsed_ms": 569,
+      "sha256": "b281582a3c07db5cfadd1f87fdade4effca898d2feb41ddfc886a524b4ec9731",
+      "source_bytes_unchanged": true,
+      "uploaded": false
+    }
+  ],
+  "matching": "maximum one-to-one matching at IoU >= 0.3, padded mask boxes against dlib annotations",
+  "limitations": [
+    "Different native MediaPipe runtime from browser WASM; browser parity not established",
+    "Pillow JPEG decoding/resampling differs from browser canvas",
+    "No actual canvas mosaic pixel test, worker, Safari or production UI test",
+    "Small selected public sample; not population accuracy; existing XML may omit visible faces"
+  ],
+  "source_stable": true
+}

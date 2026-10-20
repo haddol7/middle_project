@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "deliver",
+  "type": "workflow",
+  "input": "C:\\Users\\1\\mobile_web_service\\common01\\docs\\design-20261020\\flow.json",
+  "output": "C:\\Users\\1\\mobile_web_service\\common01\\docs\\design-20261020\\flow.html",
+  "specification": {
+    "sha256": "d79ce398529b781a7771b9c26ec56b42b62324bd6310254ee1823e63936e3f59",
+    "bytes": 3414
+  },
+  "artifact": {
+    "sha256": "d64019c5a2d4efcd82ed443a55a0d00f3f234beac1d7a13152433416604cfc55",
+    "bytes": 805869
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  }
+}

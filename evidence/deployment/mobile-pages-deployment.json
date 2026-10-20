@@ -1,0 +1,60 @@
+{
+  "release": "20261020082900cbea43",
+  "phase": "verified",
+  "verified_at": "2026-10-20T08:33:30.204871+00:00",
+  "templates": [
+    {
+      "path": "blog/base.html",
+      "sha256": "afe36c0345dbf308a80b53b0b8a36caa41eac4708f6df818f70201a30f2a2307",
+      "source_matches": true
+    },
+    {
+      "path": "blog/post_list.html",
+      "sha256": "fbd85bee9cb4654accf8bf705c380d7b27881affe4acc588c63d62d48518ff1e",
+      "source_matches": true
+    },
+    {
+      "path": "blog/post_detail.html",
+      "sha256": "622b44f763ed802795a305d4053751588ea40083ebce3accc5562d8c8f9d765d",
+      "source_matches": true
+    },
+    {
+      "path": "blog/post_edit.html",
+      "sha256": "dfb05747b5858e4c167e13de9c4cd8d7f2b20d61aa46651e863e44ffcfbb4f89",
+      "source_matches": true
+    },
+    {
+      "path": "registration/login.html",
+      "sha256": "a90a7bdd64b4b0a73aeb3b7585bd0e01135b40b018376d1d6cfb93cde89ecd94",
+      "source_matches": true
+    },
+    {
+      "path": "registration/signup.html",
+      "sha256": "3d1ec70dc3bb102a458486912b20d59a2123ec4cb06b4e911ec980fd52f18760",
+      "source_matches": true
+    }
+  ],
+  "public_probes": [
+    {
+      "url": "https://daejinha.pythonanywhere.com/static/blog/content/composer.mjs?v=mobile-pages-3",
+      "status": 200,
+      "sha256": "ea0ad6c41d4e8459c486d38306b9a09cfa66af7d21bb75b1c8c15828e16567b6",
+      "source_matches": true
+    },
+    {
+      "url": "https://daejinha.pythonanywhere.com/static/blog/content/content.css?v=mobile-pages-3",
+      "status": 200,
+      "sha256": "aedaeb9010f0be9a3e55de06d452e63c52bf7663af1aebbc76d3eec53b02c938",
+      "source_matches": true
+    }
+  ],
+  "public_post_ids": [
+    3,
+    2,
+    1
+  ],
+  "private_photo_uploaded": false,
+  "android_layout_evidence": "common01/evidence/mobile-web/android-ux-audit/after/results.json",
+  "physical_iPhone_verified": false,
+  "pass": true
+}

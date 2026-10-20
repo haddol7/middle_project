@@ -1,0 +1,49 @@
+{
+  "url": "https://daejinha.pythonanywhere.com/post/new/",
+  "title": "새 사진 게시 · Common 01",
+  "width": 618,
+  "height": 975,
+  "visualHeight": 650.2857055664062,
+  "scrollHeight": 1002,
+  "horizontalOverflow": false,
+  "header": {
+    "top": 0,
+    "bottom": 133.95237731933594,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 133.95237731933594,
+    "visible": true
+  },
+  "firstPhoto": {
+    "top": 0,
+    "bottom": 0,
+    "left": 0,
+    "right": 0,
+    "width": 0,
+    "height": 0,
+    "visible": false
+  },
+  "main": {
+    "top": 153.95237731933594,
+    "bottom": 893.4642791748047,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 739.5119018554688,
+    "visible": true
+  },
+  "primary": {
+    "top": 454.1071472167969,
+    "bottom": 786.3095397949219,
+    "left": 26.761905670166016,
+    "right": 385.42859268188477,
+    "width": 358.66668701171875,
+    "height": 332.202392578125,
+    "visible": true
+  },
+  "visibleText": "사진 블로그\n사진·검색\n사진 게시\n로그아웃\n\nPHOTO BLOG / UPLOAD\n\n새 사진 게시\n\n얼굴은 가리고, 분류와 문구는 확인하고 올려요.\n\n1 사진 선택\n2 얼굴 확인\n3 확인·게시\n사진을 선택해주세요.\n＋\n어떤 순간을 남길까요?\n\n사진은 이 브라우저에서 먼저 처리합니다.\n게시할 때 가린 사본만 서버로 보냅니다.\n\n사진 보관함에서 선택\n새 사진 촬영\n\n원본은 바뀌지 않아요. 처음에는 인식 도구를 자동으로 준비하느라 잠시 걸릴 수 있어요. 브라우저에서 읽을 수 있는 사진은 게시용 JPEG 사본으로 만듭니다.\n\n사진과 이야기를 함께 · 사진 블로그",
+  "environment": "Actual Android API35 emulator WebView; native ADB screenshot",
+  "physical_iPhone_verified": false,
+  "published": false
+}

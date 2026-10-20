@@ -1,0 +1,121 @@
+{
+  "environment": "WSL Ubuntu, actual PythonAnywhere HTTPS, anonymous read-only",
+  "at": "2026-10-20T12:19:42.973114+00:00",
+  "checks": [
+    {
+      "name": "anonymous_home_200",
+      "pass": true
+    },
+    {
+      "name": "no_public_signup_or_studio_navigation",
+      "pass": true
+    },
+    {
+      "name": "no_anonymous_publish_link",
+      "pass": true
+    },
+    {
+      "name": "photo_search_retained",
+      "pass": true
+    },
+    {
+      "name": "operator_login_without_registration",
+      "pass": true
+    },
+    {
+      "name": "retired_404:/accounts/signup/",
+      "pass": true
+    },
+    {
+      "name": "retired_404:/village/",
+      "pass": true
+    },
+    {
+      "name": "retired_404:/studio/me/",
+      "pass": true
+    },
+    {
+      "name": "retired_404:/studio/1/",
+      "pass": true
+    },
+    {
+      "name": "retired_404:/api/v1/auth/register/",
+      "pass": true
+    },
+    {
+      "name": "retired_404:/api/v1/galleries/",
+      "pass": true
+    },
+    {
+      "name": "retired_404:/api/v1/galleries/1/layout/",
+      "pass": true
+    },
+    {
+      "name": "retired_404:/api/v1/catalog/",
+      "pass": true
+    },
+    {
+      "name": "retired_404:/static/blog/app.js",
+      "pass": true
+    },
+    {
+      "name": "retired_404:/static/blog/vendor/three.module.js",
+      "pass": true
+    },
+    {
+      "name": "anonymous_cannot_publish",
+      "pass": true
+    },
+    {
+      "name": "existing_four_posts_and_seven_field_android_array",
+      "pass": true
+    },
+    {
+      "name": "existing_media_200:4",
+      "pass": true
+    },
+    {
+      "name": "existing_media_200:3",
+      "pass": true
+    },
+    {
+      "name": "existing_media_200:2",
+      "pass": true
+    },
+    {
+      "name": "existing_media_200:1",
+      "pass": true
+    }
+  ],
+  "pass": true,
+  "post_ids": [
+    4,
+    3,
+    2,
+    1
+  ],
+  "media": [
+    {
+      "post_id": 4,
+      "sha256": "eb9d13e67bae688b4747e85ba6f3711e92c14869f60e775a33f5578b3227847b",
+      "bytes": 13454
+    },
+    {
+      "post_id": 3,
+      "sha256": "0b88d1fb82ca2403f17b1fcfacbfd3139f5571a33704b09c7ed6207ad881c255",
+      "bytes": 16675
+    },
+    {
+      "post_id": 2,
+      "sha256": "46ef074c99204835dbfc0b99eaa87af7def31b18d783ee6599aa346712ea53c1",
+      "bytes": 143484
+    },
+    {
+      "post_id": 1,
+      "sha256": "46ef074c99204835dbfc0b99eaa87af7def31b18d783ee6599aa346712ea53c1",
+      "bytes": 143484
+    }
+  ],
+  "new_posts_created": false,
+  "authenticated_write_verification": "WSL real HTTP and Android isolated server; no new production post"
+}

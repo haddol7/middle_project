@@ -1,0 +1,13 @@
+{
+  "ready": true,
+  "created": true,
+  "username": "admin",
+  "staff": true,
+  "superuser": true,
+  "posts_preserved": true,
+  "actual_https_login": true,
+  "admin_dashboard": true,
+  "can_publish": true,
+  "existing_post_edit_allowed": true,
+  "session_logged_out": true
+}

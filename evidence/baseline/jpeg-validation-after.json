@@ -1,0 +1,52 @@
+{
+  "environment": "WSL Ubuntu",
+  "stage": "after_fix",
+  "validator_source_sha256": "d67cb4b021427c9ccff1355d9f232e19e144b466509bf2aacd7f651f00ebe0b2",
+  "samples": [
+    {
+      "cut_bytes": 2,
+      "serializer_accepted": false,
+      "image_error": true
+    },
+    {
+      "cut_bytes": 10,
+      "serializer_accepted": false,
+      "image_error": true
+    },
+    {
+      "cut_bytes": 25,
+      "serializer_accepted": false,
+      "image_error": true
+    },
+    {
+      "cut_bytes": 50,
+      "serializer_accepted": false,
+      "image_error": true
+    }
+  ],
+  "runtime_http_status": 400,
+  "runtime_image_error": true,
+  "photo_rows_and_file_bytes_unchanged": true,
+  "before": {
+    "post_ids": [
+      1,
+      2
+    ],
+    "media_sha256": {
+      "images/2026/10/09/19a72c39fa234f8ba3e4cff52a184200.png": "49801e8df150b2b850dd58d4b3b0c53cecb6307891cd589766df1b468fafb035",
+      "images/2026/10/09/77f6ffbf7f6e43109219266433af15af.png": "49801e8df150b2b850dd58d4b3b0c53cecb6307891cd589766df1b468fafb035"
+    }
+  },
+  "after": {
+    "post_ids": [
+      1,
+      2
+    ],
+    "media_sha256": {
+      "images/2026/10/09/19a72c39fa234f8ba3e4cff52a184200.png": "49801e8df150b2b850dd58d4b3b0c53cecb6307891cd589766df1b468fafb035",
+      "images/2026/10/09/77f6ffbf7f6e43109219266433af15af.png": "49801e8df150b2b850dd58d4b3b0c53cecb6307891cd589766df1b468fafb035"
+    }
+  },
+  "credentials_or_csrf_tokens_logged": false,
+  "side_effects": "Local fixture session lifecycle only; logged out after probe."
+}

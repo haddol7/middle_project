@@ -1,0 +1,41 @@
+{
+  "url": "https://daejinha.pythonanywhere.com/",
+  "title": "사진 블로그 · Common 01",
+  "width": 412,
+  "height": 650,
+  "visualHeight": 650.2857055664062,
+  "scrollHeight": 2410,
+  "horizontalOverflow": false,
+  "header": {
+    "top": 0,
+    "bottom": 135.95237731933594,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 135.95237731933594,
+    "visible": true
+  },
+  "firstPhoto": {
+    "top": 613.732177734375,
+    "bottom": 853.732177734375,
+    "left": 16.761905670166016,
+    "right": 395.42859268188477,
+    "width": 378.66668701171875,
+    "height": 240,
+    "visible": true
+  },
+  "main": {
+    "top": 159.95237731933594,
+    "bottom": 2301.767807006836,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 2141.8154296875,
+    "visible": true
+  },
+  "primary": null,
+  "visibleText": "사진 블로그\n사진·검색\ndaejinha\n사진 게시\n로그아웃\n\nPHOTO BLOG / PUBLIC POSTS\n\n사진과 이야기를 함께\n\n사진 속 문구와 테마로 기록을 다시 찾아보세요.\n\n사진 속 글자 검색\n테마\n전체 테마\n음식\n동물\n자연·풍경\n인물\n건축·공간\n사물\n기타\n미분류\n태그\n사진 찾기\n조건 해제\ndaejinha · 2026.10.20 14:10\n[배포 테스트] 사진 블로그 업데이트 확인\n\n미분류\n\n자동 배포 연결과 게시글 등록이 정상 동작하는지 확인하기 위한 테스트 글입니다.\n\n제목·본문·테스트 이미지를 함께 등록했습니다. 기존 게시글과 사진은 그대로 유지했습니다.\n이 글은 Codex가 사용자의 요청으로 등록한 테스트 게시글입니다.\n\n확인일: 2026년 10월 20일\n테스트 식…\n\ndaejinha · 2026.09.24 13:31\nTest\n\n미분류\n\n모바일 웹 서비스 프로젝트 과제 테스트\n\ndaejinha · 2026.09.23 13:28\nTest\n\n미분류\n\n모바일 웹 서비스 프로젝트 과제 테스트\n\n사진과 이야기를 함께 · 사진 블로그",
+  "environment": "Actual Android API35 emulator WebView; native ADB screenshot",
+  "physical_iPhone_verified": false,
+  "published": false
+}

@@ -1,0 +1,52 @@
+{
+  "verified_utc": "2026-10-10T05:31:28.688853+00:00",
+  "environment": "WSL Ubuntu",
+  "python": "/home/daeha_linux/.venvs/mobile_web_service/bin/python",
+  "database_path": "/mnt/c/Users/haddo/mobile_web_service/common01/PhotoBlogServer/db.sqlite3",
+  "scope": "Local browser-upload Post IDs 1 and 2, not Django's isolated test database.",
+  "read_only": true,
+  "post_count_in_local_database": 2,
+  "fixture_path": "evidence/test-runs/baseline-photo.png",
+  "fixture_sha256": "49801e8df150b2b850dd58d4b3b0c53cecb6307891cd589766df1b468fafb035",
+  "rows": [
+    {
+      "id": 1,
+      "row_exists": true,
+      "author_id": 1,
+      "expected_author_id": 1,
+      "author_matches": true,
+      "image_name": "images/2026/10/09/19a72c39fa234f8ba3e4cff52a184200.png",
+      "image_file_exists": true,
+      "stored_bytes": 13538,
+      "stored_sha256": "49801e8df150b2b850dd58d4b3b0c53cecb6307891cd589766df1b468fafb035",
+      "matches_browser_upload_fixture": true,
+      "image_format": "PNG",
+      "image_dimensions": [
+        900,
+        600
+      ],
+      "pillow_verify_pass": true,
+      "pass": true
+    },
+    {
+      "id": 2,
+      "row_exists": true,
+      "author_id": 1,
+      "expected_author_id": 1,
+      "author_matches": true,
+      "image_name": "images/2026/10/09/77f6ffbf7f6e43109219266433af15af.png",
+      "image_file_exists": true,
+      "stored_bytes": 13538,
+      "stored_sha256": "49801e8df150b2b850dd58d4b3b0c53cecb6307891cd589766df1b468fafb035",
+      "matches_browser_upload_fixture": true,
+      "image_format": "PNG",
+      "image_dimensions": [
+        900,
+        600
+      ],
+      "pillow_verify_pass": true,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

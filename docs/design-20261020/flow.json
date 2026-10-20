@@ -1,0 +1,153 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "사진을 준비해 게시하고 다시 찾는 흐름 · 설계",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "hidden"
+    }
+  },
+  "lanes": [
+    {
+      "id": "prepare",
+      "label": "Android · 게시 준비"
+    },
+    {
+      "id": "publish",
+      "label": "PythonAnywhere · 실제 저장과 조회"
+    },
+    {
+      "id": "rediscover",
+      "label": "Android · 기록 다시 찾기"
+    }
+  ],
+  "mainPath": [
+    "select_photo",
+    "protect_faces",
+    "freeze_image",
+    "read_content",
+    "review_results",
+    "publish_post",
+    "save_bundle"
+  ],
+  "nodes": [
+    {
+      "id": "select_photo",
+      "lane": "prepare",
+      "col": 0,
+      "type": "frontend",
+      "label": "사진 선택",
+      "sublabel": "후기·일상 기록"
+    },
+    {
+      "id": "protect_faces",
+      "lane": "prepare",
+      "col": 1,
+      "type": "security",
+      "label": "얼굴 모자이크",
+      "sublabel": "자동 적용 · 직접 보완"
+    },
+    {
+      "id": "freeze_image",
+      "lane": "prepare",
+      "col": 2,
+      "type": "frontend",
+      "label": "게시 사본 확정",
+      "sublabel": "원본은 기기에 보존"
+    },
+    {
+      "id": "read_content",
+      "lane": "prepare",
+      "col": 3,
+      "type": "backend",
+      "label": "내용·글자 분석",
+      "sublabel": "테마 추천 · OCR"
+    },
+    {
+      "id": "review_results",
+      "lane": "prepare",
+      "col": 4,
+      "type": "frontend",
+      "label": "결과 확인·수정",
+      "sublabel": "미분류·검색 제외 허용"
+    },
+    {
+      "id": "publish_post",
+      "lane": "prepare",
+      "col": 5,
+      "type": "frontend",
+      "label": "사진글 게시",
+      "sublabel": "최종 사본과 확정 결과"
+    },
+    {
+      "id": "save_bundle",
+      "lane": "publish",
+      "col": 5,
+      "type": "database",
+      "label": "사진글 저장",
+      "sublabel": "사진·분류·글자 검증"
+    },
+    {
+      "id": "query_record",
+      "lane": "rediscover",
+      "col": 5,
+      "type": "frontend",
+      "label": "기록 검색",
+      "sublabel": "테마·문구로 서버 조회"
+    },
+    {
+      "id": "open_match",
+      "lane": "rediscover",
+      "col": 4,
+      "type": "frontend",
+      "label": "기록 열기",
+      "sublabel": "일치한 글자 영역 강조"
+    }
+  ],
+  "edges": [
+    {
+      "from": "select_photo",
+      "to": "protect_faces",
+      "role": "main"
+    },
+    {
+      "from": "protect_faces",
+      "to": "freeze_image",
+      "role": "main"
+    },
+    {
+      "from": "freeze_image",
+      "to": "read_content",
+      "role": "main"
+    },
+    {
+      "from": "read_content",
+      "to": "review_results",
+      "role": "main"
+    },
+    {
+      "from": "review_results",
+      "to": "publish_post",
+      "role": "main"
+    },
+    {
+      "from": "publish_post",
+      "to": "save_bundle",
+      "label": "HTTPS",
+      "role": "main"
+    },
+    {
+      "from": "save_bundle",
+      "to": "query_record",
+      "label": "저장 후 조회",
+      "role": "branch"
+    },
+    {
+      "from": "query_record",
+      "to": "open_match",
+      "role": "branch"
+    }
+  ],
+  "cards": []
+}

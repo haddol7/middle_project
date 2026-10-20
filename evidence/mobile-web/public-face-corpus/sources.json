@@ -1,0 +1,165 @@
+{
+  "purpose": "Local face detection evaluation only. Not training. Not deployed or published.",
+  "sources": [
+    {
+      "id": "dlib-2007_007763",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2007_007763.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2007_007763.jpg",
+      "bytes": 89619,
+      "sha256": "17d9897dd55d38179f51dc18371b3f4495a606aaa2846e25a3cb6a58b3a97c89"
+    },
+    {
+      "id": "dlib-2008_001009",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_001009.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_001009.jpg",
+      "bytes": 41770,
+      "sha256": "2509864113a286bf245161d0317a18c38b6a6641135969847a7e59dff359c52c"
+    },
+    {
+      "id": "dlib-2008_001322",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_001322.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_001322.jpg",
+      "bytes": 65344,
+      "sha256": "2ea5a60f5347baab8da6eccce43b0320d63da1368d7710fb15cbff8a790bc626"
+    },
+    {
+      "id": "dlib-2008_002079",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_002079.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_002079.jpg",
+      "bytes": 92641,
+      "sha256": "f929bdf416d756b37eb90c119b892eba5d21041b134883e18d827bce641fb48f"
+    },
+    {
+      "id": "dlib-2008_002470",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_002470.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_002470.jpg",
+      "bytes": 91349,
+      "sha256": "14b543e3ac55b497aaaba9dc03a39be04c8ae670851b3f78f9f5adb08295d780"
+    },
+    {
+      "id": "dlib-2008_002506",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_002506.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_002506.jpg",
+      "bytes": 79316,
+      "sha256": "ede6804edf0ec005144ffe7f0f2b56bd2aa1d21beee79d29f72cb16ead19a447"
+    },
+    {
+      "id": "dlib-2008_004176",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_004176.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_004176.jpg",
+      "bytes": 93821,
+      "sha256": "92a075f5e1d279f009ab4809592aaf0109e429adf3266e5aa8ce2755730b41c2"
+    },
+    {
+      "id": "dlib-2008_007676",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2008_007676.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2008_007676.jpg",
+      "bytes": 110034,
+      "sha256": "09a0e07d6fb3b4276e73b9f6450b5c69d97d3e3b75807948caf6defd40260e6f"
+    },
+    {
+      "id": "dlib-2009_004587",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/2009_004587.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "2009_004587.jpg",
+      "bytes": 79462,
+      "sha256": "2dc5d52a5388499cf912d7d99dc9d05e4bec7651153331f40e81ae4813bb317c"
+    },
+    {
+      "id": "dlib-Tom_Cruise_avp_2014_4",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/Tom_Cruise_avp_2014_4.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "Tom_Cruise_avp_2014_4.jpg",
+      "bytes": 66360,
+      "sha256": "d9bea1c716b461c15ac3bc7e256bb5efa3e04379d7131f9347e96e4baa6a37c6"
+    },
+    {
+      "id": "dlib-dogs",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/dogs.jpg",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "dogs.jpg",
+      "bytes": 175216,
+      "sha256": "66e22f8c3bd3b8f876ad9158caaa064992d2b56a5681d9c6efa163a59db7ed03"
+    },
+    {
+      "id": "dlib-testing",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/testing.xml",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "testing.xml",
+      "bytes": 1960,
+      "sha256": "25abc4cb274b5e8c15266d1450509fb834042dcfd5f92ae52853268129ac734f"
+    },
+    {
+      "id": "dlib-testing_with_face_landmarks",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/testing_with_face_landmarks.xml",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "testing_with_face_landmarks.xml",
+      "bytes": 69937,
+      "sha256": "b45d736ab07016dd552a95cedb569a5e1f0c4dacf9ba6db60861fec55c05c57e"
+    },
+    {
+      "id": "dlib-training",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/training.xml",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "training.xml",
+      "bytes": 1512,
+      "sha256": "7bcac38904f4b7f5086ff0eda080ac32c0043f8c62c9c72da5a09c4d81254423"
+    },
+    {
+      "id": "dlib-training_with_face_landmarks",
+      "url": "https://raw.githubusercontent.com/davisking/dlib/master/examples/faces/training_with_face_landmarks.xml",
+      "origin": "https://github.com/davisking/dlib/tree/master/examples/faces",
+      "filename": "training_with_face_landmarks.xml",
+      "bytes": 50646,
+      "sha256": "d7895a98681f5e3818fb5d95cd75fdeba7c0e0c74cc9b22193df2909eb8f6ce5"
+    },
+    {
+      "id": "opencv-baboon",
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/baboon.jpg",
+      "origin": "https://github.com/opencv/opencv/tree/4.x/samples/data",
+      "filename": "opencv-baboon.jpg",
+      "bytes": 179920,
+      "sha256": "1a1dd18d78eec44420af3b0b7f08ee3d41c982916cae3ce203d7ff35d754cc0f"
+    },
+    {
+      "id": "opencv-building",
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/building.jpg",
+      "origin": "https://github.com/opencv/opencv/tree/4.x/samples/data",
+      "filename": "opencv-building.jpg",
+      "bytes": 79718,
+      "sha256": "742a1baad62ac82e91e718e77eedf7e85c2eddc4badfb8c87c6cbc86c45a8b07"
+    },
+    {
+      "id": "opencv-fruits",
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/fruits.jpg",
+      "origin": "https://github.com/opencv/opencv/tree/4.x/samples/data",
+      "filename": "opencv-fruits.jpg",
+      "bytes": 82429,
+      "sha256": "9c031d80a1c52da5eca790db896baffec6a7e52bf786cdb7bbfca5c7f880e6a1"
+    },
+    {
+      "id": "opencv-messi5",
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/messi5.jpg",
+      "origin": "https://github.com/opencv/opencv/tree/4.x/samples/data",
+      "filename": "opencv-messi5.jpg",
+      "bytes": 72937,
+      "sha256": "1d570e49654e84c7a943918537bd9e5e1ef82920152e147c834006e235be97c9"
+    },
+    {
+      "id": "nasa-exp70",
+      "url": "https://www.nasa.gov/wp-content/uploads/2023/10/iss070-s-002.jpg",
+      "origin": "https://www.nasa.gov/image-article/the-official-expedition-70-crew-portrait/",
+      "filename": "nasa-exp70.jpg",
+      "bytes": 4491620,
+      "sha256": "b281582a3c07db5cfadd1f87fdade4effca898d2feb41ddfc886a524b4ec9731"
+    }
+  ]
+}

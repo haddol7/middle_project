@@ -1,0 +1,42 @@
+{
+  "url": "https://daejinha.pythonanywhere.com/accounts/login/",
+  "title": "로그인 · Common 01",
+  "width": 412,
+  "height": 551,
+  "clientWidth": 412,
+  "visualHeight": 551.2380981445312,
+  "scrollHeight": 551,
+  "horizontalOverflow": false,
+  "header": {
+    "top": 0,
+    "bottom": 60.761905670166016,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 60.761905670166016,
+    "visible": true
+  },
+  "firstPhoto": null,
+  "main": {
+    "top": 76.76190948486328,
+    "bottom": 434.5119094848633,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 357.75,
+    "visible": true
+  },
+  "primary": {
+    "top": 336.952392578125,
+    "bottom": 380.952392578125,
+    "left": 32.761905670166016,
+    "right": 379.42859268188477,
+    "width": 346.66668701171875,
+    "height": 44,
+    "visible": true
+  },
+  "visibleText": "사진 블로그\n로그인\n회원가입\n로그인\n\n사진과 이야기를 이어서 남겨보세요.\n\n사용자 이름\n비밀번호\n로그인\n\n처음 오셨나요? 회원가입\n\n사진과 이야기를 함께 · 사진 블로그",
+  "environment": "Actual Android API35 emulator WebView; native ADB screenshot",
+  "physical_iPhone_verified": false,
+  "published": false
+}

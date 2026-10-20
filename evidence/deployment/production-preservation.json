@@ -1,0 +1,24 @@
+{
+  "environment": "PythonAnywhere Bash / Python 3.13.1",
+  "verified_at": "2026-10-20T05:04:22.077009+00:00",
+  "release": "2026102004523169f8f8",
+  "original_posts": 2,
+  "current_posts": 2,
+  "original_accounts": 1,
+  "current_accounts": 1,
+  "original_media_files": 4,
+  "current_media_files": 4,
+  "home_disk_kib": 317392,
+  "checks": {
+    "original_posts_preserved": true,
+    "original_accounts_preserved": true,
+    "all_original_media_digests_preserved": true,
+    "sqlite_integrity": true,
+    "original_full_backup_retained": true,
+    "secret_file_private": true,
+    "secret_directory_private": true,
+    "shared_database_reused": true,
+    "virtualenv_reused": true
+  },
+  "pass_all": true
+}

@@ -1,0 +1,33 @@
+{
+  "url": "https://daejinha.pythonanywhere.com/?q=uxnoresults",
+  "title": "사진 블로그 · Common 01",
+  "width": 412,
+  "height": 650,
+  "visualHeight": 650.2857055664062,
+  "scrollHeight": 915,
+  "horizontalOverflow": false,
+  "header": {
+    "top": 0,
+    "bottom": 78.35714721679688,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 78.35714721679688,
+    "visible": true
+  },
+  "firstPhoto": null,
+  "main": {
+    "top": 102.35714721679688,
+    "bottom": 806.3155212402344,
+    "left": 0,
+    "right": 412.19049072265625,
+    "width": 412.19049072265625,
+    "height": 703.9583740234375,
+    "visible": true
+  },
+  "primary": null,
+  "visibleText": "사진 블로그\n사진·검색\n로그인\n회원가입\n\nPHOTO BLOG / PUBLIC POSTS\n\n사진과 이야기를 함께\n\n사진 속 문구와 테마로 기록을 다시 찾아보세요.\n\n사진 속 글자 검색\n테마\n전체 테마\n음식\n동물\n자연·풍경\n인물\n건축·공간\n사물\n기타\n미분류\n태그\n사진 찾기\n조건 해제\n\n사진 속 글자 검색: uxnoresults\n\n일치하는 사진이 없어요.\n\n검색 조건을 바꾸거나 새 사진과 이야기를 남겨보세요.\n\n사진과 이야기를 함께 · 사진 블로그",
+  "environment": "Actual Android API35 emulator WebView; native ADB screenshot",
+  "physical_iPhone_verified": false,
+  "published": false
+}

@@ -1,0 +1,13 @@
+{
+  "renderer": "documents skill render_docx.py with installed Microsoft Word PDF conversion adapter",
+  "source_docx": "C:\\Users\\1\\mobile_web_service\\common01\\모바일웹서비스 프로젝트 공통평가 01_수행 결과 보고서_제출용.docx",
+  "source_opened_read_only": true,
+  "page_count": 19,
+  "resolution_dpi": 150,
+  "visual_review": "all_19_pages_reviewed",
+  "source_sha256": "c59bf66a1f95a1e0db3d7141f0ad90058028f740eac7a8f72b27326c15b36a44",
+  "assessment_requirements_preserved": true,
+  "assessment_statuses_preserved": true,
+  "login_verified_on_pythonanywhere": true,
+  "credentials_included_by_user_request": true
+}

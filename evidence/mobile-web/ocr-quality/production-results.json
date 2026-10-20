@@ -1,0 +1,482 @@
+{
+  "release": "20261020130539b3d8a3",
+  "verified_at": "2026-10-20T13:08:20.796Z",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; sdk_gphone64_x86_64 Build/AE3A.240806.043; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.219 Mobile Safari/537.36",
+    "versions": {
+      "face": "mp_blazeface_sr1_confirm_v5",
+      "label": "efficientnet_lite0_int8_1",
+      "ocr_ko": "tesseract7_fast_8741641_page2",
+      "ocr_latin": "tesseract7_fast_8741641_page2"
+    },
+    "kind": "Actual Android API35 system WebView; public production modules and local models; native ADB screenshots"
+  },
+  "checks": [
+    {
+      "name": "grass",
+      "expected": [],
+      "width": 512,
+      "height": 512,
+      "elapsed_ms": 1902,
+      "lines": [],
+      "pass": true,
+      "before_detected": 37,
+      "before_auto_selected": 37
+    },
+    {
+      "name": "grass-large",
+      "expected": [],
+      "width": 1600,
+      "height": 1600,
+      "elapsed_ms": 5282,
+      "lines": [],
+      "pass": true,
+      "before_detected": 158,
+      "before_auto_selected": 100,
+      "screenshot": "production-grass-large.png",
+      "screenshot_sha256": "909a348dcd0a5c206e3d8887200e162b4d929ac378f2bbe684e2dc8cbd585a13"
+    },
+    {
+      "name": "foliage-crop",
+      "expected": [],
+      "width": 1000,
+      "height": 500,
+      "elapsed_ms": 1057,
+      "lines": [],
+      "pass": true,
+      "before_detected": 6,
+      "before_auto_selected": 6,
+      "screenshot": "production-foliage-crop.png",
+      "screenshot_sha256": "593a61b819c30235b8b3bf29e70cf4fd3b3adab3a0008abfbb2a9aebc6d9fa2e"
+    },
+    {
+      "name": "fur",
+      "expected": [],
+      "width": 512,
+      "height": 512,
+      "elapsed_ms": 1133,
+      "lines": [],
+      "pass": true,
+      "before_detected": 12,
+      "before_auto_selected": 12
+    },
+    {
+      "name": "fruit-crop",
+      "expected": [],
+      "width": 512,
+      "height": 336,
+      "elapsed_ms": 848,
+      "lines": [],
+      "pass": true,
+      "before_detected": 1,
+      "before_auto_selected": 1
+    },
+    {
+      "name": "brick",
+      "expected": [],
+      "width": 512,
+      "height": 512,
+      "elapsed_ms": 857,
+      "lines": [],
+      "pass": true,
+      "before_detected": 2,
+      "before_auto_selected": 2
+    },
+    {
+      "name": "sign",
+      "expected": [
+        "바다라멘",
+        "CAFE MENU 100",
+        "입구 OPEN 24"
+      ],
+      "width": 1600,
+      "height": 1000,
+      "elapsed_ms": 1210,
+      "lines": [
+        {
+          "line_id": "145e7aed-c335-4a5b-a413-2ef027067867",
+          "text": "바다라멘",
+          "quad": [
+            [
+              0.079375,
+              0.136
+            ],
+            [
+              0.300625,
+              0.136
+            ],
+            [
+              0.300625,
+              0.229
+            ],
+            [
+              0.079375,
+              0.229
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        },
+        {
+          "line_id": "2652a58c-f083-4f5e-963e-77ce98db6281",
+          "text": "CAFE MENU 100",
+          "quad": [
+            [
+              0.0775,
+              0.367
+            ],
+            [
+              0.538125,
+              0.367
+            ],
+            [
+              0.538125,
+              0.441
+            ],
+            [
+              0.0775,
+              0.441
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        },
+        {
+          "line_id": "44473ba3-e492-461e-aea7-754a1953fd12",
+          "text": "입구 OPEN 24",
+          "quad": [
+            [
+              0.078125,
+              0.576
+            ],
+            [
+              0.45375,
+              0.576
+            ],
+            [
+              0.45375,
+              0.669
+            ],
+            [
+              0.078125,
+              0.669
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        }
+      ],
+      "pass": true,
+      "generated_fixture": true,
+      "screenshot": "production-sign.png",
+      "screenshot_sha256": "3caa6e8aa5f7e727eb9fb74fba5b93dd6ea61c3c8a040d34f70dd95a4ca2f270"
+    },
+    {
+      "name": "short-sign",
+      "expected": [
+        "입구",
+        "OPEN",
+        "24"
+      ],
+      "width": 1600,
+      "height": 1000,
+      "elapsed_ms": 1090,
+      "lines": [
+        {
+          "line_id": "03a347bc-b226-4797-a5e3-0ab54260fffb",
+          "text": "입구",
+          "quad": [
+            [
+              0.078125,
+              0.136
+            ],
+            [
+              0.1875,
+              0.136
+            ],
+            [
+              0.1875,
+              0.229
+            ],
+            [
+              0.078125,
+              0.229
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        },
+        {
+          "line_id": "3ae3d78d-ce82-4877-b504-f881453567d2",
+          "text": "OPEN",
+          "quad": [
+            [
+              0.0775,
+              0.368
+            ],
+            [
+              0.23375,
+              0.368
+            ],
+            [
+              0.23375,
+              0.441
+            ],
+            [
+              0.0775,
+              0.441
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        },
+        {
+          "line_id": "beb114a6-63b3-4c31-8f5a-b5cb90def8b8",
+          "text": "24",
+          "quad": [
+            [
+              0.0775,
+              0.588
+            ],
+            [
+              0.145,
+              0.588
+            ],
+            [
+              0.145,
+              0.66
+            ],
+            [
+              0.0775,
+              0.66
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        }
+      ],
+      "pass": true,
+      "generated_fixture": true
+    },
+    {
+      "name": "printed-page",
+      "expected": [
+        "This is a lot of 12 point text to test the",
+        "ocr code and see if it works on all types",
+        "of file format.",
+        "The quick brown dog jumped over the",
+        "lazy fox. The quick brown dog jumped",
+        "over the lazy fox. The quick brown dog",
+        "jumped over the lazy fox. The quick",
+        "brown dog jumped over the lazy fox."
+      ],
+      "width": 640,
+      "height": 480,
+      "elapsed_ms": 1613,
+      "lines": [
+        {
+          "line_id": "d0afbe30-f02b-4af4-b5fd-32a3fb42fcb1",
+          "text": "This is a lot of 12 point text to test the",
+          "quad": [
+            [
+              0.05625,
+              0.19166666666666668
+            ],
+            [
+              0.90625,
+              0.19166666666666668
+            ],
+            [
+              0.90625,
+              0.25416666666666665
+            ],
+            [
+              0.05625,
+              0.25416666666666665
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        },
+        {
+          "line_id": "2bc57ea7-4cf2-4b62-b224-56b7712078e7",
+          "text": "ocr code and see if it works on all types",
+          "quad": [
+            [
+              0.05625,
+              0.2625
+            ],
+            [
+              0.965625,
+              0.2625
+            ],
+            [
+              0.965625,
+              0.32708333333333334
+            ],
+            [
+              0.05625,
+              0.32708333333333334
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        },
+        {
+          "line_id": "77f85a3f-71be-4c4b-8c34-54d4c12ba4f8",
+          "text": "of file format.",
+          "quad": [
+            [
+              0.05625,
+              0.3333333333333333
+            ],
+            [
+              0.3484375,
+              0.3333333333333333
+            ],
+            [
+              0.3484375,
+              0.38333333333333336
+            ],
+            [
+              0.05625,
+              0.38333333333333336
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        },
+        {
+          "line_id": "31fc5c02-4f06-437e-89c0-62499932b50b",
+          "text": "The quick brown dog jumped over the",
+          "quad": [
+            [
+              0.05625,
+              0.4041666666666667
+            ],
+            [
+              0.9140625,
+              0.4041666666666667
+            ],
+            [
+              0.9140625,
+              0.46875
+            ],
+            [
+              0.05625,
+              0.46875
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        },
+        {
+          "line_id": "48fcc722-4fb9-4b72-806b-794dfa3a51dd",
+          "text": "lazy fox. The quick brown dog jumped",
+          "quad": [
+            [
+              0.0578125,
+              0.475
+            ],
+            [
+              0.9140625,
+              0.475
+            ],
+            [
+              0.9140625,
+              0.5395833333333333
+            ],
+            [
+              0.0578125,
+              0.5395833333333333
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        },
+        {
+          "line_id": "51122940-af85-4682-8dc9-6e3050187c50",
+          "text": "over the lazy fox. The quick brown dog",
+          "quad": [
+            [
+              0.05625,
+              0.5458333333333333
+            ],
+            [
+              0.9328125,
+              0.5458333333333333
+            ],
+            [
+              0.9328125,
+              0.6104166666666667
+            ],
+            [
+              0.05625,
+              0.6104166666666667
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        },
+        {
+          "line_id": "ad55b21d-481c-44ed-897f-c330712d4675",
+          "text": "jumped over the lazy fox. The quick",
+          "quad": [
+            [
+              0.0671875,
+              0.6166666666666667
+            ],
+            [
+              0.8765625,
+              0.6166666666666667
+            ],
+            [
+              0.8765625,
+              0.68125
+            ],
+            [
+              0.0671875,
+              0.68125
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        },
+        {
+          "line_id": "1cb3c8cb-8b74-422c-b14c-be842bbcfe09",
+          "text": "brown dog jumped over the lazy fox.",
+          "quad": [
+            [
+              0.0578125,
+              0.6875
+            ],
+            [
+              0.8765625,
+              0.6875
+            ],
+            [
+              0.8765625,
+              0.7520833333333333
+            ],
+            [
+              0.0578125,
+              0.7520833333333333
+            ]
+          ],
+          "origin": "auto",
+          "included": true
+        }
+      ],
+      "pass": true,
+      "generated_fixture": false
+    }
+  ],
+  "pass": true,
+  "negative_before": 216,
+  "negative_after": 0,
+  "positive_lines": 14,
+  "physical_iPhone_verified": false,
+  "user_original_background_verified": false,
+  "posted": false,
+  "training": false
+}

@@ -1,0 +1,67 @@
+{
+  "environment": "Android Emulator API35, 420dpi, 840x1470 pixels = 320x560 dp",
+  "status": "passed",
+  "test": "ContentUiTest.testNewComposerPickerMosaicCorrectionRotationUploadAndSearch",
+  "tests": 1,
+  "apk_sha256": "88e9b3db514ebd450a1ed47350bf7e6532de6ac9d5ca3a9c06339309d96e23b4",
+  "assertions": [
+    "Picker returns an actual photo",
+    "Photo, editing tabs and primary action stay in the viewport",
+    "Primary action stays above the visible keyboard",
+    "Tag chip add/remove, activity recreation, real WSL upload, text search and highlight",
+    "Entire OCR list remains hidden on public detail"
+  ],
+  "screenshots": [
+    {
+      "file": "content-classification-ocr.png",
+      "width": 840,
+      "height": 1470,
+      "sha256": "ac21a55269a99c725ad2c098e64363f671723afec0bbb57e2dd434859b9600a5"
+    },
+    {
+      "file": "content-face-preview.png",
+      "width": 840,
+      "height": 1470,
+      "sha256": "c9a9a40826af58f6ce68616f9a55d6d6be7caf0e81497d65defd7169735ad016"
+    },
+    {
+      "file": "content-match-highlight.png",
+      "width": 840,
+      "height": 1470,
+      "sha256": "8660e9ebd25a2d8d3c5d6908222b82a8bf9d17d7d06949a7574fd08f1c4d5a33"
+    },
+    {
+      "file": "content-ocr-keyboard.png",
+      "width": 840,
+      "height": 1470,
+      "sha256": "1c85571f684081cb7ad7553227be326eb9fafb77bda9e7e4880bfde6ba619e7e"
+    },
+    {
+      "file": "content-published.png",
+      "width": 840,
+      "height": 1470,
+      "sha256": "e55b4587fcf4d2f810b514bc55f085cb054cfed28f925146901326071d46f70e"
+    },
+    {
+      "file": "content-search-results.png",
+      "width": 840,
+      "height": 1470,
+      "sha256": "ffcbac09cfc464acd5928661652152bd5cda431bac98c02f74f90b8ffd1f0fe9"
+    },
+    {
+      "file": "content-start.png",
+      "width": 840,
+      "height": 1470,
+      "sha256": "762a2a153744e89851f2ea0043fe523fdf54708528e62164e810c983a53e146b"
+    },
+    {
+      "file": "content-tags.png",
+      "width": 840,
+      "height": 1470,
+      "sha256": "a8517730aee17ba36e3ad732190c12185d4f8207e1af68f2c8f84c98c82fbf04"
+    }
+  ],
+  "final_build_source_sha256": "652779dd6d1a7385743dc3ab8a3b86c53b6944e6c280ec6cce76acdd972b2c35",
+  "application_apk_sha256": "88e9b3db514ebd450a1ed47350bf7e6532de6ac9d5ca3a9c06339309d96e23b4",
+  "ui_test_source_sha256": "ee4cffa33e831342af79ffbb1c1fbc99ac0f3db449913a04c0760e44861c8126"
+}
