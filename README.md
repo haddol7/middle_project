@@ -11,7 +11,7 @@ GitHub: https://github.com/haddol7/middle_project
 
 - `PhotoBlogServer/`: Django 서버와 API·테스트
 - `PhotoViewer/`: Java Android 클라이언트와 기기 테스트
-- 수행 결과 보고서는 별도 전달 자료다. 이 저장소에는 포함하지 않는다.
+- [수행 결과 보고서](<모바일웹서비스 프로젝트 공통평가 01_수행 결과 보고서_GitHub.docx>): 최신 캡처와 검증 결과. 관리자 비밀번호는 별도 전달.
 - `web-tests/`: 모바일웹 규칙·인식 회귀 검사
 - `evidence/`: 실행 로그·검증 결과·화면 증빙
 - `docs/`: 설계·검증 범위·구현 기록
