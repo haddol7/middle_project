@@ -8,7 +8,7 @@ from rest_framework import permissions, viewsets
 from .forms import PostForm
 from .forms import PhotoSearchForm
 from .content_rules import ContentError, THEMES, query_terms, normalize
-from .content_queries import filter_content
+from .content_queries import filter_content, matching_line_ids
 from django.core.paginator import Paginator
 from urllib.parse import urlencode
 from .models import Post
@@ -48,7 +48,7 @@ def post_detail(request, pk):
         terms = query_terms(query) if query else []
     except ContentError:
         terms = []
-    matches = [line["line_id"] for line in content["lines"] if any(term in normalize(line["text"]) or term.replace(" ", "") in normalize(line["text"]).replace(" ", "") for term in terms)]
+    matches = matching_line_ids(content["lines"], terms)
     return render(request, "blog/post_detail.html", {"post":post,"can_manage_post":can_manage_post(request.user,post),"photo_content":content,"theme_name":THEMES.get(content["theme"],"미분류"),
         "detail_config":{"image":post.image.url,"content":content,"matched_ids":matches,"query":query if terms else ""}})
 

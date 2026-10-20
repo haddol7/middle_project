@@ -11,7 +11,7 @@ from rest_framework.views import APIView
 
 from .content_rules import ContentError, THEMES, normalize, query_terms
 from .content_services import update_content
-from .content_queries import filter_content
+from .content_queries import filter_content, matching_line_ids
 from .models import PhotoContent, PhotoTextLine, Post
 from .serializers import PostSerializer
 
@@ -139,7 +139,9 @@ class ContentPosts(ContentAPIView):
                     "content": content_payload(post, summary=True)}
             if self.search:
                 content = post.content
-                matches = content.matched_lines
+                candidates = content.matched_lines
+                matched_ids = set(matching_line_ids([line_payload(line) for line in candidates], terms))
+                matches = [line for line in candidates if str(line.line_id) in matched_ids]
                 item.update(content_revision=content.revision, image_sha256=content.image_sha256,
                             matched_lines=[line_payload(line) for line in matches[:10]], more_matches=max(0, len(matches)-10))
             results.append(item)

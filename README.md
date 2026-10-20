@@ -39,9 +39,9 @@ Android는 Windows Android Studio에서 PhotoViewer를 연다. compileSdk 36·Bu
 
 | 구분 | 확인 결과 | 재현 방법 |
 | --- | --- | --- |
-| WSL Django | 145개 통과, check 오류 없음, migration 변경 없음 | PhotoBlogServer에서 `python tools/verify_content.py` |
+| WSL Django | 148개 통과, check 오류 없음, migration 변경 없음 | PhotoBlogServer에서 `python tools/verify_content.py` |
 | WSL 독립 HTTP | 15개 통과 | 같은 위치에서 `python api_test_engine.py` |
-| Coverage | 총합 95.5%, 라인 97.2%, 분기 89.5% | `PhotoBlogServer/htmlcov/index.html` |
+| Coverage | 총합 95.7%, 라인 97.3%, 분기 90.2% | `PhotoBlogServer/htmlcov/index.html` |
 | Windows 웹 규칙 | 67개 통과 | 루트에서 `node --test web-tests/content-rules.test.mjs` |
 | Windows Android JVM | 38개 통과 | PhotoViewer에서 `./gradlew.bat testDebugUnitTest` |
 | Android API35 에뮬레이터 | 통합 기기 테스트 9개 통과 | `evidence/content/android/verification.json` |

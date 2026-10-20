@@ -18,3 +18,31 @@ def filter_content(posts, *, theme="", tag="", terms=(), author=None):
             Q(norm_text__contains=term) | Q(compact_text__contains=term.replace(" ", "")))
         posts = posts.filter(Exists(matches))
     return posts
+
+
+def matching_line_ids(lines, terms):
+    """Choose the fewest relevant OCR lines covering all query terms."""
+    if not terms:
+        return []
+    candidates = []
+    for line in lines:
+        normalized = normalize(line["text"])
+        compact = normalized.replace(" ", "")
+        hits = {term for term in terms if term in normalized or term.replace(" ", "") in compact}
+        if hits:
+            candidates.append((line["line_id"], hits))
+    required = set(terms)
+    complete = [line_id for line_id, hits in candidates if hits == required]
+    if complete:
+        return complete
+    # A query may span two OCR lines. Cover every term without highlighting
+    # additional lines merely because they repeat a common word.
+    remaining = set(required)
+    selected = []
+    while remaining:
+        best = max(candidates, key=lambda item: len(item[1] & remaining), default=None)
+        if best is None or not best[1] & remaining:
+            return []
+        selected.append(best[0])
+        remaining -= best[1]
+    return [line_id for line_id, _ in candidates if line_id in selected]

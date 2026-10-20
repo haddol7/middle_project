@@ -160,6 +160,11 @@ class ContentAPITests(TemporaryMediaMixin, TestCase):
         self.assertEqual(response.status_code,200,response.data)
         self.assertEqual(response.data["revision"],1)
 
+    def test_browsable_multipart_optional_analysis_can_be_empty_or_null(self):
+        for value in ("", "null"):
+            response = self.api.post("/api_root/Post/", {"title": "기본 API 게시", "text": "사진 게시", "image": uploaded_photo(), "photo_content": value}, format="multipart")
+            self.assertEqual(response.status_code, 201, response.data)
+
     def test_hash_or_size_mismatch_rolls_back_post_and_new_file(self):
         for changes in ({"image_sha256":"0"*64},{"width":49}):
             bad=packet(); bad.update(changes)
@@ -252,6 +257,26 @@ class ContentAPITests(TemporaryMediaMixin, TestCase):
         self.assertEqual(len(self.search("바다라멘 CAFE",theme="food",tag="라멘").data["results"]),1)
         self.assertEqual(self.search("바다라멘 CAFE",theme="animal").data["results"],[])
         self.assertEqual(self.search("바다라멘 없는단어").data["results"],[])
+
+    def test_multiword_highlight_ignores_lines_containing_only_common_words(self):
+        data = packet(text="This is a lot of 12 point text to test the")
+        wanted = data["lines"][0]["line_id"]
+        for text in ("of file format.", "The quick brown dog jumped over the", "lazy fox jumped over"):
+            data["lines"].append(dict(data["lines"][0], line_id=str(uuid4()), text=text))
+        post = self.create(data)
+        result = self.search("This is a lot").data["results"][0]
+        self.assertEqual([line["line_id"] for line in result["matched_lines"]], [wanted])
+        page = self.client.get(f"/post/{post.pk}/", {"q": "This is a lot"})
+        self.assertEqual(page.context["detail_config"]["matched_ids"], [wanted])
+
+    def test_split_line_highlight_covers_terms_without_duplicate_common_lines(self):
+        from blog.content_queries import matching_line_ids
+        lines = [{"line_id": "a", "text": "바다 라멘"},
+                 {"line_id": "b", "text": "CAFE MENU"},
+                 {"line_id": "c", "text": "CAFE OTHER"}]
+        self.assertEqual(matching_line_ids(lines, ["바다라멘", "cafe"]), ["a", "b"])
+        self.assertEqual(matching_line_ids(lines, ["바다라멘", "없는단어"]), [])
+        self.assertEqual(matching_line_ids(lines, []), [])
 
     def test_future_publication_is_hidden_from_all_content_endpoints(self):
         post=self.create(packet()); Post.objects.filter(pk=post.pk).update(published_date=timezone.now()+timezone.timedelta(days=1))

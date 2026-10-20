@@ -9,7 +9,7 @@
 | 3 | 사진 포함 API POST와 결과 | WSL 실제 HTTP, 운영 HTTPS multipart 201·사진 해시 일치 | A2·A15, 주소창 포함 입력/완료 화면 필요 |
 | 4 | Telnet GET 응답 | WSL GNU Telnet 200·JSON 배열, 최신 transcript | A3, 터미널 캡처 필요 |
 | 5 | CodeBeautify JSON 검증 | 기본 구현 당시 Valid JSON 원본 화면 보존 | A3, 최신 응답의 서비스 화면 필요 |
-| 6 | Python 테스트 엔진과 Coverage HTML | WSL 145개·독립 HTTP 15개, HTML 생성 | A4·A15, 최신 HTML 실제 화면 캡처 필요 |
+| 6 | Python 테스트 엔진과 Coverage HTML | WSL 148개·독립 HTTP 15개, HTML 생성 | A4·A15, 최신 HTML 실제 화면 캡처 필요 |
 | 7 | 실제 Android 요청 소켓 수신 | 익명 GET 원문 212B, 인증 헤더·쿠키·본문 없음 | A3, 원문을 연 VS Code 캡처 필요 |
 | 8 | localhost 서버 브라우저 | 실제 기존 목록 캡처 | A14 완료 |
 | 9 | Android 시작 | 실제 PhotoViewer API35 에뮬레이터 | A5 완료 |
@@ -33,8 +33,8 @@
 
 ## 현재 실행 근거
 
-- WSL: evidence/content/server/verification.json 및 실제 출력 로그, 145개·HTTP15개.
-- Coverage: 총합95.5%·라인97.2%·분기89.5%, PhotoBlogServer/htmlcov/index.html.
+- WSL: evidence/content/server/verification.json 및 실제 출력 로그, 148개·HTTP15개.
+- Coverage: 총합95.7%·라인97.3%·분기90.2%, PhotoBlogServer/htmlcov/index.html.
 - Windows 웹: evidence/mobile-web/unit-verification.json, 67개.
 - Windows Android: evidence/content/android/verification.json, 소스/APK 일치는 같은 manifest, 최신 운영 동기화는 evidence/content/android/cloud-sync.json.
 - 과거 운영 HTTP: evidence/submission-final/cloud-content-flow.json과 최초 게시 기록 cloud-content-flow-attempt-1.json. 현재 글4번 유지 또는 최신 UI 검사의 근거로 쓰지 않는다.

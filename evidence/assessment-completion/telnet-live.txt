@@ -1,0 +1,16 @@
+Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is 'off'.
+HTTP/1.1 200 OK
+Date: Tue, 20 Oct 2026 14:55:11 GMT
+Server: WSGIServer/0.2 CPython/3.12.15
+Content-Type: application/json
+Vary: Accept, Cookie
+Allow: GET, POST, HEAD, OPTIONS
+X-Frame-Options: DENY
+Content-Length: 670
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+
+[{"id":2,"author":1,"title":"API 사진 게시 평가","text":"실제 사진 첨부 POST 요청과 저장 결과 확인","created_date":"2026-10-20T23:52:23.858991+09:00","published_date":"2026-10-20T23:52:23.858951+09:00","image":"http://127.0.0.1:8010/media/images/2026/10/20/e3bdb6b10829451880b73e421617bc9a.png"},{"id":1,"author":1,"title":"공통평가 API 사진 게시 확인","text":"사진과 본문을 multipart로 게시한 뒤 저장 결과를 확인합니다.","created_date":"2026-10-20T23:44:17.302524+09:00","published_date":"2026-10-20T23:44:17.302485+09:00","image":"http://127.0.0.1:8010/media/images/2026/10/20/0e463f5ce0fa43ada02611a66b4309f3.png"}]Connection closed by foreign host.

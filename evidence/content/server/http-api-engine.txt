@@ -1,5 +1,5 @@
 ACTUAL WSL SUBPROCESS OUTPUT: http-api-engine
-Run started UTC: 2026-10-20T13:05:42.450668+00:00
+Run started UTC: 2026-10-20T14:46:56.646442+00:00
 WSL: Ubuntu
 Working directory: /mnt/c/Users/1/mobile_web_service/common01/PhotoBlogServer
 Command: /home/daeha/.venvs/mobile_web_service/bin/python api_test_engine.py
@@ -58,7 +58,7 @@ test_actual_stale_write_returns_409_and_legacy_array_remains (blog.tests.test_co
 test_actual_upload_public_file_search_correction_and_exclusion (blog.tests.test_content_http.ContentRealHTTPTests.test_actual_upload_public_file_search_correction_and_exclusion) ... ok
 
 ----------------------------------------------------------------------
-Ran 15 tests in 8.077s
+Ran 15 tests in 8.252s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
